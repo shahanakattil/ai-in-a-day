@@ -59,7 +59,7 @@ The high-level steps covered in the lab are:
 
     ![The Search service's API key is copied to the clipboard.](media/copy-azure-search-api-key.png)
 
-8. Download the files in the `schemas\` folder for this lab.  There are six files, three prefixed with `abstracts` and three with `covid19temp`.  Save these to a directory such as `C:\Temp\AzureSearch\`.
+8. Download the `schemas.zip` from https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/schemas.zip. Unzip schemas.zip.  There are six files, three prefixed with `abstracts` and three with `covid19temp`.  Save these to a directory such as `C:\Temp\AzureSearch\`.
 
 9. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string.  Do the same for `covid19temp_datasource.schema`.
 
