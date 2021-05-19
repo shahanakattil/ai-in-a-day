@@ -255,7 +255,7 @@ The high-level steps covered in the lab are:
 
     ![The Cognitive Services key and endpoint are selected](media/azure-cognitive-services-key.png)
 
-11. Click [here](https://experienceazure.blob.core.windows.net/templates/ai-iad/2020.09.25.20201616v1.pdf) to download the pdf file named `2020.09.25.20201616v1.pdf` for this lab. Save this to a directory such as `C:\Temp\AzureSearch\`.
+11. Click [here](https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/pdf/2020.09.25.20201616v1.pdf) to download the pdf file named `2020.09.25.20201616v1.pdf` for this lab. Save this to a directory such as `C:\Temp\AzureSearch\`.
 
 12. Navigate to the [Form OCR Testing Tool](https://fott-preview.azurewebsites.net/), an Azure-hosted website for form recognition.  Select the **Connections** option and then choose **+** to create a new connection.  Fill in the parameters as in the table below and then select **Save Connection**.
 
