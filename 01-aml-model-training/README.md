@@ -2,6 +2,7 @@
 
 This lab covers clustering with Azure Machine Learning, Automated ML, and model explainability.
 
+
 ## Task 1 - Explore dashboard of COVID-19 data
 
 Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
