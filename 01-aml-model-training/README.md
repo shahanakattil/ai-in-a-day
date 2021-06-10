@@ -124,7 +124,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 8. On the `Additional configurations` panel, fill in the values listed below:
 
     - **Primary metric (1)**: AUC weighted
-    - **Training job time (hours) (2)**: 0.25
+    - **Training job time (hours) (2)**: 0.5
     - **Metric score threshold (3)**: 0.95
     - **Validation type (4)**: k-fold cross validation
     - **Number of cross validations (5)**: 5
@@ -132,7 +132,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
   
     ![Primary metric is set to AUC weighted. Training job time is set to 0.25 hours. The validation type is set to k-fold cross validation. The number of cross validations is set to five. Max concurrent iterations is set to four. The save button is highlighted.](media/automl-additional-configuration.png)
 
-    Thanks to the 0.25 hours set for `training job time`, the experiment will stop after 15 minutes to minimize cost. When it comes to `Max concurrent iterations`, Automated ML can try at most four models at the same time, this is also limited by the compute instance's maximum number of nodes.
+    Thanks to the 0.5 hours set for `training job time`, the experiment will stop after 30 minutes to minimize cost. When it comes to `Max concurrent iterations`, Automated ML can try at most four models at the same time, this is also limited by the compute instance's maximum number of nodes.
 
     Select `Save` **(7)** to continue.
 
@@ -161,6 +161,10 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 4. On the **Run details** page, navigate to the **Models (1)** section. Check the values on the  **AUC weighted** column **(2)**, which is the primary metric selected in the AutoML run configuration. See how the best model was selected, this is the one with the maximum metric value. This is also the model for which the explanation was generated. Select **View explanation (3)**.
 
     ![Explore the models section of the AutoML run](media/inspect-models.png)
+    
+  ```
+  Note : If the values for AUC Weighted Column are not populated yet, wait for the Auto ML run to complete and make sure AUC weighted column has some values. You can navigate to next notebook (Task 7) only after getting this result.
+  ```
 
 5. On the **Explanations (1)** section, browse  the available explanations **(2)** and investigate the **Model performance (3)** representation.
 
