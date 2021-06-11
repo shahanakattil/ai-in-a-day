@@ -1,4 +1,4 @@
-# Azure **AI in a Day** Labs
+# Azure Immersion Workshop : AI
 
 ## Source datasets used by the labs
 
@@ -77,23 +77,7 @@ The high-level steps covered in the lab are:
 - Run the classifier on "new" research papers
 - Explain the best model produced by AutoML
 
-### Lab 2 - [Azure Machine Learning - MLOps](02-aml-mlops/README.md)
-> **Note: This lab will not be available as a part of ai-in-a-day
-
-The lab covers MLOps using Azure DevOps and GitHub, training and deployment of models, real time scoring using a REST API endpoint.
-
-The high-level steps covered in the lab are:
-
-- Explore dashboard of COVID-19 data
-- Explore lab scenario
-- Overview of CI/CD pipeline
-- Perform real time scoring on a REST API endpoint published by the CD component of the pipeline
-- Trigger CI/CD pipeline by committing a simple code change
-- Monitor execution of CI/CD pipeline all the way to the update on the REST API endpoint
-- Perform another real time scoring on the REST API endpoint
-- Explore aspects related to traceability and control of the process
-
-### Lab 3 - [Knowledge Mining with Azure Cognitive Search and Text Analytics](03-knowledge-mining/README.md)
+### Lab 2 - [Knowledge Mining with Azure Cognitive Search and Text Analytics](03-knowledge-mining/README.md)
 
 This lab covers Azure Cognitive Search (index, knowledge store, custom skills) and Form Recognizer.
 
@@ -106,7 +90,7 @@ The high-level steps covered in the lab are:
 - Add a set of new documents and trigger the index update process
 - Explore the document and graph search and identify updated results
 
-### Lab 4 - [Conversational AI with Azure Bot Service and Cognitive Services](04-conversational-ai/README.md)
+### Lab 3 - [Conversational AI with Azure Bot Service and Cognitive Services](04-conversational-ai/README.md)
 
 This lab covers Azure Bot Service, Bot Framework Composer, and Azure Cognitive Services.
 
@@ -119,7 +103,7 @@ The high-level steps covered in the lab are:
 - Deploy the updated version of the conversational bot
 - Interact with improved version of the AI-in-a-Day conversational bot
 
-### Lab 5 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/README.md)
+### Lab 4 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/README.md)
 
 The lab covers the Metrics Advisor service from Azure Cognitive Services.
 
@@ -132,7 +116,7 @@ The high-level steps covered in the lab are:
 - Perform root cause analysis
 - Explore anomalies with hard thresholds (optional)
 
-### Lab 6 - [Machine Learning with Azure Databricks](06-ml-in-databricks/README.md)
+### Lab 5 - [Machine Learning with Azure Databricks](06-ml-in-databricks/README.md)
 
 The lab covers Data Engineering and Machine Learning using Azure Databricks notebooks.
 
