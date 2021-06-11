@@ -78,6 +78,7 @@ The high-level steps covered in the lab are:
 - Explain the best model produced by AutoML
 
 ### Lab 2 - [Azure Machine Learning - MLOps](02-aml-mlops/README.md)
+> **Note: This lab will not be available as a part of ai-in-a-day
 
 The lab covers MLOps using Azure DevOps and GitHub, training and deployment of models, real time scoring using a REST API endpoint.
 
