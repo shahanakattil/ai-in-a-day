@@ -1,4 +1,4 @@
-# Lab 3 - Knowledge Mining with Azure Cognitive Search and Text Analytics
+# Lab 2 - Knowledge Mining with Azure Cognitive Search and Text Analytics
 
 This lab covers Azure Cognitive Services, particularly [Azure Cognitive Search](https://azure.microsoft.com/services/search/) and the [Form Recognizer](https://azure.microsoft.com/services/cognitive-services/form-recognizer/) service.
 
