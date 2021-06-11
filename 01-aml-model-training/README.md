@@ -163,10 +163,6 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 4. On the **Run details** page, navigate to the **Models (1)** section. Check the values on the  **AUC weighted** column **(2)**, which is the primary metric selected in the AutoML run configuration. See how the best model was selected, this is the one with the maximum metric value. This is also the model for which the explanation was generated. Select **View explanation (3)**.
 
     ![Explore the models section of the AutoML run](media/inspect-models.png)
-    
-  ```
-  Note : If the values for AUC Weighted Column are not populated yet, wait for the Auto ML run to complete and make sure AUC weighted column has some values. You can navigate to next notebook (Task 7) only after getting this result.
-  ```
 
 5. On the **Explanations (1)** section, browse  the available explanations **(2)** and investigate the **Model performance (3)** representation.
 
