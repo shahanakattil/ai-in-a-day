@@ -56,8 +56,6 @@ The high-level steps covered in the lab are:
     > **WARNING:** If the root folder does not have a file with the extension `w2v`, look for nested folders under the `Users` folder. Ideally, your notebooks should be in the same folder as the `w2v` file.
 
 6. If the folder does not contain any notebooks, download the following items to your local machine:
-
-    [Setup.ipynb](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/Setup.ipynb)
     
     [1. Data Preparation.ipynb](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/1.%20Data%20Preparation.ipynb)
 
@@ -72,11 +70,9 @@ Upload each file by selecting the `Upload` **(1)** button from the top right cor
 
 ## Task 4 - Prepare data for the Machine Learning process
 
-1. With the Azure Machine Learning Studio and the Jupyter notebook environment open, open and run the `Setup.ipynb` notebook in the Jupyter notebook environment. This notebook will create the aml_compute_cpu compute cluster, registers the necessary datasets: COVID19Articles_Test and COVID19Articles_Train and submits the COVID19_Classification experiment without setting the metric exit criteria.
+1. In the Azure Machine Learning Studio, open the Jupyter notebook environment.
+2.  Open `1. Data Preparation.ipynb` notebook and execute the cells one by one (using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or click on 'run' button) and observe the results of each cell execution.
 
-2. Execute the notebook cell by cell (using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
-
-3. Now open `1. Data Preparation.ipynb` notebook and execute the cells one by one.
 
 ## Task 5 - Train a Machine Learning model with Automated ML
 
