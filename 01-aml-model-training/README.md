@@ -57,11 +57,14 @@ The high-level steps covered in the lab are:
 
 6. If the folder does not contain any notebooks, download the following items to your local machine:
 
+    [Setup.ipynb](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/Setup.ipynb)
+    
     [1. Data Preparation.ipynb](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/1.%20Data%20Preparation.ipynb)
 
     [3. Document Classification.ipynb](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/3.%20Document%20Classification.ipynb)
 
     [covid_embeddings_model_500_docs.w2v](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/covid_embeddings_model_500_docs.w2v)
+    
 
 Upload each file by selecting the `Upload` **(1)** button from the top right corner of the screen and then selecting the blue `Upload` **(2)** button to confirm.
 
