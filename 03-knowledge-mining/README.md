@@ -268,9 +268,11 @@ The high-level steps covered in the lab are:
 
     ![The papers connection has been created](media/fott-connections.png)
 
-13. Return to the home screen.  Select **Train and use a model with labels**.  This will pop up a dialog.  Choose **New Project** to create a new project.
+13. Return to the home screen.  Select **Use Custom to Train a model with labels and get key value pairs**.  This will pop up a dialog.  Choose **New Project** to create a new project.
 
-    ![Train and use a model with labels](media/fott-main-screen.png)
+    ![Train and use a model with labels](media/fott-main-screen1.png)
+    
+    ![Project](media/fott-main-screen2.png)
 
 14. Enter the following values for your project.  Then, select **Save Project**.
 
@@ -412,7 +414,7 @@ The high-level steps covered in the lab are:
 
 8. Select the Search service.
 
-    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service.png)
+    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
 9. Select the **Indexes** tab and then choose the **abstracts** index.
 
