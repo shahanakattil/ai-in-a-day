@@ -49,7 +49,7 @@ The high-level steps covered in the lab are:
 
 5. Return to the **AI-in-a-Day** resource group.  Then, select the Search service.
 
-    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service.png)
+    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
 6. Copy the search service URL and paste this into a text file.  Also make note of the service account name, which comes before `.search.windows.net`.
 
@@ -119,7 +119,7 @@ The high-level steps covered in the lab are:
 
 3. Select the Search service.
 
-    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service.png)
+    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
 4. Select the **Indexes** tab and ensure that you have two indexes created.  If the Document Count is 0 for either, wait a couple of minutes and select **Refresh** until the document count appears.
 
@@ -165,11 +165,11 @@ The high-level steps covered in the lab are:
 
 2. Enter **lab03** as the Display name and paste in your storage account connection string.  Then, select **Next** to continue and **Connect** to complete the operation.
 
-    ![The connection string is filled in.](media/azure-storage-explorer-connect-2.png)
+    ![The connection string is filled in.](media/azure-storage-explorer-connect-lab03.png)
 
 3. In Azure Storage Explorer, navigate down the **lab03** attached storage and select the `covid19temp` blob container.  Double-click the **comm_use_subset** to enter that folder.
 
-    ![The comm_use_subset folder is selected.](media/azure-storage-explorer-1.png)
+    ![The comm_use_subset folder is selected.](media/azure-storage-explorer-lab03.png)
 
 4. Enter the **pdf_json_refresh** folder.  Then, in the **Select All** menu, choose **Select All Cached**.  This will highlight all 100 records in the folder.  Select **Copy** to copy these documents.
 
@@ -187,7 +187,7 @@ The high-level steps covered in the lab are:
 
 8. Select the Search service.
 
-    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service.png)
+    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
 9. Navigate to the **Indexers** section and select the **covid19temp** indexer.
 
