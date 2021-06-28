@@ -131,7 +131,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
     - **Number of cross validations (5)**: 5
     - **Max concurrent iterations (6)**: 4
   
-    ![Primary metric is set to AUC weighted. Training job time is set to 0.25 hours. The validation type is set to k-fold cross validation. The number of cross validations is set to five. Max concurrent iterations is set to four. The save button is highlighted.](media/automl-additional-configuration.png)
+    ![Primary metric is set to AUC weighted. Training job time is set to 0.25 hours. The validation type is set to k-fold cross validation. The number of cross validations is set to five. Max concurrent iterations is set to four. The save button is highlighted.](media/automl-additional-configuration2.png)
 
     Thanks to the 0.5 hours set for `training job time`, the experiment will stop after 30 minutes to minimize cost. When it comes to `Max concurrent iterations`, Automated ML can try at most four models at the same time, this is also limited by the compute instance's maximum number of nodes.
 
