@@ -219,7 +219,7 @@ The high-level steps covered in the lab are:
 
 3. Select the Storage account.
 
-    ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account.png)
+    ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
 
 4. Navigate to the **CORS** settings page.  Ensure that you are on the **Blob service** tab and then enter the following values into the table.
 
@@ -237,7 +237,7 @@ The high-level steps covered in the lab are:
 
 6. Open Azure Storage Explorer and navigate to **lab03**, and then to **Blob Containers**.  Right-click on **covid19temp** and select the **Get Shared Access Signature...** option.
 
-    ![The Get Shared Access Signature option is selected](media/azure-storage-explorer-get-sas.png)
+    ![The Get Shared Access Signature option is selected](media/azure-storage-explorer-get-sas2.png)
 
 7. Change the **Expiry time** to the year 2099, select all of the possible permissions, and then select **Create** to create a Shared Access Signature.
 
@@ -247,13 +247,13 @@ The high-level steps covered in the lab are:
 
     ![The Shared Access Signature has been copied to the clipboard](media/azure-storage-explorer-copy-sas.png)
 
-9. Return to Azure Portal page with your storage account.  Navigate back to the **AI-in-a-Day** resource group and select the Cognitive Services service.
+9. Return to Azure Portal page with your storage account.  Navigate back to the **AI-in-a-Day** resource group and select the Cognitive Service **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![The Cognitive Services service is selected](media/azure-open-cognitive-services.png)
+    ![The Cognitive Services service is selected](media/azure-open-cognitive-services1.png)
 
 10. Select the **Keys and Endpoint** option under Resource Management.  Then, copy the value for **KEY 1** and the **Endpoint**.  Paste these into a text file.
 
-    ![The Cognitive Services key and endpoint are selected](media/azure-cognitive-services-key.png)
+    ![The Cognitive Services key and endpoint are selected](media/azure-cognitive-services-key1.png)
 
 11. Click [here](https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/pdf/2020.09.25.20201616v1.pdf) to download the pdf file named `2020.09.25.20201616v1.pdf` for this lab. Save this to a directory such as `C:\Temp\AzureSearch\`.
 
