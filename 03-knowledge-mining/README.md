@@ -102,9 +102,9 @@ The high-level steps covered in the lab are:
 11. In the same PowerShell prompt, call this function for the `abstracts` index and for the `covid19temp` index.  If you did not use `C:\Temp\AzureSearch\` to save your schema files, change the function call to point to the correct file location.  Then, fill in your Azure Search account name and Azure Search API key.
 
     ```powershell
-    Create-AzureSearchIndex "C:/Temp/AzureSearch/abstracts_datasource.schema" "C:/Temp/AzureSearch/abstracts.schema" "C:/Temp/AzureSearch/abstracts_indexer.schema" "<<ACCOUNT NAME>>" "<<API KEY>>"
+    Create-AzureSearchIndex "C:/Temp/AzureSearch/abstracts_datasource.schema" "C:/Temp/AzureSearch/abstracts.schema" "C:/Temp/AzureSearch/abstracts_indexer.schema" "<<AZURE SEARCH ACCOUNT NAME>>" "<<API KEY>>"
 
-    Create-AzureSearchIndex "C:/Temp/AzureSearch/covid19temp_datasource.schema" "C:/Temp/AzureSearch/covid19temp.schema" "C:/Temp/AzureSearch/covid19temp_indexer.schema" "<<ACCOUNT NAME>>" "<<API KEY>>"
+    Create-AzureSearchIndex "C:/Temp/AzureSearch/covid19temp_datasource.schema" "C:/Temp/AzureSearch/covid19temp.schema" "C:/Temp/AzureSearch/covid19temp_indexer.schema" "<<AZURE SEARCH ACCOUNT NAME>>" "<<API KEY>>"
     ```
 
     ![The Create-AzureSearchIndex function has been run to create a new index.](media/create-azuresearchindex-use.png)
