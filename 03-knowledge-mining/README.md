@@ -269,10 +269,8 @@ The high-level steps covered in the lab are:
     ![The papers connection has been created](media/fott-connections.png)
 
 13. Return to the home screen.  Select **Use Custom to Train a model with labels and get key value pairs**.  This will pop up a dialog.  Choose **New Project** to create a new project.
-
-    ![Train and use a model with labels](media/fott-main-screen1.png)
-    
-    ![Project](media/fott-main-screen2.png)
+  
+    ![Project](media/project.png)
 
 14. Enter the following values for your project.  Then, select **Save Project**.
 
