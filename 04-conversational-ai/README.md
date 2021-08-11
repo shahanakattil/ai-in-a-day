@@ -145,11 +145,11 @@ Our Bot is now using a **Regular expression recognizer** as its Language Underst
 
    ![Luis portal subscription and authoring resource selection window is shown. Matching resources are selected. The Done button is highlighted.](media/luis-subscription-selection.png)
 
-3. Select the **Settings (1)** button from the top blue bar and then select the **Resources (2)** to access the Authoring resource information. Take note of the **Location (3)** and **Primary Key (4)**.
+3. Select the **Settings (1)** button from the top blue bar and then select the **Resources (2)** to access the Authoring resource information. Take note of the **Location (3)** and **Resource Key (4)**.
 
    ![Settings button is highlighted in the conversation apps page.](media/primary_key.png)
 
-4. Switch back to the Bot Framework Composer. Type in the **primary key** you noted from the previous step into the **LUIS Authoring key** field (1). Select the **location** you noted from the earlier step of the **LUIS region** selection list (2).
+4. Switch back to the Bot Framework Composer. Type in the **Resource Key** you noted from the previous step into the **LUIS Authoring key** field (1). Select the **location** you noted from the earlier step of the **LUIS region** selection list (2).
 
    ![LUIS settings in the Bot Framework Composer are shown. LUIS Authoring Key and LUIS region are highlighted.](media/bot-composer-luis-settings.png)
 
