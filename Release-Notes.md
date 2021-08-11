@@ -1,5 +1,10 @@
 # Release Notes
 
+### 11 August 2021
+  - UI update in 04-conversational-ai/media i.e, Resource key in **LUIS** portal.
+  - Minor instruction update in 04-conversational-ai/README.md
+
+-----------
 ### 10 August 2021
   - Updated the notebook URL in 01-aml-model-training/README.md
 
