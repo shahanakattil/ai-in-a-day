@@ -145,23 +145,19 @@ Our Bot is now using a **Regular expression recognizer** as its Language Underst
 
    ![Luis portal subscription and authoring resource selection window is shown. Matching resources are selected. The Done button is highlighted.](media/luis-subscription-selection.png)
 
-3. Select the **Settings** button from the top blue bar.
+3. Select the **Settings (1)** button from the top blue bar and then select the **Resources (2)** to access the Authoring resource information. Take note of the **Location (3)** and **Primary Key (4)**.
 
-   ![Settings button is highlighted in the conversation apps page.](media/luis-settings-button.png)
+   ![Settings button is highlighted in the conversation apps page.](media/primary_key.png)
 
-4. Select your subscription **(1)** and the authoring resource **(2)**. Drill down through the arrow button **(3)** to access Authoring resource information. Take note of the **Location (4)** and **Primary Key (5)**.
-
-   ![Authoring Resource settings page is open. Resource location and primary key are highlighted.](media/luis-settings-key.png)
-
-5. Switch back to the Bot Framework Composer. Type in the **primary key** you noted from the previous step into the **LUIS Authoring key** field (1). Select the **location** you noted from the earlier step of the **LUIS region** selection list (2).
+4. Switch back to the Bot Framework Composer. Type in the **primary key** you noted from the previous step into the **LUIS Authoring key** field (1). Select the **location** you noted from the earlier step of the **LUIS region** selection list (2).
 
    ![LUIS settings in the Bot Framework Composer are shown. LUIS Authoring Key and LUIS region are highlighted.](media/bot-composer-luis-settings.png)
 
-6. Switch to the **Design (1)** view. Select **ResearchLookup (2)** trigger.
+5. Switch to the **Design (1)** view. Select **ResearchLookup (2)** trigger.
 
    ![ResearchLookup Trigger is open. Trigger phrases are filled in with LUIS utterances. Condition is set to 0.6 scoring for predictions.](media/research-lookup-luis-trigger.png)
 
-7. Copy and paste the below language understanding code with a list of utterances with a single machine-learning entity type definition called `topic` into the **Trigger phrases** box **(3)**. All topic entities below are labeled with values that LUIS will use as part of the machine learning data set. This is a small set of data. We will have the chance to add more later in the lab, on the LUIS portal.
+6. Copy and paste the below language understanding code with a list of utterances with a single machine-learning entity type definition called `topic` into the **Trigger phrases** box **(3)**. All topic entities below are labeled with values that LUIS will use as part of the machine learning data set. This is a small set of data. We will have the chance to add more later in the lab, on the LUIS portal.
 
    ```plaintext
    - Find me publications about {topic=SARS}
@@ -202,11 +198,11 @@ Our Bot is now using a **Regular expression recognizer** as its Language Underst
    - Show me publications on {topic=Pathogenesis}
    ```
 
-8. Type in `#ResearchLookup.Score>=0.6` into the **Condition (4)** box. This will be our prediction scoring setting for the **ResearchLookup** intent.
+7. Type in `#ResearchLookup.Score>=0.6` into the **Condition (4)** box. This will be our prediction scoring setting for the **ResearchLookup** intent.
 
    ![ResearchLookup Trigger is open. Trigger phrases are filled in with LUIS utterances. Condition is set to 0.6 scoring for predictions.](media/research-lookup-luis-trigger.png)
 
-9. Select **OrganizationBasedSearch (1)** trigger. Copy and paste the below language understanding code into the **Trigger phrases** box **(2)**. Type in `#OrganizationBasedSearch.Score>=0.6` into the **Condition (3)** box.
+8. Select **OrganizationBasedSearch (1)** trigger. Copy and paste the below language understanding code into the **Trigger phrases** box **(2)**. Type in `#OrganizationBasedSearch.Score>=0.6` into the **Condition (3)** box.
 
    ![OrganizationBasedSearch Trigger is open. Trigger phrases are filled in with LUIS utterances. Condition is set to 0.6 scoring for predictions.](media/organizationbasedresearch-luis-trigger.png)
 
@@ -222,15 +218,15 @@ Our Bot is now using a **Regular expression recognizer** as its Language Underst
    - What research did {organization=Institute of Cancer Research} publish?
    ```
 
-10. Select **AskForMore (1)** trigger. Type in `-More` into the **Trigger phrases** box **(2)**. Feel free to improve the utterances for this Intent by adding more examples.  
+9. Select **AskForMore (1)** trigger. Type in `-More` into the **Trigger phrases** box **(2)**. Feel free to improve the utterances for this Intent by adding more examples.  
 
     ![AskForMore Trigger is open. Trigger phrase is set to More.](media/askformore-luis-trigger.png)  
 
-11. Now that we have set with all our LUIS intents, entities and labels, we can start our bot to test locally in the Bot Framework Emulator.
+10. Now that we have set with all our LUIS intents, entities and labels, we can start our bot to test locally in the Bot Framework Emulator.
 
     ![Start bot button is highlighted.](media/start-bot-luis.png)
 
-12. What about testing the typographical error that failed with our bot's previous version that did not have LUIS's help? Keep in mind that, for the **GetRecentResearch** intent, we still have a single utterance, as shown below.
+11. What about testing the typographical error that failed with our bot's previous version that did not have LUIS's help? Keep in mind that, for the **GetRecentResearch** intent, we still have a single utterance, as shown below.
 
     ![GetRecentResearch trigger is open. The trigger phrase is highlighted.](media/getrecentresearch-luis-trigger.png)
 
@@ -240,27 +236,27 @@ Our Bot is now using a **Regular expression recognizer** as its Language Underst
 
     It looks like LUIS was able to understand what we meant without being too picky with typographical errors.
 
-13. Before we go too far with testing, let's take a look at the LUIS portal to see what happened there. Navigate to [https://www.luis.ai/applications](https://www.luis.ai/applications) in your browser to see a refreshed list of applications.
+12. Before we go too far with testing, let's take a look at the LUIS portal to see what happened there. Navigate to [https://www.luis.ai/applications](https://www.luis.ai/applications) in your browser to see a refreshed list of applications.
 
     ![LUIS applications list is shown on the LUIS portal. AI-in-a-Day application is highlighted. ](media/luis-portal-application-list.png)
 
      When we started our local bot through Bot Framework Composer, the composer connected to LUIS Authoring service in Azure to set things up for our bot. Our bot is running locally but connecting to the cloud to talk to the LUIS service.
 
-14. Select the application to see more details.
+13. Select the application to see more details.
 
-15. Once you are on the application page, you can see a list of **intents** **(2)**. These are the **triggers** we configured in our bot. The number of **examples** **(3)** listed is the number of utterances we provided as **trigger phrases** in the Bot Framework Composer.
+14. Once you are on the application page, you can see a list of **intents** **(2)**. These are the **triggers** we configured in our bot. The number of **examples** **(3)** listed is the number of utterances we provided as **trigger phrases** in the Bot Framework Composer.
 
      ![A list of intents is presented. Intent names and example counts are highlighted.](media/luis-portal-intents.png)
 
-16. Select the **Entities page (1)** in the portal. Observe the list of entities **(2)** and their type listed as machine learned **(3)**.
+15. Select the **Entities page (1)** in the portal. Observe the list of entities **(2)** and their type listed as machine learned **(3)**.
 
      ![A list of entities is presented. Entity type "machine learned" is highlighted.](media/luis-portal-entity-list.png)
 
-17. Select the **Review endpoint utterances (1)** page in the portal. This is where we can see a list of utterances users wrote and LUIS predicted, but they are outside the original utterance list we provided. In this case, LUIS did a great job predicting that the `What is the latest resarch?` message was targeting the **GetRecentResearch** intent. If needed, we can change the predicted intent and select the **Save** button **(4)** to add the new utterance for future training. This will help LUIS learn and improve its predictions.
+16. Select the **Review endpoint utterances (1)** page in the portal. This is where we can see a list of utterances users wrote and LUIS predicted, but they are outside the original utterance list we provided. In this case, LUIS did a great job predicting that the `What is the latest resarch?` message was targeting the **GetRecentResearch** intent. If needed, we can change the predicted intent and select the **Save** button **(4)** to add the new utterance for future training. This will help LUIS learn and improve its predictions.
 
      ![Review endpoint utterances page is open. The message with the typo is highlighted. Aligned intent is shown as GetRecentResearch. Checkmark button is highlighted.](media/luis-portal-review-utterance.png)
 
-18. Now, back to our Bot Emulator for more testing. We will test the **OrganizationBasedSearch** Trigger. As a reminder, here is the list of utterances we provided to LUIS.
+17. Now, back to our Bot Emulator for more testing. We will test the **OrganizationBasedSearch** Trigger. As a reminder, here is the list of utterances we provided to LUIS.
 
      ```plaintext
      - Find me publications from {organization=WHO} 
