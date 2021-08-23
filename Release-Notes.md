@@ -3,7 +3,7 @@
 ### 18 August 2021
 * Major Update
 * Lab 5 - Data monitoring and anomaly detection using Metrics Advisor in Azure Cognitive Services
- - The lab which covers Azure Metric Advisor features from Azure Cognitive Services was made available, it was on readonly since the Azure MA was on preview state
+  - The lab which covers Azure Metric Advisor features from Azure Cognitive Services was made available, it was on readonly since the Azure MA was on preview state
 .
 -----------------------------------------------------------------
 
