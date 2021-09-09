@@ -66,8 +66,12 @@ The high-level steps covered in the lab are:
 ## Task 4 - Prepare data for the Machine Learning process
 
 1. In the Azure Machine Learning Studio, open the Jupyter notebook environment.
-2.  Open `1. Data Preparation.ipynb` notebook and execute the cells one by one (using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or click on 'run' button) and observe the results of each cell execution.
 
+!@#$%^&![Open Jupiter Notebook](./media/upload-filexxx.png)
+
+3.  Open `1. Data Preparation.ipynb` notebook and execute the cells one by one (Click on 'run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or ) and observe the results of each cell execution.
+
+!@#$%^&![Open Jupiter Notebook](./media/upload-filexxx.png)
 
 ## Task 5 - Train a Machine Learning model with Automated ML
 
