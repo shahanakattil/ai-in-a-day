@@ -177,4 +177,4 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 2. Execute the notebook cell by cell (Click on 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or ) and observe the results of each cell execution.
 
-![Note Book Cell Output](./media/NotebookOutput.png)
+![Run Note Book Cell](./media/RunNoteBookCell2.png)
