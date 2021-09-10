@@ -12,26 +12,38 @@ You should follow all of the steps provided in this section _before_ taking part
 
 1. Open the Azure Portal and sign-in with your lab credentials. select the storage account named `aiinadaystorageXXXXXX`.
 
-    ![Locate storage account in Azure Portal](../05-metrics-advisor/media/datastore-01.png)
+    ![Locate storage account in Azure Portal](media/select-azure-storage-account1.png)
 
 2.  Select `Access keys` from the left side menu, and then select `Show keys`. Save the storage account name, the `key1 Key` value, and the `key1 - Connection string` value for later use.
 
-    ![Storage account name and key](../05-metrics-advisor/media/datastore-03.png)
+    ![Storage account name and key](media/datastore-03.png)
 
 ## Task 2 - Prepare the COVID cases per age group dataset
 
-1.  Navigate to back to the resource group **iot-<inject key="DeploymentID" enableCopy="false"/>**, select the AML Workspace named **ai-in-a-day-<inject key="DeploymentID" enableCopy="false"/>** and then click on **Launch Studio** button.
+1.  Navigate to back to the resource group **AI-in-a-Day-<inject key="DeploymentID" enableCopy="false"/>**, select the AML Workspace named **ai-in-a-day-<inject key="DeploymentID" enableCopy="false"/>** and then click on **Launch Studio** button.
 
     ![Launch Studio](media/launchstudio_lab05.png)
+
 2. In Azure Machine learning studio, open Jupyter notebook environment.
+
+    ![Launch Studio](media/select-notebook-1.png)
 
 3. In the Jupyter notebook environment, navigate to the folder associated with your lab user.
 
+    ![Launch Studio](media/lab-user-1.png)
+
 4. If the folder does not contain any notebooks, download the following items to your local machine:
 
-[Prepare metrics feed data](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-05/preparemetricsfeeddata.ipynb)
+    [Prepare metrics feed data](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-05/preparemetricsfeeddata.ipynb)
 
 5. Upload the file by selecting the Upload button from the top right corner of the screen, and then selecting the blue Upload button to confirm.
+
+    ![Launch Studio](media/select-upload-1.png)
+   
+   - Check the "I trust contents of the File" and select upload. 
+   
+    ![Launch Studio](media/select-upload-2.png)
+
 6. With the Azure Machine Learning studio and the Jupyter notebook environment open, select the `preparemetricsfeeddata.ipynb` from **Notebooks** under **Author**.
 
     ![preparemetricfeeddata notebook](media/notebook_05.png)
@@ -130,9 +142,9 @@ The high-level steps covered in the lab are:
 
     ![Data feed source properties](./media/adddatafeed.png)
 
-6. Select the **Verify and get schema button** to validate the configured connection.  If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
+6. Select the **Load data button** to validate the configured connection.  If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
 
-7. Once the data schema is loaded and shown like below, configure the appropriate fields as Dimension, Measure or Timestamp.
+7. Once the data schema is loaded and shown like below, configure the appropriate fields as Dimension, Measure or Timestamp and select **Verify schema**.
 
     ![Schema configuration](./media/schemconfig.png)
 
