@@ -43,9 +43,9 @@ The high-level steps covered in the lab are:
 
     ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
 
-4. Navigate to the **Access keys** setting.  Then, select **Show keys** and copy the connection string for `key1`.  Paste this into a text file.
+4. Navigate to the **Access keys** setting.  Then, select **Show keys** on top and copy the connection string for `key1`.  Paste this into a text file.
 
-    ![The Storage account's access key is copied to the clipboard.](media/copy-azure-storage-account-key.png)
+    ![The Storage account's access key is copied to the clipboard.](media/SA-AccessKeys.png)
 
 5. Return to the **AI-in-a-Day** resource group.  Then, select the Search service.
 
