@@ -53,7 +53,7 @@ The high-level steps covered in the lab are:
 
   ![Start Azure Databricks Cluster](./media/start-databricks-cluster.png)
 
-5. While the cluster is starting, select the `Workspace` section on the left side menu, select the `Users` folder, then select the folder corresponding to the user name from your lab credentials, and then select the `AI-Lab6` folder.
+5. While the cluster is starting, select the `Workspace` section on the left side menu, select the `Users` folder, then select the folder corresponding to the user name from your lab credentials, and then select the `AI-in-a-day-Lab-6` folder.
 
   ![Open Azure Databricks workspace folders](media/user-select-1.png)
 
