@@ -37,42 +37,44 @@ The high-level steps covered in the lab are:
 
 1. Open the [Azure Portal](https://portal.azure.com) and sign-in with your lab credentials.
 
-2. In the list of your recent resources, locate the Azure Machine Learning workspace, select it, and then select `Launch studio`. If you are prompted to sign-in again, use the same lab credentials you used at the previous step.
+2. Navigate to All Resources and locate the Azure Machine Learning workspace, select and then click on `Launch studio`. If you are prompted to sign-in again, use the same lab credentials you used to login to Azure portal. Close the welcome pop-up if any.
 
-    ![Open Azure Machine Learning Workspace](./media/start-aml-workspace.png)
+    ![Navigate to Azure Machine Learning](./media/FindMLRes.png)
+    
+    ![Launch Machine Learning Studio](./media/LaunchStudio.png)
 
 3. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is running **(2)**.
 
-    ![Verify Azure Machine Learning compute instance is running](./media/check-aml-compute-instance.png)
+    ![Verify Azure Machine Learning compute instance is running](./media/MLCompute.png)
 
     >**Note**: If you launched Azure Machine Learning Studio right after your lab environment was provisioned, you might find the compute instance in a provisioning state. In this case, wait a few minutes until it changes its status to `Running`.
 
-4. From the `Application URI` section associated with the compute instance, select `Jupyter` **(3)**.
+4. From the `Application` section associated with the compute instance, select `Jupyter` **(3)**.
 
-5. In the Jupyter notebook environment, navigate to the root folder.
+    > **WARNING:** Look for nested folders under the `Users` folder. If the root folder has a file with the extension `w2v`, then ignore below step.
 
-    ![Navigate to user folder in Jupyter environment](./media/jupyter-user-folder.png)
-
-    > **WARNING:** If the root folder does not have a file with the extension `w2v`, look for nested folders under the `Users` folder. Ideally, your notebooks should be in the same folder as the `w2v` file.
-
-6. If the folder does not contain any notebooks, download the following items to your local machine:
+5. In the Jupyter notebook environment navigate to the root folder, download the following items to your local machine:
     
     [1. Data Preparation.ipynb](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/1.%20Data%20Preparation.ipynb)
 
     [3. Document Classification.ipynb](https://experienceazure.blob.core.windows.net/templates/ai-iad/ai-iad-combined/3.%20Document%20Classification.ipynb)
 
-    [covid_embeddings_model_500_docs.w2v](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/covid_embeddings_model_500_docs.w2v)
-    
+    [covid_embeddings_model_500_docs.w2v](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/covid_embeddings_model_500_docs.w2v)   
 
-Upload each file by selecting the `Upload` **(1)** button from the top right corner of the screen and then selecting the blue `Upload` **(2)** button to confirm.
+    Upload each file by selecting the `Upload` **(1)** button from the top right corner of the screen and then selecting the blue `Upload` **(2)** button to confirm.
 
-![Upload file to Jupyter notebook environment](./media/upload-file.png)
+    ![Upload file to Jupyter notebook environment](./media/upload-file.png)
 
 ## Task 4 - Prepare data for the Machine Learning process
 
-1. In the Azure Machine Learning Studio, open the Jupyter notebook environment.
-2.  Open `1. Data Preparation.ipynb` notebook and execute the cells one by one (using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or click on 'run' button) and observe the results of each cell execution.
+1. In the Azure Machine Learning Studio, open the Jupyter notebook environment. You might get a pop-up of important note, check the box and click on continue.
 
+![Select Note Book](./media/ClickJupyterDataPrepNoteBook.png)
+
+3.  Open `1. Data Preparation.ipynb` notebook and execute the cells one by one (Click on 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or ) and observe the results of each cell execution.
+
+![Run Note Book Cell](./media/RunNoteBookCell1.png)
+![Note Book Cell Output](./media/NotebookOutput.png)
 
 ## Task 5 - Train a Machine Learning model with Automated ML
 
@@ -171,4 +173,8 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 1. With the Azure Machine Learning Studio and the Jupyter notebook environment open, select the `3. Document Classification.ipynb` notebook.
 
-2. Execute the notebook cell by cell (using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
+![Select Note Book](./media/ClickJupyterDocClassificationNoteBook.png)
+
+2. Execute the notebook cell by cell (Click on 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or ) and observe the results of each cell execution.
+
+![Run Note Book Cell](./media/RunNoteBookCell2.png)

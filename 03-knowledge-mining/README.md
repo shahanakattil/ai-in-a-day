@@ -43,9 +43,9 @@ The high-level steps covered in the lab are:
 
     ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
 
-4. Navigate to the **Access keys** setting.  Then, select **Show keys** and copy the connection string for `key1`.  Paste this into a text file.
+4. Navigate to the **Access keys** setting.  Then, select **Show keys** on top and copy the connection string for `key1`.  Paste this into a text file.
 
-    ![The Storage account's access key is copied to the clipboard.](media/copy-azure-storage-account-key.png)
+    ![The Storage account's access key is copied to the clipboard.](media/SA-AccessKeys.png)
 
 5. Return to the **AI-in-a-Day** resource group.  Then, select the Search service.
 
@@ -159,23 +159,33 @@ The high-level steps covered in the lab are:
 
 ## Task 5 - Updating Azure Search Indexes
 
-1. Open Azure Storage Explorer.  Select the **Connect** option and then choose **Use a connection string** and select **Next**.
+1. On the desktop select the Azure Storage Explorer.  
+
+    ![Storage explorer is selected on the desktop.](media/storage-exp-desktop.png)
+
+2. Select the **Connect** option and then choose **Use a connection string** and select **Next**.
 
     ![The Use a connection string option is selected.](media/azure-storage-explorer-connect-1.png)
 
-2. Enter **lab03** as the Display name and paste in your storage account connection string.  Then, select **Next** to continue and **Connect** to complete the operation.
+3. Enter **lab03** as the Display name and paste in your storage account connection string.  Then, select **Next** to continue and **Connect** to complete the operation.
 
     ![The connection string is filled in.](media/azure-storage-explorer-connect-lab03.png)
 
-3. In Azure Storage Explorer, navigate down the **lab03** attached storage and select the `covid19temp` blob container.  Double-click the **comm_use_subset** to enter that folder.
+    ![Connect is selected on the storage explorer page](media/connect-stroage-explorer.png)
+
+4. In Azure Storage Explorer, navigate down the **(1)  lab03** attached storage and expand **(2) Blob containers** select the **(3) `covid19temp` blob container**.  Double-click the **(4)  comm_use_subset** to enter that folder.
 
     ![The comm_use_subset folder is selected.](media/azure-storage-explorer-lab03.png)
 
-4. Enter the **pdf_json_refresh** folder.  Then, in the **Select All** menu, choose **Select All Cached**.  This will highlight all 100 records in the folder.  Select **Copy** to copy these documents.
+4. Enter the **pdf_json_refresh** folder.  Then, in the **(1) Select All** menu, choose **Select All Cached**.  This will highlight all 100 records in the folder.  Select **Copy** to copy these documents.
 
+    ![Select the PDF refresh folder.](media/select-pdf-refresh-folder.png)
+    
     ![Select all cached items and copy them.](media/azure-storage-explorer-2.png)
 
-5. Navigate up to **comm_use_subset** and then double-click **pdf_json**.  Inside this folder, select **Paste** to paste the 100 documents into the **pdf_json** folder.  When it finishes, you should have 965 total documents.
+5. Navigate up to **comm_use_subset** by selecting the upward arrow and then double-click **pdf_json**.  Inside this folder, select **Paste** to paste the 100 documents into the **pdf_json** folder.  When it finishes, you should have 965 total documents.
+
+    ![Navigate into the pdf_json folder.](media/upward-arrow.png)
 
     ![Paste all cached items into the pdf_json folder.](media/azure-storage-explorer-3.png)
 
@@ -221,7 +231,10 @@ The high-level steps covered in the lab are:
 
     ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
 
-4. Navigate to the **CORS** settings page.  Ensure that you are on the **Blob service** tab and then enter the following values into the table.
+4. Under **Settings** navigate to the **Resource sharing(CORS)** page. Ensure that you are on the **Blob service** tab and then enter the following values into the table.
+
+
+   ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/Storage-account-Cors-1.png)
 
    | Parameter                   | Value                                |
    | --------------------------- | -------------------------------------|
@@ -257,7 +270,9 @@ The high-level steps covered in the lab are:
 
 11. Click [here](https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/pdf/2020.09.25.20201616v1.pdf) to download the pdf file named `2020.09.25.20201616v1.pdf` for this lab. Save this to a directory such as `C:\Temp\AzureSearch\`.
 
-12. Navigate to the [Form OCR Testing Tool](https://fott-preview.azurewebsites.net/), an Azure-hosted website for form recognition.  Select the **Connections** option and then choose **+** to create a new connection.  Fill in the parameters as in the table below and then select **Save Connection**.
+> **Note!** : You can follow this link to download the file. (https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/pdf/2020.09.25.20201616v1.pdf)
+
+12. Navigate to the Form OCR Testing Tool (https://fott-preview.azurewebsites.net/) an Azure-hosted website for form recognition.  Select the **Connections** option and then choose **+** to create a new connection.  Fill in the parameters as in the table below and then select **Save Connection**.
 
     | Parameter                   | Value                                |
     | --------------------------- | -------------------------------------|
@@ -280,7 +295,7 @@ The high-level steps covered in the lab are:
     | Security token              | Select `Generate New Security Token` |
     | Source connection           | Select `papers`                      |
     | Folder path                 | Enter `papers`                       |
-    | Form recognizer service URI | Enter your Cognitive Services service URI |
+    | Form recognizer service URI | Enter your Cognitive Services service URI (endpoint) |
     | API key                     | Enter your Cognitive Services API key |
     | API version                 | Leave at the default value           |
     | Description                 | Leave blank                          |
@@ -338,6 +353,10 @@ The high-level steps covered in the lab are:
 27. Select **Download** to download a Python script.  We will use this script in the next task.  Find the location where the script was downloaded and move it to `C:\Temp\AzureSearch\`.
 
     ![The option to download an analysis script is selected](media/fott-download.png)
+    
+> **Note! :** If you get a warning while downloading the Python file, select the ellipsis and select "Keep" to download the file. 
+
+   ![Keep Python file](media/python-keep.png)
 
 ## Task 7 - Indexing a New Abstract
 
@@ -349,11 +368,15 @@ The high-level steps covered in the lab are:
 
     ![Pip has installed the requests package for Python](media/pip-install-requests.png)
 
-3. Navigate to `C:\Temp\AzureSearch\` in the command prompt and then run the analyzer script you downloaded at the end of Task 4.  The command to execute is `python analyze-843d.py 2020.09.25.20201616v1.pdf -o 2020.09.25.20201616v1.json`.  You will need to replace `analyze-843d` with the name of the script you downloaded.
+3. Navigate to `C:\Temp\AzureSearch\` in the command prompt by running `cd C:\Temp\AzureSearch\` and then run the analyzer script you downloaded at the end of Task 4.  The command to execute is `python analyze-843d.py 2020.09.25.20201616v1.pdf -o 2020.09.25.20201616v1.json`.  You will need to replace `analyze-843d` with the name of the script you downloaded.
 
     ![Analyze a PDF document](media/analyze-python.png)
 
-4. Inside the `C:\Temp\AzureSearch\` directory, there is a JSON file with the results of this analysis.  The file is fairly large and contains a detailed breakdown of the text analysis.  We will take the abstract text from this JSON file and write it to an Azure Search index.  To do this, open **PowerShell** and navigate to `C:\Temp\AzureSearch\`.  Then, create the following function.
+4. Inside the `C:\Temp\AzureSearch\` directory, there is a JSON file with the results of this analysis.  The file is fairly large and contains a detailed breakdown of the text analysis.  We will take the abstract text from this JSON file and write it to an Azure Search index.  To do this, open the Windows menu, type in **PowerShell** and select the PowerShell application.
+
+    ![Open powershell](media/open-powershell.png)
+
+5. Navigate to `C:\Temp\AzureSearch\` by running `cd C:\Temp\AzureSearch\`. Then, create the following function.
 
     ```powershell
     function Add-Abstract {
@@ -396,7 +419,7 @@ The high-level steps covered in the lab are:
 
     ![The function to add an abstract](media/add-abstract.png)
 
-5. Run the following to create a new abstract.  Be sure to replace the Azure Search account name and Azure Search API key references with the correct values.
+5. Run the following to create a new abstract.  Be sure to replace the Azure Search account name (`aiinaday-cog-deploymentID`) and Azure Search API key references with the correct values.
 
     ```powershell
     Add-Abstract 2020.09.25.20201616v1.json <<Account Name>> <<API Key>>
