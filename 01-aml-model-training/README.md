@@ -45,29 +45,33 @@ The high-level steps covered in the lab are:
 1. Enter the following **Password** and click on **Sign in**.
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-1. If you see the pop-up **Stay Signed in?**, click No
+1. If you see the pop-up **Stay Signed in?**, click **No**.
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
-2. Navigate to `All Resources` and locate the Azure Machine Learning workspace, select and then click on `Launch studio`. If you are prompted to sign-in again, use the same lab credentials you used to login to Azure portal. Close the welcome pop-up if any.
+1. Navigate to `All Resources`.
 
-    ![Navigate to Azure Machine Learning](./media/FindMLRes.png)
+    ![All Resources](./media/AllResources.png)
+        
+1. Locate the Azure Machine Learning workspace, select and then click on `Launch studio`. If you are prompted to sign-in again, use the same lab credentials you used to login to Azure portal. Close the welcome pop-up if any.
+
+    ![Navigate to Azure Machine Learning](./media/FindMLResv2.png)
     
     ![Launch Machine Learning Studio](./media/LaunchStudio.png)
 
-3. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is running **(2)**.
+1. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is running **(2)**.
 
     ![Verify Azure Machine Learning compute instance is running](./media/MLCompute.png)
 
     >**Note**: If you launched Azure Machine Learning Studio right after your lab environment was provisioned, you might find the compute instance in a provisioning state. In this case, wait a few minutes until it changes its status to `Running`.
 
-4. From the `Application` section associated with the compute instance, select `Jupyter` **(3)**.
+1. From the `Application` section associated with the compute instance, select `Jupyter` **(3)**.
 
     > **WARNING:** Look for nested folders under the `Users` folder. If the root folder has a file with the extension `w2v`, then ignore below step.
 
-5. In the Jupyter notebook environment navigate to the root folder, download the following items to your local machine:
+1. In the Jupyter notebook environment navigate to the root folder, download the following items to your local machine:
     
     [1. Data Preparation.ipynb](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/1.%20Data%20Preparation.ipynb)
 
