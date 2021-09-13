@@ -10,7 +10,7 @@ Understanding the source datasets is very important in AI and ML. To help you ex
 
 To get more details about the source datasets, check out the [Data Overview](../data-overview.md) section.
 
-To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview.pbix` file located on the desktop of the virtual machine provided with your environment. If you see `Introducing the updated mobile layout` popup screen, then close it by click on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
+To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview.pbix` file located on the desktop 💻 of the virtual machine provided with your environment. If you see `Introducing the updated mobile layout` popup screen, then close it by click on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
 
 ## Task 2 - Explore lab scenario
 
@@ -35,7 +35,7 @@ The high-level steps covered in the lab are:
 
 ## Task 3 - Prepare Azure Machine Learning workspace
 
-1. In the **LabVM**, click on the **Azure Portal** shortcut of Microsoft Edge browser which is created on the desktop.
+1. In the **LabVM**, click on the **Azure Portal** shortcut of Microsoft Edge browser which is created on the desktop 💻.
   
     ![](./media/select-azureportal.png "Select Azure Portal")
     
@@ -55,9 +55,11 @@ The high-level steps covered in the lab are:
 
     ![All Resources](./media/AllResources.png)
         
-1. Locate the Azure Machine Learning workspace, select and then click on `Launch studio`. If you are prompted to sign-in again, use the same lab credentials you used to login to Azure portal. Close the welcome pop-up if any.
+1. Locate **Machine Learning** resource **ai-in-a-day-<inject key="DeploymentID" enableCopy="false"/>**, select that.
 
     ![Navigate to Azure Machine Learning](./media/FindMLResv2.png)
+    
+1. If you are prompted to sign-in again, use the same lab credentials you used to login to Azure portal. Close the welcome pop-up if any with cross icon.  
     
     ![Launch Machine Learning Studio](./media/LaunchStudio.png)
 
