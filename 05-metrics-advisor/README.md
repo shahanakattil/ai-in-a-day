@@ -39,7 +39,7 @@ The high-level steps covered in the lab are:
 
     ![Locate storage account in Azure Portal](./media/datastore-01.png)
 
-3. Select `Access keys` from the left side menu, and then select `Show keys`. Save the storage account name, the `key1 Key` value, and the `key1 - Connection string` value for later use.
+3. Select `Access keys` from the left side menu, and then select `Show keys`. Save the storage account name, the `key1` Key value, and the `key1 - Connection string` value for later use.
 
     ![Storage account name and key](./media/datastore-03.png)
 
