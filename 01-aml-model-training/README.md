@@ -73,7 +73,7 @@ The high-level steps covered in the lab are:
 
     > **WARNING:** Look for nested folders under the `Users` folder. If the root folder has a file with the extension `w2v`, then ignore below step.
 
-1. In the Jupyter notebook environment navigate to the root folder, download the following items to your local machine:
+1. In the Jupyter notebook environment navigate to the root folder, download the following items to your lab VM:
     
     [1. Data Preparation.ipynb](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/1.%20Data%20Preparation.ipynb)
 
