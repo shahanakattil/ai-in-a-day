@@ -126,7 +126,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 5. To configure cluster settings set the values given below:
 
-    - **Compute name (1)**: aml-compute-cpu-<inject key="DeploymentID" enableCopy="false"/>
+    - **Compute name (1)**: aml-<inject key="DeploymentID" enableCopy="false"/>
     - **Minimum number od nodes (2)**: 0
     - **Maximum number of nodes (3)**: 4  
 
