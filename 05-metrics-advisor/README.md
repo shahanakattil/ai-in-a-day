@@ -130,7 +130,7 @@ When detection is applied, you can select one of the metrics listed in data feed
 >
 > - Spend a few minutes to change some parameters inside the **Metric-level configuration** section and observe the change of reported anomalies (red points) on the series data representation.
 
-5. In the metrics browser page, select the **Incidents** tab and filter the list to see the incidents related to number of cases that required hospitalization hosp_ym = `Yes`. Select the anomaly reported for SUM of hospitalized cases.
+5. In the metrics browser page, select the **Incidents** tab and filter the list to see the incidents related to number of cases that required hospitalization hosp_yn = `Yes`. Select the anomaly reported for SUM of hospitalized cases.
     ![Filter incidents by hospitalization](./media/hosp_yes.png)
 
 ## Task 5 - Perform root cause analysis
