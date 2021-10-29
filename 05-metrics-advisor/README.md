@@ -70,7 +70,7 @@ The high-level steps covered in the lab are:
 
 9. Select the **Verify and get schema button** to validate the configured connection.  If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
 
-10. Once the data schema is loaded and shown like below, configure the appropriate fields as Dimension, Measure or Timestamp.
+10. Once the data schema is loaded, configure the appropriate fields as Dimension, Measure or Timestamp as shown below.
 
     ![Schema configuration](./media/schemconfig.png)
 
