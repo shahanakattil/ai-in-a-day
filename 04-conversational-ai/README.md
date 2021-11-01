@@ -123,7 +123,7 @@ First, we will start with a prepopulate Azure Cognitive Search knowledge base en
 
    ![GetRecentResearch trigger is selected. Trigger phrase is highlighted.](media/getrecentresearch-trigger-phrase.png)
 
-9. Switch back to the emulator and write, `What is the latest resarch?`. You will see that our bot can't understand the message anymore. So far, our bot has used **Regular Expression Recognizer** as its Language Understanding engine. The current setup for the **GetRecentResearch** trigger matches only an exact text to detect user intent. A simple typographical error results in a failure.
+9. Switch back to the emulator and write, `What is the latest research?`. You will see that our bot can't understand the message anymore. So far, our bot has used **Regular Expression Recognizer** as its Language Understanding engine. The current setup for the **GetRecentResearch** trigger matches only an exact text to detect user intent. A simple typographical error results in a failure.
 
    ![A dialog shows the user asking latest research with a typo in the text. Bot responds with a sorry message.](media/bot-regex-response-latestresearch-fail.png)
 
@@ -230,7 +230,7 @@ Our Bot is now using a **Regular expression recognizer** as its Language Underst
 
     ![GetRecentResearch trigger is open. The trigger phrase is highlighted.](media/getrecentresearch-luis-trigger.png)
 
-    Here we go, type `What is the latest resarch?` and see what happens.
+    Here we go, type `What is the latest research?` and see what happens.
 
     ![A chatbot dialog is shown where the user asks for more research with a question that includes a typographical error. Chatbot responds with a single research finding.](media/getrecentresearch-luis-result.png)
 
@@ -252,7 +252,7 @@ Our Bot is now using a **Regular expression recognizer** as its Language Underst
 
      ![A list of entities is presented. Entity type "machine learned" is highlighted.](media/luis-portal-entity-list.png)
 
-16. Select the **Review endpoint utterances (1)** page in the portal. This is where we can see a list of utterances users wrote and LUIS predicted, but they are outside the original utterance list we provided. In this case, LUIS did a great job predicting that the `What is the latest resarch?` message was targeting the **GetRecentResearch** intent. If needed, we can change the predicted intent and select the **Save** button **(4)** to add the new utterance for future training. This will help LUIS learn and improve its predictions.
+16. Select the **Review endpoint utterances (1)** page in the portal. This is where we can see a list of utterances users wrote and LUIS predicted, but they are outside the original utterance list we provided. In this case, LUIS did a great job predicting that the `What is the latest research?` message was targeting the **GetRecentResearch** intent. If needed, we can change the predicted intent and select the **Save** button **(4)** to add the new utterance for future training. This will help LUIS learn and improve its predictions.
 
      ![Review endpoint utterances page is open. The message with the typo is highlighted. Aligned intent is shown as GetRecentResearch. Checkmark button is highlighted.](media/luis-portal-review-utterance.png)
 
