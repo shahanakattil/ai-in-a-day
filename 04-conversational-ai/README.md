@@ -47,9 +47,9 @@ First, we will start with a prepopulate Azure Cognitive Search knowledge base en
    >
    > ![For Framework Composer Update dialog is open. Cancel button is highlighted.](media/bot_update.png)
 
-2. Navigate to your **Desktop** folder **(1)** in location using the drop-down and select the **AI-in-a-Day-Bot** by double-clicking **(2)** on it.
+2. Navigate to your **C:\Users\Public\Desktop** folder **(1)** in location using the drop-down or and select the **AI-in-a-Day-Bot** by double-clicking **(2)** on it.
 
-   ![Location is set to the users' documents folder. AI-in-a-Day-Bot project is highlighted.](media/folder_select.png)
+   ![Location is set to the users' documents folder. AI-in-a-Day-Bot project is highlighted.](media/ainewdp.png)
 
 3. In a Microsoft Edge web browser *(Do not close the Bot Framework Composer)*, navigate to the Azure portal (<https://portal.azure.com>) and log in with your credentials. Then select **Resource groups**.
 
