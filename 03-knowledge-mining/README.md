@@ -123,11 +123,11 @@ The high-level steps covered in the lab are:
 
 4. Select the **Indexes** tab and ensure that you have two indexes created.  If the Document Count is 0 for either, wait a couple of minutes and select **Refresh** until the document count appears.
 
-    ![The list of Azure Search indexes.](media/azure-search-indexes.png)
+    ![The list of Azure Search indexes.](media/search-service-indexes.png)
 
 5. Once documents are available, select **Search Explorer** to open up the Search Explorer.
 
-    ![The Search Explorer option is selected.](media/azure-search-indexes-search-explorer.png)
+    ![The Search Explorer option is selected.](media/search-service-explorer.png)
 
 6. Choose the **covid19temp** index and enter `RNA interference` into the Query string input box, and then select **Search**.  This will return the documents which include the phrase "RNA interference."
 
