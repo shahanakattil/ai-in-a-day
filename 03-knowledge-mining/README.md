@@ -163,47 +163,51 @@ The high-level steps covered in the lab are:
 
     ![Storage explorer is selected on the desktop.](media/storage-exp-desktop.png)
 
-2. Select the **Connect** option and then choose **Use a connection string** and select **Next**.
+2. Select the **Connect** option and then click on **Storage account or service**.
 
-    ![The Use a connection string option is selected.](media/azure-storage-explorer-connect-1.png)
+    ![storageaccount](media/storage-account.png)
 
-3. Enter **lab03** as the Display name and paste in your storage account connection string.  Then, select **Next** to continue and **Connect** to complete the operation.
+3. Select **Connection String(Key or SAS)** under Select Connection Method Window and then select **Next**
+
+    ![The Use a connection string option is selected.](media/connectionstring.png)
+
+4. Enter **lab03** as the Display name and paste in your storage account connection string.  Then, select **Next** to continue and **Connect** to complete the operation.
 
     ![The connection string is filled in.](media/azure-storage-explorer-connect-lab03.png)
 
     ![Connect is selected on the storage explorer page](media/connect-stroage-explorer.png)
 
-4. In Azure Storage Explorer, navigate down the **(1)  lab03** attached storage and expand **(2) Blob containers** select the **(3) `covid19temp` blob container**.  Double-click the **(4)  comm_use_subset** to enter that folder.
+5. In Azure Storage Explorer, navigate down the **(1)  lab03** attached storage and expand **(2) Blob containers** select the **(3) `covid19temp` blob container**.  Double-click the **(4)  comm_use_subset** to enter that folder.
 
     ![The comm_use_subset folder is selected.](media/azure-storage-explorer-lab03.png)
 
-4. Enter the **pdf_json_refresh** folder.  Then, in the **(1) Select All** menu, choose **Select All Cached**.  This will highlight all 100 records in the folder.  Select **Copy** to copy these documents.
+6. Enter the **pdf_json_refresh** folder.  Then, in the **(1) Select All** menu, choose **Select All Cached**.  This will highlight all 100 records in the folder.  Select **Copy** to copy these documents.
 
     ![Select the PDF refresh folder.](media/select-pdf-refresh-folder.png)
     
     ![Select all cached items and copy them.](media/azure-storage-explorer-2.png)
 
-5. Navigate up to **comm_use_subset** by selecting the upward arrow and then double-click **pdf_json**.  Inside this folder, select **Paste** to paste the 100 documents into the **pdf_json** folder.  When it finishes, you should have 965 total documents.
+7. Navigate up to **comm_use_subset** by selecting the upward arrow and then double-click **pdf_json**.  Inside this folder, select **Paste** to paste the 100 documents into the **pdf_json** folder.  When it finishes, you should have 965 total documents.
 
     ![Navigate into the pdf_json folder.](media/upward-arrow.png)
 
     ![Paste all cached items into the pdf_json folder.](media/azure-storage-explorer-3.png)
 
-6. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials.  Then, select **Resource groups**.
+8. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials.  Then, select **Resource groups**.
 
     ![Open Azure resource group](media/azure-open-resource-groups.png)
 
-7. Select the **AI-in-a-Day** resource group.
+9. Select the **AI-in-a-Day** resource group.
 
-8. Select the Search service.
+10. Select the Search service.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
-9. Navigate to the **Indexers** section and select the **covid19temp** indexer.
+11. Navigate to the **Indexers** section and select the **covid19temp** indexer.
 
     ![The covid19temp indexer is selected.](media/azure-search-indexers.png)
 
-10. Select the **Run** option to process the 100 documents.  Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes** to run the indexer.
+12. Select the **Run** option to process the 100 documents.  Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes** to run the indexer.
 
     ![The covid19temp indexer is set to run.](media/azure-search-indexers-run.png)
 
