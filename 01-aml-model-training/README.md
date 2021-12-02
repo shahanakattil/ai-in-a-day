@@ -73,10 +73,12 @@ The high-level steps covered in the lab are:
 
 1. From the `Application` section associated with the compute instance, select `Jupyter` **(3)**.
 
-    > **WARNING:** Look for nested folders under the `Users` folder. If the root folder has a file with the extension `w2v`, then ignore below step.
+    > **WARNING:** Look for nested folders under the `Users` folder. If the user folder has a file with the extension `w2v`, then ignore below step.
 
-1. In the Jupyter notebook environment navigate to the root folder, download the following items to your **LabVM**:
-    
+1. In the Jupyter notebook environment navigate to the user folder, download the following items to your **LabVM**:
+
+    > **Note**: Right Click and copy the link. Paste the link in new browser tab and download it. Follow the same step to download all 3 files.
+
     [1. Data Preparation.ipynb](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/1.%20Data%20Preparation.ipynb)
 
     [3. Document Classification.ipynb](https://experienceazure.blob.core.windows.net/templates/ai-iad/ai-iad-combined/3.%20Document%20Classification.ipynb)
