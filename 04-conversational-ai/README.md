@@ -350,10 +350,10 @@ It's time to publish our bot to an Azure Bot Service. An Azure Bot Service is no
         }
     ```
 
-13. One final value that has to be added in the **Publish Configuration** is the Luis resource name **(1)**. This is the name of the prediction Luis Cognitive Service that we selected in the previous step.
+13. One final value that has to be added in the **Publish Configuration** is the Luis resource name **(1)**. This is the name of the prediction Luis Cognitive Service that we selected in the previous step. Make sure to replace DeploymentID with <inject key="DeploymentID" enableCopy="false"/> in Luis resource name.
 
     ```json
-       "luisResource":"aiinaday-luis-pred",
+       "luisResource":"aiinaday-luis-pred-DeploymentID",
     ```
 
     ![Publish profile edit screen is open. The luisResource field in the Publish Configuration is highlighted. Save button is pointed.](media/publish-configuration-luis-resource.png)
@@ -382,9 +382,9 @@ It's time to publish our bot to an Azure Bot Service. An Azure Bot Service is no
 
 In this task, we will enable voice access to our Bot through the use of AI. We will use **Azure Cognitive Speech Services** to enable real-time speech to text and text to speech conversion. Thanks to **Bot Channels Registrations** in **Azure Bot Service**, we can use the Direct Line Speech channel to have our Bot drive audio-only conversations with client applications.
 
-1. Switch to the **Channels (1)** tab in the **Bot Channels Registration** service. Select **Direct Line Speech (2)**.
+1. Switch to the **Channels(deprecated)**(1) tab under settings in the **Azure Bot service**. Select **Direct Line Speech (2)**.
 
-   ![Bot Channels Registration is open. Channels tab is selected. Direct Line Speech is highlighted.](media/bot-channel-registration-dls.png)
+   ![Bot Channels Registration is open. Channels tab is selected. Direct Line Speech is highlighted.](media/azure-bot-channels.png)
 
 2. Select the Cognitive Speech Service named `aiinaday-speech` **(1)** for your **Cognitive service account** and hit **Save (2)**.
 
