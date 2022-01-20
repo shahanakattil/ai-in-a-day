@@ -115,14 +115,14 @@ The high-level steps covered in the lab are:
 
 > **Note**: Please wait untill the deployment gets succeeded and you can proceed with Task 3
    
-## Task 3 - Configure the "COVID cases by age group" Metrics Advisor data feed
+## Task 4 - Configure the "COVID cases by age group" Metrics Advisor data feed
 
 1. Back to the Home page in Azure Portal, in the list of your recent resources, locate the Azure Metrics Advisor workspace and select it. If you are prompted to sign-in again, use the same lab Azure credentials you used at the previous step.
-![Open Azure Metrics Advisor](./media/openmetricsadvisor.png)
+![Open Azure Metrics Advisor](./media/metrics-advisor.png)
 
-2. On the Metrics Advisor Quick start page, select the `Go to workspace` link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
+2. On the Metrics Advisor Overview page, select the `Go to workspace` link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
 
-    ![Start the web-based workspace](./media/startmetricsadvisor.png)
+    ![Start the web-based workspace](./media/metrics-advisor-overview.png)
 
 3. On the Metrics Advisor welcome page, select your Directory, subscription and workspace information and select **Get started**. You are now prepared to create your first Data feed.
 
