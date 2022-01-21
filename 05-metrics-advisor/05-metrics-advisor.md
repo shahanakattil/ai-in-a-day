@@ -115,14 +115,14 @@ The high-level steps covered in the lab are:
 
 > **Note**: Please wait untill the deployment gets succeeded and you can proceed with Task 3
    
-## Task 3 - Configure the "COVID cases by age group" Metrics Advisor data feed
+## Task 4 - Configure the "COVID cases by age group" Metrics Advisor data feed
 
 1. Back to the Home page in Azure Portal, in the list of your recent resources, locate the Azure Metrics Advisor workspace and select it. If you are prompted to sign-in again, use the same lab Azure credentials you used at the previous step.
-![Open Azure Metrics Advisor](./media/openmetricsadvisor.png)
+![Open Azure Metrics Advisor](./media/metrics-advisor.png)
 
-2. On the Metrics Advisor Quick start page, select the `Go to workspace` link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
+2. On the Metrics Advisor Overview page, select the `Go to workspace` link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
 
-    ![Start the web-based workspace](./media/startmetricsadvisor.png)
+    ![Start the web-based workspace](./media/metrics-advisor-overview.png)
 
 3. On the Metrics Advisor welcome page, select your Directory, subscription and workspace information and select **Get started**. You are now prepared to create your first Data feed.
 
@@ -169,7 +169,7 @@ The high-level steps covered in the lab are:
     ![Check the ingestion progress](./media/ingestionprogress.png)
 
 
-## Task 4 - Explore anomalies detected in data
+## Task 5 - Explore anomalies detected in data
 
 After the data feed is added, Metrics Advisor will attempt to ingest metric data from the specified start date. It will take some time for data to be fully ingested, and you can view the ingestion status by clicking Ingestion progress at the top of the data feed page. If data is ingested, Metrics Advisor will apply detection, and continue to monitor the source for new data.
 
@@ -207,7 +207,7 @@ When detection is applied, you can select one of the metrics listed in data feed
 5. In the metrics browser page, select the **Incidents** tab and filter the list to see the incidents related to number of cases that required hospitalization hosp_ym = `Yes`. Select the anomaly reported for SUM of hospitalized cases.
     ![Filter incidents by hospitalization](./media/hosp_yes.png)
 
-## Task 5 - Perform root cause analysis
+## Task 6 - Perform root cause analysis
 
 1.  In the incidents hub, notice the **Root cause** section where you should find reported the main contributors for the detected anomaly, age groups that contributed to the sum of cases reported as anomaly. Also, in the **Diagnostic** tree, hover on each age group node to investigate its contribution to the incident.
     ![Incident Hub diagnostics](./media/root_cause_incidents_hub.png)
@@ -216,7 +216,7 @@ When detection is applied, you can select one of the metrics listed in data feed
     ![Metrics drill down](./media/metrics-drill-down.png)
 
 
-## Task 6 - Explore anomalies with hard thresholds (optional)
+## Task 7 - Explore anomalies with hard thresholds (optional)
 
 As an optional exercise, you can create a different detection configuration, based on hard thresholds rather than smart detection.
 

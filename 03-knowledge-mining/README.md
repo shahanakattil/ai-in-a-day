@@ -264,13 +264,13 @@ The high-level steps covered in the lab are:
 
     ![The Shared Access Signature has been copied to the clipboard](media/azure-storage-explorer-copy-sas.png)
 
-9. Return to Azure Portal page with your storage account.  Navigate back to the **AI-in-a-Day** resource group and select the Cognitive Service **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>**.
+9. Return to Azure Portal page with your storage account.  Navigate back to the **AI-in-a-Day** resource group and select the Cognitive services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![The Cognitive Services service is selected](media/azure-open-cognitive-services1.png)
+    ![The Cognitive Services service is selected](media/cognitive-service-latest-select.png)
 
 10. Select the **Keys and Endpoint** option under Resource Management.  Then, copy the value for **KEY 1** and the **Endpoint**.  Paste these into a text file.
 
-    ![The Cognitive Services key and endpoint are selected](media/azure-cognitive-services-key1.png)
+    ![The Cognitive Services key and endpoint are selected](media/cognitive-service-latest.png)
 
 11. Click [here](https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/pdf/2020.09.25.20201616v1.pdf) to download the pdf file named `2020.09.25.20201616v1.pdf` for this lab. Save this to a directory such as `C:\Temp\AzureSearch\`.
 
