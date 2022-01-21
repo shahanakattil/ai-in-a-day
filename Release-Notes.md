@@ -1,5 +1,11 @@
 # Release Notes
 
+### 20 January 2022
+* Minor update in the Lab Guide.
+* Lab 2 - Knowledge Mining with Azure Cognitive Search and Text Analytics
+  - In Task 6, the UI and instructions for Cognitive Services multiple services UI got updated and a new screenshot has been added for better understanding. 
+-----------------------------------------------------------------
+
 ### 18 August 2021
 * Major update in the lab
 * Lab 5 - Data monitoring and anomaly detection using Metrics Advisor in Azure Cognitive Services
