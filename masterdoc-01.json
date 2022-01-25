@@ -4,8 +4,9 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/main/README.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/main/01-aml-model-training/README.md",
         "Order": 1
+
       }
     ]
   }
