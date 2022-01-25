@@ -199,7 +199,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![View explanations](media/view-explanations.png)
 
->**Note**:Before proceeding to *Task 7* please ensure to check in the environment for the experiment with name **COVID19_Classification** under Assets, if not please run **setup.py** file from the path C:\LabFiles and wait for the completion of the run. Once the experiment and run is completed please proceed further with the lab.
+>**Note**: Before proceeding to *Task 7* please ensure to check in the environment for the experiment with name **COVID19_Classification** under Assets, if not please run **setup.py** file from the path C:\LabFiles and wait for the completion of the run. Once the experiment and run is completed please proceed further with the lab. 
 
 ## Task 7 - Classify new research documents
 
