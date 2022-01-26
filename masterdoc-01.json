@@ -7,6 +7,14 @@
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/main/01-aml-model-training/README.md",
         "Order": 1
 
+      },
+       {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MCW/MCW-ML-Ops/stage/Hands-on%20lab/Before%20the%20HOL%20-%20MLOps.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MCW/MCW-ML-Ops/prod/Hands-on%20lab/HOL%20step-by-step%20-%20MLOps.md",
+        "Order": 3
       }
     ]
   }
