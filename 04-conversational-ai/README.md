@@ -292,9 +292,9 @@ It's time to publish our bot to an Azure Bot Service. An Azure Bot Service is no
 
    ![AI-in-a-day Resource Group is open in the Azure Portal. Resource Group Name and Cognitive Service Locations are highlighted.](media/add-new-publish-profile-3.png)
 
-4. Select your subscription and type in your **Azure Resource Group** name into the **Resource group name (2)** box. Type in the same name into the **Resource Name (3)** box as well. This is going to be the name of the web application that will host our Bot App in Azure. Next, please select the location of your Cognitive Services to make sure our bot is deployed to the same location **(4)**. Select **Next:Review (5)** to continue.
+4. Select your subscription and type in your **Azure Resource Group** name into the **Resource group name (2)** box. Type in the same name into the **Resource Name (3)** box as well. This is going to be the name of the web application that will host our Bot App in Azure. Next, please select the location of your Cognitive Services to make sure our bot is deployed to the same location **(4)** and select **Region for Luis(5)** copied in the previous task-5 step-3 . Select **Next:Review (6)** to continue.
 
-   ![Deploying resource configuration screen is open. Resource group name and the resource name are set to ai-in-a-day. The location is set to West US. A subscription is selected. The next button is highlighted.](media/add-new-publish-profile-2.png)
+   ![Deploying resource configuration screen is open. Resource group name and the resource name are set to ai-in-a-day. The location is set to West US. A subscription is selected. The next button is highlighted.](media/bot-config-luis.png)
 
 5. Make sure you deselect **(1)** all optional resources. We have some of these resources already in place. We will connect those to our deployment profile in the next steps. Select **Next (2)** to proceed.
 
