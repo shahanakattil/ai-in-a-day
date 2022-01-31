@@ -14,7 +14,7 @@ To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Over
 
 > **Note:** Please close and reopen the Power BI Desktop document if it throws an error in the first attempt.
 
-![Azure AI in a Day datasets](./../media/powerbireportopen.png)
+ ![Azure AI in a Day datasets](./media/powerbireportopen.png)
 
 ## Task 2 - Explore lab scenario
 
