@@ -68,7 +68,7 @@ The high-level steps covered in the lab are:
     ![Launch Machine Learning Studio](./media/LaunchStudio.png)
 
 1. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is running **(2)**.
-   * Compute instance name: <inject key="DeploymentID" enableCopy="false"/>
+   * Compute instance name: notebook<inject key="DeploymentID" enableCopy="false"/>
 
     ![Verify Azure Machine Learning compute instance is running](./media/MLCompute.png)
 
