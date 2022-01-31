@@ -46,7 +46,7 @@ The high-level steps covered in the lab are:
 1. On the **Sign into Microsoft Azure** tab you will see the login screen, in that enter following **Email/Username** and then click on **Next**. 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    
-1. Enter the following **Password** and click on **Sign in**.
+1. Enter the following **Password** and click on **Sign in**. 
    * Password: <inject key="AzureAdUserPassword"></inject>
    
 1. If you see the pop-up **Stay Signed in?**, click **No**. Also, if you see a **Save Password** popup, close that.
