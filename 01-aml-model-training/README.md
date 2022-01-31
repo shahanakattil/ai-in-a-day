@@ -63,7 +63,7 @@ The high-level steps covered in the lab are:
 
     ![Navigate to Azure Machine Learning](./media/FindMLResv2.png)
     
-1. If you are prompted to sign-in again, use the same lab credentials you used to login to Azure portal. Close the welcome pop-up if any with cross icon.  
+1. If you are prompted to sign-in again, use the same lab credentials you used to login to Azure portal. Close the welcome **pop-up** if any with cross icon.  
     
     ![Launch Machine Learning Studio](./media/LaunchStudio.png)
 
