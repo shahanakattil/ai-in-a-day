@@ -47,11 +47,11 @@ The high-level steps covered in the lab are:
 
     ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
 
-4. Navigate to the **Access keys** setting.  Then, select **Show keys** on top and copy the connection string for `key1`.  Paste this into a text file.
+4. Navigate to the **Access keys** under `security + networking` section.  Then, select **Show keys** on top and copy the connection string for `key1`.  Paste this into a text file.
 
     ![The Storage account's access key is copied to the clipboard.](media/SA-AccessKeys.png)
 
-5. Return to the **AI-in-a-Day** resource group.  Then, select the Search service.
+5. Return to the **AI-in-a-Day** resource group.  Then, select the Search service resource.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
@@ -59,19 +59,20 @@ The high-level steps covered in the lab are:
 
     ![The Search service's URL is copied to the clipboard.](media/copy-azure-search-url.png)
 
-7. Navigate to the Keys setting and copy the Primary admin key.  Paste this into a text file.
+7. Navigate to the Keys setting and copy the Primary admin key. Paste this into a text file.
 
     ![The Search service's API key is copied to the clipboard.](media/copy-azure-search-api-key.png)
 
 8. Download the `schemas.zip` from https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/schemas.zip. Unzip `schemas.zip`.  There are six files, three prefixed with `abstracts` and three with `covid19temp`.  Save these to a directory such as `C:\Temp\AzureSearch\`.
 
-9. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string.  Do the same for `covid19temp_datasource.schema`.
+9. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string and then save the file.  Do the same for `covid19temp_datasource.schema`.
 
     ![The abstract data source is ready to be updated.](media/edit-abstracts-datasource.png)
 
 10. Open a new PowerShell prompt.  Enter the following code, which will create an Azure Search data source, index, and indexer.
 
     ```powershell
+    cd C:\Temp\AzureSearch\
     function Create-AzureSearchIndex {
         param
         (
@@ -103,7 +104,9 @@ The high-level steps covered in the lab are:
 
     ![The Create-AzureSearchIndex function has been created in PowerShell.](media/create-azuresearchindex.png)
 
-11. In the same PowerShell prompt, call this function for the `abstracts` index and for the `covid19temp` index.  If you did not use `C:\Temp\AzureSearch\` to save your schema files, change the function call to point to the correct file location.  Then, fill in your Azure Search account name and Azure Search API key.
+11. In the same PowerShell prompt, call this function for the `abstracts` index and for the `covid19temp` index.  Then, fill in your Azure Search account name and Azure Search API key.
+    - Azure Search Account Name: **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**
+    - Azure Search API key: You saved Primary admin key in text editor in step 7, use that
 
     ```powershell
     Create-AzureSearchIndex "C:/Temp/AzureSearch/abstracts_datasource.schema" "C:/Temp/AzureSearch/abstracts.schema" "C:/Temp/AzureSearch/abstracts_indexer.schema" "AZURE SEARCH ACCOUNT NAME" "API KEY"
@@ -183,21 +186,21 @@ The high-level steps covered in the lab are:
 
 5. In Azure Storage Explorer, navigate down the **(1)  lab03** attached storage and expand **(2) Blob containers** select the **(3) `covid19temp` blob container**.  Double-click the **(4)  comm_use_subset** to enter that folder.
 
-    ![The comm_use_subset folder is selected.](media/azure-storage-explorer-lab03.png)
+    ![The comm_use_subset folder is selected.](media/azure-storage-explorer-lab04.png)
 
 6. Enter the **pdf_json_refresh** folder.  Then, in the **(1) Select All** menu, choose **Select All Cached**.  This will highlight all 100 records in the folder.  Select **Copy** to copy these documents.
 
-    ![Select the PDF refresh folder.](media/select-pdf-refresh-folder.png)
+    ![Select the PDF refresh folder.](media/select-pdf-refresh-folder01.png)
     
-    ![Select all cached items and copy them.](media/azure-storage-explorer-2.png)
+    ![Select all cached items and copy them.](media/azure-storage-explorer-201.png)
 
-7. Navigate up to **comm_use_subset** by selecting the upward arrow and then double-click **pdf_json**.  Inside this folder, select **Paste** to paste the 100 documents into the **pdf_json** folder.  When it finishes, you should have 965 total documents.
+7. Navigate up to **comm_use_subset** by selecting the upward arrow and then double-click **pdf_json**.  Inside this folder, select **Paste (2)** to paste the 100 documents into the **pdf_json** folder.  When it finishes, you should have **965 total documents (3)** .
 
-    ![Navigate into the pdf_json folder.](media/upward-arrow.png)
+    ![Navigate into the pdf_json folder.](media/upward-arrow01.png)
 
-    ![Paste all cached items into the pdf_json folder.](media/azure-storage-explorer-3.png)
+    ![Paste all cached items into the pdf_json folder.](media/azure-storage-explorer-301.png)
 
-8. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials.  Then, select **Resource groups**.
+8. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials, if not loggedin already.  Then, select **Resource groups**.
 
     ![Open Azure resource group](media/azure-open-resource-groups.png)
 
@@ -215,15 +218,15 @@ The high-level steps covered in the lab are:
 
     ![The covid19temp indexer is set to run.](media/azure-search-indexers-run.png)
 
-11. The indexer will run.  It should complete within 15-30 seconds to process the 100 new documents.  You may need to select **Refresh** to see the indexer's progress.
+13. The indexer will run.  It should complete within 15-30 seconds to process the 100 new documents.  You may need to select **Refresh** to see the indexer's progress.
 
     ![The covid19temp indexer has finished running.](media/azure-search-indexers-refresh.png)
 
-12. Return to the **Indexes** tab for the Search service and ensure that the **covid19temp** index has 965 documents.  If it still reads 865, wait 30 seconds and select **Refresh** to check again.
+14. Return to the **Indexes** tab for the Search service and ensure that the **covid19temp** index has 965 documents.  If it still reads 865, wait 30 seconds and select **Refresh** to check again.
 
     ![The covid19temp index has finished updating.](media/azure-search-indexes-update.png)
 
-13. Select the **covid19temp** index to return to the Search explorer.  When we had 865 documents, 53 of them pertained to Brazil.  We can confirm that this update was successful by entering `Brazil&$count=true` and selecting **Search**.  This will now return 57 results instead of the prior 53.
+15. Select the **covid19temp** index to return to the Search explorer.  When we had 865 documents, 53 of them pertained to Brazil.  We can confirm that this update was successful by entering `Brazil&$count=true` and selecting **Search**.  This will now return 57 results instead of the prior 53.
 
     ![57 documents pertain to Brazil.](media/search-explorer-brazil-2.png)
 
@@ -241,8 +244,7 @@ The high-level steps covered in the lab are:
 
 4. Under **Settings** navigate to the **Resource sharing(CORS)** page. Ensure that you are on the **Blob service** tab and then enter the following values into the table.
 
-
-   ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/Storage-account-Cors-1.png)
+    ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/Storage-account-Cors-1.png)
 
    | Parameter                   | Value                                |
    | --------------------------- | -------------------------------------|
@@ -256,7 +258,7 @@ The high-level steps covered in the lab are:
 
 5. Select **Save** to save the CORS settings.
 
-6. Open Azure Storage Explorer and navigate to **lab03**, and then to **Blob Containers**.  Right-click on **covid19temp** and select the **Get Shared Access Signature...** option.
+6.  Open Azure Storage Explorer and navigate to **lab03**, and then to **Blob Containers**.  Right-click on **covid19temp** and select the **Get Shared Access Signature...** option.
 
     ![The Get Shared Access Signature option is selected](media/azure-storage-explorer-get-sas2.png)
 
