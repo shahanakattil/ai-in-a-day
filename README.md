@@ -24,7 +24,7 @@ Understanding the source datasets is very important in AI and ML. To help you ex
 
 ![Azure AI in a Day datasets](./media/data-overview-01-01.png)
 
-To get more details about the source datasets, check out the [Data Overview](./data-overview.md) section.
+To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
 
 ## Background story
 
