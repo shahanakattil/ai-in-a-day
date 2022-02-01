@@ -85,9 +85,10 @@ The high-level steps covered in the lab are:
 
 3. Execute each cell in the notebook (using Ctrl + Enter to remain on the same cell, or Shift + Enter to advance to the next cell, or **(1) selecting the arrow to run the cell**) and observe the **(2) results**.
     > **Note**: If you see error while running cell 47, please add the following line in cell 47 and re-run the cell.
-       ```
-       ks.set_option('compute.ops_on_diff_frames', True)
-       ```
+    
+    ```
+    ks.set_option('compute.ops_on_diff_frames', True)
+    ```
 
   ![Run first cell](media/run-cell-1.png)
 
