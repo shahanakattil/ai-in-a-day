@@ -82,7 +82,7 @@ The high-level steps covered in the lab are:
 
     ![](./media/trustcode01.png)
     
-     > **WARNING:** Look for nested folders under the `Users/odl_user_<inject key="DeploymentID" enableCopy="false"/>` folder. If the user folder has a file with the extension `w2v`, then ignore below step.
+     > **WARNING:** Look for nested folders under the **Users/odl_user_<inject key="DeploymentID" enableCopy="false"/>** folder. If the user folder has a file with the extension `w2v`, then ignore below step.
 
 1. In the Jupyter notebook environment navigate to the user folder, download the following items to your **LabVM**:
 
