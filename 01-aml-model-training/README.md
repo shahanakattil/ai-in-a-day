@@ -113,7 +113,7 @@ The high-level steps covered in the lab are:
 
 In this task, we'll use Azure Automated ML to train a machine learning model capable of determining the best cluster for a COVID-19 scientific article. It builds upon the work done in the Data Preparation notebook.
 
-1. In the Azure Machine Learning studio, switch to the `Automated ML` **(1)** section and select `+ New Automated ML run` **(2)** to start the A
+1. In the Azure Machine Learning studio, switch to the `Automated ML` **(1)** section and select `+ New Automated ML run` **(2)** to start the Automated ML.
 
     ![Automated ML section is open. + New Automated ML run button is highlighted.](media/new-automated-ml-run.png)
 
@@ -153,24 +153,30 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![Experiment name is set to COVID19_Classification. Cluster is selected for the target column. Compute cluster selection points aml-compute-cpu. The next button is highlighted.](media/amlcompute2-select.png)
 
-7. On the `Select task type` screen select `Classification` **(1)** as the machine learning task type for the experiment and select `View additional configuration settings` **(2)** to open a new panel of settings.
+7. On the `Select task and settings` screen, make sure `Classification` **(1)** is selected (confirm with green check), if it is not selected and then select `View additional configuration settings` **(2)** to open a new panel of settings.
 
-    ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/automl-select-task-type.png)
+    ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/automl-select-task-type01.png)
 
 8. On the `Additional configurations` panel, fill in the values listed below:
 
     - **Primary metric (1)**: AUC weighted
-    - **Training job time (hours) (2)**: 0.5
-    - **Metric score threshold (3)**: 0.95
-    - **Max concurrent iterations (4)**: 4
+    - Explore **Exit criterion (2)**
+    - **Training job time (hours) (3)**: 0.5
+    - **Metric score threshold (4)**: 0.95
+    - Explore **Concurrency (5)**
+    - **Max concurrent iterations (6)**: 4
   
-    ![Primary metric is set to AUC weighted. Training job time is set to 0.25 hours. The validation type is set to k-fold cross validation. The number of cross validations is set to five. Max concurrent iterations is set to four. The save button is highlighted.](media/additonal-config-aml.png)
+    ![Primary metric is set to AUC weighted. Training job time is set to 0.25 hours. The validation type is set to k-fold cross validation. The number of cross validations is set to five. Max concurrent iterations is set to four. The save button is highlighted.](media/additonal-config-aml01.png)
 
     Thanks to the 0.5 hours set for `training job time`, the experiment will stop after 30 minutes to minimize cost. When it comes to `Max concurrent iterations`, Automated ML can try at most four models at the same time, this is also limited by the compute instance's maximum number of nodes.
 
-    Select `Save` **(5)** to continue.
+    Select `Save` **(7)**.
+    
+9. Now click on the **Next** button to move on [optional] Validate and test.
+ 
+   ![](media/select-validate-test.png)
 
-9. On the `Select the validation and test type`, fill in the values listed below:
+10. On the `Select the validation and test type`, fill in the values listed below:
 
     - **Validation type (1)**: k-fold cross validation
     - **Number of cross validations (2)**: 5
@@ -180,9 +186,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![Validation is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/validationtype-aml.png)
 
-10. On the following screen, you will see the progress of your experiment run.
+11. On the following screen, you will see the progress of your experiment run.
 
-11. Now that you understand the process of launching an AutoML run, let's explore in the next task the results of an already completed AutoML run.
+12. Now that you understand the process of launching an AutoML run, let's explore in the next task the results of an already completed AutoML run.
 
 >**Note**: We have already executed in this environment an AutoML run that is very similar to the one that you've just launched. This allows you to explore AutoML results without having to wait for the completion of the run.
 
@@ -192,21 +198,17 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![Locate the completed experiment ](media/locate-experiment.png)
 
-2. You will navigate to the experiment details page where you should see the list of experiment runs. Locate the first run **(1)** listed here, the one that has the status **Completed**. Choose the option to Include the existing child runs **(2)** as illustrated bellow.
+2. You will navigate to the experiment details page where you should see the list of experiment runs. Locate the first run **(1)** listed here, the one that has the status **Completed**. Name of the run can be diffent in your environment and may not match with below screesnshot.
 
-    ![Locate the completed AutoML run](media/locate-completed-run.png)
+    ![Locate the completed AutoML run](media/locate-completed-run01.png)
 
-3. Now you should be able to see the list of child runs executed in order to train multiple machine learning models using various classification algorithms. Select the first run **(1)** with the type **Automated ML (2)**.
+3. On the **Run details** page, navigate to the **Models (1)** section. Check the values on the  **AUC weighted** column **(2)**, which is the primary metric selected in the AutoML run configuration. See how the best model was selected, this is the one with the maximum metric value. This is also the model for which the explanation was generated. Select **View explanation (3)**.
 
-    ![Locate the completed AutoML run](media/inspect-child-runs.png)
+    ![Explore the models section of the AutoML run](media/inspect-models02.png)
 
-4. On the **Run details** page, navigate to the **Models (1)** section. Check the values on the  **AUC weighted** column **(2)**, which is the primary metric selected in the AutoML run configuration. See how the best model was selected, this is the one with the maximum metric value. This is also the model for which the explanation was generated. Select **View explanation (3)**.
+4. On the **Explanations (1)** section, browse  the available explanations **(2)** and investigate the **Model performance (3)** representation.
 
-    ![Explore the models section of the AutoML run](media/inspect-models.png)
-
-5. On the **Explanations (1)** section, browse  the available explanations **(2)** and investigate the **Model performance (3)** representation.
-
-    ![View explanations](media/view-explanations.png)
+    ![View explanations](media/view-explanations01.png)
 
 >**Note**: Before proceeding to *Task 7* please ensure to check in the environment for the experiment with name **COVID19_Classification** under Assets, if not please run **setup.py** file from the path **C:\LabFiles** and wait for the completion of the run. Once the experiment and run is completed please proceed further with the lab. 
 
