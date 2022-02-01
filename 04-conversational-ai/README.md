@@ -292,6 +292,8 @@ It's time to publish our bot to an Azure Bot Service. An Azure Bot Service is no
 
    ![New profile name is set to ai-in-a-day. Publish Target is set to Azure Web App. The Next button is highlighted.](media/add-new-publish-profile-1.png)
 
+>  **Note**: Use your Azure credentials from the environment details tab to login if prompted.
+
 3. We have to go back to the Azure Portal for a moment to grab some key information we will need during the next step. We need the key information of **Subscription(1)**, **Resource Group Name(2)**, **Region(4)** and **Region for luis(5)** where our Language understanding resources live. Take a note of these values to be used in the next step.
 
    ![AI-in-a-day Resource Group is open in the Azure Portal. Resource Group Name and Cognitive Service Locations are highlighted.](media/bot-updated-ui.png)
