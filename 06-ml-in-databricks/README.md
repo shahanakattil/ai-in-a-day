@@ -41,31 +41,35 @@ The high-level steps covered in the lab are:
 
 1. Open the [Azure Portal](https://portal.azure.com) and sign-in with your lab credentials.
 
-2. Navigate to your resource group `AI-in-a-Day` and locate the Azure Databricks workspace and select **launch workspace**. If you are prompted to sign-in again, use the same lab credentials you used at the previous step.
+2. Navigate to your resource group `AI-in-a-Day` and locate the Azure Databricks workspace **ai-adb-ws**.
 
-  ![Open Azure Databricks Workspace](media/rg-databricks.png)
+   ![Open Azure Databricks Workspace](media/rg-databricks.png)
+   
+3. Select **launch workspace**. If you are prompted to sign-in again, use the same lab credentials you used at the previous step.
 
-  ![Open Azure Databricks Workspace](media/launch-workspace.png)
+   ![Open Azure Databricks Workspace](media/launch-workspace.png)
 
-3. In the Azure Databricks workspace, select the `Compute` section on the left side menu.
+4. In the Azure Databricks workspace, select the `Compute` section on the left side menu.
 
-  ![select compute](media/select-compute-not-cluster.png)
+   ![select compute](media/select-compute-not-cluster.png)
 
-4. Under **All-purpose clusters** select the first cluster from the list, and then select `Start` to start the Azure Databricks cluster.
+5. Under **All-purpose clusters** select the **ai-adb-lab** cluster.
 
-  ![Select Azure Databricks Cluster](media/select-compute-1.png)
+   ![Select Azure Databricks Cluster](media/select-compute-1.png)
+  
+6. Select `Start` to start the Azure Databricks cluster. It will take 1-2 minutes to start.
 
-  ![Start Azure Databricks Cluster](./media/start-databricks-cluster.png)
+   ![Start Azure Databricks Cluster](./media/start-databricks-cluster.png)
 
-5. While the cluster is starting, select the `Workspace` section on the left side menu, select the `Users` folder, then select the folder corresponding to the user name from your lab credentials, and then select the `AI-in-a-day-Lab-6` folder.
+7. While the cluster is starting, select the `Workspace` section on the left side menu, select the `Users` folder, then select the folder corresponding to the user name from your lab credentials, and then select the `AI-in-a-day-Lab-6` folder.
 
-  ![Open Azure Databricks workspace folders](media/user-select-1.png)
+   ![Open Azure Databricks workspace folders](media/user-select-1.png)
 
-6. In the `AI-Lab6` folder, you should see the three notebooks that you will use in this lab.
+8. In the `AI-Lab6` folder, you should see the three notebooks that you will use in this lab.
 
-  ![View list of notebooks in Azure Databricks workspace](./media/databricks-workspace-2.png)
+   ![View list of notebooks in Azure Databricks workspace](./media/databricks-workspace-2.png)
 
-7. Wait until the cluster starts, then proceed to the next tasks in the lab.
+9. Wait until the cluster starts, then proceed to the next tasks in the lab.
 
 ## Task 4 - Explore the surveillance dataset
 
@@ -80,6 +84,8 @@ The high-level steps covered in the lab are:
   ![Ensure notebook is connected to running cluster](./media/notebook1.png)
 
 3. Execute each cell in the notebook (using Ctrl + Enter to remain on the same cell, or Shift + Enter to advance to the next cell, or **(1) selecting the arrow to run the cell**) and observe the **(2) results**.
+    > **Note**: if you see error while running cell 47, please add teh following line in cell
+    > ks.set_option('compute.ops_on_diff_frames', True)
 
   ![Run first cell](media/run-cell-1.png)
 
