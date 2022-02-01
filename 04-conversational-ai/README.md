@@ -63,15 +63,15 @@ First, we will start with a prepopulate Azure Cognitive Search knowledge base en
 
 5. Select the Azure Cognitive Search service.
 
-   ![Azure Cognitive Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-cognitive-search.png)
+   ![Azure Cognitive Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/cognitive_searchservice.png)
 
 6. Select **Indexes (1)** and observe the number of documents indexed in the **cognitive-index (2)**.
 
-   ![Indexes tab is open, and cognitive-index is highlighted.](media/azure-cognitive-search-index.png)
+   ![Indexes tab is open, and cognitive-index is highlighted.](media/cognitive_index.png)
 
 7. Select **Search Explorer** to navigate to a web-based search experience where you can discover the data in the index.
 
-   ![Cognitive Search service is open. Search Explorer command is highlighted.](media/azure-cognitive-search-explorer.png)
+   ![Cognitive Search service is open. Search Explorer command is highlighted.](media/search_explorer.png)
 
 8. Select **Search (1)** to access a sample set of documents from the index. Scroll down and observe the data stored in the index. The values for the fields `people`, `organizations`, `locations`, and `keyphrases`, are created through the use of Azure Cognitive Services as part of the data enrichment process during data indexing.
 
