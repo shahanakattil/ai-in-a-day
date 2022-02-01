@@ -8,7 +8,7 @@ Understanding the source datasets is very important in AI and ML. To help you ex
 
 ![Azure AI in a Day datasets](../media/data-overview-01-01.png)
 
-To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
+To get more details about the source datasets, check out the [Data Overview](../data-overview.md) section.
 
 To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see `Introducing the updated mobile layout` popup screen, then close it by click on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
 
@@ -260,7 +260,7 @@ The high-level steps covered in the lab are:
 
 6.  Open Azure Storage Explorer and navigate to **lab03**, and then to **Blob Containers**.  Right-click on **covid19temp** and select the **Get Shared Access Signature...** option.
 
-    ![The Get Shared Access Signature option is selected](media/azure-storage-explorer-get-sas2.png)
+    ![The Get Shared Access Signature option is selected](media/azure-storage-explorer-get-sas201.png)
 
 7. Change the **Expiry time** to the year 2099, select all of the possible permissions, and then select **Create** to create a Shared Access Signature.
 
@@ -429,7 +429,7 @@ The high-level steps covered in the lab are:
 
     ![The function to add an abstract](media/add-abstract.png)
 
-5. Run the following to create a new abstract.  Be sure to replace the Azure Search account name (`aiinaday-cog-deploymentID`) and Azure Search API key references with the correct values.
+5. Run the following to create a new abstract.  Be sure to replace the Azure Search account name (`aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>`) and Azure Search API key references with the correct values.
 
     ```powershell
     Add-Abstract 2020.09.25.20201616v1.json <<Account Name>> <<API Key>>
