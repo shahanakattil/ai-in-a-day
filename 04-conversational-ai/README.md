@@ -10,7 +10,11 @@ Understanding the source datasets is very important in AI and ML. To help you ex
 
 To get more details about the source datasets, check out the [Data Overview](../data-overview.md) section.
 
-To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview.pbix` file located on the desktop (**C:\Users\public\desktop**) of the virtual machine provided with your environment.
+To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see `Introducing the updated mobile layout` popup screen, then close it by click on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
+
+> **Note:** Please close and reopen the Power BI Desktop document if it throws an error in the first attempt.
+
+ ![Azure AI in a Day datasets](./media/powerbireportopen.png)
 
 ## Task 2 - Explore lab scenario
 
