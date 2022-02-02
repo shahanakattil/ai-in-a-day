@@ -12,8 +12,12 @@
         "Order": 2
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/main/06-ml-in-databricks/README.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/main/04-conversational-ai/README.md",
         "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/main/06-ml-in-databricks/README.md",
+        "Order": 4
       }
     ]
   }
