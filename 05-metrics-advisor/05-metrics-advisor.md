@@ -10,29 +10,39 @@ You should follow all of the steps provided in this section _before_ taking part
 
 ## Task 1 - Prepare Azure Machine Learning workspace
 
-1. Open the Azure Portal and sign-in with your lab credentials. select the storage account named `aiinadaystorageXXXXXX`.
+1. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials. Then, select **Resource groups**.
 
-    ![Locate storage account in Azure Portal](media/select-azure-storage-account1.png)
+    ![Open Azure resource group](media/azure-open-resource-groups.png)
 
-2.  Select `Access keys` from the left side menu, and then select `Show keys`. Save the storage account name, the `key1 Key` value, and the `key1 - Connection string` value for later use.
+2. Select the **AI-in-a-Day** resource group.
+
+3. Select the storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>**.
+
+    ![Locate storage account in Azure Portal](media/select-azure-storage-account01.png)
+
+4.  Select `Access keys` from the left side menu, and then select `Show keys`. Save the storage account name, the `key1 Key` value, and the `key1 - Connection string` value for later use.
 
     ![Storage account name and key](media/datastore-03.png)
 
 ## Task 2 - Prepare the COVID cases per age group dataset
 
-1.  Navigate to back to the resource group **AI-in-a-Day-<inject key="DeploymentID" enableCopy="false"/>**, select the AML Workspace named **ai-in-a-day-<inject key="DeploymentID" enableCopy="false"/>** and then click on **Launch Studio** button.
+1. Navigate to back to the resource group `AI-in-a-Day`. Select the AML Workspace named **ai-in-a-day-<inject key="DeploymentID" enableCopy="false"/>**
+  
+    ![Select AML](media/select-aml-ws.png)
+   
+2. Click on **Launch Studio** button.
 
     ![Launch Studio](media/launchstudio_lab05.png)
 
-2. In Azure Machine learning studio, open Jupyter notebook environment.
+2. In Azure Machine learning studio, select **Notebooks**. If you see any popup `What's New in Notebooks`, close that.
 
     ![Launch Studio](media/select-notebook-1.png)
 
-3. In the Jupyter notebook environment, navigate to the folder associated with your lab user.
+3. In the Notebooks environment, check if `preparemetricsfeeddata.ipynb` is there in **Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** folder. If it is not there dowload and import using next steps.
 
     ![Launch Studio](media/lab-user-1.png)
 
-4. If the folder does not contain any notebooks, download the following items to your local machine:
+4. If the folder does not contain `preparemetricsfeeddata.ipynb` notebooks, download the following items to your local machine:
 
     [Prepare metrics feed data](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-05/preparemetricsfeeddata.ipynb)
 
@@ -40,6 +50,7 @@ You should follow all of the steps provided in this section _before_ taking part
 
     ![Launch Studio](media/select-upload-1.png)
    
+   - Click on `Click to browse and select file(s)` and select the file which was just dowloaded.
    - Check the "I trust contents of the File" and select upload. 
    
     ![Launch Studio](media/select-upload-2.png)
@@ -106,15 +117,12 @@ The high-level steps covered in the lab are:
     * Region : Select the available Region from the dropdown
     * Name : **metricsadvisor-<inject key="DeploymentID" enableCopy="false"/>** 
     * Pricing tier: **S0**
+    * Make sure to mark checkbox ☑ for **I confirm I have read and understood the notice below**.
    
      ![](media/created_ma.png)
 
-> **Note**: Ensure to enable the confirmation for the Service Agreements and Terms.
+4. Once the validation is passed click on **Create**. The deployment could take up to **60 minutes** to complete, although it normally finishes in less than **10 minutes**. Please wait untill the deployment gets succeeded and then, you can proceed with next task.
 
-4. Once the validation is passed click on **Create**.
-
-> **Note**: Please wait untill the deployment gets succeeded and you can proceed with Task 3
-   
 ## Task 4 - Configure the "COVID cases by age group" Metrics Advisor data feed
 
 1. Back to the Home page in Azure Portal, in the list of your recent resources, locate the Azure Metrics Advisor workspace and select it. If you are prompted to sign-in again, use the same lab Azure credentials you used at the previous step.
@@ -142,7 +150,7 @@ The high-level steps covered in the lab are:
 
     ![Data feed source properties](./media/adddatafeed.png)
 
-6. Select the **Load data button** to validate the configured connection.  If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
+6. Select the **Load data button** to validate the configured connection, y=you can find **Load Data** option just below the **JSON format version** in right side, so scroll in right to see teh button.  If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
 
 7. Once the data schema is loaded and shown like below, configure the appropriate fields as Dimension, Measure or Timestamp and select **Verify schema**.
 
@@ -164,7 +172,7 @@ The high-level steps covered in the lab are:
 
     ![Submit schema configuration](./media/submitdatafeed.png)
 
-12. Wait for the ingestion progress dialog and select the **Details** link in order to observe the ingestion log by timestamp. Wait until the ingestion completes with success for all ingested json files.
+12. Wait for the ingestion progress dialog and select the **Details** link in order to observe the ingestion log by timestamp. Wait until the ingestion completes with success for all ingested json files. Data ingestion can take hours, till then you can proceed to next lab and after completing the next lab come back check teh latest status on data ingestion, if you see it is completed then continue the lab from below task.
 
     ![Check the ingestion progress](./media/ingestionprogress.png)
 
