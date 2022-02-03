@@ -172,7 +172,7 @@ The high-level steps covered in the lab are:
 
     ![Submit schema configuration](./media/submitdatafeed.png)
 
-12. Wait for the ingestion progress dialog and select the **Details** link in order to observe the ingestion log by timestamp. Wait until the ingestion completes with success for all ingested json files. Data ingestion can take hours, till then you can proceed to next lab and after completing the next lab come back check teh latest status on data ingestion, if you see it is completed then continue the lab from below task.
+12. Wait for the ingestion progress dialog and select the **Details** link in order to observe the ingestion log by timestamp. Wait until the ingestion completes with success for all ingested json files.
 
     ![Check the ingestion progress](./media/ingestionprogress.png)
 
