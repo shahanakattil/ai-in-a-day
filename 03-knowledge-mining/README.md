@@ -57,7 +57,7 @@ The high-level steps covered in the lab are:
 
 6. Download the `schemas.zip` from https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/schemas.zip. Unzip `schemas.zip`.  There are six files, three prefixed with `abstracts` and three with `covid19temp`.  Save these to a directory such as `C:\Temp\AzureSearch\`.
 
-7. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.  Do the same for `covid19temp_datasource.schema`.
+7. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string `<inject key="storageAccountConnectionString" enableCopy="true"/>` and then save the file.  Do the same for `covid19temp_datasource.schema`.
 
     ![The abstract data source is ready to be updated.](media/edit-abstracts-datasource.png)
 
