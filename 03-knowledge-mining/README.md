@@ -170,7 +170,7 @@ The high-level steps covered in the lab are:
 
     ![The Use a connection string option is selected.](media/connectionstring.png)
 
-4. Enter **lab03** as the Display name and paste in your storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>**.  Then, select **Next** to continue and **Connect** to complete the operation.
+4. Enter **lab03** as the Display name and paste in your storage account connection string `<inject key="storageAccountConnectionString" enableCopy="true"/>`.  Then, select **Next** to continue and **Connect** to complete the operation.
 
     ![The connection string is filled in.](media/azure-storage-explorer-connect-lab03.png)
 
