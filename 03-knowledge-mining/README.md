@@ -43,33 +43,25 @@ The high-level steps covered in the lab are:
 
 2. Select the **AI-in-a-Day** resource group.
 
-3. Select the Storage account.
-
-    ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
-
-4. Navigate to the **Access keys** under `security + networking` section.  Then, select **Show keys** on top and copy the connection string for `key1`.  Paste this into a text file.
-
-    ![The Storage account's access key is copied to the clipboard.](media/SA-AccessKeys.png)
-
-5. Return to the **AI-in-a-Day** resource group.  Then, select the Search service resource.
+3. Select the Search service resource.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
-6. Copy the search service URL and paste this into a text file.  Also make note of the service account name, which comes before `.search.windows.net`.
+4. Copy the search service URL and paste this into a text file.  Also make note of the service account name, which comes before `.search.windows.net`.
 
     ![The Search service's URL is copied to the clipboard.](media/copy-azure-search-url.png)
 
-7. Navigate to the Keys setting and copy the Primary admin key. Paste this into a text file.
+5. Navigate to the Keys setting and copy the Primary admin key. Paste this into a text file.
 
     ![The Search service's API key is copied to the clipboard.](media/copy-azure-search-api-key.png)
 
-8. Download the `schemas.zip` from https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/schemas.zip. Unzip `schemas.zip`.  There are six files, three prefixed with `abstracts` and three with `covid19temp`.  Save these to a directory such as `C:\Temp\AzureSearch\`.
+6. Download the `schemas.zip` from https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/schemas.zip. Unzip `schemas.zip`.  There are six files, three prefixed with `abstracts` and three with `covid19temp`.  Save these to a directory such as `C:\Temp\AzureSearch\`.
 
-9. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string and then save the file.  Do the same for `covid19temp_datasource.schema`.
+7. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string and then save the file.  Do the same for `covid19temp_datasource.schema`.
 
     ![The abstract data source is ready to be updated.](media/edit-abstracts-datasource.png)
 
-10. Open a new PowerShell prompt.  Enter the following code, which will create an Azure Search data source, index, and indexer.
+8. Open a new PowerShell prompt.  Enter the following code, which will create an Azure Search data source, index, and indexer.
 
     ```powershell
     cd C:\Temp\AzureSearch\
@@ -104,7 +96,7 @@ The high-level steps covered in the lab are:
 
     ![The Create-AzureSearchIndex function has been created in PowerShell.](media/create-azuresearchindex.png)
 
-11. In the same PowerShell prompt, call this function for the `abstracts` index and for the `covid19temp` index.  Then, fill in your Azure Search account name and Azure Search API key.
+9. In the same PowerShell prompt, call this function for the `abstracts` index and for the `covid19temp` index.  Then, fill in your Azure Search account name and Azure Search API key.
     - Azure Search Account Name: **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**
     - Azure Search API key: You saved Primary admin key in text editor in step 7, use that
 
