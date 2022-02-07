@@ -421,7 +421,7 @@ The high-level steps covered in the lab are:
 
     ![The function to add an abstract](media/add-abstract.png)
 
-5. Run the following to create a new abstract.  Be sure to replace the Azure Search account name (`aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>`) and Azure Search API key references with the correct values.
+5. Run the following to create a new abstract.  Be sure to replace the Azure Search account name **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and Azure Search API key references with the correct values.
 
     ```powershell
     Add-Abstract 2020.09.25.20201616v1.json <<Account Name>> <<API Key>>
