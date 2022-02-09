@@ -286,7 +286,7 @@ It's time to publish our bot to an Azure Bot Service. An Azure Bot Service is no
 
 1. Go back to the **Bot Framework Composer** and switch to **Project Settings (1)**. Select **Add new publish profile (2)**.
 
-   ![Bot Framework Composer Project Settings is open. Add new publish profile link is highlighted.](media/add-new-publish-profile.png)
+   ![Bot Framework Composer Project Settings is open. Add new publish profile link is highlighted.](media/publishprofile.png)
 
 2. Name your profile `ai-in-a-day` **(1)** and select **Publish bot to Azure Web App (2)** option as the publish target. Select **Next: Configure resources (3)** to move to the next step.
 
