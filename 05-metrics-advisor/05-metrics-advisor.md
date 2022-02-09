@@ -110,7 +110,7 @@ The high-level steps covered in the lab are:
 
    ![](media/metrics_advisor.png)  
 
-3. Under Project details on Create Metrics Advisor page provide the following details and click **Create + Review**
+3. Under Project details on Create Metrics Advisor page provide the following details and click **Review + Create**
 
     * Subscription : Select the available Subscription
     * Resource Group : **Ai-in-a-Day**
