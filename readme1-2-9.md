@@ -90,7 +90,7 @@ The high-level steps covered in the lab are:
 - Add a set of new documents and trigger the index update process
 - Explore the document and graph search and identify updated results
 
-### Lab 3 - [Machine Learning with Azure Databricks](06-ml-in-databricks/README.md)
+### Lab 5 - [Machine Learning with Azure Databricks](06-ml-in-databricks/README.md)
 
 The lab covers Data Engineering and Machine Learning using Azure Databricks notebooks.
 
