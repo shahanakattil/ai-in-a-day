@@ -127,7 +127,7 @@ First, we will start with a prepopulate Azure Cognitive Search knowledge base en
 
    ![GetRecentResearch trigger is selected. Trigger phrase is highlighted.](media/getrecentresearch-trigger-phrase.png)
 
-9. Switch back to the emulator and write, `What is the latest research?`. You will see that our bot can't understand the message anymore. So far, our bot has used **Regular Expression Recognizer** as its Language Understanding engine. The current setup for the **GetRecentResearch** trigger matches only an exact text to detect user intent. A simple typographical error results in a failure.
+9. Switch back to the emulator and write, `What is the latest resarch?`. You will see that our bot can't understand the message anymore. So far, our bot has used **Regular Expression Recognizer** as its Language Understanding engine. The current setup for the **GetRecentResearch** trigger matches only an exact text to detect user intent. A simple typographical error results in a failure.
 
    ![A dialog shows the user asking latest research with a typo in the text. Bot responds with a sorry message.](media/bot-regex-response-latestresearch-fail.png)
 
@@ -234,7 +234,7 @@ Our Bot is now using a **Regular expression recognizer** as its Language Underst
 
     ![GetRecentResearch trigger is open. The trigger phrase is highlighted.](media/getrecentresearch-luis-trigger.png)
 
-    Here we go, type `What is the latest research?` and see what happens.
+    Here we go, type `What is the latest resarch?` and see what happens.
 
     ![A chatbot dialog is shown where the user asks for more research with a question that includes a typographical error. Chatbot responds with a single research finding.](media/getrecentresearch-luis-result.png)
 
@@ -286,7 +286,7 @@ It's time to publish our bot to an Azure Bot Service. An Azure Bot Service is no
 
 1. Go back to the **Bot Framework Composer** and switch to **Project Settings (1)**. Select **Add new publish profile (2)**.
 
-   ![Bot Framework Composer Project Settings is open. Add new publish profile link is highlighted.](media/add-new-publish-profile.png)
+   ![Bot Framework Composer Project Settings is open. Add new publish profile link is highlighted.](media/publishprofile.png)
 
 2. Name your profile `ai-in-a-day` **(1)** and select **Publish bot to Azure Web App (2)** option as the publish target. Select **Next: Configure resources (3)** to move to the next step.
 
