@@ -274,7 +274,7 @@ The high-level steps covered in the lab are:
 
 > **Note!** : You can follow this link to download the file. (https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/pdf/2020.09.25.20201616v1.pdf)
 
-12. Navigate to the Form OCR Testing Tool (https://fott-preview.azurewebsites.net/) an Azure-hosted website for form recognition.  Select the **Connections** option and then choose **+** to create a new connection.  Fill in the parameters as in the table below and then select **Save Connection**.
+12. Navigate to the Form OCR Testing Tool ( https://fott-2-1.azurewebsites.net/ ) an Azure-hosted website for form recognition.  Select the **Connections** option and then choose **+** to create a new connection.  Fill in the parameters as in the table below and then select **Save Connection**.
 
     | Parameter                   | Value                                |
     | --------------------------- | -------------------------------------|
