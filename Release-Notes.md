@@ -1,5 +1,11 @@
 # Release Notes
 
+### 14 February 2022
+* Minor update in the Lab Guide.
+* Lab 2 - Knowledge Mining with Azure Cognitive Search and Text Analytics
+  - In Task 6, the Form OCR tool link is updated with https://fott-2-1.azurewebsites.net/
+-----------------------------------------------------------------
+
 ### 20 January 2022
 * Minor update in the Lab Guide.
 * Lab 2 - Knowledge Mining with Azure Cognitive Search and Text Analytics
