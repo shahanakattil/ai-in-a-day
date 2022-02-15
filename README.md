@@ -91,7 +91,7 @@ The high-level steps covered in the lab are:
 - Explore the document and graph search and identify updated results
 
 
-### Lab 3 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/README.md)
+### Lab 5 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/README.md)
 
 The lab covers the Metrics Advisor service from Azure Cognitive Services.
 
@@ -104,7 +104,7 @@ The high-level steps covered in the lab are:
 - Perform root cause analysis
 - Explore anomalies with hard thresholds (optional)
 
-### Lab 4 - [Machine Learning with Azure Databricks](06-ml-in-databricks/README.md)
+### Lab 6 - [Machine Learning with Azure Databricks](06-ml-in-databricks/05-metrics-advisor.md)
 
 The lab covers Data Engineering and Machine Learning using Azure Databricks notebooks.
 
