@@ -408,7 +408,10 @@ In this task, we will enable voice access to our Bot through the use of AI. We w
 
    ![Configuration page for the app service is open. The general settings tab is on screen. Web sockets is set to ON. Save button is highlighted.](media/app-service-web-socket.png)
 
-5. In a Microsoft Edge web browser, navigate to the Github Releases page of the Cognitive-Services-Voice-Assistant project here [https://github.com/Azure-Samples/Cognitive-Services-Voice-Assistant/releases](https://github.com/Azure-Samples/Cognitive-Services-Voice-Assistant/releases) and download the released ZIP file **(1)**. Select **Open (2)** when the download is completed.
+>  **Note**: Perform the following steps in your local systems/personal computer.
+> 
+
+5. In a Microsoft Edge web browser in your PC, navigate to the Github Releases page of the Cognitive-Services-Voice-Assistant project here [https://github.com/Azure-Samples/Cognitive-Services-Voice-Assistant/releases](https://github.com/Azure-Samples/Cognitive-Services-Voice-Assistant/releases) and download the released ZIP file **(1)**. Select **Open (2)** when the download is completed.
 
    > **Note:** If you are not able to download and install applications to your computer, you can watch a demo of the final result in a [video here](media/DLS-chatbot-demo.mp4).
 
