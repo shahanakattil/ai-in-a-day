@@ -14,7 +14,7 @@
 
 >Note: Please make sure you check the pre-installed extensions at >AzureDevOps organization level: 
 
-4. First we need to go to **Organization Settings** and we need to install **Machine Learning** extension.
+4. 
 5. MLOpsPython requires some variables to be set before you can run any pipelines. At this step, you'll create a variable group in Azure DevOps to store values that are reused across multiple pipeline stages. Navigate to **Pipelines**, **Library** and in the **Variable groups** section select **+ Variable group** as indicated bellow.
 
     ![Create a Variable Group for your Pipeline](../02-aml-mlops/media/03-devops-create-vargroup.png)
