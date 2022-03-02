@@ -1,4 +1,4 @@
-# Lab 3 - Conversational AI with Azure Bot Service and Cognitive Services
+# Lab 4 - Conversational AI with Azure Bot Service and Cognitive Services
 
 This lab covers Azure Bot Service, Bot Framework Composer, and Azure Cognitive Services.
 
