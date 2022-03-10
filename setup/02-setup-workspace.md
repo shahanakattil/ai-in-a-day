@@ -12,21 +12,26 @@
 
     ![Create e new project in Azure DevOps](../02-aml-mlops/media/02-devops-create-project.png)
 
->Note: Please make sure you check the pre-installed extensions at >AzureDevOps organization level: 
+4. Navigate to the VisualStudio Marketplace: https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml and select **Get it free**.
 
-4. MLOpsPython requires some variables to be set before you can run any pipelines. At this step, you'll create a variable group in Azure DevOps to store values that are reused across multiple pipeline stages. Navigate to **Pipelines**, **Library** and in the **Variable groups** section select **+ Variable group** as indicated bellow.
+5. Select **Azure DevOps organization** from the dropdown list and then select **Install**.
+
+    ![The Microsoft DevLabs Machine Learning plugin for Azure DevOps page is shown with the Azure DevOps organization selected and the Install button highlighted.](media/bhol-04.png 'Install Plug-In')
+
+
+6. MLOpsPython requires some variables to be set before you can run any pipelines. At this step, you'll create a variable group in Azure DevOps to store values that are reused across multiple pipeline stages. Navigate to **Pipelines**, **Library** and in the **Variable groups** section select **+ Variable group** as indicated bellow.
 
     ![Create a Variable Group for your Pipeline](../02-aml-mlops/media/03-devops-create-vargroup.png)
 
-5. To prepare the values you'll need to set all your variables, you need to get the resource group location where all your Azure resources were provisioned. In another browser tab, navigate to the [Azure portal](https://portal.azure.com), sign in with the provided Azure credentials if you are asked to, and navigate to the lab Resource group. On the resource group overview page, you'll find the location information you need.
+7. To prepare the values you'll need to set all your variables, you need to get the resource group location where all your Azure resources were provisioned. In another browser tab, navigate to the [Azure portal](https://portal.azure.com), sign in with the provided Azure credentials if you are asked to, and navigate to the lab Resource group. On the resource group overview page, you'll find the location information you need.
 
     ![Get Resource Group location information](../02-aml-mlops/media/04-getRGLocation.png)
 
     Also note the other two marked values in the image above (you'll also need those two on the next steps): the **Resource Group name** and the **Machine Learning Workspace name**, which are also provided for you in the lab Environment Details page.
 
-6. Going back to the Azure Devops portal where you created the Variable group for you DevOps project, enter the **Variable group name**: `devopsforai-aml-vg`.
+8. Going back to the Azure Devops portal where you created the Variable group for you DevOps project, enter the **Variable group name**: `devopsforai-aml-vg`.
 
-7. Add the required list of variables, using the **+ Add** link at the bottom of the **Variables** section as illustrated in the image bellow:
+9. Add the required list of variables, using the **+ Add** link at the bottom of the **Variables** section as illustrated in the image bellow:
 
     ![Configure required variable values in the variable group](../02-aml-mlops/media/04-devops-edit-vargroup.png)
 
@@ -42,11 +47,11 @@
     | WORKSPACE_SVC_CONNECTION | `aml-workspace-connection`  | Azure ML Workspace Service Connection name                 |
     | ACI_DEPLOYMENT_NAME      | `mlops-aci`                 | [Azure Container Instances](https://azure.microsoft.com/en-us/services/container-instances/) name                           |                 |
 
-8. Make sure you select the **Allow access to all pipelines** checkbox in the variable group configuration.
+10. Make sure you select the **Allow access to all pipelines** checkbox in the variable group configuration.
 
     ![Allow access to all pipelined](../02-aml-mlops/media/05-devops-allowacces-vargroup.png)
 
-9. Select **Save** from the top menu to create the variable group.
+11. Select **Save** from the top menu to create the variable group.
 
     ![Save the variable group configuration](../02-aml-mlops/media/06-devops-save-vargroup.png)
 
@@ -72,17 +77,41 @@
 
 ## Task 2 (Linux variant) - Configure a Linux VM as an Azure DevOps Build Agent
 
-1. Create a new Linux VM with the following specs (leave all other options default):
+1. From within Azure Portal, navigate to **Virtual machines** and then select **+ Create, + Virtual machine**.
 
-    ![Create new Linux VM](./media/02-setup-create-linux-vm.png)
+2. In the `Create a virtual machine` dialog, provide the following values, and then select **Review + create**:
 
-2. Install Docker on the VM running the following command (https://docs.docker.com/engine/install/ubuntu/):
+    - **Subscription**: Select the Azure subscription that you want to use.
+    - **Resource group**: Use an existing resource group in your subscription
+    - **Virtual machine name**: **ai-in-a-day-DID**
+    - **Region**: Select the region same as the resource group
+    - **Image**: **Ubuntu Server 20.04 LTS - Gen1**
+    - **Size**: **Standard_D1s_v2**
+    - **Authentication type**: **password**
+    - **Username**: **devopsagent**
+    - **Password**: **Password.1!!**
+    - **Public inbound ports**: **Allow selected ports**
+    - **Select inbound ports**: **SSH (22)**
+
+    ![The Create a virtual machine dialog is shown populated with the values above.](media/02-setup-create-linux-vm.png 'Create Virtual Machine')
+
+3. On the `Review + create` section, select **Create**. It will take a few minutes for the VM to be deployed. Continue below once the VM deployed and ready.
+
+4. From the `Overview` section of the virtual machine, copy the **Public IP address** and save it for later use.
+
+5. From an `Azure cloud shell` or `terminal` or `command prompt`, run the following commands:
+
+    - `ssh devopsagent@xx.xxx.xxx.xxx` (replace the IP address with your VMs public IP address)
+       - If you are prompted: `Are you sure you want to continue connecting (yes/no/[fingerprint])?`, type `yes`
+    - Provide password for `devopsagent` as **Password.1!!**
+
+5. Install Docker on the VM running the following command (https://docs.docker.com/engine/install/ubuntu/):
 
     ```sh
     sudo snap install docker
     ```
 
-3. Configure the `devopsagent` user to run Docker (https://docs.docker.com/engine/install/linux-postinstall/):
+6. Configure the `devopsagent` user to run Docker (https://docs.docker.com/engine/install/linux-postinstall/):
 
     ```sh
     sudo groupadd docker
@@ -91,21 +120,30 @@
 
     >**Note**: Ensure to Restart the Linux VM from Azure portal to apply changes made in previous steps.
 
-4. Download and install the Azure DevOps agent on Linux:
+7. Download and install the Azure DevOps agent on Linux:
 
-    ![Install DevOps Agent on Linux](./media/02-setup-linux-agent.png)
+    ![Install DevOps Agent on Linux](./media/setup-agent-pool4.png)
 
-    NOTE: You can use ```curl -O https://vstsagentpackage.azureedge.net/agent/2.192.0/vsts-agent-linux-x64-2.192.0.tar.gz``` to download the file.
+8. Once you are logged into the VM after restarting, run the following commands:
 
-5. Configure the agent according to the DevOps documentation: https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-linux?view=azure-devops.
+   - `curl -O [Download the agent URL copied above]`
+     - For example, `curl -O https://vstsagentpackage.azureedge.net/agent/2.200.2/vsts-agent-linux-x64-2.200.2.tar.gz`
+   - `mkdir myagent && cd myagent`
+   - `tar zxvf ../vsts-agent-linux-x64-2.200.2.tar.gz`
+       - Replace the above command with the recent linux agent version and ensure that the `tar.gz` file is the one downloaded above    
+   - `./config.sh`
+       - Accept the Team Explorer Everywhere license agreement now? `Y`
+       - Enter server URL > [Provide your Azure DevOps organization URL]
+           - For example, `https://dev.azure.com/organization-name`
+       - Enter authentication type (press enter for PAT) > press enter
+       - Enter personal access token > [Provide the PAT saved above]
+       - Enter agent pool (enter the value) > `odluserXXXXXX-project-agent-pool`
+       - Enter agent name (press enter for ai-in-a-day-XXXXXX) > press enter
+       - Enter work folder (press enter for _work) > press enter
+   - `sudo ./svc.sh install`
+   - `sudo ./svc.sh start`
 
-    The following commands must be run in the `myagent` folder:
-
-    ```sh
-    sudo ./config.sh
-    sudo ./svc.sh install
-    sudo ./svc.sh start
-    ```
+9. From within Azure DevOps, navigate to **Organization Settings, Agent Pools, odluserXXXXXX-project-agent-pool** and then select the **Agents** tab. Confirm that the `ai-in-a-day-XXXXXX` is `online`.
 
 ## Task 3 - Create an Azure DevOps Service Connection for the Azure ML Workspace
 
@@ -144,7 +182,6 @@ Create a new service connection to your Azure ML Workspace to enable executing t
     ![Generate git repository from template](../02-aml-mlops/media/02%20-%20github-%20generaterepo.png)
 
 5. When the new repository is generated, copy your repository URL from the browser address bar since you will need it in the next steps.
-
 
 ## Task 5 - Set up Build, Release Trigger, and Release Multi-Stage Pipelines
 
@@ -199,6 +236,8 @@ In the following steps you will create and run a new build pipeline based on the
     >```
     >where `<name-of-agent-pool>` is the name you used previously to create your self-hosted agent pool.
     >You should apply this change to all subsequent cases where the `pool` setting is implied.
+
+    ![pool_name](media/pool_name.png)
 
 11. With the created pipeline, select **Rename/move** from the right menu as illustrated bellow:
 
