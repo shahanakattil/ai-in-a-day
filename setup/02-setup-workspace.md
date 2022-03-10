@@ -341,15 +341,11 @@ In the following steps you will create and run a new build pipeline based on the
 
 5. Copy the new GH PAT.
 
-    ![Get the new PAT token](../02-aml-mlops/media/5-createGHPAT.png)
-
 6. At repository level, select Settings > Secrets and add the PAT token with the name `PATTOKEN` as a new secret.
  
     ![Add second secret PATTOKEN](./media/02-setup-05.png)
 
 7. Open the .cloud\.azure\workspace.json file and replace the workspace name and resource group with the ones provided by the lab environment.
-
-    ![Change workspace.json](./media/02-setup-051.png)
 
     ![Update workspace name and resource group](./media/02-setup-051.png)
 
@@ -371,7 +367,6 @@ In the following steps you will create and run a new build pipeline based on the
     - `ML_DATA_STORAGE_CONNECTION_STRING` - contains the connection string of the AML workspace storage account (the one named like `mlstrgXXXXXX`)
 
     ![Function App Configuration](./media/02-setup-azure-function-3.png)
-
 
 5. Create a new function, using the following settings:
 
