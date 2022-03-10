@@ -14,8 +14,7 @@
 
 >Note: Please make sure you check the pre-installed extensions at >AzureDevOps organization level: 
 
-4. 
-5. MLOpsPython requires some variables to be set before you can run any pipelines. At this step, you'll create a variable group in Azure DevOps to store values that are reused across multiple pipeline stages. Navigate to **Pipelines**, **Library** and in the **Variable groups** section select **+ Variable group** as indicated bellow.
+4. MLOpsPython requires some variables to be set before you can run any pipelines. At this step, you'll create a variable group in Azure DevOps to store values that are reused across multiple pipeline stages. Navigate to **Pipelines**, **Library** and in the **Variable groups** section select **+ Variable group** as indicated bellow.
 
     ![Create a Variable Group for your Pipeline](../02-aml-mlops/media/03-devops-create-vargroup.png)
 
@@ -39,8 +38,8 @@
     | LOCATION                 | `westus`                 | Resource group location (the value you looked for on the previous step)                             |
     | RESOURCE_GROUP           | `AI-in-a-Day-XXXXXX`                | Azure Resource Group name                                                                                                   |
     | WORKSPACE_NAME           | `ai-in-a-day-XXXXXX`             | Azure Machine Learning Workspace name                                                                                                     |
-    | AZURE_RM_SVC_CONNECTION  | `azure-resource-connection` | [Azure Resource Manager Service Connection](#create-an-azure-devops-service-connection-for-the-azure-resource-manager) name |
-    | WORKSPACE_SVC_CONNECTION | `aml-workspace-connection`  | [Azure ML Workspace Service Connection](#create-an-azure-devops-azure-ml-workspace-service-connection) name                 |
+    | AZURE_RM_SVC_CONNECTION  | `azure-resource-connection` | Azure Resource Manager Service Connection name |
+    | WORKSPACE_SVC_CONNECTION | `aml-workspace-connection`  | Azure ML Workspace Service Connection name                 |
     | ACI_DEPLOYMENT_NAME      | `mlops-aci`                 | [Azure Container Instances](https://azure.microsoft.com/en-us/services/container-instances/) name                           |                 |
 
 8. Make sure you select the **Allow access to all pipelines** checkbox in the variable group configuration.
@@ -51,7 +50,77 @@
 
     ![Save the variable group configuration](../02-aml-mlops/media/06-devops-save-vargroup.png)
 
-## Task 2 - Create an Azure DevOps Service Connection for the Azure ML Workspace
+## Task 2 - Configure the Lab VM as an Azure DevOps Build Agent
+
+1. Create a new Personal Access Token (PAT) that will be used by the build agent for authentication/authorization:
+
+    ![Create new Personal Access Token](./media/02-setup-create-pat.png)
+
+    Make sure the PAT has a scope of `Full access`:
+
+    ![Configure Personal Access Token](./media/02-setup-configure-pat.png)
+
+    Once the PAT is created, save its value for future use.
+
+2. Create a new agent pool in the project settings:
+
+    ![Create new agent pool](media/02-setup-create-agent-pool.png)
+
+    Make sure the type of the agent pool is `Self-hosted`:
+
+    ![Select agent pool type](./media/02-setup-agent-pool-type.png)
+
+3. In the newly created agent pool, create a new agent. Follow the instructions displayed on the screen (more detailed instructions are available at https://go.microsoft.com/fwlink/?LinkID=825113):
+
+    ![Create new agent in agent pool](media/02-setup-create-new-agent.png)
+
+    See the example below for configuring the agent. Notice the server URL, the PAT token being used, and the option to run the agent as a service:
+
+    ![Configure build agent](./media/02-setup-install-agent.png)
+
+    Upon successful configuration, the newly created agent must show up as `Online`:
+
+    ![Successfully configured build agent](./media/02-setup-running-agent.png)
+
+
+## Task 2 (Linux variant) - Configure a Linux VM as an Azure DevOps Build Agent
+
+1. Create a new Linux VM with the following specs (leave all other options default):
+
+    ![Create new Linux VM](./media/02-setup-create-linux-vm.png)
+
+2. Install Docker on the VM running the following command (https://docs.docker.com/engine/install/ubuntu/):
+
+    ```sh
+    sudo snap install docker
+    ```
+
+3. Configure the `devopsagent` user to run Docker (https://docs.docker.com/engine/install/linux-postinstall/):
+
+    ```sh
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
+    ```
+
+    >**Note**: Ensure to Restart the Linux VM from Azure portal to apply changes made in previous steps.
+
+4. Download and install the Azure DevOps agent on Linux:
+
+    ![Install DevOps Agent on Linux](./media/02-setup-linux-agent.png)
+
+    NOTE: You can use ```curl -O https://vstsagentpackage.azureedge.net/agent/2.192.0/vsts-agent-linux-x64-2.192.0.tar.gz``` to download the file.
+
+5. Configure the agent according to the DevOps documentation: https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-linux?view=azure-devops.
+
+    The following commands must be run in the `myagent` folder:
+
+    ```sh
+    sudo ./config.sh
+    sudo ./svc.sh install
+    sudo ./svc.sh start
+    ```
+
+## Task 3 - Create an Azure DevOps Service Connection for the Azure ML Workspace
 
 Create a new service connection to your Azure ML Workspace to enable executing the Azure ML training pipeline. The connection name needs to match the WORKSPACE_SVC_CONNECTION that you set in the variable group above (e.g. `aml-workspace-connection`).
 
@@ -75,7 +144,7 @@ Create a new service connection to your Azure ML Workspace to enable executing t
 >
 >Creating a service connection with Azure Machine Learning workspace scope requires `Owner` or `User Access Administrator` permissions on the Workspace. You'll need sufficient permissions to register an application with your Azure AD tenant, or you can get the ID and secret of a service principal from your Azure AD Administrator. That principal must have Contributor permissions on the Azure ML Workspace.
 
-## Task 3 - Import the GitHub repository
+## Task 4 - Import the GitHub repository
 
 1. Go to the [GitHub portal](https://github.com/) and sign in with the Git credentials provided for you.
 2. You will be asked to verify your account, so you should open your user's mailbox on https://outlook.office365.com/ to be able to receive the verification codes for GitHub authentication. Use the same GitHub user account credentials to open Outlook.
@@ -90,7 +159,7 @@ Create a new service connection to your Azure ML Workspace to enable executing t
 5. When the new repository is generated, copy your repository URL from the browser address bar since you will need it in the next steps.
 
 
-## Task 4 - Set up Build, Release Trigger, and Release Multi-Stage Pipelines
+## Task 5 - Set up Build, Release Trigger, and Release Multi-Stage Pipelines
 
 Now that you've provisioned all the required Azure resources and service connections, you can set up the pipelines for training (CI) and deploying (CD) your machine learning model to production. Additionally, you can set up a pipeline for batch scoring.
 In the following steps you will create and run a new build pipeline based on the `COVID19Articles-CI.yml` pipeline definition in your imported repository.
@@ -135,6 +204,15 @@ In the following steps you will create and run a new build pipeline based on the
 
     ![Save the build pipeline](../02-aml-mlops/media/018-runsavecipipeline.png)
 
+    >**IMPORTANT**!!!
+    >
+    >Due to changes in Azure Pipelines policies for allocating Microsoft-hosted agents, you must change the `pool` setting in the YAML file as follows:
+    >```yaml
+    >pool: <name-of-agent-pool>
+    >```
+    >where `<name-of-agent-pool>` is the name you used previously to create your self-hosted agent pool.
+    >You should apply this change to all subsequent cases where the `pool` setting is implied.
+
 11. With the created pipeline, select **Rename/move** from the right menu as illustrated bellow:
 
     ![Rename the build pipeline](../02-aml-mlops/media/019-renamepipeline.png)
@@ -151,7 +229,7 @@ In the following steps you will create and run a new build pipeline based on the
 >
 >While waiting for the CI pipeline to finish, given that it will take 20-25 minutes to complete, you can move on with steps 1 to 9 in the next task to create the release deploy pipeline. Note that you cannot run this second pipeline until the first one is not completed. When both pipelines are created, the CI pipeline triggers the start of the CD one.
 
-## Task 5 - Set up the Release Deployment pipeline
+## Task 6 - Set up the Release Deployment pipeline
 
 1. Open the [Azure DevOps portal](https://dev.azure.com) and sign in with the Azure credentials provided for you in the lab environment.
    
@@ -191,7 +269,7 @@ In the following steps you will create and run a new build pipeline based on the
    
     ![Run the pipeline](../02-aml-mlops/media/030-runpipeline.png)
 
-## Task 6 -  ML Ops with GitHub Actions and AML environment setup
+## Task 7 - ML Ops with GitHub Actions and AML environment setup
 
 1. Sign-in to GitHub with your GitHub account.
 
@@ -249,7 +327,7 @@ In the following steps you will create and run a new build pipeline based on the
 
     ![Update workspace name and resource group](./media/02-setup-051.png)
 
-## Task 7 - Setup Azure Function to trigger GitHub Actions dispatch
+## Task 8 - Setup Azure Function to trigger GitHub Actions dispatch
 
 1. Create an Azure Function App with `PowerShell Core` as the runtime stack.
 
@@ -292,7 +370,7 @@ In the following steps you will create and run a new build pipeline based on the
     Write-Host "PowerShell Blob trigger function Processed blob! Name: $($InputBlob.Path) Size: $($InputBlob.Length) bytes"
 
     $gitHubUser = "github-cloudlabsuser-1020"
-    $gitHubRepo = "azure-ai-in-a-day-lab-02"
+    $gitHubRepo = "azure-ai-in-a-day-lab02"
     $uri = "https://api.github.com/repos/$($gitHubUser)/$($gitHubRepo)/dispatches"
     $headers = @{ Authorization="Bearer $($env:GH_PAT)" }
     $body = "{ ""event_type"": ""storage-blobupdated"" }"
