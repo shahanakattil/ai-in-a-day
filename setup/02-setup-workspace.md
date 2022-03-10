@@ -70,19 +70,6 @@
 
     ![Select agent pool type](./media/02-setup-agent-pool-type.png)
 
-3. In the newly created agent pool, create a new agent. Follow the instructions displayed on the screen (more detailed instructions are available at https://go.microsoft.com/fwlink/?LinkID=825113):
-
-    ![Create new agent in agent pool](media/02-setup-create-new-agent.png)
-
-    See the example below for configuring the agent. Notice the server URL, the PAT token being used, and the option to run the agent as a service:
-
-    ![Configure build agent](./media/02-setup-install-agent.png)
-
-    Upon successful configuration, the newly created agent must show up as `Online`:
-
-    ![Successfully configured build agent](./media/02-setup-running-agent.png)
-
-
 ## Task 2 (Linux variant) - Configure a Linux VM as an Azure DevOps Build Agent
 
 1. Create a new Linux VM with the following specs (leave all other options default):
