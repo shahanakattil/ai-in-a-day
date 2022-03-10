@@ -305,12 +305,12 @@ In the following steps you will create and run a new build pipeline based on the
     First you will need an [Azure service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals). Just go to the Azure Portal to find the details of your resource group. Then start the Cloud CLI or install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) on your computer and execute the following command to generate the required credentials:
 
     ```sh
-    # Replace {sp_XXXXX_githubactions} where XXXXX is the current user lab unique code, {subscription-id} and {AI-in-a-Day-XXXXX},{ai-in-a-day-XXXXX} with your 
+    # Replace {sp_XXXXX_githubactions} where XXXXX is the current user DID, {subscription-id} and {AI-in-a-Day-XXXXX},{ai-in-a-day-XXXXX} with your 
     # Azure subscription id, resource group and ml workspace name and assign any name for your service principal for eg {sp_XXXXX_githubactions}
     
     az ad sp create-for-rbac --name http://{sp_XXXXX_githubactions} \
                             --role contributor \
-                            --scopes /subscriptions/{subscription-id}/resourceGroups/{AI-in-a-Day-XXXXX}/providers/Microsoft.MachineLearningServices/workspaces/{ai-in-a-day-XXXXX} \
+                            --scopes /subscriptions/{subscription-id}/resourceGroups/AI-in-a-Day-DID/providers/Microsoft.MachineLearningServices/workspaces/ai-in-a-day-DID \
                             --sdk-auth
     ```
 
@@ -330,6 +330,8 @@ In the following steps you will create and run a new build pipeline based on the
         "managementEndpointUrl": "https://management.core.windows.net/"
     }
     ```
+
+> **Note** : Save the above JSON output in the desktop of the Labvm with name **AZURE_CREDENTIALS**
 
 3. On the **Settings** tab in your repository select the Secrets section and finally add the new secret (JSON output generated at the previous step) with the name `AZURE_CREDENTIALS` to your repository.
 
