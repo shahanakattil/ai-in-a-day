@@ -1,5 +1,11 @@
 # Release Notes
 
+### 21 March 2022
+* Minor update in the Lab Guide.
+* Lab 1 - Knowledge Mining with Azure Cognitive Search and Text Analytics
+  - In Task 7, the 3. Document Classification.ipynb has been updated with commands for downloading Explanation Dashboard.
+-----------------------------------------------------------------
+
 ### 14 February 2022
 * Minor update in the Lab Guide.
 * Lab 2 - Knowledge Mining with Azure Cognitive Search and Text Analytics
