@@ -88,7 +88,7 @@ The high-level steps covered in the lab are:
 
     > **Note**: Right Click and copy the link. Paste the link in new browser tab and download it. Follow the same step to download all 3 files.
 
-    [1. Data Preparation.ipynb](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/1.%20Data%20Preparation.ipynb)
+    [1. Data Preparation.ipynb](https://persistentstorage09.blob.core.windows.net/aiwai/1. Data Preparation.ipynb)
 
     [3. Document Classification.ipynb](https://experienceazure.blob.core.windows.net/templates/ai-iad/ai-iad-combined/notebooks/3.%20Document%20Classification.ipynb)
 
