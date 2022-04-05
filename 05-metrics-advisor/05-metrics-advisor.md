@@ -44,7 +44,7 @@ You should follow all of the steps provided in this section _before_ taking part
 
 4. If the folder does not contain `preparemetricsfeeddata.ipynb` notebooks, download the following items to your local machine:
 
-    [Prepare metrics feed data](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-05/preparemetricsfeeddata.ipynb)
+    [Prepare metrics feed data](https://aiinadayaiw.blob.core.windows.net/aiinaday/preparemetricsfeeddata.ipynb)
 
 5. Upload the file by selecting the Upload button from the top right corner of the screen, and then selecting the blue Upload button to confirm.
 
