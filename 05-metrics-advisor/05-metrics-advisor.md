@@ -206,6 +206,8 @@ When detection is applied, you can select one of the metrics listed in data feed
     - Value **Out of boundary** is anomaly 
     - Do not  report anomaly until **10%** of latest **1** points are detected as anomalies.
 
+    > **Note:-** It can take 30 minutes to completed on recent historical data, so please wait or continue with next lab and come back later and continue this lab.
+
     ![Metric-level configuration](./media/metric-level-configuration-smart1.png)
 
 >Note
