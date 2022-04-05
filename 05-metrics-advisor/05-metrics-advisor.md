@@ -148,17 +148,17 @@ The high-level steps covered in the lab are:
     - **Blob template**: `%Y-%m-%d.json` (since the daily json files are provided in with naming format)
     - **JSON format version**: `v2` (since we'll be using the age group dimension in our data schema)
 
-    ![Data feed source properties](./media/adddatafeed.png)
+    ![Data feed source properties](./media/adddatafeed1.png)
 
 6. Select the **Load data button** to validate the configured connection, y=you can find **Load Data** option just below the **JSON format version** in right side, so scroll in right to see teh button.  If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
 
 7. Once the data schema is loaded and shown like below, configure the appropriate fields as Dimension, Measure or Timestamp and select **Verify schema**.
 
-    ![Schema configuration](./media/schemconfig.png)
+    ![Schema configuration](./media/schemconfig1.png)
 
 8. Scroll down towards the bottom of the page. For **Automatic roll-up** settings, select the **I need the service to roll-up my data** (1) option, select the link **Set roll-up columns** and include both dimensions (3).
 
-    ![Automatic rollup settings](./media/automaticrollup.png)
+    ![Automatic rollup settings](./media/automaticrollup1.png)
 
 9. In the **Advanced settings** section, inside **Ingestion options**, set **Stop retrying after** to **0** hours to stop the ingestion process after the first run. 
     
@@ -174,7 +174,7 @@ The high-level steps covered in the lab are:
 
 12. Wait for the ingestion progress dialog and select the **Details** link in order to observe the ingestion log by timestamp. Wait until the ingestion completes with success for all ingested json files.
 
-    ![Check the ingestion progress](./media/ingestionprogress.png)
+    ![Check the ingestion progress](./media/ingestionprogress1.png)
 
 
 ## Task 5 - Explore anomalies detected in data
@@ -190,15 +190,15 @@ When detection is applied, you can select one of the metrics listed in data feed
 
 1. Select the **Visit data-feed: covid-ages** button to navigate to the data feed overview page.
 
-    ![Check the ingestion progress](./media/ingestionprogress.png)
+    ![Check the ingestion progress](./media/ingestionprogress2.png)
 
 2.  In the data feed page, select the `count` metric under the **Metrics** section.
 
-    ![Go to the count metric details page](./media/browsemetricdata.png)
+    ![Go to the count metric details page](./media/browsemetricdata1.png)
 
 3.  To modify the inspected time window, change the start and end time of the interval from the calendar above the graphic representations. Set the interval to start from `2022-02-01`to `2022-03-15`.
 
-    ![Change monitoring time window](./media/changetimewindow.png)
+    ![Change monitoring time window](./media/changetimewindow1.png)
 
 4.  Make sure you see the ingestion process completed on recent historical data **(1)** as illustrated in the picture bellow. When all data is ingested, in the left configuration section, under the **Metric-level configuration** **(2)** change the default metric-level configuration to use Smart detection and set the sensitivity level to 81 and use this configuration:
     - Value **Out of boundary** is anomaly 
