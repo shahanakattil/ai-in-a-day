@@ -142,7 +142,7 @@ The high-level steps covered in the lab are:
 
     - **Source type**: `Azure Blob Storage (JSON)`
     - **Granularity**: `Daily`
-    - **Ingest data since (UTC)**: `2021-01-01`
+    - **Ingest data since (UTC)**: `2022-02-01`
     - **Connection string**: provide the connection string from the blob storage access keys page. (`key1 - Connection string` copied on **Before the hands-on lab** part or else please  follow Task 1 of Before the hands-on lab) 
     - **Container**: `jsonmetrics`
     - **Blob template**: `%Y-%m-%d.json` (since the daily json files are provided in with naming format)
@@ -196,7 +196,7 @@ When detection is applied, you can select one of the metrics listed in data feed
 
     ![Go to the count metric details page](./media/browsemetricdata.png)
 
-3.  To modify the inspected time window, change the start and end time of the interval from the calendar above the graphic representations. Set the interval to start from `2021-01-01`to `2021-04-15`.
+3.  To modify the inspected time window, change the start and end time of the interval from the calendar above the graphic representations. Set the interval to start from `2021-02-01`to `2021-03-15`.
 
     ![Change monitoring time window](./media/changetimewindow.png)
 
