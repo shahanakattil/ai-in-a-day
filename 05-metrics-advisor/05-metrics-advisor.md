@@ -134,7 +134,7 @@ The high-level steps covered in the lab are:
 
 3. On the Metrics Advisor welcome page, select your Directory, subscription and workspace information and select **Get started**. You are now prepared to create your first Data feed.
 
-   >Mote:- If you see that **Get Started** button is not available for you, it means that the metric advisor servies is not fully available yet. Please wait for 20-30 minutes and try again after refreshing the page.
+   > **Note:-** If you see that **Get Started** button is not available for you, it means that the metric advisor servies is not fully available yet. Please wait for 20-30 minutes and try again after refreshing the page.
 
     ![Connect to Metrics Advisor workspace](./media/metrics-advisor-connect.png)
 
