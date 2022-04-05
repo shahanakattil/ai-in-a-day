@@ -196,7 +196,7 @@ When detection is applied, you can select one of the metrics listed in data feed
 
     ![Go to the count metric details page](./media/browsemetricdata.png)
 
-3.  To modify the inspected time window, change the start and end time of the interval from the calendar above the graphic representations. Set the interval to start from `2021-02-01`to `2021-03-15`.
+3.  To modify the inspected time window, change the start and end time of the interval from the calendar above the graphic representations. Set the interval to start from `2022-02-01`to `2022-03-15`.
 
     ![Change monitoring time window](./media/changetimewindow.png)
 
