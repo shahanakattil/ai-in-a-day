@@ -210,14 +210,5 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![View explanations](media/view-explanations01.png)
 
->**Note**: Before proceeding to *Task 7* please ensure to check in the environment for the experiment with name **COVID19_Classification** under Assets, if not please run **setup.py** file from the path **C:\LabFiles** and wait for the completion of the run. Once the experiment and run is completed please proceed further with the lab. 
 
-## Task 7 - Classify new research documents
 
-1. With the Azure Machine Learning Studio and the Jupyter notebook environment open, select the `3. Document Classification.ipynb` notebook.
-
-![Select Note Book](./media/ClickJupyterDocClassificationNoteBook.png)
-
-2. Execute the notebook cell by cell (Click on 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or ) and observe the results of each cell execution.
-
-![Run Note Book Cell](./media/RunNoteBookCell2.png)
