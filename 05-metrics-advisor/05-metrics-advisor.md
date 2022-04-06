@@ -59,15 +59,23 @@ You should follow all of the steps provided in this section _before_ taking part
 
     ![preparemetricfeeddata notebook](media/notebook_05.png)
 
+7. You have to **Choose an available Jupyter kernal**, select **Python 3.8 - AzureML** from the drop-down and then select **Start Jupyter kernal**.
+
+    ![select kernal for preparemetricfeeddata notebook](media/AI-notebook-kernal-update.png)
+    
 > **Note**: Please ensure to click on **Authenticate** button if a pop-up notification comes like below.
 
-   ![authenticate pop-up](media/authenticate.png)
+   ![authenticate pop-up](media/AI-notebook-authenticate.png)
+   
+8. Make sure **Python 3.8 -AzureML** kernal selected as shown in the below screenshot.
+
+   ![Kernal selected](media/AI-notebook-python3.8-kernal.png) 
 
 > **Note**: Make sure you replace the `<BLOBSTORAGE_ACCOUNT_NAME>` and `<BLOBSTORAGE_ACCOUNT_KEY>` values in the variable initialization cell with the values you have noted down at the end of the previous task.
 
    The notebook will guide you through a list of steps needed to prepare a time series-based dataset containing JSON files to be fed into the Metrics Advisor workspace. Each JSON file will contain daily data representing the count of COVID positive cases by age group.
 
-7. Execute the notebook cell by cell (using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
+9. Execute the notebook cell by cell (using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
 
 ## Hands-on Lab
 
@@ -108,7 +116,7 @@ The high-level steps covered in the lab are:
 
 2. In the search bar type **Metrics Advisor** and then select **Create**
 
-   ![](media/metrics_advisor.png)  
+   ![](media/AI-metric-advisor-create.png)  
 
 3. Under Project details on Create Metrics Advisor page provide the following details and click **Review + Create**
 
@@ -119,7 +127,7 @@ The high-level steps covered in the lab are:
     * Pricing tier: **S0**
     * Make sure to mark checkbox ☑ for **I confirm I have read and understood the notice below**.
    
-     ![](media/created_ma.png)
+     ![](media/AI-metric-advisor-latest.png)
 
 4. Once the validation is passed click on **Create**. The deployment could take up to **60 minutes** to complete, although it normally finishes in less than **10 minutes**. Please wait untill the deployment gets succeeded and then, you can proceed with next task.
 
