@@ -198,9 +198,9 @@ When detection is applied, you can select one of the metrics listed in data feed
 
     ![Go to the count metric details page](./media/browsemetricdata1.png)
 
-3.  To modify the inspected time window, change the start and end time of the interval from the calendar above the graphic representations. Set the interval to start from `2022-02-01`to `2022-03-15`.
+3.  To modify the inspected time window, change the start and end time of the interval from the calendar above the graphic representations.
 
-    ![Change monitoring time window](./media/changetimewindow1.png)
+    ![Change monitoring time window](./media/changetimewindow11.png)
 
 4.  Make sure you see the ingestion process completed on recent historical data **(1)** as illustrated in the picture bellow. When all data is ingested, in the left configuration section, under the **Metric-level configuration** **(2)** change the default metric-level configuration to use Smart detection and set the sensitivity level to 81 and use this configuration:
     - Value **Out of boundary** is anomaly 
