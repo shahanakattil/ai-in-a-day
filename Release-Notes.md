@@ -1,5 +1,13 @@
 # Release Notes
 
+### 5 April 2022
+* Major update in the lab
+* Lab 1 - Azure Machine Learning Model Training
+  - Removed task 7(Classify new research documents) from the lab due to the compatibility issue with the AML Kernal Version 3.8 **3. Document Classification.ipynb**.
+* Lab 4 - Data monitoring and anomaly detection using Metrics Advisor in Azure Cognitive Services
+  - Updated the Dataset to use minimum data required for the Metric Advisor Datafeed
+  - Updated the file **preparemetricsdatafeed.ipynb** to run in Kernal Version 3.8 - AML
+
 ### 21 March 2022
 * Minor update in the Lab Guide.
 * Lab 1 - Knowledge Mining with Azure Cognitive Search and Text Analytics
