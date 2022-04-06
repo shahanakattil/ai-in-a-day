@@ -206,9 +206,9 @@ When detection is applied, you can select one of the metrics listed in data feed
 
     ![Go to the count metric details page](./media/browsemetricdata1.png)
 
-3.  To modify the inspected time window, change the start and end time of the interval from the calendar above the graphic representations. Set the interval to start from `2022-02-01`to `2022-03-15`.
-
-    ![Change monitoring time window](./media/changetimewindow1.png)
+3.  To modify the inspected time window, change the start and end time of the interval from the calendar above the graphic representations.
+    
+    ![Change monitoring time window](./media/AI-metric-advisor-count-overview.png)
 
 4.  Make sure you see the ingestion process completed on recent historical data **(1)** as illustrated in the picture bellow. When all data is ingested, in the left configuration section, under the **Metric-level configuration** **(2)** change the default metric-level configuration to use Smart detection and set the sensitivity level to 81 and use this configuration:
     - Value **Out of boundary** is anomaly 
@@ -224,8 +224,13 @@ When detection is applied, you can select one of the metrics listed in data feed
 >
 > - Spend a few minutes to change some parameters inside the **Metric-level configuration** section and observe the change of reported anomalies (red points) on the series data representation.
 
-5. In the metrics browser page, select the **Incidents** tab and filter the list to see the incidents related to number of cases that required hospitalization hosp_ym = `Yes`. Select the anomaly reported for SUM of hospitalized cases.
-    ![Filter incidents by hospitalization](./media/hosp_yes1.png)
+5. In the metrics browser page, select the **Incidents** tab and click on the **Dimension filter**(1) to see the incidents related to number of cases that required hospitalization **hosp_ym = Yes**(2) and **Confirm**(3). 
+
+    ![Filter incidents by hospitalization steps](./media/AI-metric-advisor-filter.png)
+
+6. From the list select the anomaly reported for SUM of hospitalized cases.
+    
+    ![Filter incidents by hospitalization](./media/AI-metric-advisor-sum-yes.png)
 
 ## Task 6 - Perform root cause analysis
 
@@ -251,4 +256,4 @@ To do this, go back to the metric detection configuration screen and try a new c
 
 We should have marked as anomalies the points in time where number of cases is bellow or above a fixed threshold for 10 continous points in time.(Notice the yellow dots **(2)** before the reported anomalies and how the threashold is delimited by the red horizontal lines **(3)**).
 
-![Hard threshold](./media/hardthreshold1.png)
+![Hard threshold](./media/AI-metric-advisor-final.png)
