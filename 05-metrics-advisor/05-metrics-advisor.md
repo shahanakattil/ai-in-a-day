@@ -59,15 +59,23 @@ You should follow all of the steps provided in this section _before_ taking part
 
     ![preparemetricfeeddata notebook](media/notebook_05.png)
 
-> **Note**: Please ensure to click on **Authenticate** button if a pop-up notification comes like below.
+7. You have to **Choose an available Jupyter kernal**, select **Python 3.8 - AzureML** from the drop-down and then select **Start Jupyter kernal**.
 
-   ![authenticate pop-up](media/authenticate.png)
+    ![select kernal for preparemetricfeeddata notebook](media/AI-notebook-kernal-update.png)
+    
+>**Note**: Please ensure to click on **Authenticate** button if a pop-up notification comes like below.
+
+   ![authenticate pop-up](media/AI-notebook-authenticate.png)
+   
+8. Make sure **Python 3.8 -AzureML** kernal selected as shown in the below screenshot.
+
+   ![Kernal selected](media/AI-notebook-python3.8-kernal.png) 
 
 > **Note**: Make sure you replace the `<BLOBSTORAGE_ACCOUNT_NAME>` and `<BLOBSTORAGE_ACCOUNT_KEY>` values in the variable initialization cell with the values you have noted down at the end of the previous task.
 
    The notebook will guide you through a list of steps needed to prepare a time series-based dataset containing JSON files to be fed into the Metrics Advisor workspace. Each JSON file will contain daily data representing the count of COVID positive cases by age group.
 
-7. Execute the notebook cell by cell (using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
+9. Execute the notebook cell by cell (using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
 
 ## Hands-on Lab
 
@@ -108,7 +116,7 @@ The high-level steps covered in the lab are:
 
 2. In the search bar type **Metrics Advisor** and then select **Create**
 
-   ![](media/metrics_advisor.png)  
+   ![](media/AI-metric-advisor-create.png)  
 
 3. Under Project details on Create Metrics Advisor page provide the following details and click **Review + Create**
 
@@ -119,7 +127,7 @@ The high-level steps covered in the lab are:
     * Pricing tier: **S0**
     * Make sure to mark checkbox ☑ for **I confirm I have read and understood the notice below**.
    
-     ![](media/created_ma.png)
+     ![](media/AI-metric-advisor-latest.png)
 
 4. Once the validation is passed click on **Create**. The deployment could take up to **60 minutes** to complete, although it normally finishes in less than **10 minutes**. Please wait untill the deployment gets succeeded and then, you can proceed with next task.
 
@@ -199,8 +207,8 @@ When detection is applied, you can select one of the metrics listed in data feed
     ![Go to the count metric details page](./media/browsemetricdata1.png)
 
 3.  To modify the inspected time window, change the start and end time of the interval from the calendar above the graphic representations.
-
-    ![Change monitoring time window](./media/changetimewindow1.png)
+    
+    ![Change monitoring time window](./media/AI-metric-advisor-count-overview.png)
 
 4.  Make sure you see the ingestion process completed on recent historical data **(1)** as illustrated in the picture bellow. When all data is ingested, in the left configuration section, under the **Metric-level configuration** **(2)** change the default metric-level configuration to use Smart detection and set the sensitivity level to 81 and use this configuration:
     - Value **Out of boundary** is anomaly 
@@ -216,8 +224,13 @@ When detection is applied, you can select one of the metrics listed in data feed
 >
 > - Spend a few minutes to change some parameters inside the **Metric-level configuration** section and observe the change of reported anomalies (red points) on the series data representation.
 
-5. In the metrics browser page, select the **Incidents** tab and filter the list to see the incidents related to number of cases that required hospitalization hosp_ym = `Yes`. Select the anomaly reported for SUM of hospitalized cases.
-    ![Filter incidents by hospitalization](./media/hosp_yes1.png)
+5. In the metrics browser page, select the **Incidents** tab and click on the **Dimension filter**(1) to see the incidents related to number of cases that required hospitalization **hosp_ym = Yes**(2) and **Confirm**(3). 
+
+    ![Filter incidents by hospitalization steps](./media/AI-metric-advisor-filter.png)
+
+6. From the list select the anomaly reported for SUM of hospitalized cases.
+    
+    ![Filter incidents by hospitalization](./media/AI-metric-advisor-sum-yes.png)
 
 ## Task 6 - Perform root cause analysis
 
@@ -243,4 +256,4 @@ To do this, go back to the metric detection configuration screen and try a new c
 
 We should have marked as anomalies the points in time where number of cases is bellow or above a fixed threshold for 10 continous points in time.(Notice the yellow dots **(2)** before the reported anomalies and how the threashold is delimited by the red horizontal lines **(3)**).
 
-![Hard threshold](./media/hardthreshold1.png)
+![Hard threshold](./media/AI-metric-advisor-final.png)
