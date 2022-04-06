@@ -61,10 +61,9 @@ The high-level steps covered in the lab are:
 
     ![The abstract data source is ready to be updated.](media/edit-abstracts-datasource.png)
 
-8. Open a new PowerShell prompt.  Enter the following code, which will create an Azure Search data source, index, and indexer.
+8. Open a new PowerShell prompt.  Navigate to following directory `cd C:\Temp\AzureSearch\`. Enter the following code, which will create an Azure Search data source, index, and indexer.
 
     ```powershell
-    cd C:\Temp\AzureSearch\
     function Create-AzureSearchIndex {
         param
         (
