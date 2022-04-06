@@ -63,7 +63,7 @@ You should follow all of the steps provided in this section _before_ taking part
 
     ![select kernal for preparemetricfeeddata notebook](media/AI-notebook-kernal-update.png)
     
-> **Note**: Please ensure to click on **Authenticate** button if a pop-up notification comes like below.
+>**Note**: Please ensure to click on **Authenticate** button if a pop-up notification comes like below.
 
    ![authenticate pop-up](media/AI-notebook-authenticate.png)
    
