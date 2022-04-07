@@ -98,7 +98,7 @@ The high-level steps covered in the lab are:
 
 2. Ensure the notebook is connected to the running cluster.
 
-![Ensure notebook is connected to running cluster](media/attach-cluster-to-notebook.png)
+![Ensure notebook is connected to running cluster](media/AI-databricks-02.png)
 
 ![Ensure notebook is connected to running cluster](./media/notebook2.png)
 
