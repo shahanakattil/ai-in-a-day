@@ -256,4 +256,4 @@ To do this, go back to the metric detection configuration screen and try a new c
 
 We should have marked as anomalies the points in time where number of cases is bellow or above a fixed threshold for 10 continous points in time.(Notice the yellow dots **(2)** before the reported anomalies and how the threashold is delimited by the red horizontal lines **(3)**).
 
-![Hard threshold](./media/AI-metric-advisor-final.png)
+![Hard threshold](./media/AI-metric-advisor-hardthreshold.png)
