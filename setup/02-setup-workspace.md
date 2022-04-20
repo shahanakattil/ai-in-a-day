@@ -286,6 +286,17 @@ In the following steps you will create and run a new build pipeline based on the
 8. With the created pipeline, select **Rename/move** from the right menu as illustrated bellow:
    
     ![Rename the build pipeline](../02-aml-mlops/media/019-renamepipeline.png)
+    
+     >**IMPORTANT**!!!
+    >
+    >Due to changes in Azure Pipelines policies for allocating Microsoft-hosted agents, you need and the `pool` setting in the YAML file as follows:
+    >```yaml
+    >pool: <name-of-agent-pool>
+    >```
+    >where `<name-of-agent-pool>` is the name you used previously to create your self-hosted agent pool.
+    >You should apply this change to all subsequent cases where the `pool` setting is implied.
+
+    ![pool_name](media/pool_name.png)
 
 9. Change the pipeline name to: `Model-Deploy-CD` and select **Save**.
    
