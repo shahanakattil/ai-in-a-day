@@ -74,32 +74,6 @@ The high-level steps covered in the lab are:
 
     >**Note**: If you launched Azure Machine Learning Studio right after your lab environment was provisioned, you might find the compute instance in a provisioning state. In this case, wait a few minutes until it changes its status to `Running`.
 
-1. From the `Application` section associated with the compute instance, select `Jupyter` **(1)**. 
-
-    ![](./media/clickjupiter01.png)
-
-1. If you see **IMPORTANT NOTE: Always use trusted code** then check on **Yes, I Understand** and then click **Continue**.
-
-    ![](./media/trustcode01.png)
-    
-     > **WARNING:** Look for nested folders under the **Users/odl_user_<inject key="DeploymentID" enableCopy="false"/>** folder. If the user folder has a file with the extension `w2v`, then ignore below step.
-
-1. In the Jupyter notebook environment navigate to the user folder, download the following items to your **LabVM**:
-
-    > **Note**: Right Click and copy the link. Paste the link in new browser tab and download it. Follow the same step to download all 3 files.
-
-    [1. Data Preparation.ipynb](https://aiinadayaiw.blob.core.windows.net/aiinaday/1.%20Data%20Preparation.ipynb)
-
-    [3. Document Classification.ipynb](https://aiinadayaiw.blob.core.windows.net/aiinaday/3.%20Document%20Classification.ipynb)
-
-    [covid_embeddings_model_500_docs.w2v](https://aiinadayaiw.blob.core.windows.net/aiinaday/covid_embeddings_model_500_docs.w2v)  
-    
-    [aiw-ai-kernal.yml](https://aiinadayaiw.blob.core.windows.net/aiinaday/aiw-ai-kernal.yml)
-
-    Upload each file by selecting the `Upload` **(1)** button from the top right corner of the screen and then selecting the blue `Upload` **(2)** button to confirm.
-
-    ![Upload file to Jupyter notebook environment](./media/upload-file1.png)
-    
 1. In the Azure Machine Learning Studio under **Compute** (1), open the **Terminal** (2) environment.
     
    ![](./media/mlterminal.png)
@@ -109,7 +83,15 @@ The high-level steps covered in the lab are:
    ![](./media/setkernal1.png)
    
    ![](./media/setkernal2.png)
- 
+
+1. From the `Application` section associated with the compute instance, select `Jupyter` **(1)**. 
+
+    ![](./media/clickjupiter01.png)
+
+1. If you see **IMPORTANT NOTE: Always use trusted code** then check on **Yes, I Understand** and then click **Continue**.
+
+    ![](./media/trustcode01.png)
+    
 ## Task 4 - Prepare data for the Machine Learning process
 
 1. In the Azure Machine Learning Studio, open the Jupyter notebook environment. You might get a pop-up of important note, check the box and click on continue.
