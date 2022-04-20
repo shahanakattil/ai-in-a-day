@@ -65,7 +65,7 @@ The high-level steps covered in the lab are:
     
 1. If you are prompted to sign-in again, use the same lab credentials you used to login to Azure portal. Close the welcome **pop-up** if any with cross icon.  
     
-    ![Launch Machine Learning Studio](./media/LaunchStudio.png)
+    ![Launch Machine Learning Studio](./media/launch_studio.png)
 
 1. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is running **(2)**.
    * Compute instance name: notebook<inject key="DeploymentID" enableCopy="false"/>
