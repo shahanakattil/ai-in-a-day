@@ -110,12 +110,15 @@ The high-level steps covered in the lab are:
    
    ![](./media/setkernal2.png)
  
-
 ## Task 4 - Prepare data for the Machine Learning process
 
 1. In the Azure Machine Learning Studio, open the Jupyter notebook environment. You might get a pop-up of important note, check the box and click on continue.
 
-![Select Note Book](./media/ClickJupyterDataPrepNoteBook.png)
+   ![Select Note Book](./media/ClickJupyterDataPrepNoteBook.png)
+   
+2. On Jupiter page, select **Kernal** *(1)*, then **Change kernal** *(2)* and make sure **Python (aiw-ai-kernal)** *(3)* is selected.
+
+   ![](./media/selectaikernal.png)
 
 3.  Open `1. Data Preparation.ipynb` notebook and execute the cells one by one (Click on 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or ) and observe the results of each cell execution.
 
