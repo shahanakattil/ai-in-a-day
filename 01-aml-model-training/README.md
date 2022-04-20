@@ -90,9 +90,9 @@ The high-level steps covered in the lab are:
 
     [1. Data Preparation.ipynb](https://aiinadayaiw.blob.core.windows.net/aiinaday/1.%20Data%20Preparation.ipynb)
 
-    [3. Document Classification.ipynb](https://experienceazure.blob.core.windows.net/templates/ai-iad/ai-iad-combined/notebooks/3.%20Document%20Classification.ipynb)
+    [3. Document Classification.ipynb](https://aiinadayaiw.blob.core.windows.net/aiinaday/3.%20Document%20Classification.ipynb)
 
-    [covid_embeddings_model_500_docs.w2v](https://solliancepublicdata.blob.core.windows.net/ai-in-a-day/lab-01/covid_embeddings_model_500_docs.w2v)  
+    [covid_embeddings_model_500_docs.w2v](https://aiinadayaiw.blob.core.windows.net/aiinaday/covid_embeddings_model_500_docs.w2v)  
     
     [aiw-ai-kernal.yml](https://aiinadayaiw.blob.core.windows.net/aiinaday/aiw-ai-kernal.yml)
 
