@@ -99,6 +99,17 @@ The high-level steps covered in the lab are:
     Upload each file by selecting the `Upload` **(1)** button from the top right corner of the screen and then selecting the blue `Upload` **(2)** button to confirm.
 
     ![Upload file to Jupyter notebook environment](./media/upload-file1.png)
+    
+1. In the Azure Machine Learning Studio under **Compute** (1), open the **Terminal** (2) environment.
+    
+   ![](./media/mlterminal.png)
+   
+1. Run following commands and make sure all commands will execute successfully.
+
+   ![](./media/setkernal1.png)
+   
+   ![](./media/setkernal2.png)
+ 
 
 ## Task 4 - Prepare data for the Machine Learning process
 
