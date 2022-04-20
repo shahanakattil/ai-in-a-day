@@ -70,7 +70,7 @@ The high-level steps covered in the lab are:
 1. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is running **(2)**.
    * Compute instance name: notebook<inject key="DeploymentID" enableCopy="false"/>
 
-    ![Verify Azure Machine Learning compute instance is running](./media/MLCompute.png)
+    ![Verify Azure Machine Learning compute instance is running](./media/compute_status.png)
 
     >**Note**: If you launched Azure Machine Learning Studio right after your lab environment was provisioned, you might find the compute instance in a provisioning state. In this case, wait a few minutes until it changes its status to `Running`.
 
