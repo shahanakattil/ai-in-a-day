@@ -80,6 +80,10 @@ The high-level steps covered in the lab are:
    
 1. Run following commands and make sure all commands will execute successfully.
 
+        conda env create -f aiw-ai-kernal.yml
+        conda activate aiw-ai-kernal
+        ipython kernel install --user --name aiw-ai-kernal --display-name "Python (aiw-ai-kernal)"
+
    ![](./media/setkernal1.png)
    
    ![](./media/setkernal2.png)
