@@ -102,9 +102,9 @@ The high-level steps covered in the lab are:
 
    ![Select Note Book](./media/ClickJupyterDataPrepNoteBook.png)
    
-2. On Jupiter page, select **Kernal** *(1)*, then **Change kernal** *(2)* and make sure **Python (aiw-ai-kernal)** *(3)* is selected.
+2. On Jupiter page, select **Kernel** *(1)*, then **Change kernel** *(2)* and make sure **Python (aiw-ai-kernel)** *(3)* is selected.
 
-   ![](./media/selectaikernal.png)
+   ![](./media/selectaikernel.png)
 
 3.  Open `1. Data Preparation.ipynb` notebook and execute the cells one by one (Click on 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or ) and observe the results of each cell execution.
 
