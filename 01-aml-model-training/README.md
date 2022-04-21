@@ -79,11 +79,11 @@ The high-level steps covered in the lab are:
    ![](./media/mlterminal.png)
    
 1. Run following commands and make sure all commands will execute successfully.
-
-        conda env create -f aiw-ai-kernel.yml
-        conda activate aiw-ai-kernel
-        ipython kernel install --user --name aiw-ai-kernel --display-name "Python (aiw-ai-kernel)"
-
+    ```  
+    conda env create -f aiw-ai-kernel.yml
+    conda activate aiw-ai-kernel
+    ipython kernel install --user --name aiw-ai-kernel --display-name "Python (aiw-ai-kernel)"
+    ```
    ![](./media/setkernel1.png)
    
    ![](./media/setkernel2.png)
