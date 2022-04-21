@@ -84,9 +84,9 @@ The high-level steps covered in the lab are:
         conda activate aiw-ai-kernel
         ipython kernel install --user --name aiw-ai-kernel --display-name "Python (aiw-ai-kernel)"
 
-   ![](./media/setkernal1.png)
+   ![](./media/setkernel1.png)
    
-   ![](./media/setkernal2.png)
+   ![](./media/setkernel2.png)
 
 1. From the `Application` section associated with the compute instance, select `Jupyter` **(1)**. 
 
