@@ -14,7 +14,7 @@
 
 4. Navigate to the VisualStudio Marketplace: https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml and select **Get it free**.
 
-5. Select **Azure DevOps organization** from the dropdown list and then select **Install**.
+5. Select **Azure DevOps organization** from the dropdown list and then select **Install** and then click on the **Go to Organization**
 
     ![The Microsoft DevLabs Machine Learning plugin for Azure DevOps page is shown with the Azure DevOps organization selected and the Install button highlighted.](media/bhol-04.png 'Install Plug-In')
 
