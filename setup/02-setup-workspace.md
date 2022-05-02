@@ -8,7 +8,7 @@
 
 2. To sign-in, use the Azure credentials provided by the lab environment.
 
-3. First time you sign-in to your Azure DevOps account, you are asked to create a new project in the pre-created organization you have available, named `odluserXXXXXX`. Provide the project name in the following form `odluserXXXXXX-project` and select **+ Create project**
+3. First time you sign-in to your Azure DevOps account, you are asked to create a new project in the pre-created organization you have available, named `odluserXXXXXX`. Provide the project name in the following form `odluserXXXXXX-project` and select **+ Create project** and ensure to enable the *check in* option  to  grant permissions to all pipelines.
 
     ![Create e new project in Azure DevOps](../02-aml-mlops/media/02-devops-create-project.png)
 
