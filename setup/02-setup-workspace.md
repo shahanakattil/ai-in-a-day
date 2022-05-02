@@ -31,7 +31,7 @@
 
 8. Going back to the Azure Devops portal where you created the Variable group for you DevOps project, enter the **Variable group name**: `devopsforai-aml-vg`.
 
-9. Add the required list of variables, using the **+ Add** link at the bottom of the **Variables** section as illustrated in the image bellow:
+9. Add the required list of variables, using the **+ Add** link at the bottom of the **Variables** section as illustrated in the image bellow and select **Save**.
 
     ![Configure required variable values in the variable group](../02-aml-mlops/media/add_variables.png)
 
@@ -47,14 +47,12 @@
     | WORKSPACE_SVC_CONNECTION | `aml-workspace-connection`  | Azure ML Workspace Service Connection name                 |
     | ACI_DEPLOYMENT_NAME      | `mlops-aci`                 | [Azure Container Instances](https://azure.microsoft.com/en-us/services/container-instances/) name                           |                 |
 
-10. Make sure you select the **Allow access to all pipelines** checkbox in the variable group configuration.
+10. Once the Variables are saved, select the **Pipeline permissions option(1)** and then clcik on the **vertical ellipsis symbol(2)**
 
-    ![Allow access to all pipelined](../02-aml-mlops/media/05-devops-allowacces-vargroup.png)
+11. And in the pipeline permissions **select open access(3)**, and then select **Open access** and confirm open access to the pipelines in the project to use the resource by clicking the **Open access** button.
 
-11. Select **Save** from the top menu to create the variable group.
-
-    ![Save the variable group configuration](../02-aml-mlops/media/06-devops-save-vargroup.png)
-
+    ![Allow access to all pipelined](../02-aml-mlops/media/pipeline_permissions.png)
+    
 ## Task 2 - Configure the Lab VM as an Azure DevOps Build Agent
 
 1. Create a new Personal Access Token (PAT) that will be used by the build agent for authentication/authorization:
