@@ -362,13 +362,13 @@ In the following steps you will create and run a new build pipeline based on the
 
 ## Task 8 - Setup Azure Function to trigger GitHub Actions dispatch
 
-1. Create an Azure Function App with `PowerShell Core` as the runtime stack.
+1. Create an Azure Function App with `PowerShell Core` as the runtime stack and then click **Next: Hosting >**
 
-    ![Create Azure Function App](./media/02-setup-azure-function.png)
+    ![Create Azure Function App](./media/Function_App.png)
 
-2. Use the AML workspace storage account as the storage account. Set the plan type to `Consumption (Serverless)`.
+2. Under Hosting select the stoarage account created for AML like below:
 
-    ![Function App storage account and plan](./media/02-setup-azure-function-2.png)
+    ![Function App storage account and plan](./media/Hosting.png)
 
 3. Leave all other options default and create.
 
