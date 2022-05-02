@@ -69,7 +69,7 @@
 
     ![Create new agent pool](media/02-setup-create-agent-pool.png)
 
-    Make sure the type of the agent pool is `Self-hosted`:
+    Make sure the type of the agent pool is `Self-hosted` and also update the name with odluserXXXXX-project-agent-pool.
 
     ![Select agent pool type](./media/02-setup-agent-pool-type.png)
 
