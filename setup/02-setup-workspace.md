@@ -169,7 +169,7 @@ Create a new service connection to your Azure ML Workspace to enable executing t
 
 ## Task 4 - Import the GitHub repository
 
-1. Go to the [GitHub portal](https://github.com/) and sign in with the Git credentials provided for you.
+1. Open a private Window and go to the [GitHub portal](https://github.com/) and sign in with the Git credentials provided for you.
 2. You will be asked to verify your account, so you should open your user's mailbox on https://outlook.office365.com/ to be able to receive the verification codes for GitHub authentication. Use the same GitHub user account credentials to open Outlook.
 
 3. In GitHub, while authenticated with the lab user, navigate to the following link to create a new git repository from the provided template:
