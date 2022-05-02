@@ -33,7 +33,7 @@
 
 9. Add the required list of variables, using the **+ Add** link at the bottom of the **Variables** section as illustrated in the image bellow:
 
-    ![Configure required variable values in the variable group](../02-aml-mlops/media/04-devops-edit-vargroup.png)
+    ![Configure required variable values in the variable group](../02-aml-mlops/media/add_variables.png)
 
     Use values listed in the table:
 
