@@ -63,7 +63,7 @@ The high-level steps covered in the lab are:
 
     ![Navigate to Azure Machine Learning](./media/FindMLResv2.png)
     
-1. If you are prompted to sign-in again, use the same lab credentials you used to login to Azure portal. Close the welcome **pop-up** if any with cross icon.  
+1. Click on **Launch studio**. If you are prompted to sign-in again, use the same lab credentials you used to login to Azure portal. Close the welcome **pop-up** if any with cross icon.  
     
     ![Launch Machine Learning Studio](./media/launch_studio.png)
 
@@ -98,7 +98,7 @@ The high-level steps covered in the lab are:
     
 ## Task 4 - Prepare data for the Machine Learning process
 
-1. In the Azure Machine Learning Studio, open the Jupyter notebook environment. You might get a pop-up of important note, check the box and click on continue.
+1. In the Azure Machine Learning Studio, open `1. Data Preparation.ipynb` notebook. You might get a pop-up of important note, check the box and click on continue.
 
    ![Select Note Book](./media/ClickJupyterDataPrepNoteBook.png)
    
@@ -106,7 +106,7 @@ The high-level steps covered in the lab are:
 
    ![](./media/selectaikernel.png)
 
-3.  Open `1. Data Preparation.ipynb` notebook and execute the cells one by one (Click on 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or ) and observe the results of each cell execution.
+3. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or ) and observe the results of each cell execution.
 
 ![Run Note Book Cell](./media/RunNoteBookCell1.png)
 ![Note Book Cell Output](./media/NotebookOutput.png)
