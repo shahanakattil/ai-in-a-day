@@ -287,14 +287,14 @@ In the following steps you will create and run a new build pipeline based on the
     
      >**IMPORTANT**!!!
     >
-    >Due to changes in Azure Pipelines policies for allocating Microsoft-hosted agents, you need and the `pool` setting in the YAML file at 25th line as follows:
+    >Due to changes in Azure Pipelines policies for allocating Microsoft-hosted agents, you need and the `pool` setting in the YAML file at 26th line as follows:
     >```yaml
     >pool: <name-of-agent-pool>
     >```
     >where `<name-of-agent-pool>` is the name you used previously to create your self-hosted agent pool.
     
 
-    ![pool_name](media/pool_name.png)
+    ![pool_name](media/model-deploy-CD.png)
 
 9. Change the pipeline name to: `Model-Deploy-CD` and select **Save**.
    
