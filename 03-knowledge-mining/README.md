@@ -43,7 +43,7 @@ The high-level steps covered in the lab are:
 
 2. Select the **AI-in-a-Day** resource group.
 
-3. Select the Search service resource.
+3. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**, select that.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
@@ -115,7 +115,7 @@ The high-level steps covered in the lab are:
 
 2. Select the **AI-in-a-Day** resource group.
 
-3. Select the Search service.
+3. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**, select that.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
@@ -197,7 +197,7 @@ The high-level steps covered in the lab are:
 
 9. Select the **AI-in-a-Day** resource group.
 
-10. Select the Search service.
+10. Select the **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** Search service.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
@@ -229,7 +229,7 @@ The high-level steps covered in the lab are:
 
 2. Select the **AI-in-a-Day** resource group.
 
-3. Select the Storage account.
+3. Select the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** Storage account.
 
     ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
 
@@ -434,7 +434,7 @@ The high-level steps covered in the lab are:
 
 7. Select the **AI-in-a-Day** resource group.
 
-8. Select the Search service.
+8. Select the **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** Search service.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
