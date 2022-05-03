@@ -356,7 +356,7 @@ It's time to publish our bot to an Azure Bot Service. An Azure Bot Service is no
         }
     ```
 
-13. One final value that has to be added in the **Publish Configuration** is the Luis resource name **(1)**. This is the name of the prediction Luis Cognitive Service that we selected in the previous step. Make sure to replace DeploymentID with <inject key="DeploymentID" enableCopy="false"/> in Luis resource name.
+13. One final value that has to be added in the **Publish Configuration** is the Luis resource name **(1)**. This is the name of the prediction Luis Cognitive Service that we selected in the previous step. Make sure to replace DeploymentID with <inject key="DeploymentID" /> in Luis resource name.
 
     ```json
        "luisResource":"aiinaday-luis-pred-DeploymentID",
