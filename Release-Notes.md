@@ -1,5 +1,11 @@
 # Release Notes
 
+### 21 April 2022
+* Major update in the lab
+  * Lab 1 - Azure Machine Learning Model Training
+    - Added steps to create conda environment(aiw-ai-kernel) in Task 3 and updated instruction in Task 4 to use the created Kerna; version to run the 1. Data Preparation.ipynb notebook
+-----------------------------------------------------------------
+
 ### 5 April 2022
 * Major update in the lab
   * Lab 1 - Azure Machine Learning Model Training
@@ -7,6 +13,7 @@
   * Lab 4 - Data monitoring and anomaly detection using Metrics Advisor in Azure Cognitive Services
     - Updated the Dataset to use minimum data required for the Metric Advisor Datafeed
     - Updated the file **preparemetricsdatafeed.ipynb** to run in Kernal Version 3.8 - AML
+-----------------------------------------------------------------
 
 ### 21 March 2022
 * Minor update in the Lab Guide.
