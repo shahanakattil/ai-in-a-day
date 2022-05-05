@@ -53,9 +53,8 @@
 
     ![Allow access to all pipelined](../02-aml-mlops/media/pipeline_permissions.png)
     
-## Task 2 - Configure the Lab VM as an Azure DevOps Build Agent
 
-1. Create a new Personal Access Token (PAT) that will be used by the build agent for authentication/authorization:
+12. Create a new Personal Access Token (PAT) that will be used by the build agent for authentication/authorization:
 
     ![Create new Personal Access Token](./media/02-setup-create-pat.png)
 
@@ -65,7 +64,7 @@
 
     Once the PAT is created, save its value for future use.
 
-2. Create a new agent pool in the project settings:
+13. Create a new agent pool in the project settings:
 
     ![Create new agent pool](media/02-setup-create-agent-pool.png)
 
@@ -73,7 +72,7 @@
 
     ![Select agent pool type](./media/02-setup-agent-pool-type.png)
 
-## Task 2 (Linux variant) - Configure a Linux VM as an Azure DevOps Build Agent
+## Task 2 - Configure a Linux VM as an Azure DevOps Build Agent
 
 1. From within Azure Portal, navigate to **Virtual machines** and then select **+ Create, + Virtual machine**.
 
