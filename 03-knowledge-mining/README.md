@@ -97,7 +97,7 @@ The high-level steps covered in the lab are:
 
 9. In the same PowerShell prompt, call this function for the `abstracts` index and for the `covid19temp` index.  Then, fill in your Azure Search account name and Azure Search API key.
     - Azure Search Account Name: **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**
-    - Azure Search API key: You saved Primary admin key in text editor in step 7, use that
+    - Azure Search API key: You saved Primary admin key in text editor in step 5, use that
 
     ```powershell
     Create-AzureSearchIndex "C:/Temp/AzureSearch/abstracts_datasource.schema" "C:/Temp/AzureSearch/abstracts.schema" "C:/Temp/AzureSearch/abstracts_indexer.schema" "AZURE SEARCH ACCOUNT NAME" "API KEY"
