@@ -196,9 +196,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 ## Task 6 - Explore AutoML results
 
-1. In the Azure Machine Learning Studio, navigate to the **Experiments (1)** section and locate the **COVID19_Classification** experiment **(2)**. Select the experiment name link.
+1. In the Azure Machine Learning Studio, navigate to the **Jobs (1)** section and locate the **COVID19_Classification** experiment **(2)**. Select the experiment name link.
 
-    ![Locate the completed experiment ](media/locate-experiment.png)
+    ![Locate the completed experiment ](media/ss1.png)
 
 2. You will navigate to the experiment details page where you should see the list of experiment runs. Locate the first run **(1)** listed here, the one that has the status **Completed**. Name of the run can be diffent in your environment and may not match with below screesnshot.
 
