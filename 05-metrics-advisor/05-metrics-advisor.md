@@ -38,7 +38,7 @@ You should follow all of the steps provided in this section _before_ taking part
 
     ![Launch Studio](media/select-notebook-1.png)
 
-3. In the Notebooks environment, check if `preparemetricsfeeddata.ipynb` is there in **Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** folder. If it is not there dowload and import using next steps.
+3. In the Notebooks environment, check if `preparemetricsfeeddata.ipynb` is there in **Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** folder. If it is not there download and import using next steps.
 
     ![Launch Studio](media/lab-user-1.png)
 

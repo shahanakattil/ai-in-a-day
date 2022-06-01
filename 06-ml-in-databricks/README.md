@@ -59,7 +59,7 @@ The high-level steps covered in the lab are:
   
 6. Select `Start` to start the Azure Databricks cluster. It will take 1-2 minutes to start.
 
-   ![Start Azure Databricks Cluster](./media/start-databricks-cluster.png)
+   ![Start Azure Databricks Cluster](./media/ss3.png)
 
 7. While the cluster is starting, select the `Workspace` section on the left side menu, select the `Users` folder, then select the folder corresponding to the user name from your lab credentials, and then select the `AI-in-a-day-Lab-6` folder.
 
