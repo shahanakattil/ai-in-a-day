@@ -294,13 +294,13 @@ We should have marked as anomalies the points in time where number of cases is b
 
     The auto-tuning feature is only applied on the 'Smart detection' method.
 
-### Prerequisite for triggering auto-tuning
+### Subtask 1 - Prerequisite for triggering auto-tuning
 
 1. After the metrics are onboarded to Metrics Advisor, the system will try to perform statistics on the metrics to categorize  **anomaly pattern**  types and  **series value**  distribution. By providing this functionality, you can further fine tune the configuration based on their specific preferences. At the beginning, it will show a status of  **Initializing**.
 
     [![Screenshot of Metrics Advisor U I with Initializing auto-tuning text visible.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-initializing.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-initializing.png#lightbox)
 
-### Choose to enable auto-tuning on anomaly pattern and series value
+### Subtask 2 - Choose to enable auto-tuning on anomaly pattern and series value
 
 The feature enables you to tune detection configuration from two perspectives  **anomaly pattern**  and  **series value**. Based on your specific use case, you can choose which one to enabled or enable both.
 
@@ -311,7 +311,7 @@ The feature enables you to tune detection configuration from two perspectives  *
 
 [![Screenshot with a toggle button for apply pattern preference and apply value preference selected.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-preference.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-preference.png#lightbox)
 
-### Tune the configuration for selected anomaly patterns
+### Subtask 3 - Tune the configuration for selected anomaly patterns
 
 If specific anomaly patterns are chosen, the next step is to fine tune the configuration for each. There's a global  **sensitivity**  that is applied for all series. For each anomaly pattern, you can tune the  **adjustment**, which is based on the global  **sensitivity**.
 
@@ -319,7 +319,7 @@ You must tune each anomaly pattern that has been chosen individually.
 
 [![Screenshot of auto-tuning pattern U I within Metrics Advisor.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-pattern.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-pattern.png#lightbox)
 
-### Tune the configuration for each series value group
+### Subtask 4 - Tune the configuration for each series value group
 
 After the system generates statistics on all time series within the metric, several series value groups are created automatically. As described above, you can fine tune the  **adjustment**  for each series value group according to your specific business needs.
 
@@ -327,7 +327,7 @@ There will be a default adjustment configured to get the best detection results,
 
 [![Screenshot of pattern based sensitivity U I with adjustment for anomaly patterns, spike -30 highlighted on a slider with a range from -100 to 100.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-value.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-value.png#lightbox)
 
-### Set up alert rules
+### Subtask 5 - Set up alert rules
 
 Even once the detection configuration on capturing valid anomalies is tuned, it's still important to input  **alert rules**  to make sure the final alert rules can meet eventual business needs. There are a number of rules that can be set, like  **filter rules**  or  **snooze continuous alert rules**.
 
@@ -335,7 +335,7 @@ Even once the detection configuration on capturing valid anomalies is tuned, it'
 
 After configuring all the settings described in the section above, the system will orchestrate them together and automatically detect anomalies based on your inputted preferences. The goal is to get the best configuration that works for each metric, which can be achieved much easier through use of the new  **auto-tuning**  capability.
 
-### Tune the configuration for all series in current metric
+### Subtask 6 - Tune the configuration for all series in current metric
 
 This configuration will be applied to all the series in this metric, except for ones with a separate configuration. A metric level configuration is applied by default when data is onboarded, and is shown on the left panel. Users can directly edit metric level config on metric page.
 
@@ -343,7 +343,7 @@ There are additional parameters like  **Direction**, and  **Valid anomaly**  tha
 
 [![Configuration combination](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/configuration-combination.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/configuration-combination.png#lightbox)
 
-### [](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/configure-metrics#tune-the-configuration-for-a-specific-series-or-group)Tune the configuration for a specific series or group
+### Subtask 7 - Tune the configuration for a specific series or group
 
 Select  **Advanced configuration**  below the metric level configuration options to see the group level configuration.You can add a configuration for an individual series, or group of series by clicking the  **+**  icon in this window. The parameters are similar to the metric-level configuration parameters, but you may need to specify at least one dimension value for a group-level configuration to identify a group of series. And specify all dimension values for series-level configuration to identify a specific series.
 
