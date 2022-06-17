@@ -273,7 +273,7 @@ We should have marked as anomalies the points in time where number of cases is b
 
 4. You can also select time ranges, and change the layout of the page (1)
 
-5. You can select the  **Incidents**  tab to view anomalies.
+5. You can select the  **Incidents**  tab to view anomalies (2).
 
     ![Metrics drill down](./media/layout-browse.png)
 
