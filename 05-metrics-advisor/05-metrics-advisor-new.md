@@ -265,7 +265,7 @@ We should have marked as anomalies the points in time where number of cases is b
 
 1. To browse the metrics for a specific data feed, go to the  **Data feeds**  page and select **covid-ages** from the feeds. This will display a list of metrics associated with it.
 
-    [![Select a metric](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/select-metric.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/select-metric.png#lightbox)
+    ![](./media/metrics-browse.png)
 
 2. Select **count**  to see its details. In this view.
 
@@ -273,188 +273,207 @@ We should have marked as anomalies the points in time where number of cases is b
 
 4. You can also select time ranges, and change the layout of the page (1)
 
-5. You can select the  **Incidents**  tab to view anomalies (2).
-
     ![Metrics drill down](./media/layout-browse.png)
+
+5. You can select the  **Incidents**  tab to view anomalies (2).
 
 ## Task 9 - Tune the detection configuration
 
-1. A metric can apply one or more detection configurations. There's a default configuration for each metric, which you can edit or add to, according to your monitoring needs.
+A metric can apply one or more detection configurations. There's a default configuration for each metric, which you can edit or add to, according to your monitoring needs. The new auto-tuning feature makes this distinction between anomaly types possible. As of now, there are five supported anomaly patterns:
 
-1. The new auto-tuning feature makes this distinction between anomaly types possible. As of now, there are five supported anomaly patterns:
-    
-    -   Spike
-    -   Dip
-    -   Increase
-    -   Decrease
-    -   Steady
+-   Spike
+-   Dip
+-   Increase
+-   Decrease
+-   Steady
 
-
-- Note
-
-    The auto-tuning feature is only applied on the 'Smart detection' method.
-
-### Subtask 1 - Prerequisite for triggering auto-tuning
+>**Note**: The auto-tuning feature is only applied on the 'Smart detection' method.
 
 1. After the metrics are onboarded to Metrics Advisor, the system will try to perform statistics on the metrics to categorize  **anomaly pattern**  types and  **series value**  distribution. By providing this functionality, you can further fine tune the configuration based on their specific preferences. At the beginning, it will show a status of  **Initializing**.
 
     [![Screenshot of Metrics Advisor U I with Initializing auto-tuning text visible.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-initializing.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-initializing.png#lightbox)
 
-### Subtask 2 - Choose to enable auto-tuning on anomaly pattern and series value
 
-The feature enables you to tune detection configuration from two perspectives  **anomaly pattern**  and  **series value**. Based on your specific use case, you can choose which one to enabled or enable both.
+### Subtask 1 - Choose to enable auto-tuning on anomaly pattern and series value
 
--   For the  **anomaly pattern**  option, the system will list out different anomaly patterns that were observed with the metric. You can choose which ones you're interested in and select them, the unselected patterns will have their sensitivity  **reduced**  by default.
-    
--   For the  **series value**  option, your selection will depend on your specific use case. You'll have to decide if you want to use a higher sensitivity for series with higher values, and decrease sensitivity on low value ones, or vice versa. Then check the checkbox.
-   
+1. Once the initializing is completed select the **Auto Tuning** option as shown below.
 
-[![Screenshot with a toggle button for apply pattern preference and apply value preference selected.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-preference.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-preference.png#lightbox)
+    ![](./media/auto-tuning-select.png)
 
-### Subtask 3 - Tune the configuration for selected anomaly patterns
+1. You will be greeted with **Auto tuning preference** page.
 
-If specific anomaly patterns are chosen, the next step is to fine tune the configuration for each. There's a global  **sensitivity**  that is applied for all series. For each anomaly pattern, you can tune the  **adjustment**, which is based on the global  **sensitivity**.
+1. The **Auto tuning preference** feature enables you to tune detection configuration from two perspectives  **anomaly pattern**  and  **series value**. Based on your specific use case, in our case we will choose the **Anomaly pattern.**
 
-You must tune each anomaly pattern that has been chosen individually.
+1. For the  **anomaly pattern**  option, the system will list out different anomaly patterns that were observed with the metric. You can choose which ones you're interested in and select them, the unselected patterns will have their sensitivity  **reduced**  by default.
 
-[![Screenshot of auto-tuning pattern U I within Metrics Advisor.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-pattern.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-pattern.png#lightbox)
+    ![](./media/auto-tuning-select-1.png)
 
-### Subtask 4 - Tune the configuration for each series value group
+1. Select the **Apply Pattern preference** option (1), followed by selecting **Spike** (2) as the anomaly pattern and then select **Next** (3) to go the next section.
 
-After the system generates statistics on all time series within the metric, several series value groups are created automatically. As described above, you can fine tune the  **adjustment**  for each series value group according to your specific business needs.
+### Subtask 2 - Tune the configuration for selected anomaly patterns
 
-There will be a default adjustment configured to get the best detection results, but it can be further tuned.
+The next step is to fine tune the configuration for each. There's a global  **sensitivity**  that is applied for all series. For each anomaly pattern, you can tune the  **adjustment**, which is based on the global  **sensitivity**.
 
-[![Screenshot of pattern based sensitivity U I with adjustment for anomaly patterns, spike -30 highlighted on a slider with a range from -100 to 100.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-value.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-value.png#lightbox)
+1. You must tune each anomaly pattern that has been chosen individually. In our case the **Spike** (1) anomaly pattern will be visible. Under the **Adjustment for anomaly patterns** adjust the slider to change the **sensitivity**. Now select **Next** (2) to set up alerts.
 
-### Subtask 5 - Set up alert rules
+    ![](./media/pattern-based-sensitivity.png)
 
-Even once the detection configuration on capturing valid anomalies is tuned, it's still important to input  **alert rules**  to make sure the final alert rules can meet eventual business needs. There are a number of rules that can be set, like  **filter rules**  or  **snooze continuous alert rules**.
 
-[![Screenshot of setup alert rules UI within Metrics Advisor product.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-alert.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-alert.png#lightbox)
+### Subtask 3 - Set up alert rules
+
+Once the detection configuration on capturing valid anomalies is tuned, it's still important to input  **alert rules**  to make sure the final alert rules can meet eventual business needs. There are a number of rules that can be set, like  **filter rules**  or  **snooze continuous alert rules**.
+
+1. On the **Setup alert Rules** page under the **Configuration name** enter **Test-Alert** (1) and leave the **Hooks** unselected. Expand the **Filter anomaly based on value** section (2) and the **Advanced Settings** (3).
+
+    ![](./media/setup-alert-rules.png)
+
+2. On the **Filter anamoly based on value** select the **This Metric** setting and from the dropdown select **Out of range** (2). Leave the **Snooze successive anomalies** unchanged (3). Select the **Anomalies in all series** (4) under the **Alert Scope** section. Now select **Save and close** (5).
+
+    ![](./media/setup-alert-rules-1.png)
+
+3. You can see the newly configured **Test-Alert** under the **metric-level configuration** pane on the left.
+
+
+    ![](./media/setup-alert-rules-2.png)
+
 
 After configuring all the settings described in the section above, the system will orchestrate them together and automatically detect anomalies based on your inputted preferences. The goal is to get the best configuration that works for each metric, which can be achieved much easier through use of the new  **auto-tuning**  capability.
 
-### Subtask 6 - Tune the configuration for all series in current metric
 
-This configuration will be applied to all the series in this metric, except for ones with a separate configuration. A metric level configuration is applied by default when data is onboarded, and is shown on the left panel. Users can directly edit metric level config on metric page.
+## Task 10 - Tune the configuration for a specific series or group
 
-There are additional parameters like  **Direction**, and  **Valid anomaly**  that can be used to further tune the configuration. You can combine different detection methods as well.
+1. Select  **Advanced configuration**  below the metric level configuration options to see the group level configuration.
 
-[![Configuration combination](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/configuration-combination.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/configuration-combination.png#lightbox)
+    ![](./media/advanced-config-1.png)
 
-### Subtask 7 - Tune the configuration for a specific series or group
 
-Select  **Advanced configuration**  below the metric level configuration options to see the group level configuration.You can add a configuration for an individual series, or group of series by clicking the  **+**  icon in this window. The parameters are similar to the metric-level configuration parameters, but you may need to specify at least one dimension value for a group-level configuration to identify a group of series. And specify all dimension values for series-level configuration to identify a specific series.
+2. You can add a configuration for an individual series, or group of series by clicking the  **+**  icon in this window. 
+    
+    ![](./media/detect-config.png)
 
-This configuration will be applied to the group of series or specific series instead of the metric level configuration. After setting the conditions for this group, save it.
+3. Select the **'+'** for **Configuration for series group**.
+Specify at least one **dimension value** (1) for a group-level configuration to identify a group of series. Leave the conditions as default and select **Save**.
 
-[![Advanced configuration](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/advanced-configuration.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/advanced-configuration.png#lightbox)
+    ![](./media/series-group-config-01.png)
 
-### Anomaly detection methods
 
-Metrics Advisor offers multiple anomaly detection methods:  **Hard threshold, Smart detection, Change threshold**. You can use one or combine them using logical operators by clicking the  **'+'**  button.
+4. Under the **Metric-level configuration** pane, notice the **Series group configs** value has changed to **1**.
 
-**Hard threshold**
+    ![](./media/series-group-config-2.png)
 
-Hard threshold is a basic method for anomaly detection. You can set an upper and/or lower bound to determine the expected value range. Any points fall out of the boundary will be identified as an anomaly.
 
-**Smart detection**
+5. Select **Advanced configuration** once again to add **specific series** level configuration.
 
-Smart detection is powered by machine learning that learns patterns from historical data, and uses them for future detection. When using this method, the  **Sensitivity**  is the most important parameter for tuning the detection results. You can drag it to a smaller or larger value to affect the visualization on the right side of the page. Choose one that fits your data and save it.
+    ![](./media/advanced-config-1.png)
 
-In smart detection mode, the sensitivity and boundary version parameters are used to fine-tune the anomaly detection result.
+6. Select the **'+'** for **Configuration for specific series**. Specify all **dimension values** (1) and (2) for series-level configuration to identify a specific series. Leave the **Conditions** as default and select **Save**.
 
-Sensitivity can affect the width of the expected value range of each point. When increased, the expected value range will be tighter, and more anomalies will be reported:
+    ![](./media/specific-config-01.png)
 
-![Smart detection with high sensitivity](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/smart-detection-high-sensitivity.png)
+7. Under the **Metric-level configuration** pane, notice the **Specific series configs** value has changed to **1**.
 
-When the sensitivity is turned down, the expected value range will be wider, and fewer anomalies will be reported:
+    ![](./media/series-specific-config-2.png)
 
-![Smart detection with low sensitivity](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/smart-detection-low-sensitivity.png)
+8. This configuration will be applied to the group of series or specific series instead of the metric level configuration. After setting the conditions for this group, **save**.
 
-**Change threshold**
+    ![](./media/save-config-01.png)
+
+
+## Task 11 - Anomaly detection methods
+
+Metrics Advisor offers multiple anomaly detection methods:  **Hard threshold, Smart detection, Change threshold**.
+
+### Subtask 1 : Smart Detection
+
+Smart detection is powered by machine learning that learns patterns from historical data, and uses them for future detection. When using this method, the  **Sensitivity**  is the most important parameter for tuning the detection results.
+
+1. Under the **Metric-level configuration** select the **Smart detection** config. Drag the **Sensitivity** slider to a smaller value and notice the visualization change on the right side. 
+
+    ![](./media/smart-lower.png)
+
+2. Sensitivity can affect the width of the expected value range of each point. Now drag the **Sensitivity** slider to a larger value and notice the expected value range will be tighter and more anomolies will be reported.
+
+    ![](./media/smart-larger.png)
+
+### Subtask 2 : Change threshold
 
 Change threshold is normally used when metric data generally stays around a certain range. The threshold is set according to  **Change percentage**. The  **Change threshold**  mode is able to detect anomalies in the scenarios:
 
 -   Your data is normally stable and smooth. You want to be notified when there are fluctuations.
 -   Your data is normally unstable and fluctuates a lot. You want to be notified when it becomes too stable or flat.
 
-Use the following steps to use this mode:
 
-1.  Select  **Change threshold**  as your anomaly detection method when you set the anomaly detection configurations for your metrics or time series.
-    
-    ![change threshold](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/change-threshold.png)
-    
-2.  Select the  **out of the range**  or  **in the range**  parameter based on your scenario.
-    
-    If you want to detect fluctuations, select  **out of the range**. For example, with the settings below, any data point that changes over 10% compared to the previous one will be detected as an outlier.  ![out of range parameter](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/out-of-the-range.png)
-    
-    If you want to detect flat lines in your data, select  **in the range**. For example, with the settings below, any data point that changes within 0.01% compared to the previous one will be detected as an outlier. Because the threshold is so small (0.01%), it detects flat lines in the data as outliers.
-    
-    ![In range parameter](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/in-the-range.png)
-    
-3.  Set the percentage of change that will count as an anomaly, and which previously captured data points will be used for comparison. This comparison is always between the current data point, and a single data point N points before it.
-    
-    **Direction**  is only valid if you're using the  **out of the range**  mode:
-    
-    -   **Up**  configures detection to only detect anomalies when (current data point) - (comparison data point) >  **+**  threshold percentage.
-    -   **Down**  configures detection to only detect anomalies when (current data point) - (comparing data point) <  **-**  threshold percentage.
+1.  Under the **Metric-level configuration**, select  **Change threshold** as your anomaly detection method. 
 
-## Task 10 - Preset events
+    ![](./media/change-threshold.png)
+    
+
+2. Select the **out of threshold** to detect fluctuations and set the value to **10%**. Any data point that changes over 10% compared to the previous one will be detected as an outlier.
+
+    ![](./media/out-of-threshold.png)
+
+3. Now select **within the threshold** to detect flat lines in your data and set the value to **0.01%**. Any data point that changes within 0.01% compared to the previous one will be detected as an outlier. Because the threshold is so small (0.01%), it detects flat lines in the data as outliers.
+
+    ![](./media/within-threshold.png)
+
+
+>**Note**: For more information, see [Anomaly detection methods](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/configure-metrics#anomaly-detection-methods).
+
+
+
+## Task 12 - Preset events
 
 Sometimes, expected events and occurrences (such as holidays) can generate anomalous data. Using preset events, you can add flags to the anomaly detection output, during specified times. This feature should be configured after your data feed is onboarded. Each metric can only have one preset event configuration.
 
-Note
+>**Note**: Preset event configuration will take holidays into consideration during anomaly detection, and may change your results. It will be applied to the data points ingested after you save the configuration.
 
-Preset event configuration will take holidays into consideration during anomaly detection, and may change your results. It will be applied to the data points ingested after you save the configuration.
+1. Select the  **Configure Preset Event**  button next to the metrics drop-down list on each metric details page.
 
-Select the  **Configure Preset Event**  button next to the metrics drop-down list on each metric details page.
+    ![](./media/configure-preset.png)
 
-![preset event button](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/preset-event-button.png)
+2. In the window that appears, Make sure  **Enable holiday event** (1) is selected to use the configuration.
 
-In the window that appears, configure the options according to your usage. Make sure  **Enable holiday event**  is selected to use the configuration.
+3. On the **Strategy** option select **Suppress holiday** (2).
 
-The  **Holiday event**  section helps you suppress unnecessary anomalies detected during holidays. There are two options for the  **Strategy**  option that you can apply:
+4. On the **Country Dimension** option select **age_group** (3) from the drop down. You will notice a new field is added named **Country of interest**.
 
--   **Suppress holiday**: Suppresses all anomalies and alerts in anomaly detection results during holiday period.
--   **Holiday as weekend**: Calculates the average expected values of several corresponding weekends before the holiday, and bases the anomaly status off of these values.
+5. On the **Country of interest** field, you will see two options. On the **Standard country code** select your country from the drop down and on the **age_group** option select
+**__SUM__**.
 
-There are several other values you can configure:
+6. On the **Holiday option** select **Only NON-PTO Holidays**.
+Leave the rest of the options as default. The **Holiday event** pane should look like this: 
 
-Option
+    ![](./media/holiday-event.png)
 
-Description
+7. The **Cycle event** is used to reduce anomalies if they follow a cyclic pattern, but it will report an anomaly if multiple data points don't follow the pattern. Select the downward arrow to expand the **Cycle event** (1).
 
-**Choose one dimension as country**
+8. Make sure  **Enable Cycle event** (2) is selected to use the configuration.
 
-Choose a dimension that contains country information. For example, a country code.
+9. On the **Cycle option**, select **MoM** (3).
 
-**Country code mapping**
+    ![](./media/cycle-event.png)
 
-The mapping between a standard  [country code](https://wikipedia.org/wiki/ISO_3166-1_alpha-2), and chosen dimension's country data.
+10. On the **Strict mode**, select **Yes** (4) and click on **Save** to save the preset.
 
-**Holiday options**
+11. You have now successfully configured **Preset events**.
 
-Whether to take into account all holidays, only PTO (Paid Time Off) holidays, or only Non-PTO holidays.
-
-**Days to expand**
-
-The impacted days before and after a holiday.
-
-The  **Cycle event**  section can be used in some scenarios to help reduce unnecessary alerts by using cyclic patterns in the data. For example:
-
--   Metrics that have multiple patterns or cycles, such as both a weekly and monthly pattern.
--   Metrics that don't have a clear pattern, but the data is comparable Year over Year (YoY), Month over Month (MoM), Week Over Week (WoW), or Day Over Day (DoD).
+>**Note**: For more information, see [Present Events](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/configure-metrics#preset-events).
 
 
+## Task 13 - View recent incidents
 
-Cycle event is used to reduce anomalies if they follow a cyclic pattern, but it will report an anomaly if multiple data points don't follow the pattern.  **Strict mode**  is used to enable anomaly reporting if even one data point doesn't follow the pattern.
+Metrics Advisor detects anomalies on all your time series data as they're ingested. However, not all anomalies need to be escalated, because they might not have a significant impact. Aggregation will be performed on anomalies to group related ones into incidents. 
 
-![preset event configuration](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/preset-events.png)
+1. To view these incidents select the  **Incident**  tab in metrics details page.
 
-## Task 11 - View recent incidents
+    ![](./media/select-incident.png)
 
-Metrics Advisor detects anomalies on all your time series data as they're ingested. However, not all anomalies need to be escalated, because they might not have a significant impact. Aggregation will be performed on anomalies to group related ones into incidents. You can view these incidents from the  **Incident**  tab in metrics details page.
+2. From the **Incident** page, select an incident to go to the **Incidents Analysis** page. Where you can see more details about it. 
 
-Select an incident to go to the  **Incidents analysis**  page where you can see more details about it. Select  **Manage incidents in new Incident hub**, to find the  page where you can find all incidents under the specific metric.
+    ![](./media/view-incident.png)
+    
+    ![](./media/view-incident-1.png)
+
+3. On the **Incident hub** select **Home** to find the page where you can find all the incidents under the specific metric.
+
+    ![](./media/view-incident-2.png)
