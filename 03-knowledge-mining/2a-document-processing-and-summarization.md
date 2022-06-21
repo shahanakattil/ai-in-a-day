@@ -53,7 +53,7 @@ The high-level steps covered in the lab are:
 
 5. Navigate to the Keys setting and copy the Primary admin key. Paste this into a text file.
 
-    ![The Search service's API key is copied to the clipboard.](media/copy-azure-search-api-key.png)
+    ![The Search service's API key is copied to the clipboard.](media/lab2-t3-step5.png)
 
 6. Download the `schemas.zip` from https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/schemas.zip. Unzip `schemas.zip`.  There are six files, three prefixed with `abstracts` and three with `covid19temp`.  Save these to a directory such as `C:\Temp\AzureSearch\`.
 
@@ -277,80 +277,83 @@ The high-level steps covered in the lab are:
 
     ![Create new custom model](media/lab2a-t6-frs1.png)
 
-13. Return to the home screen.  Select **Use Custom to Train a model with labels and get key value pairs**.  This will pop up a dialog.  Choose **New Project** to create a new project.
+13. In the Custom models page, under **My Project** click on **+ Create a project**.
   
-    ![Project](media/project.png)
+    ![Project](media/lab2a-t6-frs2.png)
 
-14. Enter the following values for your project.  Then, select **Save Project**.
+14. In the Enter Project Details pane, enter the Project Name as **covid19abstract** and add the description as **Extracting Abstract from the documents**. Click on **Continue**.
+
+    ![The covid19abstract project has been created](media/lab2a-t6-frs3.png)
+    
+15. In the Configure service resource, for **Access By** select **API endpoint and key**. Enter the **Cognitive Service endpoint** and **API key** which you have copied to text file at the earlier of this task. Check the box and leave default for API version. Click on **Continue**.
+
+    ![Project](media/lab2a-t6-frs4.png)
+    
+16. Next in the connect training data source, select the below values form the drop-down and click on **Continue**.
 
     | Parameter                   | Value                                |
     | --------------------------- | -------------------------------------|
-    | Display name                | Enter `covid19abstract`              |
-    | Security token              | Select `Generate New Security Token` |
-    | Source connection           | Select `papers`                      |
+    | Subscription                | Select the default subscription      |
+    | Resource Group              | Select `AI-in-a-Day`                 |
+    | Storage account             | Select aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> |
+    | Blob container              | Select `covid19temp`                 |
     | Folder path                 | Enter `papers`                       |
-    | Form recognizer service URI | Enter your Cognitive Services service URI (endpoint) |
-    | API key                     | Enter your Cognitive Services API key |
-    | API version                 | Leave at the default value           |
-    | Description                 | Leave blank                          |
 
-    ![The covid19abstract project has been created](media/fott-new-project.png)
+    ![Project](media/lab2a-t6-frs5.png)
 
-15. After creating a new project, you will be sent to the project for tagging.  In the **Tags** section, select **+** to create a new tag, which we will call `Abstract`.
+17. Review the detials and click on **Create project**.
 
-    ![The Abstract tag has been created](media/fott-tags.png)
+    ![Project](media/lab2a-t6-frs6.png)
+  
+18. After creating a new project, you will be sent to the project for tagging in Label data. Select **+**(1) to create a new **Field**(2), type `Abstract` in the Field and hit enter. By this you have created a new Abstract Field.
 
-16. Wait for the layout to be run for the first document and locate the document's abstract.  Note that for some documents, the abstract is on the second page.  Then, move on to the next document.  We will tag each of the five papers, so navigate to each in turn, allowing the layout to be run.  In order for tagging to be successful, we must first run the layout of a document, navigate to another document, and return to this first document before we begin tagging.  Layout generation happens once per document, after which point we can return to it and tag our abstract.
+    ![The Abstract tag has been created](media/lab2a-t6-frs8.png)
+    
+    ![The Abstract tag has been created](media/lab2a-t6-frs9.png)
 
-    ![Running layout for a document](media/fott-running-layout.png)
+19. Wait for the layout to be run for the first document and locate the document's abstract.  Note that for some documents, the abstract is on the second page.  Then, move on to the next document.  We will tag each of the five papers, so navigate to each in turn, allowing the layout to be run.  In order for tagging to be successful, we must first run the layout of a document, navigate to another document, and return to this first document before we begin tagging.  Layout generation happens once per document, after which point we can return to it and tag our abstract.
 
-17. Return to the second PDF and select each word in the **Abstract** section.  After highlighting this, select the **Abstract** tag to tag this section.  Note that you will need to select each word individually rather than selecting a box.  After selecting the **Abstract** tag, you should see a tag logo next to the PDF.  If you see the tag logo, this means that tagging was successful for this document.
+    ![Running layout for a document](media/lab2a-t6-frs7.png)
 
-    ![The first PDF has been viewed, and the second PDF has been tagged](media/fott-tagging-1.png)
+20. Return to the second PDF and select each word in the **Abstract** section.  After highlighting this, select the **Abstract** tag to tag this section.  Note that you will need to select each word individually rather than selecting a box.  After selecting the **Abstract** tag, you should see a tag logo next to the PDF.  If you see the tag logo, this means that tagging was successful for this document.
 
-18. Return to the first PDF and highlight the word **ABSTRACT** as well as the abstract.  If the abstract is lengthy, as in this example, it is okay to include just the first paragraph.  Then, select the **Abstract** tag to tag this document.  Ensure that the viewed icon (an eye) changes to a tag icon.  If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful.  In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
+    ![The first PDF has been viewed, and the second PDF has been tagged](media/lab2a-t6-frs10.png)
 
-    ![The first PDF has been tagged](media/fott-tagging-2.png)
+21. Return to the first PDF and highlight the word **ABSTRACT** as well as the abstract.  If the abstract is lengthy, as in this example, it is okay to include just the first paragraph.  Then, select the **Abstract** tag to tag this document.  Ensure that the viewed icon (an eye) changes to a tag icon.  If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful.  In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
 
-19. Continue tagging until all five of the top papers are tagged.
+    ![The first PDF has been tagged](media/lab2a-t6-frs11.png)
 
-    ![The first five PDFs have been tagged](media/fott-tagging-3.png)
+22. Continue tagging until all five of the top papers are tagged. Once we have tagged five documents, then select the **Train** option.
+    
+    ![The first five PDFs have been tagged](media/lab2a-t6-frs12.png)
 
-20. Once we have tagged five documents, select the **Train** menu option, enter `Abstracts` as the model name, and select the **Train** option.
+23. In a pop-up to Train a new model, enter **Abstracts** as the ModelID, and select the **Neural** from the drop-down as Build Mode. Then click on **Train**.
 
-    ![The option to train a model has been selected](media/fott-train-model.png)
+    ![The option to train a model has been selected](media/lab2a-t6-frs13.png)
 
-21. After the model has finished training, we will see results.  Although the estimated accuracy is not great, we will use this model.
+24. Training a model may take up to 10-15 minustes to get succeed. Click on **Go to models**. 
 
-    ![The Abstracts model has been trained](media/fott-train-model-results.png)
+    ![The option to train a model has been selected](media/lab2a-t6-frs14.png)
 
-22. Return to the **Tags Editor** and select a new document, one you have not already tagged.  After the layout has been run, navigate to the **Actions** menu and select **Auto-label the current document**.
+25. After the model has finished training, you will see that Status as succeeded.  Although the estimated accuracy is not great, we will use this model.
 
-    ![Auto-label the current document](media/fott-auto-label.png)
+    ![The Abstracts model has been trained](media/lab2a-t6-frs15.png)
 
-23. We will see the results of auto-labeling and an estimated likelihood of success.  Furthermore, the document has an auto-labeled icon next to it.  If this is good enough, we can continue.
+26. From the left menu, select the **Test**(1). Click on **+ Add**(2) and navigate to `C:\Temp\AzureSearch\` and select `2020.09.25.20201616v1.pdf`. Select **Analyze**(3) to see the results. Note that the abstract is on page 2 of the PDF.
 
-    ![The result of auto-labeling the current document](media/fott-auto-label-result.png)
+    ![An analyzed document](media/lab2a-t6-frs16.png)
 
-24. In this case, auto-labeling was okay but missed a few words.  We can select all of the words in the abstract and then select the **Abstract** label.  This will show a new icon, representing an auto-labeled document with manual corrections.
+27. Select **Result** and click on **download icon** to download JSON file. We will use this script in the next task. Find the location where the script was downloaded and move it to `C:\Temp\AzureSearch\`.
 
-    ![The result of correcting auto-labeling of a document](media/fott-auto-label-corrected.png)
+    ![An analyzed document](media/lab2a-t6-frs19.png)
 
-25. We can update our model by returning to the **Train** page and re-training the `Abstracts` model.  The resulting estimated accuracy is slightly lower, but there is now another document available to improve model quality.  In this case, estimated accuracy is misleading.
+28. Select **Code** and click on **download icon** to download a Python script. We will use this script in the next task. Find the location where the script was downloaded and move it to `C:\Temp\AzureSearch\`.
 
-    ![Retraining a model](media/fott-train-model-2.png)
-
-26. After training the new model, select the **Analyze** menu option.  Select **Browse** and navigate to `C:\Temp\AzureSearch\` and select `2020.09.25.20201616v1.pdf`.  Select **Run Analysis** to see the results.  Note that the abstract is on page 2 of the PDF.
-
-    ![An analyzed document](media/fott-run-analysis.png)
-
-27. Select **Download** to download a Python script.  We will use this script in the next task.  Find the location where the script was downloaded and move it to `C:\Temp\AzureSearch\`.
-
-    ![The option to download an analysis script is selected](media/fott-download.png)
+    ![The option to download an analysis script is selected](media/lab2a-t6-frs17.png)
     
 > **Note! :** If you get a warning while downloading the Python file, select the ellipsis and select "Keep" to download the file. 
 
-   ![Keep Python file](media/python-keep.png)
+   ![Keep Python file](media/lab2a-t6-frs18.png)
 
 ## Task 7 - Indexing a New Abstract
 
