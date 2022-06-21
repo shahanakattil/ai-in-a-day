@@ -273,16 +273,9 @@ The high-level steps covered in the lab are:
 
 > **Note!** : You can follow this link to download the file. (https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/pdf/2020.09.25.20201616v1.pdf)
 
-12. Navigate to the Form OCR Testing Tool ( https://fott-2-1.azurewebsites.net/ ) an Azure-hosted website for form recognition.  Select the **Connections** option and then choose **+** to create a new connection.  Fill in the parameters as in the table below and then select **Save Connection**.
+12. Navigate to the [Form Recognizer Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Create new** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
 
-    | Parameter                   | Value                                |
-    | --------------------------- | -------------------------------------|
-    | Display name                | Enter `papers`                       |
-    | Description                 | Leave blank                          |
-    | Provider                    | Select `Azure blob container`        |
-    | SAS URI                     | Paste your Azure SAS URI             |
-
-    ![The papers connection has been created](media/fott-connections.png)
+    ![Create new custom model](media/lab2a-t6-frs1.png)
 
 13. Return to the home screen.  Select **Use Custom to Train a model with labels and get key value pairs**.  This will pop up a dialog.  Choose **New Project** to create a new project.
   
