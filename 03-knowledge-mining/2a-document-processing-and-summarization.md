@@ -355,7 +355,7 @@ The high-level steps covered in the lab are:
     pip install azure-ai-textanalytics==5.2.0b1
     ```
 
-    ![Pip has installed the azureai text analytics package for Python](media/lab2a-t7-pipazureai.png)
+    ![Pip has installed the azureai text analytics package for Python](media/lab2a-t7-pip-azureai.png)
 
 3. Create a new file named **summarization.py** in the location `C:\Temp\AzureSearch\` and add the below code in the file. Make sure to replace the **Key** and the **Endpoint** of the Cognitive services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have copied to text file in the previous tasks.
 
