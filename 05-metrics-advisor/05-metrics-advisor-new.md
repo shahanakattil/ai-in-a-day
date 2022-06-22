@@ -327,7 +327,7 @@ A metric can apply one or more detection configurations. There's a default confi
 
 >**Note**: The auto-tuning feature is only applied on the 'Smart detection' method.
 
-1. After the metrics are onboarded to Metrics Advisor, the system will try to perform statistics on the metrics to categorize **anomaly pattern** types and **series value** distribution. By providing this functionality, you can further fine tune the configuration based on their specific preferences. At the beginning, it will show a status of **Initializing**.
+1. After the metrics are onboarded to Metrics Advisor, the system will try to perform statistics on the metrics to categorize **anomaly pattern** types and **series value** distribution. By providing this functionality, you can further fine tune the configuration based on their specific preferences. In the beginning, it will show a status of **Initializing**.
 
     [![Screenshot of Metrics Advisor U I with Initializing auto-tuning text visible.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-initializing.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-initializing.png#lightbox)
 
@@ -339,7 +339,7 @@ A metric can apply one or more detection configurations. There's a default confi
 
 You will be greeted with **Auto tuning preference** page.
 
-1. The **Auto tuning preference** feature enables you to tune detection configuration from two perspectives **anomaly pattern** and **series value**. Based on your specific use case, in our case we will choose the **Anomaly pattern.**
+1. The **Auto tuning preference** feature enables you to tune detection configuration from two perspectives **anomaly pattern** and **series value** based on your specific use case, in our case we will choose the **Anomaly pattern.**
 
 2. For the  **anomaly pattern**  option, the system will list out different anomaly patterns that were observed with the metric. You can choose which ones you're interested in and select them, the unselected patterns will have their sensitivity **reduced** by default.
 
@@ -363,15 +363,13 @@ Once the detection configuration on capturing valid anomalies is tuned, it's sti
 
     ![](./media/setup-alert-rules.png)
 
-2. On the **Filter anamoly based on value** select the **This Metric** setting and from the dropdown select **Out of range** (2). Leave the **Snooze successive anomalies** (3) unchanged. Select the **Anomalies in all series** (4) under the **Alert Scope** section. Now select **Save and close** (5).
+2. On the **Filter anomaly based on value** select the **This Metric** setting and from the dropdown select **Out of range** (2). Leave the **Snooze successive anomalies** (3) unchanged. Select the **Anomalies in all series** (4) under the **Alert Scope** section. Now select **Save and close** (5).
 
     ![](./media/setup-alert-rules-1.png)
 
 3. You can see the newly configured **Test-Alert** under the **metric-level configuration** pane on the left.
 
-
     ![](./media/setup-alert-rules-2.png)
-
 
 After configuring all the settings described in the section above, the system will orchestrate them together and automatically detect anomalies based on your inputted preferences. The goal is to get the best configuration that works for each metric, which can be achieved much easier through use of the new  **auto-tuning**  capability.
 
@@ -424,7 +422,7 @@ Sometimes, expected events and occurrences (such as holidays) can generate anoma
 
 3. On the **Strategy** option select **Suppress holiday** (2).
 
-4. On the **Country Dimension** option select **age_group** (3) from the drop down. You will notice a new field is added named **Country of interest**.
+4. On the **Country Dimension** option select **age_group** (3) from the drop-down. You will notice a new field is added named **Country of interest**.
 
 5. On the **Country of interest** field, you will see two options. On the **Standard country code** select your country from the drop down and on the **age_group** option select
 **__SUM__**.
