@@ -258,8 +258,47 @@ We should have marked as anomalies the points in time where number of cases is b
 
 ![Hard threshold](./media/AI-metric-advisor-hardthreshold.png)
 
+## Task 8 - Anomaly detection methods (Optional)
 
-## Task 8 - Configure metrics and fine tune detection configuration
+Metrics Advisor offers multiple anomaly detection methods:  **Hard threshold, Smart detection, Change threshold**.
+
+### Subtask 1 : Smart Detection
+
+Smart detection is powered by machine learning that learns patterns from historical data, and uses them for future detection. When using this method, the  **Sensitivity**  is the most important parameter for tuning the detection results.
+
+1. Under the **Metric-level configuration** select the **Smart detection** config. Drag the **Sensitivity** slider to a smaller value and notice the visualization change on the right side. 
+
+    ![](./media/smart-lower.png)
+
+2. Sensitivity can affect the width of the expected value range of each point. Now drag the **Sensitivity** slider to a larger value and notice the expected value range will be tighter and more anomolies will be reported.
+
+    ![](./media/smart-larger.png)
+
+### Subtask 2 : Change threshold
+
+Change threshold is normally used when metric data generally stays around a certain range. The threshold is set according to  **Change percentage**. The  **Change threshold**  mode is able to detect anomalies in the scenarios:
+
+-   Your data is normally stable and smooth. You want to be notified when there are fluctuations.
+-   Your data is normally unstable and fluctuates a lot. You want to be notified when it becomes too stable or flat.
+
+
+1.  Under the **Metric-level configuration**, select  **Change threshold** as your anomaly detection method. 
+
+    ![](./media/change-threshold.png)
+    
+
+2. Select the **out of threshold** to detect fluctuations and set the value to **10%**. Any data point that changes over 10% compared to the previous one will be detected as an outlier.
+
+    ![](./media/out-of-threshold.png)
+
+3. Now select **within the threshold** to detect flat lines in your data and set the value to **0.01%**. Any data point that changes within 0.01% compared to the previous one will be detected as an outlier. Because the threshold is so small (0.01%), it detects flat lines in the data as outliers.
+
+    ![](./media/within-threshold.png)
+
+
+>**Note**: For more information, see [Anomaly detection methods](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/configure-metrics#anomaly-detection-methods).
+
+## Task 9 - Configure metrics and fine tune detection configuration
 
 ### Metrics
 
@@ -277,7 +316,7 @@ We should have marked as anomalies the points in time where number of cases is b
 
 5. You can select the  **Incidents**  tab to view anomalies (2).
 
-## Task 9 - Tune the detection configuration
+## Task 10 - Tune the detection configuration
 
 A metric can apply one or more detection configurations. There's a default configuration for each metric, which you can edit or add to, according to your monitoring needs. The new auto-tuning feature makes this distinction between anomaly types possible. As of now, there are five supported anomaly patterns:
 
@@ -340,7 +379,7 @@ Once the detection configuration on capturing valid anomalies is tuned, it's sti
 After configuring all the settings described in the section above, the system will orchestrate them together and automatically detect anomalies based on your inputted preferences. The goal is to get the best configuration that works for each metric, which can be achieved much easier through use of the new  **auto-tuning**  capability.
 
 
-## Task 10 - Tune the configuration for a specific series or group
+## Task 11 - Tune the configuration for a specific series or group
 
 1. Select  **Advanced configuration**  below the metric level configuration options to see the group level configuration.
 
@@ -377,49 +416,6 @@ Specify at least one **dimension value** (1) for a group-level configuration to 
 8. This configuration will be applied to the group of series or specific series instead of the metric level configuration. After setting the conditions for this group, **save**.
 
     ![](./media/save-config-01.png)
-
-
-## Task 11 - Anomaly detection methods
-
-Metrics Advisor offers multiple anomaly detection methods:  **Hard threshold, Smart detection, Change threshold**.
-
-### Subtask 1 : Smart Detection
-
-Smart detection is powered by machine learning that learns patterns from historical data, and uses them for future detection. When using this method, the  **Sensitivity**  is the most important parameter for tuning the detection results.
-
-1. Under the **Metric-level configuration** select the **Smart detection** config. Drag the **Sensitivity** slider to a smaller value and notice the visualization change on the right side. 
-
-    ![](./media/smart-lower.png)
-
-2. Sensitivity can affect the width of the expected value range of each point. Now drag the **Sensitivity** slider to a larger value and notice the expected value range will be tighter and more anomolies will be reported.
-
-    ![](./media/smart-larger.png)
-
-### Subtask 2 : Change threshold
-
-Change threshold is normally used when metric data generally stays around a certain range. The threshold is set according to  **Change percentage**. The  **Change threshold**  mode is able to detect anomalies in the scenarios:
-
--   Your data is normally stable and smooth. You want to be notified when there are fluctuations.
--   Your data is normally unstable and fluctuates a lot. You want to be notified when it becomes too stable or flat.
-
-
-1.  Under the **Metric-level configuration**, select  **Change threshold** as your anomaly detection method. 
-
-    ![](./media/change-threshold.png)
-    
-
-2. Select the **out of threshold** to detect fluctuations and set the value to **10%**. Any data point that changes over 10% compared to the previous one will be detected as an outlier.
-
-    ![](./media/out-of-threshold.png)
-
-3. Now select **within the threshold** to detect flat lines in your data and set the value to **0.01%**. Any data point that changes within 0.01% compared to the previous one will be detected as an outlier. Because the threshold is so small (0.01%), it detects flat lines in the data as outliers.
-
-    ![](./media/within-threshold.png)
-
-
->**Note**: For more information, see [Anomaly detection methods](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/configure-metrics#anomaly-detection-methods).
-
-
 
 ## Task 12 - Preset events
 
