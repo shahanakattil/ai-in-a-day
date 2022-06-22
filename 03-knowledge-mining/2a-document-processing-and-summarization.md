@@ -331,17 +331,9 @@ The high-level steps covered in the lab are:
 
     ![An analyzed document](media/lab2a-t6-frs16.png)
 
-24. Select **Result** and click on **download icon** to download JSON file. We will use this script in the next task. Find the location where the script was downloaded and move it to `C:\Temp\AzureSearch\`.
+24. Select **Result** and click on **download icon** to download JSON file. Find the location where the script was downloaded and observe the result code.
 
     ![An analyzed document](media/lab2a-t6-frs19.png)
-
-25. Select **Code** and click on **download icon** to download a Python script. We will use this script in the next task. Find the location where the script was downloaded and move it to `C:\Temp\AzureSearch\`.
-
-    ![The option to download an analysis script is selected](media/lab2a-t6-frs17.png)
-    
-> **Note! :** If you get a warning while downloading the Python file, select the ellipsis and select "Keep" to download the file. 
-
-   ![Keep Python file](media/lab2a-t6-frs18.png)
 
 ## Task 7 - Document Summarization via Cognitive Service for Language integration
 
