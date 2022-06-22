@@ -266,7 +266,7 @@ Metrics Advisor offers multiple anomaly detection methods:  **Hard threshold, Sm
 
 Smart detection is powered by machine learning that learns patterns from historical data, and uses them for future detection. When using this method, the  **Sensitivity**  is the most important parameter for tuning the detection results.
 
-1. Under the **Metric-level configuration** select the **Smart detection** config. Drag the **Sensitivity** slider to a smaller value and notice the visualization change on the right side. 
+1. Under the **Metric-level configuration** select the **Smart detection** configuration. Drag the **Sensitivity** slider to a smaller value and notice the visualization change on the right side. 
 
     ![](./media/smart-lower.png)
 
@@ -276,11 +276,10 @@ Smart detection is powered by machine learning that learns patterns from histori
 
 ### Subtask 2 : Change threshold
 
-Change threshold is normally used when metric data generally stays around a certain range. The threshold is set according to  **Change percentage**. The  **Change threshold**  mode is able to detect anomalies in the scenarios:
+Change threshold is normally used when metric data generally stays around a certain range. The threshold is set according to  **Change percentage**. The **Change threshold**  mode is able to detect anomalies in the scenarios:
 
 -   Your data is normally stable and smooth. You want to be notified when there are fluctuations.
 -   Your data is normally unstable and fluctuates a lot. You want to be notified when it becomes too stable or flat.
-
 
 1.  Under the **Metric-level configuration**, select  **Change threshold** as your anomaly detection method. 
 
@@ -304,17 +303,17 @@ Change threshold is normally used when metric data generally stays around a cert
 
 1. To browse the metrics for a specific data feed, go to the  **Data feeds**  page and select **covid-ages** from the feeds. This will display a list of metrics associated with it.
 
-    ![](./media/metrics-browse.png)
+2. Select **count** to see its details. In this view.
 
-2. Select **count**  to see its details. In this view.
+   ![](./media/metrics-browse.png)
 
-3. When you first view a metric's details, you can load a time series by letting Metrics Advisor choose one for you, or by specifying values to be included for each dimension.
+When you first view a metric's details, you can load a time series by letting Metrics Advisor choose one for you, or by specifying values to be included for each dimension.
 
-4. You can also select time ranges, and change the layout of the page (1)
+3. You can also select time ranges, and change the layout of the page (1)
+
+4. You can select the  **Incidents**  tab to view anomalies (2).
 
     ![Metrics drill down](./media/layout-browse.png)
-
-5. You can select the  **Incidents**  tab to view anomalies (2).
 
 ## Task 10 - Tune the detection configuration
 
@@ -332,22 +331,21 @@ A metric can apply one or more detection configurations. There's a default confi
 
     [![Screenshot of Metrics Advisor U I with Initializing auto-tuning text visible.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-initializing.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-initializing.png#lightbox)
 
-
 ### Subtask 1 - Choose to enable auto-tuning on anomaly pattern and series value
 
 1. Once the initializing is completed select the **Auto Tuning** option as shown below.
 
     ![](./media/auto-tuning-select.png)
 
-1. You will be greeted with **Auto tuning preference** page.
+You will be greeted with **Auto tuning preference** page.
 
 1. The **Auto tuning preference** feature enables you to tune detection configuration from two perspectives  **anomaly pattern**  and  **series value**. Based on your specific use case, in our case we will choose the **Anomaly pattern.**
 
-1. For the  **anomaly pattern**  option, the system will list out different anomaly patterns that were observed with the metric. You can choose which ones you're interested in and select them, the unselected patterns will have their sensitivity  **reduced**  by default.
+2. For the  **anomaly pattern**  option, the system will list out different anomaly patterns that were observed with the metric. You can choose which ones you're interested in and select them, the unselected patterns will have their sensitivity  **reduced**  by default.
 
     ![](./media/auto-tuning-select-1.png)
 
-1. Select the **Apply Pattern preference** option (1), followed by selecting **Spike** (2) as the anomaly pattern and then select **Next** (3) to go the next section.
+3. Select the **Apply Pattern preference** option (1), followed by selecting **Spike** (2) as the anomaly pattern and then select **Next** (3) to go the next section.
 
 ### Subtask 2 - Tune the configuration for selected anomaly patterns
 
@@ -366,7 +364,7 @@ Once the detection configuration on capturing valid anomalies is tuned, it's sti
 
     ![](./media/setup-alert-rules.png)
 
-2. On the **Filter anamoly based on value** select the **This Metric** setting and from the dropdown select **Out of range** (2). Leave the **Snooze successive anomalies** unchanged (3). Select the **Anomalies in all series** (4) under the **Alert Scope** section. Now select **Save and close** (5).
+2. On the **Filter anamoly based on value** select the **This Metric** setting and from the dropdown select **Out of range** (2). Leave the **Snooze successive anomalies** (3) unchanged. Select the **Anomalies in all series** (4) under the **Alert Scope** section. Now select **Save and close** (5).
 
     ![](./media/setup-alert-rules-1.png)
 
@@ -381,25 +379,21 @@ After configuring all the settings described in the section above, the system wi
 
 ## Task 11 - Tune the configuration for a specific series or group
 
-1. Select  **Advanced configuration**  below the metric level configuration options to see the group level configuration.
+1. Select **Advanced configuration** below the metric level configuration options to see the group level configuration.
 
     ![](./media/advanced-config-1.png)
 
-
-2. You can add a configuration for an individual series, or group of series by clicking the  **+**  icon in this window. 
+2. You can add a configuration for an individual series, or group of series by clicking the **'+'** icon in this window. 
     
     ![](./media/detect-config.png)
 
-3. Select the **'+'** for **Configuration for series group**.
-Specify at least one **dimension value** (1) for a group-level configuration to identify a group of series. Leave the conditions as default and select **Save**.
+3. Select the **'+'** for **Configuration for series group**. Specify at least one **dimension value** (1) for a group-level configuration to identify a group of series. Leave the conditions as default and select **Save**.
 
     ![](./media/series-group-config-01.png)
-
 
 4. Under the **Metric-level configuration** pane, notice the **Series group configs** value has changed to **1**.
 
     ![](./media/series-group-config-2.png)
-
 
 5. Select **Advanced configuration** once again to add **specific series** level configuration.
 
