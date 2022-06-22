@@ -334,6 +334,8 @@ The high-level steps covered in the lab are:
 24. Select **Result** and click on **download icon** to download JSON file. Find the location where the script was downloaded and observe the result code.
 
     ![An analyzed document](media/lab2a-t6-frs19.png)
+    
+25. For now you have used custom models with Neural build mode. You can use any sample document which containes Tables and Signature to Test/Analyze using Template build mode. Please find the reference to explore more about Form Recognizer Studio: [Quickstart: Form Recognizer Studio - Azure Applied AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-form-recognizer-studio)
 
 ## Task 7 - Document Summarization via Cognitive Service for Language integration
 
