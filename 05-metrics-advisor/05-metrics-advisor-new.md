@@ -270,13 +270,13 @@ Smart detection is powered by machine learning that learns patterns from histori
 
     ![](./media/smart-lower.png)
 
-2. Sensitivity can affect the width of the expected value range of each point. Now drag the **Sensitivity** slider to a larger value and notice the expected value range will be tighter and more anomolies will be reported.
+2. Sensitivity can affect the width of the expected value range of each point. Now drag the **Sensitivity** slider to a larger value and notice the expected value range will be tighter and more anomalies will be reported.
 
     ![](./media/smart-larger.png)
 
 ### Subtask 2 : Change threshold
 
-Change threshold is normally used when metric data generally stays around a certain range. The threshold is set according to  **Change percentage**. The **Change threshold**  mode is able to detect anomalies in the scenarios:
+Change threshold is normally used when metric data generally stay around a certain range. The threshold is set according to **Change percentage**. The **Change threshold**  mode is able to detect anomalies in the scenarios:
 
 -   Your data is normally stable and smooth. You want to be notified when there are fluctuations.
 -   Your data is normally unstable and fluctuates a lot. You want to be notified when it becomes too stable or flat.
@@ -301,7 +301,7 @@ Change threshold is normally used when metric data generally stays around a cert
 
 ### Metrics
 
-1. To browse the metrics for a specific data feed, go to the  **Data feeds**  page and select **covid-ages** from the feeds. This will display a list of metrics associated with it.
+1. To browse the metrics for a specific data feed, go to the **Data feeds** page and select **covid-ages** from the feeds. This will display a list of metrics associated with it.
 
 2. Select **count** to see its details. In this view.
 
@@ -311,7 +311,7 @@ When you first view a metric's details, you can load a time series by letting Me
 
 3. You can also select time ranges, and change the layout of the page (1)
 
-4. You can select the  **Incidents**  tab to view anomalies (2).
+4. You can select the **Incidents** tab to view anomalies (2).
 
     ![Metrics drill down](./media/layout-browse.png)
 
@@ -327,7 +327,7 @@ A metric can apply one or more detection configurations. There's a default confi
 
 >**Note**: The auto-tuning feature is only applied on the 'Smart detection' method.
 
-1. After the metrics are onboarded to Metrics Advisor, the system will try to perform statistics on the metrics to categorize  **anomaly pattern**  types and  **series value**  distribution. By providing this functionality, you can further fine tune the configuration based on their specific preferences. At the beginning, it will show a status of  **Initializing**.
+1. After the metrics are onboarded to Metrics Advisor, the system will try to perform statistics on the metrics to categorize **anomaly pattern** types and **series value** distribution. By providing this functionality, you can further fine tune the configuration based on their specific preferences. At the beginning, it will show a status of **Initializing**.
 
     [![Screenshot of Metrics Advisor U I with Initializing auto-tuning text visible.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-initializing.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-initializing.png#lightbox)
 
@@ -339,9 +339,9 @@ A metric can apply one or more detection configurations. There's a default confi
 
 You will be greeted with **Auto tuning preference** page.
 
-1. The **Auto tuning preference** feature enables you to tune detection configuration from two perspectives  **anomaly pattern**  and  **series value**. Based on your specific use case, in our case we will choose the **Anomaly pattern.**
+1. The **Auto tuning preference** feature enables you to tune detection configuration from two perspectives **anomaly pattern** and **series value**. Based on your specific use case, in our case we will choose the **Anomaly pattern.**
 
-2. For the  **anomaly pattern**  option, the system will list out different anomaly patterns that were observed with the metric. You can choose which ones you're interested in and select them, the unselected patterns will have their sensitivity  **reduced**  by default.
+2. For the  **anomaly pattern**  option, the system will list out different anomaly patterns that were observed with the metric. You can choose which ones you're interested in and select them, the unselected patterns will have their sensitivity **reduced** by default.
 
     ![](./media/auto-tuning-select-1.png)
 
@@ -349,16 +349,15 @@ You will be greeted with **Auto tuning preference** page.
 
 ### Subtask 2 - Tune the configuration for selected anomaly patterns
 
-The next step is to fine tune the configuration for each. There's a global  **sensitivity**  that is applied for all series. For each anomaly pattern, you can tune the  **adjustment**, which is based on the global  **sensitivity**.
+The next step is to fine tune the configuration for each. There's a global **sensitivity** that is applied for all series. For each anomaly pattern, you can tune the **adjustment**, which is based on the global **sensitivity**.
 
 1. You must tune each anomaly pattern that has been chosen individually. In our case the **Spike** (1) anomaly pattern will be visible. Under the **Adjustment for anomaly patterns** adjust the slider to change the **sensitivity**. Now select **Next** (2) to set up alerts.
 
     ![](./media/pattern-based-sensitivity.png)
 
-
 ### Subtask 3 - Set up alert rules
 
-Once the detection configuration on capturing valid anomalies is tuned, it's still important to input  **alert rules**  to make sure the final alert rules can meet eventual business needs. There are a number of rules that can be set, like  **filter rules**  or  **snooze continuous alert rules**.
+Once the detection configuration on capturing valid anomalies is tuned, it's still important to input **alert rules** to make sure the final alert rules can meet eventual business needs. There are a number of rules that can be set, like **filter rules** or **snooze continuous alert rules**.
 
 1. On the **Setup alert Rules** page under the **Configuration name** enter **Test-Alert** (1) and leave the **Hooks** unselected. Expand the **Filter anomaly based on value** section (2) and the **Advanced Settings** (3).
 
@@ -417,11 +416,11 @@ Sometimes, expected events and occurrences (such as holidays) can generate anoma
 
 >**Note**: Preset event configuration will take holidays into consideration during anomaly detection, and may change your results. It will be applied to the data points ingested after you save the configuration.
 
-1. Select the  **Configure Preset Event**  button next to the metrics drop-down list on each metric details page.
+1. Select the **Configure Preset Event** button next to the metrics drop-down list on each metric details page.
 
     ![](./media/configure-preset.png)
 
-2. In the window that appears, Make sure  **Enable holiday event** (1) is selected to use the configuration.
+2. In the window that appears, Make sure **Enable holiday event** (1) is selected to use the configuration.
 
 3. On the **Strategy** option select **Suppress holiday** (2).
 
@@ -449,12 +448,11 @@ Leave the rest of the options as default. The **Holiday event** pane should look
 
 >**Note**: For more information, see [Present Events](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/configure-metrics#preset-events).
 
-
 ## Task 13 - View recent incidents
 
 Metrics Advisor detects anomalies on all your time series data as they're ingested. However, not all anomalies need to be escalated, because they might not have a significant impact. Aggregation will be performed on anomalies to group related ones into incidents. 
 
-1. To view these incidents select the  **Incident**  tab in metrics details page.
+1. To view these incidents select the **Incident** tab in metrics details page.
 
     ![](./media/select-incident.png)
 
