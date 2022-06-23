@@ -18,9 +18,9 @@ To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Over
 
 ## Task 2 - Explore lab scenario
 
-Given the magnitude of the COVID-19 problem, it comes naturally to have a lot of research on the topic. In fact, in 2020 alone, tens of thousands of papers have been published on COVID-19 alone. The sheer amount of communication on the subject makes it difficult for a researcher to grasp and structure all the relevant topics and details. Furthermore, pre-defined catalogs and papers classification might not always reflect their content in the most effective way possible.
+Given the magnitude of the COVID-19 problem, it comes naturally to have a lot of research on the topic. In fact, in 2020 alone, tens of thousands of papers have been published on COVID-19 alone. The sheer amount of communication on the subject makes it difficult for a researcher to grasp and structure all the relevant topics and details. Furthermore, pre-defined catalogues and papers classification might not always reflect their content in the most effective way possible.
 
-Based on a set of existing research papers, we will use Natural Language Processing and Machine Learning to identify these papers' natural grouping. For each new document that gets into our system, we will use Machine Learning to classify it into one of the previously identified groups. We will use Automated ML (a feature of Azure Machine Learning) to train the best classification model and explain its behavior.
+Based on a set of existing research papers, we will use Natural Language Processing and Machine Learning to identify these papers' natural grouping. For each new document that gets into our system, we will use Machine Learning to classify it into one of the previously identified groups. We will use Automated ML (a feature of Azure Machine Learning) to train the best classification model and explain its behaviour.
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
@@ -78,7 +78,7 @@ The high-level steps covered in the lab are:
     
    ![](./media/mlterminal.png)
    
-1. Run following commands and make sure all commands will execute successfully.
+1. Run the following commands and make sure all commands will execute successfully.
     ```  
     conda env create -f aiw-ai-kernel.yml
     conda activate aiw-ai-kernel
@@ -98,7 +98,7 @@ The high-level steps covered in the lab are:
     
 ## Task 4 - Prepare data for the Machine Learning process
 
-1. In the Azure Machine Learning Studio, open `1. Data Preparation.ipynb` notebook. You might get a pop-up of important note, check the box and click on continue.
+1. In the Azure Machine Learning Studio, open `1. Data Preparation.ipynb` notebook. You might get a pop-up of an important note, check the box and click on continue.
 
    ![Select Note Book](./media/ClickJupyterDataPrepNoteBook.png)
    
@@ -200,7 +200,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![Locate the completed experiment ](media/ss1.png)
 
-2. You will navigate to the experiment details page where you should see the list of experiment runs. Locate the first run **(1)** listed here, the one that has the status **Completed**. Name of the run can be diffent in your environment and may not match with below screesnshot.
+2. You will navigate to the experiment details page where you should see the list of experiment runs. Locate the first run **(1)** listed here, the one that has the status **Completed**. The name of the run can be different in your environment and may not match with the below screenshot.
 
     ![Locate the completed AutoML run](media/locate-completed-run01.png)
 
@@ -237,11 +237,11 @@ The wizard is designed to provide an interface to input all the necessary parame
 
    ![Selecting Dataset](media/select_dataset.png)
 
-4. Once we picked the dataset, select the **Regression** modelling type and click **Next**
+4. Once we picked the dataset, select the **Regression** modeling type and click **Next**
 
-   ![Modelling_type](media/modelling_type.png)
+   ![Modeling_type](media/modelling_type.png)
 
-5. Now we need to select the Dasboard components, The Responsible AI dashboard offers two profiles for recommended sets of tools you can generate:
+5. Now we need to select the Dashboard components, The Responsible AI dashboard offers two profiles for recommended sets of tools you can generate:
 
    * **Model debugging** : Understand and debug erroneous data cohorts in your ML model using Error analysis, Counterfactual what-if examples, and Model explainability
    * **Real life interventions** : Understand and debug erroneous data cohorts in your ML model using Causal analysis
@@ -250,7 +250,7 @@ The wizard is designed to provide an interface to input all the necessary parame
 
    ![Model Debugging](media/model_debugging.png)
    
-7. After selecting a profile, we need to configure parameters for dashboard components. Explore through the ocmponent parameters for model debugging
+7. After selecting a profile, we need to configure parameters for dashboard components. Explore through the component parameters for model debugging
   
      * **Target feature (required)**: Specify the feature that your model was trained to predict
      * **Categorical features**: Indicate which features are categorical to properly render them as categorical values in the dashboard UI. This is pre-loaded for you based on your dataset metadata.
@@ -261,9 +261,9 @@ The wizard is designed to provide an interface to input all the necessary parame
      * **Number of counterfactuals** (required): Specify the number of counterfactual examples you want generated per datapoint. A minimum of at least 10 should be generated to enable a bar chart view in the dashboard of which features were most perturbed on average to achieve the desired prediction.
      * **Range of value predictions (required)** : Specify for regression scenarios the desired range you want counterfactual examples to have prediction values in. For binary classification scenarios, it will automatically be set to generate counterfactuals for the opposite class of each datapoint. For multi-classification scenarios, there will be a drop-down to specify which class you want each datapoints to be predicted as.
      * **Specify features to perturb** : By default, all features will be perturbed. However, if there are specific features you want perturbed, clicking this will open a panel with the list of features to select. (See below)
-     * **Generate explanations** : Toggle on and off to generate a model explanation component for your Responsible AI dashboard. No configuration is necessary as a default opaque box mimic explainer will be used to generate feature importances.
+     * **Generate explanations** : Toggle on and off to generate a model explanation component for your Responsible AI dashboard. No configuration is necessary as a default opaque box mimic explainer will be used to generate feature importance.
   
-8. Select the **Target feature** and Categorial features from the dropdown, If enabling the **Counterfactual what-if examples** please ensure to provide _Number of counterfactuals_ and _Range of value predictions_. Leave the other paramters to default and select **Next** .
+8. Select the **Target feature** and Categorial features from the dropdown, If enabling the **Counterfactual what-if examples** please ensure to provide _Number of counterfactuals_ and _Range of value predictions_. Leave the other parameters to default and select **Next** .
 
    ![Parameters_debugging](media/parameters_debugging.png)
 
@@ -275,7 +275,7 @@ The wizard is designed to provide an interface to input all the necessary parame
    * **Select compute type** : Compute cluster
    * **Select compute** : aml-compute-cpu
 
-10. Skip the creation of expermiment by clicking the **Cancel** option, since we have already created an RAI dashboard in the environment, this allows you to explore on Responsible AI Dashboard experiments without having to wait for the completion of the job run.
+10. Skip the creation of experiment by clicking the **Cancel** option, since we have already created an RAI dashboard in the environment, this allows you to explore on Responsible AI Dashboard experiments without having to wait for the completion of the job run.
     
     ![experiment_configuration](media/experiment_configuration1.png)
 
@@ -293,7 +293,6 @@ The wizard is designed to provide an interface to input all the necessary parame
 
 4. Explore through the Dashboard for understanding to enable the Full functionality with integrated compute resource.
 
-> **Note**: For more information abaout the Responsible AI dashboard, refernce this link ```https://docs.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-dashboard```
+> **Note**: For more information about the Responsible AI dashboard, reference this link ```https://docs.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-dashboard```
 
-
-## Task 9 -  
+ 
