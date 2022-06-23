@@ -4,7 +4,7 @@ This lab covers Azure Cognitive Services, particularly [Azure Cognitive Search](
 
 ## Task 1 - Explore dashboard of COVID-19 data
 
-Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the begining of each lab.
+Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning  of each lab.
 
 ![Azure AI in a Day datasets](../media/data-overview-01-01.png)
 
@@ -61,7 +61,7 @@ The high-level steps covered in the lab are:
 
     ![The abstract data source is ready to be updated.](media/edit-abstracts-datasource.png)
 
-8. Open a new PowerShell prompt.  Navigate to following directory `cd C:\Temp\AzureSearch\`. Enter the following code, which will create an Azure Search data source, index, and indexer.
+8. Open a new PowerShell prompt.  Navigate to the following directory `cd C:\Temp\AzureSearch\`. Enter the following code, which will create an Azure Search data source, index, and indexer.
 
     ```powershell
     function Create-AzureSearchIndex {
@@ -129,7 +129,7 @@ The high-level steps covered in the lab are:
 
 6. Choose the **covid19temp** index and enter `RNA interference` into the Query string input box, and then select **Search**.  This will return the documents which include the phrase "RNA interference."
 
-    ![Articles with the phrase RNA intereference.](media/search-explorer-rna-interference.png)
+    ![Articles with the phrase RNA interference.](media/search-explorer-rna-interference.png)
 
 7. We can also see how many articles match a certain search string.  In the Query string input box, enter the phrase `Brazil&$count=true` and then select **Search**.  This will return 53 documents.
 
@@ -191,7 +191,7 @@ The high-level steps covered in the lab are:
 
     ![Paste all cached items into the pdf_json folder.](media/azure-storage-explorer-301.png)
 
-8. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials, if not loggedin already.  Then, select **Resource groups**.
+8. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials, if not logged in already.  Then, select **Resource groups**.
 
     ![Open Azure resource group](media/azure-open-resource-groups.png)
 
@@ -219,7 +219,7 @@ The high-level steps covered in the lab are:
 
 15. Select the **covid19temp** index to return to the Search explorer.  When we had 865 documents, 53 of them pertained to Brazil.  We can confirm that this update was successful by entering `Brazil&$count=true` and selecting **Search**.  This will now return 57 results instead of the prior 53.
 
-    ![57 documents pertain to Brazil.](media/search-explorer-brazil-2.png)
+    ![57 documents pertaining to Brazil.](media/search-explorer-brazil-2.png)
 
 ## Task 6 - Using the Form Recognizer Studio
 
@@ -289,7 +289,7 @@ The high-level steps covered in the lab are:
 
     ![Project](media/lab2a-t6-frs5.png)
 
-14. Review the detials and click on **Create project**.
+14. Review the details and click on **Create project**.
 
     ![Project](media/lab2a-t6-frs6.png)
   
@@ -319,7 +319,7 @@ The high-level steps covered in the lab are:
 
     ![The option to train a model has been selected](media/lab2a-t6-frs13.png)
 
-21. Training a model may take up to 10-15 minustes to get succeed. Click on **Go to models**. 
+21. Training a model may take up to 10-15 minutes to get succeed. Click on **Go to models**. 
 
     ![The option to train a model has been selected](media/lab2a-t6-frs14.png)
 
@@ -335,7 +335,7 @@ The high-level steps covered in the lab are:
 
     ![An analyzed document](media/lab2a-t6-frs19.png)
     
-25. For now you have used custom models with Neural build mode. You can use any sample document which containes Tables and Signature to Test/Analyze using Template build mode. Please find the reference to explore more about Form Recognizer Studio: [Quickstart: Form Recognizer Studio - Azure Applied AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-form-recognizer-studio)
+25. For now you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signature to Test/Analyze using Template build mode. Please find the reference to explore more about Form Recognizer Studio: [Quickstart: Form Recognizer Studio - Azure Applied AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-form-recognizer-studio)
 
 ## Task 7 - Document Summarization via Cognitive Service for Language integration
 
