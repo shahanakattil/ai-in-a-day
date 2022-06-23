@@ -1,0 +1,25 @@
+[
+  {
+    "Name": "Azure Immersion Workshop : FY23 Azure AI",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/FY-23-AI-Updates/readme%201-2-4.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/FY-23-AI-Updates/01-aml-model-training/01-aml-model-training-new.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/FY-23-AI-Updates/03-knowledge-mining/2a-document-processing-and-summarization.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/FY-23-AI-Updates/05-metrics-advisor/05-metrics-advisor-new.md",
+        "Order": 4
+      }
+    ]
+  }
+]
+ 
