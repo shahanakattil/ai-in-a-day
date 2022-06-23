@@ -297,9 +297,7 @@ Change threshold is normally used when metric data generally stay around a certa
 
 >**Note**: For more information, see [Anomaly detection methods](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/configure-metrics#anomaly-detection-methods).
 
-## Task 9 - Configure metrics and fine tune detection configuration
-
-### Metrics
+## Task 9 - Configuring Metrics 
 
 1. To browse the metrics for a specific data feed, go to the **Data feeds** page and select **covid-ages** from the feeds. This will display a list of metrics associated with it.
 
@@ -315,7 +313,7 @@ When you first view a metric's details, you can load a time series by letting Me
 
     ![Metrics drill down](./media/layout-browse.png)
 
-## Task 10 - Tune the detection configuration
+## Task 10 - Fine Tuning the detection configuration
 
 A metric can apply one or more detection configurations. There's a default configuration for each metric, which you can edit or add to, according to your monitoring needs. The new auto-tuning feature makes this distinction between anomaly types possible. As of now, there are five supported anomaly patterns:
 
