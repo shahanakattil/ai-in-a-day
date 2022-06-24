@@ -291,7 +291,7 @@ The wizard is designed to provide an interface to input all the necessary parame
 
 3. Select the **Back to models** details to get back to your list of dashboards.
 
-4. Explore through the Dashboard for understanding to enable the Full functionality with integrated compute resource.
+4. Explore through the Dashboard to learn how to enable the Full functionality with integrated compute resource.
 
 > **Note**: For more information about the Responsible AI dashboard, reference this link ```https://docs.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-dashboard```
 
