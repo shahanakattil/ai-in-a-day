@@ -41,53 +41,50 @@ With Machine Learning (ML) and Natural Language Processing (NLP), Human Machine 
 
 First, we will start with a prepopulate Azure Cognitive Search knowledge base enhanced with Azure Cognitive Skills to test our foundational Bot based on old-fashion keyword lookup, regular expressions. Next, we will extend our conversational Bot's behavior using the Bot Framework Composer and Azure Language Understanding (LUIS). Finally, we will deploy our Bot to Azure Bot Service and enable voice access to our Bot using Cognitive Speech Services and Direct Line Speech channel.
 
-## Task 3 - Setting Azure Cognitive Search for a Chatbot
+## Task 3 -Setting up Power Virtual Agents and Create your first Chatbot.
 
-1. Launch the **Bot Framework Composer (1)** from its shortcut on Desktop. Select **Open (2)** to load our starter project.
+1. Navigate to **[Power Virtual agents page](https://powervirtualagents.microsoft.com/en-us/)** and select **Start Free**.
 
-   ![Bot Framework is open. Open menu command is highlighted.](media/bot-composer-project-open.png)
+   ![](media/power-virtual-agent-sign-up.png)
 
-   > **WARNING**: If you are asked for an application update such as below, please select **Not Now** and then select **Got it** to continue.
-   >
-   > ![For Framework Composer Update dialog is open. Cancel button is highlighted.](media/bot_update.png)
+2. Enter your email on the **Let's get you started** and select **Next**. 
 
-2. Navigate to your **C:\Users\Public\Desktop** folder **(1)** in location using the drop-down or and select the **AI-in-a-Day-Bot** by double-clicking **(2)** on it.
+   ![](media/PVA-sign-up-1.png)
 
-   ![Location is set to the users' documents folder. AI-in-a-Day-Bot project is highlighted.](media/ainewdp.png)
+> **Note**: You can retrieve your Email/username and Password from the environment details tab.
 
-3. In a Microsoft Edge web browser *(Do not close the Bot Framework Composer)*, navigate to the Azure portal (<https://portal.azure.com>) and log in with your credentials. Then select **Resource groups**.
+3. Select **Sign in** and enter your Password and select **sign in**.
 
-   ![Open Azure resource group](media/azure-open-resource-groups.png)
+4. Once **Signed in**, select **Get started** under the **Confirmation Details**.
 
-4. Select the **AI-in-a-Day** resource group.
+   ![](media/power-virtual-agent-sign-up-1.png)
 
-5. Select the Azure Cognitive Search service.
+5. You have now successfully signed up for **Power Virtual Agents**
 
-   ![Azure Cognitive Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/cognitive_searchservice.png)
+6. On the **Welcome to Power Virtual Agents** page, choose your respective region and select **Get Started**.
 
-6. Select **Indexes (1)** and observe the number of documents indexed in the **cognitive-index (2)**.
+   ![](media/PVA-select-region.png)
 
-   ![Indexes tab is open, and cognitive-index is highlighted.](media/cognitive_index.png)
+7. On the **Create a Chatbot** page enter the following details :
 
-7. Select **Search Explorer** to navigate to a web-based search experience where you can discover the data in the index.
+   - **Name of your bot** : Enter **AI-Bot-DeploymentID**.
+   - **What language will your bot speak?** : Select **English (US)** from the dropdown.
+   - **Select an environment** : Select the default **Cloudlabs.AI (AIW-DS) (default) - United States**
 
-   ![Cognitive Search service is open. Search Explorer command is highlighted.](media/search_explorer.png)
+   Now select **Create**.
 
-8. Select **Search (1)** to access a sample set of documents from the index. Scroll down and observe the data stored in the index. The values for the fields `people`, `organizations`, `locations`, and `keyphrases`, are created through the use of Azure Cognitive Services as part of the data enrichment process during data indexing.
+> **Note**: You can retrieve the DeploymentcID from the environment details tab.
 
-   ![Showing a sample set of RAW documents from Azure Cognitive Search. People, organizations, locations, and keyphrases fields are highlighted.](media/azure-cognitive-search-explorer-result.png)
+8. Once the Bot is created you will see the Power virtual agents page.
 
-9. Close the **Search Explorer**. Navigate to the **Keys (1)** panel. Copy the primary admin key by selecting the copy command **(2)**. Take note of the service name for your Azure Cognitive Search **(3)** for use in the next step.
+   ![](media/after-bot-creation.png)
 
-   ![Azure Cognitive Search service page is open. The keys tab is shown. Primary admin key copy command is highlighted.](media/azure-cognitive-search-key.png)
+9. One the **Power Virtual Agents** page, select **Topics** and **New Topic**.
 
-10. Now it's time to change the access keys used in our starter Bot to use our Azure Cognitive Search service. Go back to the Bot Framework Composer. Select **Greeting** trigger **(1)**. From the design surface, select the first **Set a property** activity **(2)**. You will see a **Value** field **(3)** on the right panel. We have to change the value with the primary admin key we have copied from the Azure Portal.
+   ![](media/PVA-new-topic.png)
 
-    ![Bot Framework Composer is on screen. Greeting trigger is selected. Set a property activity is selected. The value field on the right panel is highlighted.](media/starter-bot-key-change.png)
+10. 
 
-11. Our next step is to replace the Azure Cognitive Search endpoints used in the application with the one that you just noted in Step 9. Select **GetRecentResearch** trigger **(1)**. From the design surface, select the first **Send an HTTP request** activity **(2)**. You will see a **Url** field **(3)** on the right panel. We have to change the value `aiinaday` with the Azure Cognitive Search endpoint you coped previously. Repeat the same for `ResearchLookup`, `AskForMore`, and `OrganizationBasedSearch` triggers as well.
-
-    ![Bot Framework Composer is on screen. GetRecentResearch trigger is selected. Send an HTTP request activity is selected. The Url field on the right panel is highlighted.](media/starter-bot-endpoint-change-getrecentresearch.png)
 
 ## Task 4 - Running AI-in-a-Day Conversational Bot for the First Time
 
