@@ -18,4 +18,6 @@ Captions and answers are extracted verbatim from text in the search document. Th
 
    ![Semantic search service to be selected](media/lab2b-ssp1.png)
    
-4. From the Semantic search (preview) pane, 
+4. From the Semantic search (preview) pane, select **Free** tier by clicking on **Select Plan**. Once you click on select plan, a free tier plan will be selected for Semantic search.
+
+   ![Semantic search service free tier to be selected](media/lab2b-ssp2.png)
