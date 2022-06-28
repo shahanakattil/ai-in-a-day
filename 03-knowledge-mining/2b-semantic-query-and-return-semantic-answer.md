@@ -112,3 +112,8 @@ In this task you are going to perform the semantic search using a query in [REST
    
    ![Semantic search](media/lab2b-ssp15.png)
    
+8. You will be seeing a **Sending request** in the **Response** section which will take few seconds to get the response from cognitive search service. Once you get the response check that **Network Status: 200 OK**, review the response and explore with your own query requests.
+
+   ![Semantic search](media/lab2b-ssp16.png)
+   
+   >**Note**: If you face an issue that request failed with 401 Forbidden or 403 Forbidden, this might caused due to passing invalid authentication credentials or invalid api-key.
