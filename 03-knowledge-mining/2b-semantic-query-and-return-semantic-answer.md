@@ -8,7 +8,7 @@ Semantic search is a premium feature in Azure Cognitive Search that invokes a se
 
 Captions and answers are extracted verbatim from text in the search document. The semantic subsystem determines what part of your content has the characteristics of a caption or answer, but it does not compose new sentences or phrases. For this reason, content that includes explanations or definitions work best for semantic search.
 
-1. Navigate to **AI-in-a-Day** resource group [the Azure portal](https://portal.azure.com).
+1. Navigate to **AI-in-a-Day** resource group in the [Azure portal](https://portal.azure.com).
 
 2. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and select that.
 
