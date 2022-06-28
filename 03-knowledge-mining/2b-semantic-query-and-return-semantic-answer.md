@@ -45,7 +45,7 @@ Semantic ranking is an extension of the query execution pipeline that improves p
 
    ![Semantic configuration](media/lab2b-ssp6-latest.png)
 
-## Task 3 - Semantic search using Semantic configuration in Azure Portal
+## Task 3 - Semantic search using semantic configuration in Azure Portal
 
 1. Naviagte to **Overview**(1) of **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then click on **Search explorer**.
 
