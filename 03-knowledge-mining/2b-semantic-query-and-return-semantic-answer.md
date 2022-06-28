@@ -44,3 +44,17 @@ Semantic ranking is an extension of the query execution pipeline that improves p
 3. You will be able to see the added semantic configuration under Semantic configurations tab, click on **Save** to save the changes made.
 
    ![Semantic configuration](media/lab2b-ssp6-latest.png)
+
+## Task 3 - Semantic search using Semantic configuration in Azure Portal
+
+1. Naviagte to **Overview**(1) of **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then click on **Search explorer**.
+
+   ![Semantic search](media/lab2b-ssp3.png)
+   
+2. In the **Search explorer** pane, select the Index **covid19temp**(1) from the drop-down and click on the downward arrow to expand the **Query options (Preview)**(2). Turn **On**(3) the Semantic search (preview), select **my-semantic-config**(4) from the drop-down under Semantic configuration which you created in previous task. Click on **Search**(5).
+
+   ![Semantic search](media/lab2b-ssp7-latest.png)
+   
+3. Wait for few seconds to complete the search and scroll-down to the **Results** part in the same page. You will be able to see the output for the semantic search using semantic configuration.
+
+   ![Semantic search](media/lab2b-ssp8-latest.png)
