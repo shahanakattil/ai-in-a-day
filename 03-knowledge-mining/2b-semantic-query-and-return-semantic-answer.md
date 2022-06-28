@@ -62,3 +62,25 @@ Semantic ranking is an extension of the query execution pipeline that improves p
 ## Task 4 - Semantic Query using REST APIs
 
 In this task you are going to perform the semantic search using a query in [REST APIs](https://docs.microsoft.com/en-us/azure/search/search-get-started-rest). For now you will performing with [Postman desktop app](https://www.getpostman.com/) for sending requests to Azure Cognitive Search.
+
+1. In the **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** pane, select **Keys** under settings from left menu.
+
+   ![Semantic search](media/lab2b-ssp9.png)
+   
+2. Make sure to copy **api-key** which you can find below the **Manage query keys**. Save it in the text file which will be used later.
+
+   ![Semantic search](media/lab2b-ssp10.png)
+   
+3. Navigate to **LABVM Desktop** and open **Postman** application by double-clicking on it.
+
+   ![Semantic search](media/lab2b-ssp11.png)
+   
+4. In the Overview page of Postman app, click on **Create a request** under Get started.
+
+   ![Semantic search](media/lab2b-ssp12.png)
+   
+5. Select the **POST** Method from the drop-down. Enter request URL given below and make sure to replace the search service resoruce name as **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and index name as **covid19temp**.
+
+   `https://[search-service-name].search.windows.net/indexes/[index-name]/docs/search`
+   
+   ![Semantic search](media/lab2b-ssp12.png)
