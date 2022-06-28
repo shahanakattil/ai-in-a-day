@@ -21,3 +21,26 @@ Semantic ranking is an extension of the query execution pipeline that improves p
 4. From the Semantic search (preview) pane, select **Free** tier by clicking on **Select Plan**. Once you click on select plan, a free tier plan will be selected for Semantic search.
 
    ![Semantic search service free tier to be selected](media/lab2b-ssp2.png)
+   
+## Task 2 - Creating a Semantic configuration
+
+1. Naviagte to **Overview**(1) of **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then select **Indexes**(2). You will be able to see the list of indexes, click on **covid19temp**(3) index for adding semantic configuration.
+
+   ![Semantic config](media/lab2b-ssp4.png)
+   
+2. In the **covid19temp** index pane, select **Semantic configurations**(1) and click on **+ Add semantic configuration**. You will see a tab appears at right-side with **New semantic configuration**, enter the below values:
+
+    | Parameter                   | Value                                        |
+    | --------------------------- | -------------------------------------------- |
+    | Name (3)                    | my-semantic-config                           |
+    | Title field (4)             | Select `metadata\title` from the drop-down   |
+    | Field name under Content fields (5) | Select `bib_entries/BIBREFO/title` from the drop-down |
+    | Field name under Key fields (6)    | Select `bib_entries/BIBREFO/ref_id` from the drop-down |
+  
+  Click on **Ok**(7).
+  
+  ![Semantic configuration](media/lab2b-ssp5-latest.png)
+  
+3. You will be able to see the added semantic configuration under Semantic configurations tab, click on **Save** to save the changes made.
+
+   ![Semantic configuration](media/lab2b-ssp6-latest.png)
