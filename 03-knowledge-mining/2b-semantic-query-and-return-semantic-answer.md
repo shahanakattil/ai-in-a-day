@@ -95,3 +95,20 @@ In this task you are going to perform the semantic search using a query in [REST
    After updating the parameters, your **Request URL**(3) should be same as shown in the below screenshot.
    
    ![Semantic search](media/lab2b-ssp14.png)
+
+7. For adding query, you need to select **Body**(2) section. Then click on **raw**(2) as code type and select **JSON**(3) as extension from the drop-down. Copy-paste the query which is given below into the **coding area**(4) and click on **Send**(5).
+
+   ```bash
+   {
+       "search": "What is Endoplasmic Reticulum",
+       "queryType": "semantic",
+       "queryLanguage": "en-us",
+       "semanticConfiguration": "my-semantic-config",
+       "answers": "extractive|count-3",
+       "captions": "extractive|highlight-true",
+       "count": "true"
+   }
+   ```
+   
+   ![Semantic search](media/lab2b-ssp15.png)
+   
