@@ -116,4 +116,4 @@ In this task you are going to perform the semantic search using a query in [REST
 
    ![Semantic search](media/lab2b-ssp16.png)
    
-   >**Note**: If you face an issue that request failed with 401 Forbidden or 403 Forbidden, this might caused due to passing invalid authentication credentials or invalid api-key.
+   >**Note**: If you face an issue that request failed with 401 Forbidden or 403 Forbidden errod, this might caused due to passing invalid authentication credentials or invalid api-key.
