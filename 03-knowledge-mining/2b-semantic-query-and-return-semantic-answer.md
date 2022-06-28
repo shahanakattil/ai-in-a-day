@@ -37,9 +37,9 @@ Semantic ranking is an extension of the query execution pipeline that improves p
     | Field name under Content fields (5) | Select `bib_entries/BIBREFO/title` from the drop-down |
     | Field name under Key fields (6)    | Select `bib_entries/BIBREFO/ref_id` from the drop-down |
   
-  Click on **Ok**(7).
+   Click on **Ok**(7).
   
-  ![Semantic configuration](media/lab2b-ssp5-latest.png)
+   ![Semantic configuration](media/lab2b-ssp5-latest.png)
   
 3. You will be able to see the added semantic configuration under Semantic configurations tab, click on **Save** to save the changes made.
 
