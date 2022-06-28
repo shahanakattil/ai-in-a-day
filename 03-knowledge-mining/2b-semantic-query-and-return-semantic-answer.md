@@ -58,3 +58,7 @@ Semantic ranking is an extension of the query execution pipeline that improves p
 3. Wait for few seconds to complete the search and scroll-down to the **Results** part in the same page. You will be able to see the output for the semantic search using semantic configuration.
 
    ![Semantic search](media/lab2b-ssp8-latest.png)
+   
+## Task 4 - Semantic Query using REST APIs
+
+In this task you are going to perform the semantic search using a query in [REST APIs](https://docs.microsoft.com/en-us/azure/search/search-get-started-rest). For now you will performing with [Postman desktop app](https://www.getpostman.com/) for sending requests to Azure Cognitive Search.
