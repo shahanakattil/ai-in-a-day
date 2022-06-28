@@ -33,7 +33,7 @@ Semantic ranking is an extension of the query execution pipeline that improves p
     | Parameter                   | Value                                        |
     | --------------------------- | -------------------------------------------- |
     | Name (3)                    | my-semantic-config                           |
-    | Title field (4)             | Select `metadata\title` from the drop-down   |
+    | Title field (4)             | Select `metadata/title` from the drop-down   |
     | Field name under Content fields (5) | Select `bib_entries/BIBREFO/title` from the drop-down |
     | Field name under Key fields (6)    | Select `bib_entries/BIBREFO/ref_id` from the drop-down |
   
@@ -67,7 +67,7 @@ In this task you are going to perform the semantic search using a query in [REST
 
    ![Semantic search](media/lab2b-ssp9.png)
    
-2. Make sure to copy **api-key** which you can find below the **Manage query keys**. Save it in the text file which will be used later.
+2. Make sure to copy **api-key** which you can find below the **Manage query keys** and save it in the text file for later use.
 
    ![Semantic search](media/lab2b-ssp10.png)
    
@@ -79,8 +79,8 @@ In this task you are going to perform the semantic search using a query in [REST
 
    ![Semantic search](media/lab2b-ssp12.png)
    
-5. Select the **POST** Method from the drop-down. Enter request URL given below and make sure to replace the search service resoruce name as **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and index name as **covid19temp**.
+5. Select the **POST** Method from the drop-down. Enter request URL given below and make sure to replace the search service name as **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and index name as **covid19temp**.
 
    `https://[search-service-name].search.windows.net/indexes/[index-name]/docs/search`
    
-   ![Semantic search](media/lab2b-ssp12.png)
+   ![Semantic search](media/lab2b-ssp13.png)
