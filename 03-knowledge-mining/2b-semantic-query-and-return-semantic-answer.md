@@ -67,7 +67,7 @@ In this task you are going to perform the semantic search using a query in [REST
 
    ![Semantic search](media/lab2b-ssp9.png)
    
-2. Make sure to copy **api-key** which you can find below the **Manage query keys** and save it in the text file for later use.
+2. Make sure to copy **key** which you can find below the **Manage query keys** and save it in the text file for later use.
 
    ![Semantic search](media/lab2b-ssp10.png)
    
@@ -84,3 +84,14 @@ In this task you are going to perform the semantic search using a query in [REST
    `https://[search-service-name].search.windows.net/indexes/[index-name]/docs/search`
    
    ![Semantic search](media/lab2b-ssp13.png)
+
+6. In Parametrs section, enter the below values for **api-version**(1) and **api-key**(2).
+
+    | Parameter           | Value                                        |
+    | --------------------| -------------------------------------------- |
+    | api-version         | 2021-04-30-Preview                           |
+    | api-key             | Enter the manage query key which you have copied earlier in Step - 2    |
+   
+   After updating the parameters, your **Request URL**(3) should be same as shown in the below screenshot.
+   
+   ![Semantic search](media/lab2b-ssp14.png)
