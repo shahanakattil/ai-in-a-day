@@ -156,9 +156,8 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
 4. On the **Create a dialog** pop up, specify the name of your new dialog as **Meals**, then click **OK**.
 
-   ![](media/Meals-dialog.png)
-
-
+   ![](media/meals-dialog.png)
+   
 5. From the left navigation menu, click on the **Bot Responses** tab. With the **Meals** dialogue selected click on **Show code**. This is where we will enter the **JSON** text to create the adaptive card.
 
    ![](media/bot-show-code.png)
@@ -358,7 +357,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
 2. Go to the test pane and switch on **Track between topics**.
 
-   ![](media/Track-between-topics.png)
+   ![](media/track-between-topics.png)
 
 3. Type in a trigger phrase and the name of a city when prompted. 
 
