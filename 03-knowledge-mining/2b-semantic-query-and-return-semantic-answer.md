@@ -18,17 +18,17 @@ Semantic ranking is an extension of the query execution pipeline that improves p
 
    ![Semantic search service to be selected](media/lab2b-ssp1.png)
    
-4. From the Semantic search (preview) pane, select **Free** tier by clicking on **Select Plan**. Once you click on select plan, a free tier plan will be selected for Semantic search.
+4. From the Semantic search (preview) pane, select the **Free** tier by clicking on **Select Plan**. Once you click on select plan, a free tier plan will be selected for Semantic search.
 
    ![Semantic search service free tier to be selected](media/lab2b-ssp2.png)
    
 ## Task 2 - Creating a Semantic configuration
 
-1. Naviagte to **Overview**(1) of **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then select **Indexes**(2). You will be able to see the list of indexes, click on **covid19temp**(3) index for adding semantic configuration.
+1. Navigate to **Overview**(1) of **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then select **Indexes**(2). You will be able to see the list of indexes, click on **covid19temp**(3) index for adding semantic configuration.
 
    ![Semantic config](media/lab2b-ssp4.png)
    
-2. In the **covid19temp** index pane, select **Semantic configurations**(1) and click on **+ Add semantic configuration**. You will see a tab appears at right-side with **New semantic configuration**, enter the below values:
+2. In the **covid19temp** index pane, select **Semantic configurations**(1) and click on **+ Add semantic configuration**. You will see a tab appears on the right-side with **New semantic configuration**, enter the below values:
 
     | Parameter                   | Value                                        |
     | --------------------------- | -------------------------------------------- |
@@ -47,7 +47,7 @@ Semantic ranking is an extension of the query execution pipeline that improves p
 
 ## Task 3 - Semantic search using semantic configuration in Azure Portal
 
-1. Naviagte to **Overview**(1) of **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then click on **Search explorer**.
+1. Navigate to **Overview**(1) of **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then click on **Search explorer**.
 
    ![Semantic search](media/lab2b-ssp3.png)
    
@@ -71,7 +71,7 @@ In this task you are going to perform the semantic search using a query in [REST
 
    ![Semantic search](media/lab2b-ssp10.png)
    
-3. Navigate to **LABVM Desktop** and open **Postman** application by double-clicking on it.
+3. Navigate to **LABVM Desktop** and open the **Postman** application by double-clicking on it.
 
    ![Semantic search](media/lab2b-ssp11.png)
    
@@ -85,7 +85,7 @@ In this task you are going to perform the semantic search using a query in [REST
    
    ![Semantic search](media/lab2b-ssp13.png)
 
-6. In Parametrs section, enter the below values for **api-version**(1) and **api-key**(2).
+6. In Parameters section, enter the below values for **api-version**(1) and **api-key**(2).
 
     | Parameter           | Value                                        |
     | --------------------| -------------------------------------------- |
@@ -112,8 +112,8 @@ In this task you are going to perform the semantic search using a query in [REST
    
    ![Semantic search](media/lab2b-ssp15.png)
    
-8. You will be seeing a **Sending request** in the **Response** section which will take few seconds to get the response from cognitive search service. Once you get the response check that **Network Status: 200 OK**, review the response and explore with your own query requests.
+8. You will be seeing a **Sending request** in the **Response** section which will take a few seconds to get the response from the cognitive search service. Once you get the response check that **Network Status: 200 OK**, review the response and explore with your own query requests.
 
    ![Semantic search](media/lab2b-ssp16.png)
    
-   >**Note**: If you face an issue that request failed with 401 Forbidden or 403 Forbidden errod, this might caused due to passing invalid authentication credentials or invalid api-key.
+   >**Note**: If you face an issue that the request failed with 401 Forbidden or 403 Forbidden error, this might be caused due to passing invalid authentication credentials or invalid api-key. For more information reference this link ```https://docs.microsoft.com/en-us/rest/api/searchservice/http-status-codes#common-http-status-codes```
