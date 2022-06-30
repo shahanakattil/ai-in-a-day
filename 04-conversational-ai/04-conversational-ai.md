@@ -1,18 +1,6 @@
-# Lab 3 - Power Virtual Agents with Azure Bot Service and Cognitive Services
+# Lab 3 - Conversational AI with Azure Bot Service and Cognitive Services
 
-This lab covers Power Virtual agents, Bot Framework Composer, and Azure Cognitive Services.
-
-## Prerequisite: Install Bot Framework Composer
-
-1. Click on one of the following links to download the Bot Framework Composer on your device: 
-
-    - Windows: https://aka.ms/bf-composer-download-win 
-    - Mac: https://aka.ms/bf-composer-download-mac 
-    - Linux: https://aka.ms/bf-composer-download-linux
-
-2. Once the download is complete, launch the **Bot Framework Composer** Setup and go through the installation steps.
-
-3. Once the installation is complete, **close** down Bot Framework Composer. It should not be open before you start the lab.
+This lab covers Power Virtual Agents as the hero bot service and demonstrates how to extend your PVA bot using Bot Framework Composer.
 
 ## Task 1 - Explore dashboard of COVID-19 data
 
@@ -124,36 +112,23 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/save-bot.png)
 
-
-7. Install the **Bot Framework Composer** if you haven't already. If you have installed the Bot framework Composer skip steps 8, 9 and 10 and continue from step 11 onwards.
-
-8. Click on one of the following links to download the Bot Framework Composer on your device: 
-
-    - Windows: https://aka.ms/bf-composer-download-win 
-    - Mac: https://aka.ms/bf-composer-download-mac 
-    - Linux: https://aka.ms/bf-composer-download-linux
-
-9. Once the download is complete, launch the **Bot Framework Composer** Setup and go through the installation steps.
-
-10. Once the installation is complete, **close** down Bot Framework Composer. It should not be open before you start the lab.
-
-11. Click on the downward arrow and select **Open in Bot Framework Composer**
+7. Click on the downward arrow and select **Open in Bot Framework Composer**
 
     ![](media/bot-composer-1.png)
 
     >**Note**: If you can’t launch composer automatically from Power Virtual Agents, you can launch it manually from your browser. Click on Copy link to copy the link and paste it into the URL in your web browser. 
 
-12. Make sure to open Bot Framework Composer from within Power Virtual Agents. This ensures that Composer has all the necessary plugins needed for 
+8. Make sure to open Bot Framework Composer from within Power Virtual Agents. This ensures that Composer has all the necessary plugins needed for 
 integration with Power Virtual Agents
 
 
 ## Task 5 - Create an adaptive card using Bot Framework Composer
 
-1. When Bot Framework Composer application launches, you will be prompted to sign in. Sign in with the provided credientials.
+1. When Bot Framework Composer application launches, you will be prompted to sign in. Sign in with the provided credentials.
 
    >**Note** : You can find the credentials in the environment details tab.
 
-2. Once you sign in, you will be asked to import your bot to a new project. The **Name** field will be autopopulated. If it's empty, fill in the name field with the name of your 
+2. Once you sign in, you will be asked to import your bot to a new project. The **Name** field will be auto-populated. If it's empty, fill in the name field with the name of your 
 bot which we created on the **Power virtual agents** page. Then, click **Create**.
 
    ![](media/import-bot.png)
@@ -378,7 +353,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
    ![](media/final-bot.png)
 
 
-## Task 8 - Enabling Voice Access for Our Bot
+## Task 8 - Enabling Voice Access for Our Bot (Optional)
 
 > **WARNING**: This task requires access to Microphone hardware in your environment. If you are running your lab through a remote desktop connection, additional setup might be required. As an alternative, you can run the VoiceAssistantClient that is used in the lab in your local machine instead of a remote Virtual machine. If both options are not working, you might not be able to demo the functionality after step 5. In this case, you can download a video version of the end-user experience [here](media/DLS-chatbot-demo.mp4).
 
