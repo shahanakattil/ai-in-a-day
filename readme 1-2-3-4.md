@@ -78,7 +78,7 @@ The high-level steps covered in the lab are:
 - Explain the best model produced by AutoML
 - Assess AI systems and make data-driven decisions with Azure Machine Learning Responsible AI dashboard
 
-### Lab 2a - [Knowledge Mining with Azure Cognitive Search and Text Analytics](03-knowledge-mining/README.md)
+### Lab 2a - [Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language](2a-document-processing-and-summarization.md)
 
 This lab covers Azure Cognitive Search (index, knowledge store, custom skills) and Form Recognizer.
 
@@ -92,8 +92,25 @@ The high-level steps covered in the lab are:
 - Introducing  the Form Recognizer Studio
 - Document Summarization via Cognitive Service for Language integration
 
+### Lab 2b - [Knowledge Mining with Azure Cognitive Search](2b-semantic-query-and-return-semantic-answer.md)
 
-### Lab 4 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/README.md)
+ - Enabling the Semantic search (preview) in Cognitive Search service
+ - Creating a Semantic configuration
+ - Semantic search using semantic configuration in Azure Portal
+ - Semantic Query using REST APIs
+
+### Lab 3 - [Conversational AI with Azure Bot Service and Cognitive Services](04-conversational-ai.md)
+
+ - Explore dashboard of COVID-19 data
+ - Explore lab scenario
+ - Setting up Power Virtual Agents and Create your first Chatbot.
+ - Create a new topic
+ - Create an adaptive card using Bot Framework Composer
+ - Add your composer content to Power Virtual Agents bot
+ - Test your Bot
+ - Enabling Voice Access for Our Bot 
+
+### Lab 4 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/05-metrics-advisor-new.md)
 
 The lab covers the Metrics Advisor service from Azure Cognitive Services.
 
