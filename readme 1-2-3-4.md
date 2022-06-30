@@ -62,7 +62,7 @@ Using Cognitive Services Metrics Advisor, we will demonstrate how to improve the
 
 Each individual lab in this repo addresses a subset of the challenges described in the [Background story](#background-story) section.
 
-### Lab 1 - [Azure Machine Learning Model Training](01-aml-model-training/README.md)
+### Lab 1 - [Azure Machine Learning Model Training](01-aml-model-training/01-aml-model-training-new.md)
 
 The lab covers clustering with Azure Machine Learning, Automated ML, and model explainability.
 
