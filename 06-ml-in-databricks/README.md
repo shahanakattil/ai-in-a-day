@@ -143,6 +143,9 @@ The high-level steps covered in the lab are:
 11. After some time you will see a popup with the details of real-time execution in Azure Databricks, to see the job run in Azure Databricks, click on the **Run page url**. 
      ![ADF for lab6](./../media/dbviewrun.png)
      ![ADF for lab6](./../media/pipedetails.png)
-12. Now, you will be redirected to the Azure Databricks portal where you can see the notebook outputs, Task run details and other related information. You also will be having an option to Hide code to just see the results. 
+     
+12. Now, you will be redirected to the Azure Databricks portal where you can see the notebook outputs, Task run details and other related information. You also will be having an option to Hide code to just see the results. Once you see that the job status is **Succeeded**, you can continue with next task.
      
      ![ADF for lab6](./../media/runrichdetails.png)
+     
+
