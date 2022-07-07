@@ -1,6 +1,6 @@
 # Lab 5 - Machine Learning with Azure Databricks
 
-The lab covers Data Engineering and Machine Learning using Azure Databricks notebooks.
+The lab covers Data Engineering and Machine Learning using Azure Databricks notebooks activity in Azure Data Factory.
 
 ## Task 1 - Explore dashboard of COVID-19 data
 
