@@ -127,3 +127,7 @@ The high-level steps covered in the lab are:
 - Tune the configuration for a specific series or group
 - Preset Events
 - Recent incident views
+
+### Lab 5 - [Machine Learning with Azure Databricks](06-ml-in-databricks/README.md)
+
+The lab covers Data Engineering and Machine Learning using Azure Databricks notebooks activity in Azure Data Factory.
