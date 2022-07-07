@@ -131,3 +131,10 @@ The high-level steps covered in the lab are:
 ### Lab 5 - [Machine Learning with Azure Databricks](06-ml-in-databricks/README.md)
 
 The lab covers Data Engineering and Machine Learning using Azure Databricks notebooks activity in Azure Data Factory.
+
+The high-level steps covered in the lab are:
+
+- Explore dashboard of COVID-19 data
+- Explore the lab scenario
+- Connect Data Factory to Azure Databricks using linked service
+- Create Data Factory Pipeline to run notebooks in Azure Databricks
