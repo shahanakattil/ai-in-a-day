@@ -128,9 +128,11 @@ The high-level steps covered in the lab are:
     
 7. Now you will be triggering the pipeline, click on the **Add trigger** button and select **Trigger now**.
 
-     ![ADF for lab6](./../media/pubdone.png)
+     ![ADF for lab6](./media/lab5-task6-4.png)
      
 8. Now on the Pipeline run window, click on **OK** button to a start the trigger.
+
+   ![ADF for lab6](./media/lab5-task6-5.png)
 
 9. Now to see the pipeline running, navigate to **Monitor** section from the left side menu and select **Pipeline runs**. You should be able to see a pipeline under **Triggered** section. 
  
@@ -141,11 +143,70 @@ The high-level steps covered in the lab are:
      ![ADF for lab6](./../media/pipedetails.png)
      
 11. After some time you will see a popup with the details of real-time execution in Azure Databricks, to see the job run in Azure Databricks, click on the **Run page url**. 
+     
      ![ADF for lab6](./../media/dbviewrun.png)
-     ![ADF for lab6](./../media/pipedetails.png)
      
 12. Now, you will be redirected to the Azure Databricks portal where you can see the notebook outputs, Task run details and other related information. You also will be having an option to Hide code to just see the results. Once you see that the job status is **Succeeded**, you can continue with next task.
      
      ![ADF for lab6](./../media/runrichdetails.png)
+     
+## Task 6 - Create Data Factory Pipeline to run notebooks in Azure Databricks for Notebook3.
+   In this task you will create pipeline to run notebooks in Azure Databricks with the help of linked service in Data Factory and you will see the output in Azure Databricks.
+   
+1. While you are on the same Data Factory portal, navigate to **Author** section from the left side menu and click on the **+** button.
+
+    ![ADF for lab6](./../media/pipeline1.png)
+     
+2. Now, Select **Pipeline** and then select **Pipeline** again.
+   
+    ![ADF for lab6](./../media/pipelin2.png)
+   
+3. On the Pipeline creation page, under properties section enter the pipeline name as **Databricks Notebook3**.  
+
+    ![ADF for lab6](./media/lab5-task6-1.png)
+    
+4. In the **Activities** toolbox, expand **Databricks**. Drag the **Notebook** activity from the Activities toolbox to the pipeline designer surface. 
+    
+    ![ADF for lab6](./../media/drag.png)
+    
+5. In the properties for the Databricks Notebook activity window at the bottom, complete the following steps:
+
+    * Switch to the Azure Databricks tab.
+      -Select **AzureDatabricks** LinkedService from the drop down. (which you created in the previous task).
+      
+      ![ADF for lab6](./../media/linkpipelinedb.png)
+      
+    * Switch to the Settings tab.
+      - Click on **browse** on Notebook path option and navigate to ```Users/odl_user_XXXXX@aiw-ds.cloudlabs.ai/AI-in-a-Day-Lab-6``` path and select the first notebook **1-explore-surveillance-dataset** and click on **OK** button.
+
+          ![ADF for lab6](./media/lab5-task6-3.png)
+          
+6. Leave the other things default and click on **Publish all** button to publish the newly created pipeline. You should be able to see a notification after sometime with the information of **Publishing completed**.
+
+    ![ADF for lab6](./../media/pubdone.png)
+    
+7. Now you will be triggering the pipeline, click on the **Add trigger** button and select **Trigger now**.
+
+     ![ADF for lab6](./media/lab5-task6-4.png)
+     
+8. Now on the Pipeline run window, click on **OK** button to a start the trigger.
+
+   ![ADF for lab6](./media/lab5-task6-5.png)
+
+9. Now to see the pipeline running, navigate to **Monitor** section from the left side menu and select **Pipeline runs**. You should be able to see a pipeline under **Triggered** section. 
+ 
+     ![ADF for lab6](./media/lab5-task6-6.png)
+     
+10. Now to see the output in Databricks, select the running pipeline and under the **Activity runs**, Click on the details button. 
+
+     ![ADF for lab6](./../media/pipedetails.png)
+     
+11. After some time you will see a popup with the details of real-time execution in Azure Databricks. To see the job run in Azure Databricks, click on the **Run page url**. 
+     
+     ![ADF for lab6](./../media/dbviewrun.png)
+     
+12. Now, you will be redirected to the Azure Databricks portal where you can see the notebook outputs, Task run details and other related information. You also will be having an option to Hide code to just see the results. Once you see that the job status is **Succeeded**, you can continue with next task.
+     
+     ![ADF for lab6](./media/lab5-task6-8.png)
      
 
