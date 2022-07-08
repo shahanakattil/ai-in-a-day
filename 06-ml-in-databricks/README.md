@@ -4,7 +4,7 @@ The lab covers Data Engineering and Machine Learning using Azure Databricks note
 
 ## Task 1 - Explore dashboard of COVID-19 data
 
-Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the begining of each lab.
+Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
 
 ![Azure AI in a Day datasets](../media/data-overview-01-01.png)
 
@@ -20,7 +20,7 @@ To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Over
 
 When data comes in natural language, a data engineering process should transform it into a numerical form useful in Machine Learning. In most cases, some input values will be off (e.g., resulting from human error) or even missing. The same process should be able to identify and handle these cases. Furthermore, analysts need to perform exploratory analysis and various other consistency checks to gain a deep understanding of the data and ensure a level of quality that makes it fit for Machine Learning.
 
-Using Azure Databricks, we will prepare input datasets and analyze their content. We will also attempt to correlate the various datasets and clean their content. We will assess the resulting data quality using both statistical and Machine Learning-based approaches.
+Using Azure Databricks, we will prepare input datasets and analyse their content. We will also attempt to correlate the various datasets and clean their content. We will assess the resulting data quality using both statistical and Machine Learning-based approaches.
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
@@ -69,16 +69,16 @@ In this task you will be creating a link service in the Data factory to connect 
 
     ![ADF for lab6](./../media/dblink.png)
     
-8. After clicking on **Continue** button, Enter the below details on creation window. Once done click on **Create** button.
+8. After clicking on **Continue** button, Enter the below details in creation window. Once done click on **Create** button.
 
     - Name: ```AzureDatabricks```
     - Description: ```AzureDatabricks linked service```
-    - Connect via integratin runtime: **Leave default**
+    - Connect via integration runtime: **Leave default**
     - Account Selection method: ```From Azure subscription```
     - Azure subscription: ```Select available subscription from drop down```
-    - Databricks workspace: ```Select ai-adb-ws from drop down meno```
+    - Databricks workspace: ```Select ai-adb-ws from drop down menu```
     - Select cluster: ```Existing interactive cluster```
-    - Authentication type: ```Access tokek```
+    - Authentication type: ```Access token```
     - Access token: Paste the token you copied in the last exercise
     - Choose from existing clusters: Select ```ai-adb-lab``` from dropdown menu.
     
@@ -92,7 +92,7 @@ In this task you will be creating a link service in the Data factory to connect 
     
 
 ## Task 4 - Create Data Factory Pipeline to run the Explore the surveillance dataset Databricks notebook.
-   In this task you will create pipeline to run notebooks in Azure Databricks with the help of linked service in Data Factory and you will see the output in Azure Databricks.
+   In this task you will create a pipeline to run notebooks in Azure Databricks with the help of linked service in Data Factory and you will see the output in Azure Databricks.
    
 1. While you are on the same Data Factory portal, navigate to **Author** section from the left side menu and click on the **+** button.
 
@@ -206,7 +206,7 @@ In this task you will be creating a link service in the Data factory to connect 
 
     ![ADF for lab6](./media/lab5-task6-4.png)
      
-1. Now on the Pipeline run window, click on **OK** button to a start the trigger, Also you should be able to see the parameters and values you have created in previous steps.
+1. Now on the Pipeline run window, click on **OK** button to start the trigger, Also you should be able to see the parameters and values you have created in previous steps.
 
     ![ADF for lab6](./media/paramrun.png)
 
@@ -226,7 +226,7 @@ In this task you will be creating a link service in the Data factory to connect 
      
     ![ADF for lab6](./media/paramoutputs.png)
                
-1. Now on the left side you will be having your notebook and the results, as in this Notebook we are creating few expermients in the databricks and in Azure Machine learning. Once you go thorough from the cells output, you will be having the direct URL's to launch the experments and model details
+1. Now on the left side you will be having your notebook and the results, as in this Notebook we are creating few experiments in the databricks and in Azure Machine learning. Once you go thorough from the cells output, you will be having the direct URL's to launch the experiments and model details
 
     ![ADF for lab6](./media/notebookoutput.png)
     
