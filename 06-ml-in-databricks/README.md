@@ -75,10 +75,10 @@ The high-level steps covered in the lab are:
     - Description: ```AzureDatabricks linked service```
     - Connect via integratin runtime: **Leave default**
     - Account Selection method: ```From Azure subscription```
-    - Azure subscription: ``Select available subscription from drop down```
+    - Azure subscription: ```Select available subscription from drop down```
     - Databricks workspace: ```Select ai-adb-ws from drop down meno```
     - Select cluster: ```Existing interactive cluster```
-    - Authentication type: ```Access toke```
+    - Authentication type: ```Access tokek```
     - Access token: Paste the token you copied in the last exercise
     - Choose from existing clusters: Select ```ai-adb-lab``` from dropdown menu.
     
@@ -91,7 +91,7 @@ The high-level steps covered in the lab are:
     ![ADF for lab6](./../media/lndone.png)
     
 
-## Task 4 - Create Data Factory Pipeline to run notebooks in Azure Databricks.
+## Task 4 - Create Data Factory Pipeline to run the Explore the surveillance dataset Databricks notebook.
    In this task you will create pipeline to run notebooks in Azure Databricks with the help of linked service in Data Factory and you will see the output in Azure Databricks.
    
 1. While you are on the same Data Factory portal, navigate to **Author** section from the left side menu and click on the **+** button.
@@ -142,7 +142,7 @@ The high-level steps covered in the lab are:
 
      ![ADF for lab6](./../media/pipedetails.png)
      
-11. After some time you will see a popup with the details of real-time execution in Azure Databricks, to see the job run in Azure Databricks, click on the **Run page url**. 
+11. After some time you will see a pop-up with the details of real-time execution in Azure Databricks, to see the job run in Azure Databricks, click on the **Run page url**. 
      
      ![ADF for lab6](./../media/dbviewrun.png)
      
@@ -150,10 +150,10 @@ The high-level steps covered in the lab are:
      
      ![ADF for lab6](./../media/runrichdetails.png)
      
-## Task 6 - Create Data Factory Pipeline to run notebooks in Azure Databricks for Notebook2.
+## Task 5 - Create Data Factory Pipeline to run the Build a risk classifier based on surveillance data Azure Databricks Notebook.
    In this task you will create pipeline to run notebooks in Azure Databricks with the help of linked service in Data Factory and you will see the output in Azure Databricks and Azure Machine Learning.
    
-1. 1. While you are on the same Data Factory portal, navigate to **Author** section from the left side menu and click on the **+** button.
+1. While you are on the same Data Factory portal, navigate to **Author** section from the left side menu and click on the **+** button.
 
     ![ADF for lab6](./../media/pipeline1.png)
      
@@ -163,15 +163,15 @@ The high-level steps covered in the lab are:
     
 1. On the Pipeline creation page, under properties section enter the pipeline name as **Databricks Notebook2**.  
 
-    ![ADF for lab6](./media/lab5-task6-1.png)
+    ![ADF for lab6](./media/notebookj2name.png)
     
-1. Now under the parameters section, click on "+New" button and add the below parameters and the value:
+1. Now under the parameters section, click on **+New** button and add the below parameters and the values:
 
-       - experiment: /Users/odl_user_677783@aiw-ds.cloudlabs.ai/2-surveillance-risk-classifier
-       - client_id: inject keys
-       - client_secret: inject keys
+     - experiment: /Users/odl_user_677783@aiw-ds.cloudlabs.ai/2-surveillance-risk-classifier
+     - client_id: inject keys
+     - client_secret: inject keys
        
-       ![ADF for lab6](./media/param3.png)
+        ![ADF for lab6](./media/param3.png)
 
 1. In the **Activities** toolbox, expand **Databricks**. Drag the **Notebook** activity from the Activities toolbox to the pipeline designer surface. 
     
@@ -185,9 +185,9 @@ The high-level steps covered in the lab are:
       ![ADF for lab6](./../media/linkpipelinedb.png)
       
     * Switch to the Settings tab.
-      - Click on **browse** on Notebook path option and navigate to ```Users/odl_user_XXXXX@aiw-ds.cloudlabs.ai/AI-in-a-Day-Lab-6``` path and select the second  notebook **2-surveillance-risk-classifier** and click on **OK** button.
+       - Click on **browse** on Notebook path option and navigate to ```Users/odl_user_XXXXX@aiw-ds.cloudlabs.ai/AI-in-a-Day-Lab-6``` path and select the second  notebook **2-surveillance-risk-classifier** and click on **OK** button.
 
-          ![ADF for lab6](./media/2notebook.png)
+        ![ADF for lab6](./media/2notebook.png)
           
       - Expand the **Base parameters** section and click on the **+New** button and add the bellow parameters and the values:
       
@@ -198,33 +198,39 @@ The high-level steps covered in the lab are:
            ![ADF for lab6](./media/pipeparam.png)
            
 1. Leave the other things default and click on **Publish all** button to publish the newly created pipeline. You should be able to see a notification after sometime with the information of **Publishing completed**.
-
+    
+    ![ADF for lab6](./../media/publishppp.png)
     ![ADF for lab6](./../media/pubdone.png)
+    
 1. Now you will be triggering the pipeline, click on the **Add trigger** button and select **Trigger now**.
 
-     ![ADF for lab6](./media/lab5-task6-4.png)
+    ![ADF for lab6](./media/lab5-task6-4.png)
      
-1. Now on the Pipeline run window, click on **OK** button to a start the trigger.
+1. Now on the Pipeline run window, click on **OK** button to a start the trigger, Also you should be able to see the parameters and values you have created in previous steps.
 
-   ![ADF for lab6](./media/lab5-task6-5.png)
+    ![ADF for lab6](./media/paramrun.png)
 
 1. Now to see the pipeline running, navigate to **Monitor** section from the left side menu and select **Pipeline runs**. You should be able to see a pipeline under **Triggered** section. 
  
-     ![ADF for lab6](./media/lab5-task6-6.png)
+    ![ADF for lab6](./media/NB3.png)
      
 1. Now to see the output in Databricks, select the running pipeline and under the **Activity runs**, Click on the details button. 
 
-     ![ADF for lab6](./../media/pipedetails.png)
+    ![ADF for lab6](./../media/pipedetails.png)
      
 1. After some time you will see a popup with the details of real-time execution in Azure Databricks. To see the job run in Azure Databricks, click on the **Run page url**. 
      
-     ![ADF for lab6](./../media/dbviewrun.png)
+    ![ADF for lab6](./../media/dbviewrun.png)
      
-1. Now, you will be redirected to the Azure Databricks portal where you can see the notebook outputs, Task run details and other related information. You also will be having an option to Hide code to just see the results. Once you see that the job status is **Succeeded**, you can continue with next task.
+1. Now, you will be redirected to the Azure Databricks portal where you can see the notebook outputs, Task run details and other related information on the right side. You also will be having the parameters details that you have created. 
      
-     ![ADF for lab6](./media/lab5-task6-8.png)
+    ![ADF for lab6](./media/paramoutputs.png)
                
-## Task 6 - Create Data Factory Pipeline to run notebooks in Azure Databricks for Notebook3.
+1. Now on the left side you will be having your notebook and the results, as in this Notebook we are creating few expermients in the databricks and in Azure Machine learning. Once you go thorough from the cells output, you will be having the direct URL's to launch the experments and model details
+
+    ![ADF for lab6](./media/notebookoutput.png)
+    
+## Task 6 - Create Data Factory Pipeline to run the Explore the research papers dataset Azure Databricks for notebook.
    In this task you will create pipeline to run notebooks in Azure Databricks with the help of linked service in Data Factory and you will see the output in Azure Databricks.
    
 1. While you are on the same Data Factory portal, navigate to **Author** section from the left side menu and click on the **+** button.
