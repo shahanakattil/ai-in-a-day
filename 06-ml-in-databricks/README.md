@@ -39,7 +39,7 @@ The high-level steps covered in the lab are:
 
 ## Task 3- Connect Data Factory to Azure Databricks using linked service.
 
-    In this task you will be creating a link service in the Data factory to connect Azure Databricks with Data factory.
+In this task you will be creating a link service in the Data factory to connect Azure Databricks with Data factory.
     
 1. Navigate to Azure portal and in the search box on top, search for Data factory and select it.  
 
