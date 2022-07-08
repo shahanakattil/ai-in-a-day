@@ -199,7 +199,7 @@ In this task you will be creating a link service in the Data factory to connect 
            
 1. Leave the other things default and click on **Publish all** button to publish the newly created pipeline. You should be able to see a notification after sometime with the information of **Publishing completed**.
     
-    ![ADF for lab6](./../media/publishppp.png)
+    ![ADF for lab6](./media/publishppp.png)
     ![ADF for lab6](./../media/pubdone.png)
     
 1. Now you will be triggering the pipeline, click on the **Add trigger** button and select **Trigger now**.
