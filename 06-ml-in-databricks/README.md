@@ -45,7 +45,7 @@ In this task you will be creating a link service in the Data factory to connect 
 
     ![ADF for lab6](./../media/searchadf.png)
 
-2. Now open the data factory resource from the list named as datafactory-XXXXXX.
+2. Now open the data factory resource from the list named as **datafactory-<inject key="DeploymentID" enableCopy="false"/>**.
 
     ![ADF for lab6](./../media/adfopen.png) 
      
