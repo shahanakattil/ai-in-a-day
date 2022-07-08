@@ -167,9 +167,9 @@ The high-level steps covered in the lab are:
     
 1. Now under the parameters section, click on **+New** button and add the below parameters and the values:
 
-     - experiment: /Users/odl_user_677783@aiw-ds.cloudlabs.ai/2-surveillance-risk-classifier
-     - client_id: inject keys
-     - client_secret: inject keys
+     - **experiment**: ```/Users/odl_user_xxxxxx@aiw-ds.cloudlabs.ai/2-surveillance-risk-classifier```, Please make sure to update the XXXXXX value with deployment inject
+     - **client_id**: inject keys
+     - **client_secret**: inject keys
        
         ![ADF for lab6](./media/param3.png)
 
