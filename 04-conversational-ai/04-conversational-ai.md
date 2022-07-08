@@ -27,7 +27,7 @@ The way organizations are building conversational systems is evolving, with bots
 
 ![Architecture for Lab 4](media/ai-workflow.png)
 
-## Task 3 - Setting up Power Virtual Agents and Create your first Chatbot.
+## Task 3 - Setting up Power Virtual Agents and Create your first Chatbot
 
 1. Navigate to **[Power Virtual agents page](https://powervirtualagents.microsoft.com/en-us/)** and select **Start Free**.
 
@@ -66,7 +66,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/after-bot-creation.png)
 
-## Task 4 - Create a new topic
+## Task 4 - Create a new Topic
 
 1. One the **Power Virtual Agents** page, select **Topics** and **New Topic**.
 
