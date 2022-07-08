@@ -79,12 +79,12 @@ In this task you will be creating a link service in the Data factory to connect 
     - Databricks workspace: ```Select ai-adb-ws from drop down menu```
     - Select cluster: ```Existing interactive cluster```
     - Authentication type: ```Access token```
-    - Access token: Paste the token you copied in the last exercise
+    - Access token: Paste the token you copied in the last exercise  
     - Choose from existing clusters: Select ```ai-adb-lab``` from dropdown menu.
     
-      ![ADF for lab6](./../media/ln1.png)
+       ![ADF for lab6](./../media/ln1.png)
       
-      ![ADF for lab6](./../media/ln2.png)
+       ![ADF for lab6](./../media/ln2.png)
       
 9. Once the linked service creation is done, you will see a linked service in data factory linked service section.
    
