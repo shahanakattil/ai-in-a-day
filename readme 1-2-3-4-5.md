@@ -137,4 +137,8 @@ The high-level steps covered in the lab are:
 - Explore dashboard of COVID-19 data
 - Explore the lab scenario
 - Connect Data Factory to Azure Databricks using linked service
-- Create Data Factory Pipeline to run notebooks in Azure Databricks
+- Create Data Factory Pipeline to run the Explore the surveillance dataset Databricks notebook
+- Create Data Factory Pipeline to run the Build a risk classifier based on surveillance data Azure Databricks Notebook
+- Create Data Factory Pipeline to run the Explore the research papers dataset Azure Databricks for notebook
+
+
