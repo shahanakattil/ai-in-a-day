@@ -37,7 +37,7 @@ The high-level steps covered in the lab are:
 - Use SparkML to build risk classifier on case surveillance dataset
 - Assess fairness of risk classifier
 
-## Task 3- Connect Data Factory to Azure Databricks using linked service.
+## Task 3- Connect Data Factory to Azure Databricks using linked service
 
 In this task you will be creating a link service in the Data factory to connect Azure Databricks with Data factory.
     
@@ -91,7 +91,7 @@ In this task you will be creating a link service in the Data factory to connect 
     ![ADF for lab6](./../media/lndone.png)
     
 
-## Task 4 - Create Data Factory Pipeline to run the Explore the surveillance dataset Databricks notebook.
+## Task 4 - Create Data Factory Pipeline to run the Explore the surveillance dataset Databricks notebook
    In this task you will create a pipeline to run notebooks in Azure Databricks with the help of linked service in Data Factory and you will see the output in Azure Databricks.
    
 1. While you are on the same Data Factory portal, navigate to **Author** section from the left side menu and click on the **+** button.
@@ -150,7 +150,7 @@ In this task you will be creating a link service in the Data factory to connect 
      
      ![ADF for lab6](./../media/runrichdetails.png)
      
-## Task 5 - Create Data Factory Pipeline to run the Build a risk classifier based on surveillance data Azure Databricks Notebook.
+## Task 5 - Create Data Factory Pipeline to run the Build a risk classifier based on surveillance data Azure Databricks Notebook
    In this task you will create pipeline to run notebooks in Azure Databricks with the help of linked service in Data Factory and you will see the output in Azure Databricks and Azure Machine Learning.
    
 1. While you are on the same Data Factory portal, navigate to **Author** section from the left side menu and click on the **+** button.
@@ -230,7 +230,7 @@ In this task you will be creating a link service in the Data factory to connect 
 
     ![ADF for lab6](./media/notebookoutput.png)
     
-## Task 6 - Create Data Factory Pipeline to run the Explore the research papers dataset Azure Databricks for notebook.
+## Task 6 - Create Data Factory Pipeline to run the Explore the research papers dataset Azure Databricks for notebook
    In this task you will create pipeline to run notebooks in Azure Databricks with the help of linked service in Data Factory and you will see the output in Azure Databricks.
    
 1. While you are on the same Data Factory portal, navigate to **Author** section from the left side menu and click on the **+** button.
