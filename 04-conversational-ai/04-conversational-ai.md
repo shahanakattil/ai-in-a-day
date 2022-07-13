@@ -289,34 +289,31 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
 10. Click on the **'+'** button, and select **Send a response**.
 
-      ![](media/begin-dialog-2.png)
+    ![](media/begin-dialog-2.png)
 
 11. In the Bot responses box that appears on the right side of the screen, select **Show Code** and enter the following JSON code.
 
+    ![](media/show-code-1.png)
 
-      ![](media/show-code-1.png)
+    ```
+    ${AdaptiveCardMeals(virtualagent.user_city)}
+    ```
 
-      ```
-      ${AdaptiveCardMeals(virtualagent.user_city)}
-      ```
+    ![](media/show-code-2.png)   
 
-      ![](media/show-code-2.png)   
-
-      >**Note**: Ensure there is only one – symbol at the start of the code.
+    >**Note**: Ensure there is only one – symbol at the start of the code.
 
 12. On the left navigation menu select **Publish**.  Select your **bot**, then click on **Publish selected bots**. 
 
-      ![](media/publish-bot-01.png)   
+    ![](media/publish-bot-01.png)   
 
+13. You need to providing the Email/Username: <inject key="AzureAdUserEmail"></inject> in the signup popup for publishing bot. Confirm that you want to publish the bot by clicking on **Okay**. The bot should now be in the process of publishing.
 
-13. Confirm that you want to publish the bot. The bot should now be in the process of publishing.
-
-
-      ![](media/publish-bot-02.png)  
+    ![](media/publish-bot-02.png)  
 
 14. You will get a confirmation message in Composer once the bot has been published.
 
-      ![](media/publish-bot-03.png) 
+    ![](media/publish-bot-03.png) 
 
 ## Task 6 - Add your composer content to Power Virtual Agents bot
 
