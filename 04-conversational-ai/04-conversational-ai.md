@@ -170,7 +170,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
    ```
    # adaptivecardjson_meals(location) 
-   - 
+   - ```
    { 
       "type": "AdaptiveCard", 
       "$schema": "http://adaptivecards.io/schemas/adaptive-card.json", 
@@ -266,7 +266,9 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
       ] 
    } 
    ```
-
+   
+   >**Note**: Add **```** at the end of above code after pasting it to code window.
+   
    ![](media/code-2.png)
 
 8. The last code to enter is the activity that will display this **adaptive card** in the Bot Framework dialog. Paste in the following code in the same window in composer, underneath the code entered in previous step.
@@ -278,7 +280,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
    ]
 
    ```
-
+   
    ![](media/bot-show-code-01.png)
 
 9. From the left navigation bar, click on the **Create** tab and select **BeginDialog**.
