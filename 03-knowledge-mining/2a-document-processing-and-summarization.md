@@ -353,7 +353,7 @@ The high-level steps covered in the lab are:
 
 3. Create a new file named **summarization.py** in the location `C:\Temp\AzureSearch\` and add the below code in the file. Make sure to replace the **Key** and the **Endpoint** of the Cognitive services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have copied to text file in the previous tasks.
 
-```bash
+ ```bash
 key = "paste-your-key-here"
 endpoint = "paste-your-endpoint-here"
 
