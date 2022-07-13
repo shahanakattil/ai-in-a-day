@@ -169,15 +169,15 @@ The high-level steps covered in the lab are:
 
     ![The Use a connection string option is selected.](media/connectionstring.png)
 
-4. Enter **lab03** as the Display name and paste in your storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>**.  Then, select **Next** to continue and **Connect** to complete the operation.
+4. Paste in your storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>**.  Then, select **Next** to continue and **Connect** to complete the operation.
 
-    ![The connection string is filled in.](media/azure-storage-explorer-connect-lab03.png)
+    ![The connection string is filled in.](media/new-lab2a-1.png)
 
-    ![Connect is selected on the storage explorer page](media/connect-stroage-explorer.png)
+    ![Connect is selected on the storage explorer page](media/new-lab2a-2.png)
 
 5. In Azure Storage Explorer, navigate down the **(1)  lab03** attached storage and expand **(2) Blob containers** select the **(3) `covid19temp` blob container**.  Double-click the **(4)  comm_use_subset** to enter that folder.
 
-    ![The comm_use_subset folder is selected.](media/azure-storage-explorer-lab04.png)
+    ![The comm_use_subset folder is selected.](media/new-lab2a-3.png)
 
 6. Enter the **pdf_json_refresh** folder.  Then, in the **(1) Select All** menu, choose **Select All Cached**.  This will highlight all 100 records in the folder.  Select **Copy** to copy these documents.
 
@@ -305,7 +305,7 @@ The high-level steps covered in the lab are:
 
 17. Return to the second PDF and select each word in the **Abstract** section.  After highlighting this, select the **Abstract** tag to tag this section.  Note that you will need to select each word individually rather than selecting a box.  After selecting the **Abstract** tag, you should see a tag logo next to the PDF.  If you see the tag logo, this means that tagging was successful for this document.
 
-    ![The first PDF has been viewed, and the second PDF has been tagged](media/lab2a-t6-frs10.png)
+    ![The first PDF has been viewed, and the second PDF has been tagged](media/new-lab2a-t6-4.png)
 
 18. Return to the first PDF and highlight the word **ABSTRACT** as well as the abstract.  If the abstract is lengthy, as in this example, it is okay to include just the first paragraph.  Then, select the **Abstract** tag to tag this document.  Ensure that the viewed icon (an eye) changes to a tag icon.  If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful.  In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
 
@@ -327,9 +327,9 @@ The high-level steps covered in the lab are:
 
     ![The Abstracts model has been trained](media/lab2a-t6-frs15.png)
 
-23. From the left menu, select the **Test**(1). Click on **+ Add**(2) and navigate to `C:\Temp\AzureSearch\` and select `2020.09.25.20201616v1.pdf`. Select **Analyze**(3) to see the results. Note that the abstract is on page 2 of the PDF.
+23. From the left menu, select the **Test**(1). Click on **Browse for a file**(2) and navigate to `C:\Temp\AzureSearch\` and select `2020.09.25.20201616v1.pdf`. Select **Analyze**(3) to see the results. Note that the abstract is on page 2 of the PDF.
 
-    ![An analyzed document](media/lab2a-t6-frs16.png)
+    ![An analyzed document](media/new-lab2a-5.png)
 
 24. Select **Result** and click on **download icon** to download JSON file. Find the location where the script was downloaded and observe the result code.
 
@@ -353,60 +353,60 @@ The high-level steps covered in the lab are:
 
 3. Create a new file named **summarization.py** in the location `C:\Temp\AzureSearch\` and add the below code in the file. Make sure to replace the **Key** and the **Endpoint** of the Cognitive services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have copied to text file in the previous tasks.
 
-   ```bash
-   key = "paste-your-key-here"
-   endpoint = "paste-your-endpoint-here"
+```bash
+key = "paste-your-key-here"
+endpoint = "paste-your-endpoint-here"
 
-   from azure.ai.textanalytics import TextAnalyticsClient
-   from azure.core.credentials import AzureKeyCredential
+from azure.ai.textanalytics import TextAnalyticsClient
+from azure.core.credentials import AzureKeyCredential
 
-   # Authenticate the client using your key and endpoint 
-   def authenticate_client():
-       ta_credential = AzureKeyCredential(key)
-       text_analytics_client = TextAnalyticsClient(
-               endpoint=endpoint, 
-               credential=ta_credential)
-       return text_analytics_client
+# Authenticate the client using your key and endpoint 
+def authenticate_client():
+    ta_credential = AzureKeyCredential(key)
+    text_analytics_client = TextAnalyticsClient(
+            endpoint=endpoint, 
+            credential=ta_credential)
+    return text_analytics_client
 
-    client = authenticate_client()
+client = authenticate_client()
 
-    # Example method for summarizing text
-    def sample_extractive_summarization(client):
-        from azure.core.credentials import AzureKeyCredential
-        from azure.ai.textanalytics import (
-            TextAnalyticsClient,
-            ExtractSummaryAction
-        ) 
+# Example method for summarizing text
+def sample_extractive_summarization(client):
+    from azure.core.credentials import AzureKeyCredential
+    from azure.ai.textanalytics import (
+        TextAnalyticsClient,
+        ExtractSummaryAction
+    ) 
 
-        document = [
-           "The extractive summarization feature uses natural language processing techniques to locate key sentences in an unstructured text document. "
-           "These sentences collectively convey the main idea of the document. This feature is provided as an API for developers. " 
-           "They can use it to build intelligent solutions based on the relevant information extracted to support various use cases. "
-           "In the public preview, extractive summarization supports several languages. It is based on pretrained multilingual transformer models, part of our quest for holistic representations. "
-           "It draws its strength from transfer learning across monolingual and harness the shared nature of languages to produce models of improved quality and efficiency. "
-         ]
+    document = [
+        "The extractive summarization feature uses natural language processing techniques to locate key sentences in an unstructured text document. "
+        "These sentences collectively convey the main idea of the document. This feature is provided as an API for developers. " 
+        "They can use it to build intelligent solutions based on the relevant information extracted to support various use cases. "
+        "In the public preview, extractive summarization supports several languages. It is based on pretrained multilingual transformer models, part of our quest for holistic representations. "
+        "It draws its strength from transfer learning across monolingual and harness the shared nature of languages to produce models of improved quality and efficiency. "
+    ]
 
-         poller = client.begin_analyze_actions(
-             document,
-             actions=[
-                 ExtractSummaryAction(max_sentence_count=4)
-             ],
-         )
+    poller = client.begin_analyze_actions(
+        document,
+        actions=[
+            ExtractSummaryAction(max_sentence_count=4)
+        ],
+    )
 
-         document_results = poller.result()
-         for result in document_results:
-             extract_summary_result = result[0]  # first document, first result
-             if extract_summary_result.is_error:
-                print("...Is an error with code '{}' and message '{}'".format(
-                    extract_summary_result.code, extract_summary_result.message
-                ))
-            else:
-                print("Summary extracted: \n{}".format(
-                    " ".join([sentence.text for sentence in extract_summary_result.sentences]))
-                )
+    document_results = poller.result()
+    for result in document_results:
+        extract_summary_result = result[0]  # first document, first result
+        if extract_summary_result.is_error:
+            print("...Is an error with code '{}' and message '{}'".format(
+                extract_summary_result.code, extract_summary_result.message
+            ))
+        else:
+            print("Summary extracted: \n{}".format(
+                " ".join([sentence.text for sentence in extract_summary_result.sentences]))
+            )
 
-    sample_extractive_summarization(client)
-    ```
+sample_extractive_summarization(client)
+ ```
     
    ![summarization](media/lab2a-t7-summarization.png) 
 
