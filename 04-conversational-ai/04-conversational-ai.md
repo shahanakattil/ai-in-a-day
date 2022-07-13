@@ -135,9 +135,9 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
    >**Note**: In the occasion where the following screen does not appear in Composer on launch, you will need to close the application and launch it again from Power Virtual Agents.
 
-3. Once you see your project appear in Composer. On the left side of the screen, click on **Create** and click on the three dots (1) . Then, select **+ Add a dialog**.
+3. Once you see your project appear in Composer. On the left side of the screen, click on **Create** and click on the three dots. Then, select **+ Add a dialog**.
 
-   ![](media/add-dialog-01.png)
+   ![](media/lab3-task5-1.png)
 
 4. On the **Create a dialog** pop up, specify the name of your new dialog as **Meals**, then click **OK**.
 
