@@ -305,7 +305,7 @@ The high-level steps covered in the lab are:
 
 17. Return to the second PDF and select each word in the **Abstract** section.  After highlighting this, select the **Abstract** tag to tag this section.  Note that you will need to select each word individually rather than selecting a box.  After selecting the **Abstract** tag, you should see a tag logo next to the PDF.  If you see the tag logo, this means that tagging was successful for this document.
 
-    ![The first PDF has been viewed, and the second PDF has been tagged](media/new-lab2a-t6-4.png)
+    ![The first PDF has been viewed, and the second PDF has been tagged](media/new-lab2a-4.png)
 
 18. Return to the first PDF and highlight the word **ABSTRACT** as well as the abstract.  If the abstract is lengthy, as in this example, it is okay to include just the first paragraph.  Then, select the **Abstract** tag to tag this document.  Ensure that the viewed icon (an eye) changes to a tag icon.  If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful.  In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
 
