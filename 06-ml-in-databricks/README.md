@@ -79,11 +79,11 @@ The high-level steps covered in the lab are:
      
 11. Now on the Token creation window, add the comment as **ADFlinktoken (1)** and click on the **Generate** button. 
 
-     ![ADF for lab6](./../media/tokengen.png)
+     ![ADF for lab6](./../media/tokengen2.png)
  
 12. Now copy the Generated token value and save it in a noteped to use in next exercises.
 
-     ![ADF for lab6](./../media/tokengen2.png)
+     ![ADF for lab6](./../media/tokengen3.png)
      
 ## Task 4- Connect Data Factory to Azure Databricks using linked service
 
