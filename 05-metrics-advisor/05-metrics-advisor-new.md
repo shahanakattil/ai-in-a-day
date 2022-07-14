@@ -93,7 +93,7 @@ To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Over
 
 Besides collecting data about COVID-19 cases, it is also essential to ensure the accuracy of the reporting. Accuracy check is where continuous monitoring of incoming data feeds doubled by automatic detection of anomalies plays a critical role. Data is valid for analysis as long as it is reliable and contains the minimum possible number of errors. With distributed data sources and numerous reporting entities, automatic anomaly detection is the best choice to minimize that number.
 
-Using Cognitive Services Metrics Advisor, we will demonstrate how to improve the case surveillance data quality by identifying anomalies in the number of daily reported cases as early as possible.
+Using Cognitive Services Metrics Advisor, we will demonstrate how to improve the case surveillance data quality by identifying as early as possible anomalies.
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
@@ -129,7 +129,7 @@ The high-level steps covered in the lab are:
    
      ![](media/AI-metric-advisor-latest.png)
 
-4. Once the validation is passed, click on **Create**. The deployment could take up to **60 minutes** to complete, although it normally finishes in less than **10 minutes**. Please wait until the deployment succeeds, and then you can proceed with the next task.
+4. Once the validation is passed, click on **Create**. The deployment could take up to **60 minutes** to complete, although it normally finishes in less than **10 minutes**. Please wait until the deployment gets succeeded and then you can proceed with next task.
 
 ## Task 4 - Configure the "COVID cases by age group" Metrics Advisor data feed
 
