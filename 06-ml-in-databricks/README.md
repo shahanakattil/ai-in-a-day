@@ -69,21 +69,19 @@ The high-level steps covered in the lab are:
 
    ![View list of notebooks in Azure Databricks workspace](./media/databricks-workspace-2.png)
 
-9. Wait until the cluster starts, then proceed to the next tasks in the lab.
-
-10. Now click on the **Settings (1)** button from the left side menu and select the **User Settings (2)** option.
+9. Now click on the **Settings (1)** button from the left side menu and select the **User Settings (2)** option.
 
      ![ADF for lab6](./../media/toekn1.png)
      
-11. Now on the **User Settings** page, click on the **Generate new token**.
+10. Now on the **User Settings** page, click on the **Generate new token**.
 
      ![ADF for lab6](./../media/tokengen.png)
      
-12. Now on the Token creation window, add the comment as **ADFlinktoken (1)** and click on the **Generate** button. 
+11. Now on the Token creation window, add the comment as **ADFlinktoken (1)** and click on the **Generate** button. 
 
      ![ADF for lab6](./../media/tokengen.png)
  
-13. Now copy the Generated token value and save it in a noteped to use in next exercises.
+12. Now copy the Generated token value and save it in a noteped to use in next exercises.
 
      ![ADF for lab6](./../media/tokengen2.png)
      
