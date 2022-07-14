@@ -36,8 +36,58 @@ The high-level steps covered in the lab are:
 - Correlate research paper and case surveillance datasets
 - Use SparkML to build a risk classifier on a case surveillance dataset
 - Assess fairness of risk classifier
+- 
+## Task 3 - Start your Azure Databricks environment and generate Databricks token. 
 
-## Task 3- Connect Data Factory to Azure Databricks using linked service
+1. Open the [Azure Portal](https://portal.azure.com) and sign-in with your lab credentials.
+
+2. Navigate to your resource group `AI-in-a-Day` and locate the Azure Databricks workspace **ai-adb-ws**.
+
+   ![Open Azure Databricks Workspace](media/rg-databricks.png)
+   
+3. Select **launch workspace**. If you are prompted to sign-in again, use the same lab credentials you used at the previous step.
+
+   ![Open Azure Databricks Workspace](media/launch-workspace.png)
+
+4. In the Azure Databricks workspace, select the `Compute` section on the left side menu.
+
+   ![select compute](media/select-compute-not-cluster.png)
+
+5. Under **All-purpose clusters** select the **ai-adb-lab** cluster.
+
+   ![Select Azure Databricks Cluster](media/select-compute-1.png)
+  
+6. Select `Start` to start the Azure Databricks cluster. It will take 1-2 minutes to start.
+
+   ![Start Azure Databricks Cluster](./media/ss3.png)
+
+7. While the cluster is starting, select the `Workspace` section on the left side menu, select the `Users` folder, then select the folder corresponding to the user name from your lab credentials, and then select the `AI-in-a-day-Lab-6` folder.
+
+   ![Open Azure Databricks workspace folders](media/user-select-1.png)
+
+8. In the `AI-Lab6` folder, you should see the three notebooks that you will use in this lab.
+
+   ![View list of notebooks in Azure Databricks workspace](./media/databricks-workspace-2.png)
+
+9. Wait until the cluster starts, then proceed to the next tasks in the lab.
+
+10. Now click on the **Settings (1)** button from the left side menu and select the **User Settings (2)** option.
+
+     ![ADF for lab6](./../media/toekn1.png)
+     
+11. Now on the **User Settings** page, click on the **Generate new token**.
+
+     ![ADF for lab6](./../media/tokengen.png)
+     
+12. Now on the Token creation window, add the comment as **ADFlinktoken (1)** and click on the **Generate** button. 
+
+     ![ADF for lab6](./../media/tokengen.png)
+ 
+13. Now copy the Generated token value and save it in a noteped to use in next exercises.
+
+     ![ADF for lab6](./../media/tokengen2.png)
+     
+## Task 4- Connect Data Factory to Azure Databricks using linked service
 
 In this task, you will be creating a link service in the Data factory to connect Azure Databricks with the Data factory.
     
@@ -72,7 +122,6 @@ In this task, you will be creating a link service in the Data factory to connect
 8. After clicking on the **Continue** button, Enter the below details in the creation window. Once done, click on the **Create** button.
 
     * Name: ```AzureDatabricks``` **(1)**
-    * Description: ```AzureDatabricks linked service``` **(2)**
     * Connect via integration runtime: **Leave default**
     * Account Selection method: ```From Azure subscription``` **(3)**
     * Azure subscription: ```Select available subscription from drop down``` **(4)**
@@ -90,7 +139,7 @@ In this task, you will be creating a link service in the Data factory to connect
     ![ADF for lab6](./../media/lndone.png)
     
 
-## Task 4 - Create Data Factory Pipeline to run the Explore the surveillance dataset Databricks notebook
+## Task 5 - Create Data Factory Pipeline to run the Explore the surveillance dataset Databricks notebook
    In this task, you will create a pipeline to run notebooks in Azure Databricks with the help of a linked service in Data Factory, and you will see the output in Azure Databricks.
    
 1. While you are on the same Data Factory portal, navigate to the **Author** section from the left side menu and click on the **+** button.
@@ -149,7 +198,7 @@ In this task, you will be creating a link service in the Data factory to connect
      
      ![ADF for lab6](./../media/runrichdetails.png)
      
-## Task 5 - Create Data Factory Pipeline to run the Build a risk classifier based on surveillance data Azure Databricks Notebook
+## Task 6 - Create Data Factory Pipeline to run the Build a risk classifier based on surveillance data Azure Databricks Notebook
    In this task, you will create pipeline to run notebooks in Azure Databricks with the help of a linked service in Data Factory, and you will see the output in Azure Databricks and Azure Machine Learning.
    
 1. While you are on the same Data Factory portal, navigate to the **Author** section from the left side menu and click on the **+** button.
@@ -229,7 +278,7 @@ In this task, you will be creating a link service in the Data factory to connect
 
     ![ADF for lab6](./media/notebookoutput.png)
     
-## Task 6 - Create Data Factory Pipeline to run the Explore the research papers dataset Azure Databricks for notebook
+## Task 7 - Create Data Factory Pipeline to run the Explore the research papers dataset Azure Databricks for notebook
    In this task, you will create pipeline to run notebooks in Azure Databricks with the help of a linked service in Data Factory, and you will see the output in Azure Databricks.
    
 1. While you are on the same Data Factory portal, navigate to the **Author** section from the left side menu and click on the **+** button.
