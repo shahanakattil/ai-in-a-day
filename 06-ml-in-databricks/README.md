@@ -214,7 +214,7 @@ In this task, you will be creating a link service in the Data factory to connect
     
 1. Now, under the parameters section **(3)**, click on the **+New (2)** button and add the below parameters and the values **(3)**:
 
-     - **experiment**: ```/Users/odl_user_xxxxxx@aiw-ds.cloudlabs.ai/2-surveillance-risk-classifier```, Please make sure to update the XXXXXX value with deployment  **<inject key="DeploymentID" enableCopy="true"/>**.
+     - **experiment**: ```/Users/odl_user_xxxxxx@aiw-ds.cloudlabs.ai/2-surveillance-risk-classifier```, Please make sure to update the XXXXXX value with **<inject key="DeploymentID" enableCopy="true"/>**.
      - **client_id**:  **<inject key="Application Id" enableCopy="true"/>**
      - **client_secret**: **<inject key="Secret Key" enableCopy="true"/>**
        
