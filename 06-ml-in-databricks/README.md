@@ -36,7 +36,8 @@ The high-level steps covered in the lab are:
 - Correlate research paper and case surveillance datasets
 - Use SparkML to build a risk classifier on a case surveillance dataset
 - Assess fairness of risk classifier
-- 
+
+
 ## Task 3 - Start your Azure Databricks environment and generate Databricks token. 
 
 1. Open the [Azure Portal](https://portal.azure.com) and sign-in with your lab credentials.
