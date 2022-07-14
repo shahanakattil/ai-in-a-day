@@ -2,7 +2,7 @@
 
 This lab covers Power Virtual Agents as the hero bot service and demonstrates how to extend your PVA bot using Bot Framework Composer.
 
-## Task 1 - Explore dashboard of COVID-19 data
+## Task 1 - Explore the dashboard of COVID-19 data
 
 Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
 
@@ -10,7 +10,7 @@ Understanding the source datasets is very important in AI and ML. To help you ex
 
 To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
 
-To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see `Introducing the updated mobile layout` popup screen, then close it by click on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
+To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see the `Introducing the updated mobile layout` popup screen, close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
 
 > **Note:** Please close and reopen the Power BI Desktop document if it throws an error in the first attempt.
 
@@ -23,7 +23,7 @@ The power of Machine Learning also comes into play when dealing with human-to-ma
 With Machine Learning (ML) and Natural Language Processing (NLP), Human Machine Interface (HMI) technologies are enjoying an increased adoption year over year. By 2021, [the growth of chatbots in this space is expected to be 25.07%](https://www.technavio.com/report/chatbot-market-industry-analysis).
 
 
-The way organizations are building conversational systems is evolving, with bots being built and maintained by a mix of technical and non-technical roles. Power Virtual Agents has the capability to extend its capabilities by allowing pro-code users to create dialogs / topics using the Azure Bot Framework Composer today. This experience allows technical and non-technical teams to build and host their solutions on a single platform.
+The way organizations are building conversational systems is evolving, with bots being built and maintained by a mix of technical and non-technical roles. Power Virtual Agents has the capability to extend its capabilities by allowing pro-code users to create dialogs/topics using the Azure Bot Framework Composer today. This experience allows technical and non-technical teams to build and host their solutions on a single platform.
 
 ![Architecture for Lab 4](media/ai-workflow.png)
 
@@ -39,7 +39,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    > **Note**: You can retrieve your Email/username and Password from the environment details tab.
 
-3. Select **Sign in** and enter your Password and select **sign in**.
+3. Select **Sign in**, Enter your Password and select **sign in**.
 
 4. Once **Signed in**, select **Get started** under the **Confirmation Details**.
 
@@ -94,7 +94,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/delete-01.png)
 
-4. Now select the **'+'** under the trigger phrase and add **Ask a question** node.
+4. Now select the **'+'** under the trigger phrase and add the **Ask a question** node.
 
    ![](media/add-a-question.png)
 
@@ -106,7 +106,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/add-a-question-1.png)
 
-   >**Note** : The variable just created will be used in the adaptive card. For the variable to be used within Bot Framework Composer, it must be set with Bot scope rather than Topic scope.
+   >**Note**: The variable just created will be used in the adaptive card. For the variable to be used within Bot Framework Composer, it must be set with Bot scope rather than Topic scope.
 
 6. Save the **topic**, then return to the list of topics. 
 
@@ -124,20 +124,20 @@ integration with Power Virtual Agents
 
 ## Task 5 - Create an adaptive card using Bot Framework Composer
 
-1. When Bot Framework Composer application launches, you will be prompted to sign in. Sign in with the provided credentials.
+1. When the Bot Framework Composer application launches, you will be prompted to sign in. Sign in with the provided credentials.
 
-   >**Note** : You can find the credentials in the environment details tab.
+   >**Note**: You can find the credentials in the environment details tab.
 
 2. Once you sign in, you will be asked to import your bot to a new project. The **Name** field will be auto-populated. If it's empty, fill in the name field with the name of your 
 bot which we created on the **Power virtual agents** page. Then, click **Create**.
 
    ![](media/import-bot.png)
 
-   >**Note**: In the occasion where the following screen does not appear in Composer on launch, you will need to close the application and launch it again from Power Virtual Agents.
+   >**Note**: On the occasion where the following screen does not appear in Composer on launch, you will need to close the application and relaunch it from Power Virtual Agents.
 
-3. Once you see your project appear in Composer. On the left side of the screen, click on **Create** and click on the three dots. Then, select **+ Add a dialog**.
+3. Once you see your project appear in Composer. On the left side of the screen, click on **Create** and click on the three dots **(1)** . Then, select **+ Add a dialog**.
 
-   ![](media/lab3-task5-1.png)
+   ![](media/add-dialog-01.png)
 
 4. On the **Create a dialog** pop up, specify the name of your new dialog as **Meals**, then click **OK**.
 
@@ -147,7 +147,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
    ![](media/bot-show-code.png)
 
-6. Paste in the following LG (Language Generation) Template. This template sets out the names of the meals and their related image that will be displayed in the adaptive card.
+6. Paste in the following LG (Language Generation) Template. This template sets out the names of the meals and their related image that will be displayed on the adaptive card.
 
    ```
    # Chicken()
@@ -166,11 +166,11 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
    
    ![](media/code-1.png)
 
-7. Next, paste in the following JSON code into the same window, underneath the code entered previous step.
+7. Next, paste the following JSON code into the same window underneath the code entered in the previous step.
 
    ```
    # adaptivecardjson_meals(location) 
-   - ```
+   - 
    { 
       "type": "AdaptiveCard", 
       "$schema": "http://adaptivecards.io/schemas/adaptive-card.json", 
@@ -266,12 +266,10 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
       ] 
    } 
    ```
-   
-   >**Note**: Add **```** at the end of above code after pasting it to code window.
-   
+
    ![](media/code-2.png)
 
-8. The last code to enter is the activity that will display this **adaptive card** in the Bot Framework dialog. Paste in the following code in the same window in composer, underneath the code entered in previous step.
+8. The last code to enter is the activity that will display this **adaptive card** in the Bot Framework dialog. Paste the following code in the same window in composer, underneath the code entered in the previous step.
 
    ```
    # AdaptiveCardMeals(location)
@@ -280,48 +278,51 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
    ]
 
    ```
-   
+
    ![](media/bot-show-code-01.png)
 
 9. From the left navigation bar, click on the **Create** tab and select **BeginDialog**.
 
    ![](media/begin-dialog-1.png)
 
-10. Click on the **'+'** button, and select **Send a response**.
+10. Click the **'+'** button and select **Send a response**.
 
-    ![](media/begin-dialog-2.png)
+      ![](media/begin-dialog-2.png)
 
 11. In the Bot responses box that appears on the right side of the screen, select **Show Code** and enter the following JSON code.
 
-    ![](media/show-code-1.png)
 
-    ```
-    ${AdaptiveCardMeals(virtualagent.user_city)}
-    ```
+      ![](media/show-code-1.png)
 
-    ![](media/show-code-2.png)   
+      ```
+      ${AdaptiveCardMeals(virtualagent.user_city)}
+      ```
 
-    >**Note**: Ensure there is only one – symbol at the start of the code.
+      ![](media/show-code-2.png)   
 
-12. On the left navigation menu select **Publish**.  Select your **bot**, then click on **Publish selected bots**. 
+      >**Note**: Ensure there is only one – symbol at the start of the code.
 
-    ![](media/publish-bot-01.png)   
+12. On the left navigation menu, select **Publish**.  Select your **bot**, then click on **Publish selected bots**. 
 
-13. You need to providing the Email/Username: <inject key="AzureAdUserEmail"></inject> in the signup popup for publishing bot. Confirm that you want to publish the bot by clicking on **Okay**. The bot should now be in the process of publishing.
+      ![](media/publish-bot-01.png)   
 
-    ![](media/publish-bot-02.png)  
+
+13. Confirm that you want to publish the bot. The bot should now be in the process of publishing.
+
+
+      ![](media/publish-bot-02.png)  
 
 14. You will get a confirmation message in Composer once the bot has been published.
 
-    ![](media/publish-bot-03.png) 
+      ![](media/publish-bot-03.png) 
 
-## Task 6 - Add your composer content to Power Virtual Agents bot
+## Task 6 - Add your composer content to the Power Virtual Agents bot
 
 1. Go back to the **Power Virtual Agents** page.
 
-2. On the **Topics** tab notice the adaptive card action you just published from Composer is visible in your list of topics. 
+2. On the **Topics** tab, notice the adaptive card action you just published from Composer is visible in your list of topics. 
 
-   >**Note**: You may need to refresh the screen your page to see it.
+   >**Note**: You may need to refresh the screen of your page to see it.
 
 3. Open the topic : **Meal delivery options**.
 
@@ -335,7 +336,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
 ## Task 7 - Test your Bot
 
-1. While on the **Meal delivery options** select the **Bot** icon on the top right corner.
+1. While on the **Meal delivery options**, select the **Bot** icon on the top right corner.
 
    ![](media/test-bot.png)
 
@@ -347,16 +348,16 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
    ```what meals can I order```
 
-4. Your chatbot should display images of the meals in an adaptive card as show below.
+4. Your chatbot should display images of the meals in an adaptive card, as shown below.
 
    ![](media/final-bot.png)
 
 
 ## Task 8 - Enabling Voice Access for Our Bot (Optional)
 
-> **WARNING**: This task requires access to Microphone hardware in your environment. If you are running your lab through a remote desktop connection, additional setup might be required. As an alternative, you can run the VoiceAssistantClient that is used in the lab in your local machine instead of a remote Virtual machine. If both options are not working, you might not be able to demo the functionality after step 5. In this case, you can download a video version of the end-user experience [here](media/DLS-chatbot-demo.mp4).
+> **WARNING**: This task requires access to Microphone hardware in your environment. If you are running your lab through a remote desktop connection, an additional setup might be required. As an alternative, you can run the VoiceAssistantClient that is used in the lab on your local machine instead of a remote Virtual machine. If both options are not working, you might not be able to demo the functionality after step 5. In this case, you can download a video version of the end-user experience [here](media/DLS-chatbot-demo.mp4).
 
-In this task, we will enable voice access to our Bot through the use of AI. We will use **Azure Cognitive Speech Services** to enable real-time speech to text and text to speech conversion. Thanks to **Bot Channels Registrations** in **Azure Bot Service**, we can use the Direct Line Speech channel to have our Bot drive audio-only conversations with client applications.
+In this task, we will enable voice access to our Bot through the use of AI. We will use **Azure Cognitive Speech Services** to enable real-time speech-to-text and text-to-speech conversion. Thanks to **Bot Channels Registrations** in **Azure Bot Service**, we can use the Direct Line Speech channel to have our Bot drive audio-only conversations with client applications.
 
 1. Switch to the **Channels(deprecated)**(1) tab under settings in the **Azure Bot service**. Select **Direct Line Speech (2)**.
 
@@ -370,7 +371,7 @@ In this task, we will enable voice access to our Bot through the use of AI. We w
 
    ![Channel registration list is shown. Direct Line Speech and Web Chat are listed.](media/bot-channel-registration-channels.png)
 
-3. Go back to your Resource Group and select the `ai-in-a-day` app service.
+3. Go to your Resource Group and select the `ai-in-a-day` app service.
 
    ![Resources in the resource group are listed. ai-in-a-day app service is highlighted.](media/app-service-select.png)
 
@@ -381,13 +382,13 @@ In this task, we will enable voice access to our Bot through the use of AI. We w
 >  **Note**: Perform the following steps in your local systems/personal computer.
 > 
 
-5. In a Microsoft Edge web browser in your PC, navigate to the Github Releases page of the Cognitive-Services-Voice-Assistant project here [https://github.com/Azure-Samples/Cognitive-Services-Voice-Assistant/releases](https://github.com/Azure-Samples/Cognitive-Services-Voice-Assistant/releases) and download the released ZIP file **(1)**. Select **Open (2)** when the download is completed.
+5. In a Microsoft Edge web browser on your PC, navigate to the Github Releases page of the Cognitive-Services-Voice-Assistant project here [https://github.com/Azure-Samples/Cognitive-Services-Voice-Assistant/releases](https://github.com/Azure-Samples/Cognitive-Services-Voice-Assistant/releases) and download the released ZIP file **(1)**. Select **Open (2)** when the download is completed.
 
    > **Note:** If you are not able to download and install applications to your computer, you can watch a demo of the final result in a [video here](media/DLS-chatbot-demo.mp4).
 
    ![The releases page for the Windows Voice Assistant Client on Github is open. WindowsVoiceAssistantClient ZIP file is selected. Open button on the download dialog is highlighted.](media/windows-voice-assistant-client.png)
 
-6. Navigate into the folder in the ZIP file and find the **VoiceAssistantClient (1)** application file. Double click to start the program. When prompted, select **Extract all (2)** to temporarily extract the ZIP file's contents.
+6. Navigate into the folder in the ZIP file and find the **VoiceAssistantClient (1)** application file. Double click to start the program. When prompted, select **Extract all (2)** to extract the ZIP file's contents temporarily.
 
    ![ZIP file is open. VoiceAssistantClient is selected. Extract all command is highlighted.](media/windows-voice-assistant-client-extract.png)
 
