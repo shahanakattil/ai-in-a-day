@@ -1,5 +1,24 @@
 # Release Notes
 
+### 01 June 2022
+* Major update in the lab
+  * Lab 1 - Azure Machine Learning Model Training
+    - Updated instructions and screenshots in Task 6 according to latest UI updates.
+  * Updated minor instructions in Lab 2 and Lab 4.
+  * Lab 5 - Machine Learning with Azure Databricks
+    - Updated screenshot in Task 3 according to latest UI updates.
+-----------------------------------------------------------------
+
+### 03 May 2022
+* Minor updates in the lab.
+  * Lab 1 - Azure Machine Learning Model Training
+    - Updated minor instructions in Task 4
+  * Lab 2 - Knowledge Mining with Azure Cognitive Search and Text Analytics
+    - Updated inject keys in Task 3, 4 and 5.
+  * Lab 3 - Conversational AI with Azure Bot Service and Cognitive Services
+    - Updated inject keys in Task 6.
+-----------------------------------------------------------------
+
 ### 21 April 2022
 * Major update in the lab
   * Lab 1 - Azure Machine Learning Model Training
