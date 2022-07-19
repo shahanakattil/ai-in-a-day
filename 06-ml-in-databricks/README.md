@@ -82,7 +82,7 @@ The high-level steps covered in the lab are:
 
      ![ADF for lab6](./../media/tokengen2.png)
  
-12. Now copy the Generated token value and save it in a noteped to use in next exercises.
+12. Now copy the Generated token value and save it in a notepad to use in the next exercises.
 
      ![ADF for lab6](./../media/tokengen3.png)
      
@@ -185,7 +185,7 @@ In this task, you will be creating a link service in the Data factory to connect
  
      ![ADF for lab6](./../media/viewpipe.png)
      
-10. Now, to see the output in Databricks, select the running pipeline and under the **Activity runs**, Click on the details button. 
+10. Now, to see the output in Databricks, select the running pipeline and under the **Activity runs**, Click on the Details button. 
 
      ![ADF for lab6](./../media/pipedetails.png)
      
@@ -198,7 +198,7 @@ In this task, you will be creating a link service in the Data factory to connect
      ![ADF for lab6](./../media/runrichdetails.png)
      
 ## Task 6 - Create Data Factory Pipeline to run the Build a risk classifier based on surveillance data Azure Databricks Notebook
-   In this task, you will create pipeline to run notebooks in Azure Databricks with the help of a linked service in Data Factory, and you will see the output in Azure Databricks and Azure Machine Learning.
+   In this task, you will create a pipeline to run notebooks in Azure Databricks with the help of a linked service in Data Factory, and you will see the output in Azure Databricks and Azure Machine Learning.
    
 1. While you are on the same Data Factory portal, navigate to the **Author** section from the left side menu and click on the **+** button.
 
@@ -236,7 +236,7 @@ In this task, you will be creating a link service in the Data factory to connect
 
         ![ADF for lab6](./media/2notebook.png)
           
-      - Expand the **Base parameters (1)** section and click on the **+New (2)** button and add the bellow parameters and the values **(3)**:
+      - Expand the **Base parameters (1)** section and click on the **+New (2)** button and add the below parameters and the values **(3)**:
       
            - **experiment**:    ```@pipeline().parameters.experiment```
            - **client_id**:     ```@pipeline().parameters.client_id```
@@ -261,7 +261,7 @@ In this task, you will be creating a link service in the Data factory to connect
  
     ![ADF for lab6](./media/NB3.png)
      
-1. Now, to see the output in Databricks, select the running pipeline and under the **Activity runs**, Click on the details button. 
+1. Now, to see the output in Databricks, select the running pipeline and under the **Activity runs**, Click on the Details button. 
 
     ![ADF for lab6](./../media/pipedetails.png)
      
@@ -278,7 +278,7 @@ In this task, you will be creating a link service in the Data factory to connect
     ![ADF for lab6](./media/notebookoutput.png)
     
 ## Task 7 - Create Data Factory Pipeline to run the Explore the research papers dataset Azure Databricks for notebook
-   In this task, you will create pipeline to run notebooks in Azure Databricks with the help of a linked service in Data Factory, and you will see the output in Azure Databricks.
+   In this task, you will create a pipeline to run notebooks in Azure Databricks with the help of a linked service in Data Factory, and you will see the output in Azure Databricks.
    
 1. While you are on the same Data Factory portal, navigate to the **Author** section from the left side menu and click on the **+** button.
 
@@ -324,7 +324,7 @@ In this task, you will be creating a link service in the Data factory to connect
  
      ![ADF for lab6](./media/lab5-task6-6.png)
      
-10. Now, to see the output in Databricks, select the running pipeline and under the **Activity runs**, Click on the details button. 
+10. Now, to see the output in Databricks, select the running pipeline and under the **Activity runs**, Click on the Details button. 
 
      ![ADF for lab6](./../media/pipedetails.png)
      
