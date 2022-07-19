@@ -232,10 +232,10 @@ The wizard is designed to provide an interface to input all the necessary parame
 
 3. Under **Datasets for training and testing** page, we need to select the train and test dataset that you used when training your model to generate model-debugging insights. Select the datasets as per the below instruction and click on **Next**.
 
-* **Select a dataset for training** : From the dropdown select **COVID19Articles_Test**
+* **Select a dataset for training** : From the dropdown select **COVID19Articles_Train**
 * **Select a dataset for testing**  : From the dropdown select  **COVID19Articles_Test**
 
-   ![Selecting Dataset](media/select_dataset.png)
+   ![Selecting Dataset](media/select_dataset1.png)
 
 4. Once we picked the dataset, select the **Regression** modeling type and click **Next**
 
