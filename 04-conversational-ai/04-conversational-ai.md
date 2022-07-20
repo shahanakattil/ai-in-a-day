@@ -351,3 +351,6 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 4. Your chatbot should display images of the meals in an adaptive card, as shown below.
 
    ![](media/final-bot.png)
+
+Now you have successfully created and tested Power Virtual Agents bot!!
+ 
