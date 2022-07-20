@@ -55,7 +55,7 @@ The high-level steps covered in the lab are:
 
     ![The Search service's API key is copied to the clipboard.](media/lab2-t3-step5.png)
 
-6. Download the `schemas.zip` from https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/schemas.zip. Unzip `schemas.zip`. There are six files, three prefixed with `abstracts` and three with `covid19temp`. Save these to a directory such as `C:\Temp\AzureSearch\`.
+6. Open **File Explorer** from the task bar and navigate to the path `C:\Temp\AzureSearch\`. There are six files, three prefixed with `abstracts` and three with `covid19temp`.
 
 7. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.  Do the same for `covid19temp_datasource.schema`.
 
@@ -339,6 +339,12 @@ The high-level steps covered in the lab are:
 
 ## Task 7 - Document Summarization via Cognitive Service for Language integration
 
+Summarization is one of the features offered by [Azure Cognitive Service for Language](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/overview), a collection of machine learning and AI algorithms in the cloud for developing intelligent applications that involve written language. Use this article to learn more about this feature, and how to use it in your applications.
+
+In general, there are two approaches for automatic document summarization: extractive and abstractive. This API provides extractive summarization. Extractive summarization is a feature that produces a summary by extracting sentences that collectively represent the most important or relevant information within the original content. This feature is designed to shorten content that users consider too long to read. Extractive summarization condenses articles, papers, or documents to key sentences. The AI models used by the API are provided by the service, you just have to send content for analysis.
+
+In this task, we are creating a text summarization application with the client library for Python. You will create a Python application that can summarize documents or text-based customer service conversations.
+
 1. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd`, and select the **Command Prompt** application.
 
     ![The Command Prompt application is selected](media/open-cmd.png)
@@ -351,64 +357,9 @@ The high-level steps covered in the lab are:
 
     ![Pip has installed the azureai text analytics package for Python](media/lab2a-t7-pip-azureai.png)
 
-3. Create a new file named **summarization.py** in the location `C:\Temp\AzureSearch\` and add the below code in the file. Make sure to replace the **Key** and the **Endpoint** of the Cognitive services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have copied to the text file in the previous tasks.
+3. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\`. Select the file named **summarization.py** and open it in **Notepad**. 
 
-> **Note**: Please make sure the file name used is **summarization.py** and the save as type is selected as **All files** so you don’t accidentally create a file called **summarization.py.txt** by mistake!
-
- ```bash
-key = "paste-your-key-here"
-endpoint = "paste-your-endpoint-here"
-
-from azure.ai.textanalytics import TextAnalyticsClient
-from azure.core.credentials import AzureKeyCredential
-
-# Authenticate the client using your key and endpoint 
-def authenticate_client():
-    ta_credential = AzureKeyCredential(key)
-    text_analytics_client = TextAnalyticsClient(
-            endpoint=endpoint, 
-            credential=ta_credential)
-    return text_analytics_client
-
-client = authenticate_client()
-
-# Example method for summarizing text
-def sample_extractive_summarization(client):
-    from azure.core.credentials import AzureKeyCredential
-    from azure.ai.textanalytics import (
-        TextAnalyticsClient,
-        ExtractSummaryAction
-    ) 
-
-    document = [
-        "The extractive summarization feature uses natural language processing techniques to locate key sentences in an unstructured text document. "
-        "These sentences collectively convey the main idea of the document. This feature is provided as an API for developers. " 
-        "They can use it to build intelligent solutions based on the relevant information extracted to support various use cases. "
-        "In the public preview, extractive summarization supports several languages. It is based on pretrained multilingual transformer models, part of our quest for holistic representations. "
-        "It draws its strength from transfer learning across monolingual and harness the shared nature of languages to produce models of improved quality and efficiency. "
-    ]
-
-    poller = client.begin_analyze_actions(
-        document,
-        actions=[
-            ExtractSummaryAction(max_sentence_count=4)
-        ],
-    )
-
-    document_results = poller.result()
-    for result in document_results:
-        extract_summary_result = result[0]  # first document, first result
-        if extract_summary_result.is_error:
-            print("...Is an error with code '{}' and message '{}'".format(
-                extract_summary_result.code, extract_summary_result.message
-            ))
-        else:
-            print("Summary extracted: \n{}".format(
-                " ".join([sentence.text for sentence in extract_summary_result.sentences]))
-            )
-
-sample_extractive_summarization(client)
- ```
+4. Replace the **key** and **endpoint** in the file with Cognitive services multi-service account named **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have already copied to the text file in Task-6, Step-7 and finally save the file.
     
    ![summarization](media/lab2a-t7-summarization.png) 
 
@@ -420,4 +371,6 @@ sample_extractive_summarization(client)
    ```
    
    ![summarization](media/lab2a-t7-summ-results.png)
+
+You can find more references about Document Summarization from here: [Quickstart: Get started with Language Studio - Azure Cognitive Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/language-studio). Use this article to learn about Language Studio, and testing features of Azure Cognitive Service for Language Integration.
 
