@@ -170,7 +170,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
    ```
    # adaptivecardjson_meals(location) 
-   - 
+   -  ```
    { 
       "type": "AdaptiveCard", 
       "$schema": "http://adaptivecards.io/schemas/adaptive-card.json", 
