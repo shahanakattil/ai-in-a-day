@@ -168,7 +168,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
 7. Next, paste in the following JSON code into the same window, underneath the code entered previous step.
 
-   ```
+   ````
    # adaptivecardjson_meals(location) 
    - ```
    { 
@@ -266,8 +266,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
       ] 
    } 
    ```
-   
-   >**Note**: Add **```** at the end of above code after pasting it to code window.
+   ````
    
    ![](media/code-2.png)
 
