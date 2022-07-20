@@ -341,6 +341,10 @@ The high-level steps covered in the lab are:
 
 Summarization is one of the features offered by [Azure Cognitive Service for Language](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/overview), a collection of machine learning and AI algorithms in the cloud for developing intelligent applications that involve written language. Use this article to learn more about this feature, and how to use it in your applications.
 
+In general, there are two approaches for automatic document summarization: extractive and abstractive. This API provides extractive summarization. Extractive summarization is a feature that produces a summary by extracting sentences that collectively represent the most important or relevant information within the original content. This feature is designed to shorten content that users consider too long to read. Extractive summarization condenses articles, papers, or documents to key sentences. The AI models used by the API are provided by the service, you just have to send content for analysis.
+
+In this task, we are creating a text summarization application with the client library for Python. You will create a Python application that can summarize documents or text-based customer service conversations.
+
 1. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd`, and select the **Command Prompt** application.
 
     ![The Command Prompt application is selected](media/open-cmd.png)
@@ -353,7 +357,9 @@ Summarization is one of the features offered by [Azure Cognitive Service for Lan
 
     ![Pip has installed the azureai text analytics package for Python](media/lab2a-t7-pip-azureai.png)
 
-3. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\`. Open the file named **summarization.py** and make sure to replace the **Key** and the **Endpoint** of the Cognitive services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have copied to the text file in the previous tasks.
+3. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\`. Select the file named **summarization.py** and open it in **Notepad**. 
+
+4. Replace the **key** and **endpoint** in the file with Cognitive services multi-service account named **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have already copied to the text file in Task-6, Step-7 and finally save the file.
     
    ![summarization](media/lab2a-t7-summarization.png) 
 
@@ -365,4 +371,6 @@ Summarization is one of the features offered by [Azure Cognitive Service for Lan
    ```
    
    ![summarization](media/lab2a-t7-summ-results.png)
+
+You can find more references about Document Summarization from here: [Quickstart: Get started with Language Studio - Azure Cognitive Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/language-studio). Use this article to learn about Language Studio, and testing features of Azure Cognitive Service for Language Integration.
 
