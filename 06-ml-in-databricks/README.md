@@ -196,7 +196,9 @@ In this task, you will be creating a link service in the Data factory to connect
 12. Now, you will be redirected to the Azure Databricks portal, where you can see the notebook outputs, Task run details, and other related information. You also will have an option to Hide the code to just see the results. Once you see that the job status is **Succeeded**, you can continue with the next task.
      
      ![ADF for lab6](./../media/runrichdetails.png)
-     
+
+13. You can scroll down and explore the outputs of each cell in the notebook. You should be able to access few links related to the experiments and ML models, which redirect you to Azure Machine Learning Studio.
+
 ## Task 6 - Create Data Factory Pipeline to run the Build a risk classifier based on surveillance data Azure Databricks Notebook
    In this task, you will create a pipeline to run notebooks in Azure Databricks with the help of a linked service in Data Factory, and you will see the output in Azure Databricks and Azure Machine Learning.
    
@@ -276,7 +278,9 @@ In this task, you will be creating a link service in the Data factory to connect
 1. Now, on the left side, you will have your notebook and the results as in this Notebook we are creating a few experiments in the databricks and in Azure Machine learning. Once you go through the cell's output, you will have the direct URL's to launch the experiments and model details
 
     ![ADF for lab6](./media/notebookoutput.png)
-    
+
+1. You can scroll down and explore the outputs of each cell in the notebook. You should be able to access few links related to the experiments and ML models, which redirect you to Azure Machine Learning Studio.
+
 ## Task 7 - Create Data Factory Pipeline to run the Explore the research papers dataset Azure Databricks for notebook
    In this task, you will create a pipeline to run notebooks in Azure Databricks with the help of a linked service in Data Factory, and you will see the output in Azure Databricks.
    
@@ -332,8 +336,8 @@ In this task, you will be creating a link service in the Data factory to connect
      
      ![ADF for lab6](./../media/dbviewrun.png)
      
-12. Now, you will be redirected to the Azure Databricks portal, where you can see the notebook outputs, Task run details, and other related information. You also will have an option to Hide the code to just see the results. Once you see that the job status is **Succeeded**, you can continue with the next task.
+12. Now, you will be redirected to the Azure Databricks portal, where you can see the notebook outputs, Task run details, and other related information. You also will have an option to Hide the code to just see the results. You can see that the job status is **Succeeded**.
      
      ![ADF for lab6](./media/lab5-task6-8.png)
      
-
+13. You can scroll down and explore the outputs of each cell in the notebook. You should be able to access few links related to the experiments and ML models, which redirect you to Azure Machine Learning Studio.
