@@ -257,27 +257,23 @@ The high-level steps covered in the lab are:
 
     ![The Cognitive Services key and endpoint are selected](media/cognitive-service-latest.png)
 
-8. Click [here](https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/pdf/2020.09.25.20201616v1.pdf) to download the pdf file named `2020.09.25.20201616v1.pdf` for this lab. Save this to a directory such as `C:\Temp\AzureSearch\`.
-
-> **Note!** : You can follow this link to download the file. (https://github.com/CloudLabsAI-Azure/ai-in-a-day/raw/main/03-knowledge-mining/pdf/2020.09.25.20201616v1.pdf)
-
-9. Navigate to the [Form Recognizer Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Create new** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
+8. Navigate to the [Form Recognizer Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Create new** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
 
     ![Create new custom model](media/lab2a-t6-frs1.png)
 
-10. In the Custom models page, under **My Project** click on **+ Create a project**.
+9. In the Custom models page, under **My Project** click on **+ Create a project**.
   
     ![Project](media/lab2a-t6-frs2.png)
 
-11. In the Enter Project Details pane, enter the Project Name as **covid19abstract** and add the description as **Extracting Abstract from the documents**. Click on **Continue**.
+10. In the Enter Project Details pane, enter the Project Name as **covid19abstract** and add the description as **Extracting Abstract from the documents**. Click on **Continue**.
 
     ![The covid19abstract project has been created](media/lab2a-t6-frs3.png)
     
-12. In the Configure service resource, for **Access By**, select **API endpoint and key**. Enter the **Cognitive Service endpoint** and **API key**, which you have copied to the text file at the earlier of this task. Check the box and leave default for API version. Click on **Continue**.
+11. In the Configure service resource, for **Access By**, select **API endpoint and key**. Enter the **Cognitive Service endpoint** and **API key**, which you have copied to the text file at the earlier of this task. Check the box and leave default for API version. Click on **Continue**.
 
     ![Project](media/lab2a-t6-frs4.png)
     
-13. Next in the connect training data source, select the below values from the drop-down and click on **Continue**.
+12. Next in the connect training data source, select the below values from the drop-down and click on **Continue**.
 
     | Parameter                   | Value                                |
     | --------------------------- | -------------------------------------|
@@ -289,53 +285,53 @@ The high-level steps covered in the lab are:
 
     ![Project](media/lab2a-t6-frs5.png)
 
-14. Review the details and click on **Create project**.
+13. Review the details and click on **Create project**.
 
     ![Project](media/lab2a-t6-frs6.png)
   
-15. After creating a new project, you will be sent to the project for tagging in Label data. Select **+** **(1)** to create a new **Field** **(2)**, type `Abstract` in the Field, and hit enter. By this, you have created a new Abstract Field.
+14. After creating a new project, you will be sent to the project for tagging in Label data. Select **+** **(1)** to create a new **Field** **(2)**, type `Abstract` in the Field, and hit enter. By this, you have created a new Abstract Field.
 
     ![The Abstract tag has been created](media/lab2a-t6-frs8.png)
     
     ![The Abstract tag has been created](media/lab2a-t6-frs9.png)
 
-16. Wait for the layout to be run for the first document and locate the document's abstract. Note that for some documents, the abstract is on the second page. Then, move on to the next document. We will tag each of the five papers, so navigate to each in turn, allowing the layout to be run. In order for tagging to be successful, we must first run the layout of a document, navigate to another document, and return to this first document before we begin tagging. Layout generation happens once per document, after which we can return to it and tag our abstract.
+15. Wait for the layout to be run for the first document and locate the document's abstract. Note that for some documents, the abstract is on the second page. Then, move on to the next document. We will tag each of the five papers, so navigate to each in turn, allowing the layout to be run. In order for tagging to be successful, we must first run the layout of a document, navigate to another document, and return to this first document before we begin tagging. Layout generation happens once per document, after which we can return to it and tag our abstract.
 
     ![Running layout for a document](media/lab2a-t6-frs7.png)
 
-17. Return to the second PDF and select each word in the **Abstract** section. After highlighting this, select the **Abstract** tag to tag this section. Note that you will need to select each word individually rather than selecting a box. After selecting the **Abstract** tag, you should see a tag logo next to the PDF. If you see the tag logo, this means that tagging was successful for this document.
+16. Return to the second PDF and select each word in the **Abstract** section. After highlighting this, select the **Abstract** tag to tag this section. Note that you will need to select each word individually rather than selecting a box. After selecting the **Abstract** tag, you should see a tag logo next to the PDF. If you see the tag logo, this means that tagging was successful for this document.
 
     ![The first PDF has been viewed, and the second PDF has been tagged](media/new-lab2a-4.png)
 
-18. Return to the first PDF and highlight the word **ABSTRACT** and the abstract. If the abstract is lengthy, as in this example, it is okay to include just the first paragraph. Then, select the **Abstract** tag to tag this document. Ensure that the viewed icon (an eye) changes to a tag icon. If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful. In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
+17. Return to the first PDF and highlight the word **ABSTRACT** and the abstract. If the abstract is lengthy, as in this example, it is okay to include just the first paragraph. Then, select the **Abstract** tag to tag this document. Ensure that the viewed icon (an eye) changes to a tag icon. If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful. In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
 
     ![The first PDF has been tagged](media/lab2a-t6-frs11.png)
 
-19. Continue tagging until all five of the top papers are tagged. Once we have tagged five documents, select the **Train** option.
+18. Continue tagging until all five of the top papers are tagged. Once we have tagged five documents, select the **Train** option.
     
     ![The first five PDFs have been tagged](media/lab2a-t6-frs12.png)
 
-20. In a pop-up to Train a new model, enter **Abstracts** as the ModelID, and select the **Neural** from the drop-down as Build Mode. Then click on **Train**.
+19. In a pop-up to Train a new model, enter **Abstracts** as the ModelID, and select the **Neural** from the drop-down as Build Mode. Then click on **Train**.
 
     ![The option to train a model has been selected](media/lab2a-t6-frs13.png)
 
-21. Training a model may take up to 10-15 minutes to get succeed. Click on **Go to models**. 
+20. Training a model may take up to 10-15 minutes to get succeed. Click on **Go to models**. 
 
     ![The option to train a model has been selected](media/lab2a-t6-frs14.png)
 
-22. After the model has finished training, you will see that the Status has succeeded.  Although the estimated accuracy is not great, we will use this model.
+21. After the model has finished training, you will see that the Status has succeeded.  Although the estimated accuracy is not great, we will use this model.
 
     ![The Abstracts model has been trained](media/lab2a-t6-frs15.png)
 
-23. From the left menu, select the **Test**(1). Click on **Browse for a file**(2) and navigate to `C:\Temp\AzureSearch\` and select `2020.09.25.20201616v1.pdf`. Select **Analyze**(3) to see the results. Note that the abstract is on page 2 of the PDF.
+22. From the left menu, select the **Test**(1). Click on **Browse for a file**(2) and navigate to `C:\Temp\AzureSearch\` and select `2020.09.25.20201616v1.pdf`. Select **Analyze**(3) to see the results. Note that the abstract is on page 2 of the PDF.
 
     ![An analyzed document](media/new-lab2a-5.png)
 
-24. Select **Result** and click on **download icon** to download JSON file. Find the location where the script was downloaded and observe the result code.
+23. Select **Result** and click on **download icon** to download JSON file. Find the location where the script was downloaded and observe the result code.
 
     ![An analyzed document](media/lab2a-t6-frs19.png)
     
-25. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signature to Test/Analyze using Template build mode. Please find the reference to explore more about Form Recognizer Studio: [Quickstart: Form Recognizer Studio - Azure Applied AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-form-recognizer-studio)
+24. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signature to Test/Analyze using Template build mode. Please find the reference to explore more about Form Recognizer Studio: [Quickstart: Form Recognizer Studio - Azure Applied AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-form-recognizer-studio)
 
 ## Task 7 - Document Summarization via Cognitive Service for Language integration
 
