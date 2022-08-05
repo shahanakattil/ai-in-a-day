@@ -233,29 +233,29 @@ The high-level steps covered in the lab are:
 
     ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
 
-4. Under **Settings**, navigate to the **Resource sharing(CORS)** page. Ensure that you are on the **Blob service** tab, and enter the following values into the table.
+4. Under **Settings**, navigate to the **Resource sharing(CORS)** page. Ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)**.
 
-    ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/Storage-account-Cors-1.png)
+    ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/storage-cors.png)
 
-   | Parameter                   | Value                                |
-   | --------------------------- | -------------------------------------|
-   | Allowed origins             | Enter `*`                            |
-   | Allowed methods             | Select all of the available methods. |
-   | Allowed headers             | Enter `*`                            |
-   | Exposed headers             | Enter `content-length`               |
-   | Max age                     | Enter `200`                          |
+   | Parameter                   | Value                                              |
+   | --------------------------- | -------------------------------------------------- |
+   | Allowed origins             | Enter `https://formrecognizer.appliedai.azure.com` |
+   | Allowed methods             | Select all of the available methods.               |
+   | Allowed headers             | Enter `*`                                          |
+   | Exposed headers             | Enter `*`                                          |
+   | Max age                     | Enter `200`                                        |
 
-   ![The CORS options are set for the storage account](media/storage-account-cors.png)
+   ![The CORS options are set for the storage account](media/storage-cors-blob.png)
 
-5. Select **Save** to save the CORS settings.
+5. Select **Save** **(3)** to save the CORS settings.
 
-6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Cognitive services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>**.
+6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Cognitive services multi-service account **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![The Cognitive Services service is selected](media/cognitive-service-latest-select.png)
+    ![The Cognitive Services service is selected](media/form-recog-new.png)
 
-7. Select the **Keys and Endpoint** option under Resource Management. Then, copy the value for **KEY 1** and the **Endpoint**. Paste these into a text file.
+7. Select the **Keys and Endpoint** **(1)** option under Resource Management and click on **Show Keys** **(2)**. Then, copy the value for **KEY 1** **(3)** and the **Endpoint** **(4)**. Paste these into a text file for later use.
 
-    ![The Cognitive Services key and endpoint are selected](media/cognitive-service-latest.png)
+    ![The Cognitive Services key and endpoint are selected](media/fr-key-endpoint.png)
 
 8. Navigate to the [Form Recognizer Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Create new** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
 
