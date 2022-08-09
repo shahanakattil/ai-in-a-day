@@ -341,11 +341,19 @@ In general, there are two approaches for automatic document summarization: extra
 
 In this task, we are creating a text summarization application with the client library for Python. You will create a Python application that can summarize documents or text-based customer service conversations.
 
-1. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd`, and select the **Command Prompt** application.
+1. Return to Azure Portal page and navigate to the **AI-in-a-Day** resource group and select the Cognitive services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>**.
+
+    ![The Cognitive Services service is selected](media/cognitive-service-latest-select.png)
+
+2. Select the **Keys and Endpoint** option under Resource Management.  Then, copy the value for **KEY 1** and the **Endpoint**.  Paste these into a text file for later use.
+
+    ![The Cognitive Services key and endpoint are selected](media/cognitive-service-latest.png)
+
+3. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd`, and select the **Command Prompt** application.
 
     ![The Command Prompt application is selected](media/open-cmd.png)
 
-2. Run the below command. To run this, you must have Python installed on the machine. If `python.exe` is not accessible as part of the path--meaning you get an error when trying to run `pip`, navigate to where Python is installed.  The `pip.exe` program is inside the `\Scripts\` folder.
+4. Run the below command. To run this, you must have Python installed on the machine. If `python.exe` is not accessible as part of the path--meaning you get an error when trying to run `pip`, navigate to where Python is installed.  The `pip.exe` program is inside the `\Scripts\` folder.
 
     ```bash
     pip install azure-ai-textanalytics==5.2.0b1
@@ -353,13 +361,13 @@ In this task, we are creating a text summarization application with the client l
 
     ![Pip has installed the azureai text analytics package for Python](media/lab2a-t7-pip-azureai.png)
 
-3. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\`. Select the file named **summarization.py** and open it in **Notepad**. 
+5. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\`. Select the file named **summarization.py** and open it in **Notepad**. 
 
-4. Replace the **key** and **endpoint** in the file with Cognitive services multi-service account named **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have already copied to the text file in Task-6, Step-7 and finally save the file.
+6. Replace the **key** and **endpoint** in the file with Cognitive services multi-service account named **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have already copied in step-2 of the same task and finally save the file.
     
    ![summarization](media/lab2a-t7-summarization.png) 
 
-5. Navigate to the command prompt and run the following commands.
+7. Navigate to the command prompt and run the following commands.
 
    ```bash
    cd C:\Temp\AzureSearch\
