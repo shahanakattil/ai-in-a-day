@@ -269,7 +269,7 @@ The high-level steps covered in the lab are:
 
     ![The covid19abstract project has been created](media/lab2a-t6-frs3.png)
     
-11. In the Configure service resource, for **Access By**, select **API endpoint and key**. Enter the **Cognitive Service endpoint** and **API key**, which you have copied to the text file at the earlier of this task. Check the box and leave default for API version. Click on **Continue**.
+11. In the Configure service resource, for **Access By**, select **API endpoint and key**. Enter the **Form recognizer endpoint** and **API key**, which you have copied to the text file at the earlier of this task. Check the box and leave default for API version. Click on **Continue**.
 
     ![Project](media/lab2a-t6-frs4.png)
     
