@@ -284,6 +284,8 @@ The high-level steps covered in the lab are:
     | Folder path                 | Enter `papers`                       |
 
     ![Project](media/lab2a-t6-frs5.png)
+    
+    > **Note** : If you are unable to select the Storage Account in connect training data source page, signout and signin from the Form Recognizer Studio with the given credentials. Re-perform the task from Step-8.
 
 13. Review the details and click on **Create project**.
 
