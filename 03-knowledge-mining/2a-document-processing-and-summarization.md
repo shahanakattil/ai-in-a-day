@@ -249,7 +249,7 @@ The high-level steps covered in the lab are:
 
 5. Select **Save** **(3)** to save the CORS settings.
 
-6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Cognitive services multi-service account **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
+6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Form recognizer resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
 
     ![The Cognitive Services service is selected](media/form-recog-new.png)
 
