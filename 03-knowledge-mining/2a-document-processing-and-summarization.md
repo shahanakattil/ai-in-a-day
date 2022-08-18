@@ -95,7 +95,10 @@ The high-level steps covered in the lab are:
 
     ![The Create-AzureSearchIndex function has been created in PowerShell.](media/create-azuresearchindex.png)
 
-9. In the same PowerShell prompt, call this function for the `abstracts` index and the `covid19temp` index. Then, fill in your Azure Search account name and Azure Search API key.
+9. In the same PowerShell prompt, call this function for the `abstracts` index and the `covid19temp` index.
+
+   Make sure to update the Azure Search account name and Azure Search API key in the below commands and then run.
+   
     - Azure Search Account Name: **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**
     - Azure Search API key: You saved the Primary admin key in the text editor in step 5, use that
 
@@ -145,7 +148,7 @@ The high-level steps covered in the lab are:
 
 10. Select the **Create Demo App** option.
 
-    ![The Create Demo App option is selected.](media/create-demo-app.png)
+    ![The Create Demo App option is selected.](media/lab2a-task4-step10.png)
 
 11. On the first tab, select `metadata.title` for the Title and `abstract.text` for the Description. Then select **Create Demo App**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
 
