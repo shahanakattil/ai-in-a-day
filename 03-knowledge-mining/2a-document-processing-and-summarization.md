@@ -95,7 +95,10 @@ The high-level steps covered in the lab are:
 
     ![The Create-AzureSearchIndex function has been created in PowerShell.](media/create-azuresearchindex.png)
 
-9. In the same PowerShell prompt, call this function for the `abstracts` index and the `covid19temp` index. Then, fill in your Azure Search account name and Azure Search API key.
+9. In the same PowerShell prompt, call this function for the `abstracts` index and the `covid19temp` index.
+
+   Make sure to update the Azure Search account name and Azure Search API key in the below commands and then run.
+   
     - Azure Search Account Name: **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**
     - Azure Search API key: You saved the Primary admin key in the text editor in step 5, use that
 
@@ -145,7 +148,7 @@ The high-level steps covered in the lab are:
 
 10. Select the **Create Demo App** option.
 
-    ![The Create Demo App option is selected.](media/create-demo-app.png)
+    ![The Create Demo App option is selected.](media/lab2a-task4-step10.png)
 
 11. On the first tab, select `metadata.title` for the Title and `abstract.text` for the Description. Then select **Create Demo App**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
 
@@ -185,7 +188,7 @@ The high-level steps covered in the lab are:
     
     ![Select all cached items and copy them.](media/azure-storage-explorer-201.png)
 
-7. Navigate up to **comm_use_subset** by selecting the upward arrow and then double-click **pdf_json (1)**. Inside this folder, select **Paste (2)** to paste the 100 documents into the **pdf_json** folder. When it finishes, you should have **965 total documents (3)** .
+7. Navigate up to **comm_use_subset** by selecting the upward arrow and then double-click **pdf_json (1)**. Inside this folder, select **Paste (2)** to paste the 100 documents into the **pdf_json** folder. When it finishes, you should have **965 total documents (3)**.
 
     ![Navigate into the pdf_json folder.](media/upward-arrow01.png)
 
@@ -333,7 +336,7 @@ The high-level steps covered in the lab are:
 
     ![An analyzed document](media/lab2a-t6-frs19.png)
     
-24. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signature to Test/Analyze using Template build mode. Please find the reference to explore more about Form Recognizer Studio: [Quickstart: Form Recognizer Studio - Azure Applied AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-form-recognizer-studio)
+24. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Form Recognizer Studio: [Quickstart: Form Recognizer Studio - Azure Applied AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-form-recognizer-studio)
 
 ## Task 7 - Document Summarization via Cognitive Service for Language integration
 
