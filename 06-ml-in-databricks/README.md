@@ -60,7 +60,7 @@ The high-level steps covered in the lab are:
   
 6. Select `Start` to start the Azure Databricks cluster. It will take 1-2 minutes to start.
 
-   ![Start Azure Databricks Cluster](./media/ss3.png)
+   ![Start Azure Databricks Cluster](./media/lab5-task3-step6.png)
 
 7. While the cluster is starting, select the `Workspace` section on the left side menu, select the `Users` folder, then select the folder corresponding to the user name from your lab credentials, and then select the `AI-in-a-day-Lab-6` folder.
 
@@ -130,8 +130,8 @@ In this task, you will be creating a link service in the Data factory to connect
     * Access token: Paste the token you copied in the last exercise **(2)**
     * Choose from existing clusters: Select ```ai-adb-lab``` from dropdown menu. **(3)**
     
-      ![ADF for lab6](./../media/ln1.png)
-      ![ADF for lab6](./../media/ln2.png)
+    ![ADF for lab6](./../media/ln1.png)
+    ![ADF for lab6](./../media/ln2.png)
       
 9. Once the linked service creation is done, you will see a linked service in the data factory linked service section.
    
