@@ -228,7 +228,7 @@ When detection is applied, you can select one of the metrics listed in the data 
 
     ![Filter incidents by hospitalization steps](./media/AI-metric-advisor-filter.png)
 
-6. From the list, select the anomaly reported for SUM of hospitalized cases.
+6. From the list, select the anomaly reported for SUM or any age_group of hospitalized cases.
     
     ![Filter incidents by hospitalization](./media/AI-metric-advisor-sum-yes.png)
 
