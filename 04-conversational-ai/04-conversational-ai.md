@@ -53,14 +53,13 @@ The way organizations are building conversational systems is evolving, with bots
 
 7. On the **Create a Chatbot** page enter the following details :
 
-   - **Name of your bot** : Enter **AI-Bot-<inject key="DeploymentID" />**.
+   - **Name of your bot** : Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
    - **What language will your bot speak?** : Select **English (US)** from the dropdown.
    - **Select an environment** : Select the default **Cloudlabs.AI (AIW-DS) (default) - United States**
 
    Now select **Create**.
 
-    ![](media/create-a-bot.png)
-
+   ![](media/create-a-bot.png)
 
 8. Once the Bot is created you will see the Power virtual agents page.
 
@@ -112,15 +111,13 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/save-bot.png)
 
-7. Click on the downward arrow and select **Open in Bot Framework Composer**
+7. Select **Topics** from the left menu, then click on the downward arrow and select **Open in Bot Framework Composer**.
 
     ![](media/bot-composer-1.png)
 
-    >**Note**: If you can’t launch composer automatically from Power Virtual Agents, you can launch it manually from your browser. Click on Copy link to copy the link and paste it into the URL in your web browser. 
+    >**Note**: If you can’t launch composer automatically from Power Virtual Agents, you can launch it manually from your browser. Click on Copy link to copy the link and paste the URL in your web browser.
 
-8. Make sure to open Bot Framework Composer from within Power Virtual Agents. This ensures that Composer has all the necessary plugins needed for 
-integration with Power Virtual Agents
-
+8. Make sure to open Bot Framework Composer from within Power Virtual Agents. This ensures that Composer has all the necessary plugins needed for integration with Power Virtual Agents.
 
 ## Task 5 - Create an adaptive card using Bot Framework Composer
 
@@ -128,8 +125,7 @@ integration with Power Virtual Agents
 
    >**Note** : You can find the credentials in the environment details tab.
 
-2. Once you sign in, you will be asked to import your bot to a new project. The **Name** field will be auto-populated. If it's empty, fill in the name field with the name of your 
-bot which we created on the **Power virtual agents** page. Then, click **Create**.
+2. Once you sign in, you will be asked to import your bot to a new project. The **Name** field will be auto-populated. If it's empty, fill the name field with the name of your bot which we created on the **Power virtual agents** page. Then, click **Create**.
 
    ![](media/import-bot.png)
 
@@ -164,7 +160,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
    -https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/FY-23-AI-Updates/04-conversational-ai/media/tofu.png
    ```
    
-   ![](media/code-1.png)
+   ![](media/lab3-task5-step6.png)
 
 7. Next, paste in the following JSON code into the same window, underneath the code entered previous step.
 
@@ -280,7 +276,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
    ```
    
-   ![](media/bot-show-code-01.png)
+   ![](media/lab3-task5-step8.png)
 
 9. From the left navigation bar, click on the **Create** tab and select **BeginDialog**.
 
@@ -298,7 +294,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
     ${AdaptiveCardMeals(virtualagent.user_city)}
     ```
 
-    ![](media/show-code-2.png)   
+    ![](media/lab3-task5-step11.png)   
 
     >**Note**: Ensure there is only one – symbol at the start of the code.
 
@@ -306,7 +302,7 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
     ![](media/publish-bot-01.png)   
 
-13. You need to providing the Email/Username: <inject key="AzureAdUserEmail"></inject> in the signup popup for publishing bot. Confirm that you want to publish the bot by clicking on **Okay**. The bot should now be in the process of publishing.
+13. You need to provide the Email/Username: <inject key="AzureAdUserEmail"></inject> in the signup popup for publishing bot. Confirm that you want to publish the bot by clicking on **Okay**. The bot should now be in the process of publishing.
 
     ![](media/publish-bot-02.png)  
 
@@ -326,29 +322,32 @@ bot which we created on the **Power virtual agents** page. Then, click **Create*
 
    ![](media/select-mdo.png)
 
-4. Under the **question**, add a node and **select Redirect to another topic** and select **Meals**.
+4. Click on **+** to add a node at the bottom of the Topic. Then select **Redirect to another topic** and select **Meals**.
 
    ![](media/redirect-another-topic.png)
 
-5. Your Power Virtual Agents bot will call the Bot Framework dialog to display an adaptive card. Save your **Topic**.
+5. Your Power Virtual Agents bot will call the Bot Framework dialog to display an adaptive card. Click on **Save** icon at the top right.
+
+   ![](media/lab3-task6-step5.png)
 
 ## Task 7 - Test your Bot
 
-1. While on the **Meal delivery options** select the **Bot** icon on the top right corner.
+1. While on the **Meal delivery options**, select the **Bot** icon on the top right corner.
 
    ![](media/test-bot.png)
 
-2. Go to the test pane and switch on **Track between topics**.
+2. In the Test bot pane, enable the **Track between topics**.
 
    ![](media/track-between-topics.png)
 
-3. Type in a trigger phrase and the name of a city when prompted. 
+3. Enter the below phrase in a trigger phrase in Test bot. 
 
    ```what meals can I order```
 
-4. Your chatbot should display images of the meals in an adaptive card as show below.
+   ![](media/lab3-task7-step3.png)
+
+4. Then enter the name of the city as **Seattle**. Your chatbot should display images of the meals in an adaptive card as show below.
 
    ![](media/final-bot.png)
-
 
 Now you have successfully created and tested Power Virtual Agents bot
