@@ -210,7 +210,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![Explore the models section of the AutoML run](media/inspect-models02.png)
 
-4. On the **Explanations (1)** section, browse the available explanations **(2)** and investigate the **Model performance (3)** representation.
+4. On the **Explanations (preview) (1)** section, browse the available explanations **(2)** and investigate the **Model performance (3)** representation.
 
    ![View explanations](media/lab1-task6-step4.png)
 
