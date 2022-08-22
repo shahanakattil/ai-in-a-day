@@ -44,25 +44,25 @@ Managing a virtually non-stop flux of incoming research documents should be base
 
 When data comes in natural language, a data engineering process should transform it into a numerical form useful in Machine Learning. In most cases, some input values will be off (e.g., resulting from human error) or even missing. The same process should be able to identify and handle these cases. Furthermore, analysts need to perform exploratory analysis and various other consistency checks to gain a deep understanding of the data and ensure a level of quality that makes it fit for Machine Learning.
 
-Using Azure Databricks, we will prepare input datasets and analyze their content. We will also attempt to correlate the various datasets and clean their content. We will assess the resulting data quality using both statistical and Machine Learning-based approaches (Lab 6).
+Using Azure Databricks, we will prepare input datasets and analyze their content. We will also attempt to correlate the various datasets and clean their content. We will assess the resulting data quality using both statistical and Machine Learning-based approaches (Lab 5).
 
 Another critical problem to deal with when it comes to the volumes of research documents covering COVID-19 is the problem of advanced indexing and searching their content. The specific internal structure of research papers (including citations, contributors, and various entities like diagnosis, forms of examination, family relations, genes, medication, symptom or signs, and treatments) form a reach semantic graph that goes way beyond simple document categorization. An analyst would benefit significantly from exploring the corpus of documents in a way that takes all these complex relationships into account.
 
-Using the Cognitive Search capabilities, we will create a complex index of documents that allows an analyst to perform an advanced search and explore the inter-document graph relationships (Lab 3).
+Using the Cognitive Search capabilities, we will create a complex index of documents that allows an analyst to perform an advanced search and explore the inter-document graph relationships (Lab 2a).
 
 The power of Machine Learning also comes into play when dealing with human-to-machine interfaces. While classical interfaces like native or web applications are ubiquitous, the new approaches based on conversational AI are becoming increasingly popular. Having the capability to interact with intelligent services using natural language is quickly becoming the norm rather than the exception. Using Conversational AI, analysts can find the research of interest by using simple natural language phrases.
 
-Using Azure Bot Service and Cognitive Services, we provide a conversational bot that helps analysts navigate the corpus of research documents and identify the most relevant ones (Lab 4).
+Using Power Virtual Agents and Cognitive Services, we provide a conversational bot that helps analysts navigate the corpus of research documents and identify the most relevant ones (Lab 3).
 
 Besides collecting data about COVID-19 cases, it is also essential to ensure the accuracy of the reporting. Accuracy check is where continuous monitoring of incoming data feeds doubled by automatic detection of anomalies plays a critical role. Data is valid for analysis as long as it is reliable and contains the minimum possible number of errors. With distributed data sources and numerous reporting entities, automatic anomaly detection is the best choice to minimize that number.
 
-Using Cognitive Services Metrics Advisor, we will demonstrate how to improve the case surveillance data quality by identifying as early as possible anomalies in the number of daily reported cases (Lab 5).
+Using Cognitive Services Metrics Advisor, we will demonstrate how to improve the case surveillance data quality by identifying as early as possible anomalies in the number of daily reported cases (Lab 4).
 
 ## Labs
 
 Each individual lab in this repo addresses a subset of the challenges described in the [Background story](#background-story) section.
 
-### Lab 1 - [Azure Machine Learning Model Training](01-aml-model-training/README.md)
+### Lab 1 - [Azure Machine Learning Model Training](01-aml-model-training/01-aml-model-training-new.md)
 
 The lab covers clustering with Azure Machine Learning, Automated ML, and model explainability.
 
@@ -76,8 +76,9 @@ The high-level steps covered in the lab are:
 - Use the newly found clusters to label research document and run Auto ML process to train a classifier
 - Run the classifier on "new" research papers
 - Explain the best model produced by AutoML
+- Assess AI systems and make data-driven decisions with Azure Machine Learning Responsible AI dashboard
 
-### Lab 2 - [Knowledge Mining with Azure Cognitive Search and Text Analytics](03-knowledge-mining/README.md)
+### Lab 2a - [Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language](03-knowledge-mining/2a-document-processing-and-summarization.md)
 
 This lab covers Azure Cognitive Search (index, knowledge store, custom skills) and Form Recognizer.
 
@@ -85,25 +86,31 @@ The high-level steps covered in the lab are:
 
 - Explore dashboard of COVID-19 data
 - Explore lab scenario
-- Explore document search process
-- Explore graph search process
-- Add a set of new documents and trigger the index update process
-- Explore the document and graph search and identify updated results
+- Creating Azure Search Indexes
+- Querying Azure Search Indexes
+- Updating Azure Search Indexes
+- Introducing  the Form Recognizer Studio
+- Document Summarization via Cognitive Service for Language integration
 
-### Lab 3 - [Conversational AI with Azure Bot Service and Cognitive Services](04-conversational-ai/README.md)
+### Lab 2b - [Knowledge Mining with Azure Cognitive Search](03-knowledge-mining/2b-semantic-query-and-return-semantic-answer.md)
 
-This lab covers Azure Bot Service, Bot Framework Composer, and Azure Cognitive Services.
+ - Enabling the Semantic search (preview) in Cognitive Search service
+ - Creating a Semantic configuration
+ - Semantic search using semantic configuration in Azure Portal
+ - Semantic Query using REST APIs
 
-The high-level steps covered in the lab are:
+### Lab 3 - [Conversational AI with Azure Bot Service and Cognitive Services](04-conversational-ai/04-conversational-ai.md)
 
-- Explore dashboard of COVID-19 data
-- Explore lab scenario
-- Interact with the AI-in-a-Day conversational bot
-- Extend the behavior of the conversational bot using the Bot Framework Composer (and LUIS)
-- Deploy the updated version of the conversational bot
-- Interact with improved version of the AI-in-a-Day conversational bot
+ - Explore dashboard of COVID-19 data
+ - Explore lab scenario
+ - Setting up Power Virtual Agents and Create your first Chatbot.
+ - Create a new topic
+ - Create an adaptive card using Bot Framework Composer
+ - Add your composer content to Power Virtual Agents bot
+ - Test your Bot
+ - Enabling Voice Access for Our Bot 
 
-### Lab 4 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/README.md)
+### Lab 4 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/05-metrics-advisor-new.md)
 
 The lab covers the Metrics Advisor service from Azure Cognitive Services.
 
@@ -111,22 +118,26 @@ The high-level steps covered in the lab are:
 
 - Explore dashboard of COVID-19 data
 - Explore the lab scenario
-- Onboard your time series data in the Metrics Advisor
-- Explore anomalies detected in your data
+- Deploy Azure Cognitive Services Metrics Advisior instance
+- Configuring the "COVID cases by age group" Metrics Advisor data feed
+- Explore anomalies detected in data
 - Perform root cause analysis
-- Explore anomalies with hard thresholds (optional)
+- Anomaly detection methods
+- Configure metrics and fine tune detection configuration
+- Tune the configuration for a specific series or group
+- Preset Events
+- Recent incident views
 
 ### Lab 5 - [Machine Learning with Azure Databricks](06-ml-in-databricks/README.md)
 
-The lab covers Data Engineering and Machine Learning using Azure Databricks notebooks.
+The lab covers Data Engineering and Machine Learning using Azure Databricks notebooks activity in Azure Data Factory.
 
 The high-level steps covered in the lab are:
 
 - Explore dashboard of COVID-19 data
-- Explore lab scenario
-- Explore source data and identify potential issues
-- Perform data cleansing on research paper dataset and explore results
-- Perform data cleansing on case surveillance data and explore results
-- Correlate research paper and case surveillance datasets
-- Use SparkML to build risk classifier on case surveillance dataset
-- Assess fairness of risk classifier
+- Explore the lab scenario
+- Connect Data Factory to Azure Databricks using linked service
+- Create Data Factory Pipeline to run the Explore the surveillance dataset Databricks notebook
+- Create Data Factory Pipeline to run the Build a risk classifier based on surveillance data Azure Databricks Notebook
+- Create Data Factory Pipeline to run the Explore the research papers dataset Azure Databricks for notebook
+
