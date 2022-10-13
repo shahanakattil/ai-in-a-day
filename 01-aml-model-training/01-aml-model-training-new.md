@@ -220,17 +220,17 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![Model-Created](media/rai_model.png)
 
-2. In **rai_diabetes_decision_model** page, from the **Details (1)** option click the **Create Responsible AI dashboard (preview) (2)** button.
+2. In **rai_diabetes_decision_model** page, from the **Responsible AI** option click the **Create dashboard** button.
 
-   ![Responsible AI dashboard](media/rai_dashboard.png)
+   ![Responsible AI dashboard](./media/SHC7.2.png)
 
-The wizard is designed to provide an interface to input all the necessary parameters to instantiate your Responsible AI dashboard without having to touch code. The experience takes place entirely in the Azure Machine Learning studio UI with a guided flow and instructional text to help contextualize the variety of choices in which Responsible AI components you’d like to populate your dashboard. The wizard is divided into five steps:
+   The wizard is designed to provide an interface to input all the necessary parameters to instantiate your Responsible AI dashboard without having to touch code. The  experience takes place entirely in the Azure Machine Learning studio UI with a guided flow and instructional text to help contextualize the variety of choices in  which Responsible AI components you’d like to populate your dashboard. The wizard is divided into five steps:
 
-   - Datasets
-   - Modeling task
-   - Dashboard components
-   - Component parameters
-   - Experiment configuration
+    - Datasets
+    - Modeling task
+    - Dashboard components
+    - Component parameters
+    - Experiment configuration
 
 3. Under the **Datasets for training and testing** page, we need to select the train and test dataset that you used when training your model to generate model-debugging insights. Select the datasets as per the below instruction and click on **Next**.
 
@@ -265,9 +265,9 @@ The wizard is designed to provide an interface to input all the necessary parame
    - **Specify features to perturb**: By default, all features will be perturbed. However, if there are specific features you want perturbed, clicking this will open a panel with the list of features to select. (See below)
    - **Generate explanations**: Toggle on and off to generate a model explanation component for your Responsible AI dashboard. No configuration is necessary as a default opaque box mimic explainer will be used to generate feature importance.
   
-8. In **Target feature** select **Column1** and for **Categorial features** select **0,1,2,3,4,5,6** from the dropdown. **Disable** the **Error tree and heat map** option. If enabling the **Counterfactual what-if examples** please ensure to provide _Number of counterfactuals_ and _Range of value predictions_ as shown in the below screenshot. Leave the other parameters to default and select **Next**.
+8. In **Target feature** select **Column1** and for **Categorial features** select **0 to 6 Decimal** from the dropdown. **Disable** the **Error tree and heat map** option. If enabling the **Counterfactual what-if examples** please ensure to provide _Number of counterfactuals_ and _Range of value predictions_ as shown in the below screenshot. Leave the other parameters to default and select **Next**.
 
-   ![Parameters_debugging](media/lab1-task7-1.png)
+   ![Parameters_debugging](./media/SHC7.8.png)
 
 9. In the **Training job or experiment configuration**, page enter the following:
 
@@ -287,13 +287,13 @@ The wizard is designed to provide an interface to input all the necessary parame
 
    ![model](media/models.png)
 
-2. On the Models page, select the **Responsible AI (preview)** option and select the available RAI dashboard.
+2. On the Models page, select the **Responsible AI** option and select the available RAI dashboard.
 
-   ![Responsible_AI.png](media/available_RAI.png)
+   ![Responsible_AI.png](./media/SHC8.2.png)
 
 3. Go through the insights of the RAI dashbaord and select the **Back to models** details to get back to your list of dashboards.
 
-   ![Responsible_AI.png](media/lab1-task8-1.png)
+   ![Responsible_AI.png](./media/SHC8.3.png)
 
 4. Explore through the Dashboard to learn how to enable the Full functionality with integrated compute resources.
 
