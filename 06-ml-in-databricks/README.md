@@ -6,7 +6,7 @@ The lab covers Data Engineering and Machine Learning using Azure Databricks note
 
 Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
 
-![Azure AI in a Day datasets](../media/data-overview-01-01.png)
+![Azure AI in a Day datasets](./media/SHC1.png)
 
 To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
 
@@ -24,7 +24,7 @@ Using Azure Databricks, we will prepare input datasets and analyze their content
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
-![Architecture for Lab 6](./../media/Architecture-6.png)
+![Architecture for Lab 6](./media/SHC2.png)
 
 The high-level steps covered in the lab are:
 
@@ -68,7 +68,7 @@ The high-level steps covered in the lab are:
 
 8. In the `AI-Lab6` folder, you should see the three notebooks that you will use in this lab.
 
-   ![View list of notebooks in Azure Databricks workspace](./media/databricks-workspace-2.png)
+   ![View list of notebooks in Azure Databricks workspace](./media/SHC5.3.8.png)
 
 9. Now click the drop-down from the top right corner and select the **User Settings (2)** option.
 
@@ -112,7 +112,7 @@ In this task, you will be creating a link service in the Data factory to connect
     
 6. Now click on the **Create linked service** button.
 
-    ![ADF for lab6](./../media/newlinked.png)
+    ![ADF for lab6](./media/SHC5.4.6.1.png)
     
 7. Now, On the **New linked service** window select the **Compute** tab, select the **Azure Databricks** option and click on **Continue**.
 
