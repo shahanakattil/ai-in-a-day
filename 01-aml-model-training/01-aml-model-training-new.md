@@ -6,7 +6,7 @@ This lab covers clustering with Azure Machine Learning, Automated ML, and model 
 
 Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
 
-![Azure AI in a Day datasets](../media/data-overview-01-01.png)
+![Azure AI in a Day datasets](./media/SHC1.png)
 
 To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
 
@@ -24,7 +24,7 @@ Based on a set of existing research papers, we will use Natural Language Process
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
-![Architecture for Lab 1](./../media/Architecture-1.png)
+![Architecture for Lab 1](./media/SHC2.png)
 
 The high-level steps covered in the lab are:
 
@@ -102,7 +102,7 @@ The high-level steps covered in the lab are:
 
 1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `1. Data Preparation.ipynb` notebook.
 
-   ![Select Note Book](./media/ClickJupyterDataPrepNoteBook.png)
+   ![Select Note Book](./media/SHC3.png)
    
 2. On Jupiter page, select **Kernel** *(1)*, then **Change kernel** *(2)* and make sure **Python (aiw-ai-kernel)** *(3)* is selected.
 
@@ -110,8 +110,8 @@ The high-level steps covered in the lab are:
 
 3. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on the 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or ) and observe the results of each cell execution.
 
-![Run Note Book Cell](./media/RunNoteBookCell1.png)
-![Note Book Cell Output](./media/NotebookOutput.png)
+   ![Run Note Book Cell](./media/SHC4.png)
+   ![Note Book Cell Output](./media/SHC4.1.png)
 
 ## Task 5 - Train a Machine Learning model with Automated ML
 
@@ -137,7 +137,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
     - **Virtual machine type (2)**: CPU
     - **Virtual machine Size (3)**: Standard_DS3_v2
 
-    ![Dedicated virtual machine priority, CPU virtual machine type, and Standard_DS3_v2 virtual machine size are selected. The next button is highlighted.](media/create-new-compute-cluster.png)
+    ![Dedicated virtual machine priority, CPU virtual machine type, and Standard_DS3_v2 virtual machine size are selected. The next button is highlighted.](./media/SHC5.4.1.png)
 
     Select `Next` **(4)** to continue.
 
@@ -149,7 +149,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     Setting the number of maximum nodes to a higher value will allow Automated ML to run more experiments in parallel but will also increase your costs.
 
-    ![Computer name is set to aml-compute-cpu. The minimum number of nodes is set to zero. The maximum number of nodes is set to four. The create button is highlighted.](media/automl-configure-cluster-settings.png)
+    ![Computer name is set to aml-compute-cpu. The minimum number of nodes is set to zero. The maximum number of nodes is set to four. The create button is highlighted.](./media/SHC5.5.1.png)
 
     Select `Create` **(4)** to proceed.
 
