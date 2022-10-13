@@ -6,7 +6,7 @@ This lab covers Azure Cognitive Services, particularly [Azure Cognitive Search](
 
 Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
 
-![Azure AI in a Day datasets](../media/data-overview-01-01.png)
+![Azure AI in a Day datasets](./media/SHC1.png)
 
 To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
 
@@ -24,7 +24,7 @@ Using the Cognitive Search capabilities, we will create a complex index of docum
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
-![Architecture for Lab 3](./../media/Architecture-3.png)
+![Architecture for Lab 3](./media/SHC2.png)
 
 The high-level steps covered in the lab are:
 
