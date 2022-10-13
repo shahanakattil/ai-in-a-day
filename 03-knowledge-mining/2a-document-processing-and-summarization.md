@@ -39,7 +39,7 @@ The high-level steps covered in the lab are:
 
 1. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials. Then, select **Resource groups**.
 
-    ![Open Azure resource group](media/azure-open-resource-groups.png)
+    ![Open Azure resource group](media/SHC2a.3.1.png)
 
 2. Select the **AI-in-a-Day** resource group.
 
@@ -114,7 +114,7 @@ The high-level steps covered in the lab are:
 
 1. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials. Then, select **Resource groups**.
 
-    ![Open Azure resource group](media/azure-open-resource-groups.png)
+    ![Open Azure resource group](media/SHC2a.3.1.png)
 
 2. Select the **AI-in-a-Day** resource group.
 
@@ -196,7 +196,7 @@ The high-level steps covered in the lab are:
 
 8. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials if not logged in already. Then, select **Resource groups**.
 
-    ![Open Azure resource group](media/azure-open-resource-groups.png)
+    ![Open Azure resource group](media/SHC2a.3.1.png)
 
 9. Select the **AI-in-a-Day** resource group.
 
@@ -228,7 +228,7 @@ The high-level steps covered in the lab are:
 
 1. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials. Then, select **Resource groups**.
 
-    ![Open Azure resource group](media/azure-open-resource-groups.png)
+    ![Open Azure resource group](media/SHC2a.3.1.png)
 
 2. Select the **AI-in-a-Day** resource group.
 
@@ -272,9 +272,16 @@ The high-level steps covered in the lab are:
 
     ![The covid19abstract project has been created](media/lab2a-t6-frs3.png)
     
-11. In the Configure service resource, for **Access By**, select **API endpoint and key**. Enter the **Form recognizer endpoint** and **API key**, which you have copied to the text file at the earlier of this task. Check the box and leave default for API version. Click on **Continue**.
+11. In the **Configure service resource**, provide the following details and click on **Continue**.
+   
+    | Parameter                   | Value                                |
+    | --------------------------- | -------------------------------------|
+    | Subscription                | Select the default subscription      |
+    | Resource Group              | Select `AI-in-a-Day`                 |
+    | Form Recognizer or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>|
+    
 
-    ![Project](media/lab2a-t6-frs4.png)
+    ![Project](media/SHC2a.6.11.1.png)
     
 12. Next in the connect training data source, select the below values from the drop-down and click on **Continue**.
 
@@ -286,13 +293,13 @@ The high-level steps covered in the lab are:
     | Blob container              | Select `covid19temp`                 |
     | Folder path                 | Enter `papers`                       |
 
-    ![Project](media/lab2a-t6-frs5.png)
+    ![Project](media/SHC2a.6.12.1.png)
     
     > **Note** : If you are unable to select the Storage Account in connect training data source page, signout and signin from the Form Recognizer Studio with the given credentials. Re-perform the task from Step-8.
 
 13. Review the details and click on **Create project**.
 
-    ![Project](media/lab2a-t6-frs6.png)
+    ![Project](media/SHC2a.6.13.png)
   
 14. After creating a new project, you will be sent to the project for tagging in Label data. Select **+** **(1)** to create a new **Field** **(2)**, type `Abstract` in the Field, and hit enter. By this, you have created a new Abstract Field.
 
