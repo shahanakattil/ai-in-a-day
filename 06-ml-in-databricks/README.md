@@ -70,9 +70,9 @@ The high-level steps covered in the lab are:
 
    ![View list of notebooks in Azure Databricks workspace](./media/databricks-workspace-2.png)
 
-9. Now click on the **Settings (1)** button from the left side menu and select the **User Settings (2)** option.
+9. Now click the drop-down from the top right corner and select the **User Settings (2)** option.
 
-     ![ADF for lab6](./../media/toekn1.png)
+     ![ADF for lab6](./media/SHC5.3.9.png)
      
 10. Now on the **User Settings** page, click on the **Generate new token**.
 
