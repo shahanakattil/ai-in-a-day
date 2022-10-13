@@ -18,7 +18,7 @@ The high-level steps covered in the lab are:
 
 Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the begining of each lab.
 
-![Azure AI in a Day datasets](../media/data-overview-01-01.png)
+![Azure AI in a Day datasets](./media/SHC1.png)
 
 To get more details about the source datasets, check out the [Data Overview](../data-overview.md) section.
 
@@ -32,7 +32,7 @@ Using GitHub and GitHub Actions, we will build an end-to-end Machine Learning pr
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
-![Architecture for Lab 2](./../media/Architecture-2.png)
+![Architecture for Lab 2](./media/SHC2.png)
 
 ## Task 3 - Observe the execution and artifacts of the existing model training Azure DevOps pipeline
 
