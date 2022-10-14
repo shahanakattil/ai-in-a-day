@@ -83,7 +83,7 @@ You should follow all of the steps provided in this section _before_ taking part
 
 Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
 
-![Azure AI in a Day datasets](../media/data-overview-01-01.png)
+![Azure AI in a Day datasets](./media/SHC1.png)
 
 To get more details about the source datasets, check out the [Data Overview](../data-overview.md) section.
 
@@ -97,7 +97,7 @@ Using Cognitive Services Metrics Advisor, we will demonstrate how to improve the
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
-![Architecture for Lab 5](./../media/Architecture-5.png)
+![Architecture for Lab 5](./media/SHC2.png)
 
 The high-level steps covered in the lab are:
 
@@ -144,7 +144,7 @@ The high-level steps covered in the lab are:
 
    > **Note:-** If you see that **Get Started** button is not available for you, it means that the metric advisor service is not fully available yet. Please wait for 20-30 minutes and try again after refreshing the page.
 
-    ![Connect to Metrics Advisor workspace](./media/metrics-advisor-connect.png)
+    ![Connect to Metrics Advisor workspace](./media/AI4.3.6.png)
 
 4. With the Metrics Advisor workspace opened, select the **Add datafeed** option from the left navigation menu.
 
@@ -172,19 +172,19 @@ The high-level steps covered in the lab are:
 
 9. In the **Advanced settings (1)** section, inside **Ingestion options**, set **Stop retrying after (2)** to **0** hours to stop the ingestion process after the first run. 
     
-    ![Advanced settings](./media/advancedsettings.png)
+    ![Advanced settings](./media/AI4.3.12.png)
 
 10. In the **Misc** section, choose the option to **Fill previous** for the anomaly detection model.
 
-    ![Misc settings](./media/fillprevious.png)
+    ![Misc settings](./media/AI4.3.13.png)
 
 11. Provide the **Data feed name**: `covid-ages` and select **Submit** to confirm and submit the data feed.
 
-    ![Submit schema configuration](./media/submitdatafeed.png)
+    ![Submit schema configuration](./media/AI4.3.14.png)
 
 12. Wait for the ingestion progress dialog and select the **Details** link in order to observe the ingestion log by timestamp. Wait until the ingestion completes with success for all ingested json files.
 
-    ![Check the ingestion progress](./media/ingestionprogress1.png)
+    ![Check the ingestion progress](./media/AI4.3.15.png)
 
 
 ## Task 5 - Explore anomalies detected in data
@@ -200,11 +200,11 @@ When detection is applied, you can select one of the metrics listed in the data 
 
 1. Select the **Visit data-feed: covid-ages** button to navigate to the data feed overview page.
 
-    ![Check the ingestion progress](./media/ingestionprogress2.png)
+    ![Check the ingestion progress](./media/AI4.3.15.png)
 
 2. In the data feed page, select the `count` metric under the **Metrics** section.
 
-    ![Go to the count metric details page](./media/browsemetricdata1.png)
+    ![Go to the count metric details page](./media/browsemetricdata1.1.png)
 
 3. To modify the inspected time window, change the start and end time of the interval from the calendar above the graphic representations.
     
@@ -327,7 +327,7 @@ A metric can apply one or more detection configurations. There's a default confi
 
 1. After the metrics are onboarded to Metrics Advisor, the system will try to perform statistics on the metrics to categorize **anomaly pattern** types and **series value** distribution. By providing this functionality, you can further fine tune the configuration based on their specific preferences. In the beginning, it will show a status of **Initializing**.
 
-    [![Screenshot of Metrics Advisor U I with Initializing auto-tuning text visible.](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-initializing.png)](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/media/metrics/autotuning-initializing.png#lightbox)
+    ![](./media/AI4.10.1.png)
 
 ### Subtask 1 - Choose to enable auto-tuning on anomaly pattern and series value
 
@@ -456,7 +456,7 @@ Metrics Advisor detects anomalies on all your time series data as they're ingest
 
     ![](./media/view-incident.png)
     
-    ![](./media/view-incident-1.png)
+    ![](./media/AI4.13.2.2.png)
 
 3. On the **Incident hub**, select **Home** to find the page where you can find all the incidents under the specific metric.
 

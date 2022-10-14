@@ -6,7 +6,7 @@ This lab covers clustering with Azure Machine Learning, Automated ML, and model 
 
 Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
 
-![Azure AI in a Day datasets](../media/data-overview-01-01.png)
+![Azure AI in a Day datasets](./media/SHC1.png)
 
 To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
 
@@ -24,7 +24,7 @@ Based on a set of existing research papers, we will use Natural Language Process
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
-![Architecture for Lab 1](./../media/Architecture-1.png)
+![Architecture for Lab 1](./media/SHC2.png)
 
 The high-level steps covered in the lab are:
 
@@ -102,7 +102,7 @@ The high-level steps covered in the lab are:
 
 1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `1. Data Preparation.ipynb` notebook.
 
-   ![Select Note Book](./media/ClickJupyterDataPrepNoteBook.png)
+   ![Select Note Book](./media/SHC3.png)
    
 2. On Jupiter page, select **Kernel** *(1)*, then **Change kernel** *(2)* and make sure **Python (aiw-ai-kernel)** *(3)* is selected.
 
@@ -110,8 +110,8 @@ The high-level steps covered in the lab are:
 
 3. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on the 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or ) and observe the results of each cell execution.
 
-![Run Note Book Cell](./media/RunNoteBookCell1.png)
-![Note Book Cell Output](./media/NotebookOutput.png)
+   ![Run Note Book Cell](./media/SHC4.png)
+   ![Note Book Cell Output](./media/SHC4.1.png)
 
 ## Task 5 - Train a Machine Learning model with Automated ML
 
@@ -137,7 +137,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
     - **Virtual machine type (2)**: CPU
     - **Virtual machine Size (3)**: Standard_DS3_v2
 
-    ![Dedicated virtual machine priority, CPU virtual machine type, and Standard_DS3_v2 virtual machine size are selected. The next button is highlighted.](media/create-new-compute-cluster.png)
+    ![Dedicated virtual machine priority, CPU virtual machine type, and Standard_DS3_v2 virtual machine size are selected. The next button is highlighted.](./media/SHC5.4.1.png)
 
     Select `Next` **(4)** to continue.
 
@@ -149,7 +149,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     Setting the number of maximum nodes to a higher value will allow Automated ML to run more experiments in parallel but will also increase your costs.
 
-    ![Computer name is set to aml-compute-cpu. The minimum number of nodes is set to zero. The maximum number of nodes is set to four. The create button is highlighted.](media/automl-configure-cluster-settings.png)
+    ![Computer name is set to aml-compute-cpu. The minimum number of nodes is set to zero. The maximum number of nodes is set to four. The create button is highlighted.](./media/SHC5.5.1.png)
 
     Select `Create` **(4)** to proceed.
 
@@ -220,17 +220,17 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![Model-Created](media/rai_model.png)
 
-2. In **rai_diabetes_decision_model** page, from the **Details (1)** option click the **Create Responsible AI dashboard (preview) (2)** button.
+2. In **rai_diabetes_decision_model** page, from the **Responsible AI** option click the **Create dashboard** button.
 
-   ![Responsible AI dashboard](media/rai_dashboard.png)
+   ![Responsible AI dashboard](./media/SHC7.2.png)
 
-The wizard is designed to provide an interface to input all the necessary parameters to instantiate your Responsible AI dashboard without having to touch code. The experience takes place entirely in the Azure Machine Learning studio UI with a guided flow and instructional text to help contextualize the variety of choices in which Responsible AI components you’d like to populate your dashboard. The wizard is divided into five steps:
+   The wizard is designed to provide an interface to input all the necessary parameters to instantiate your Responsible AI dashboard without having to touch code. The  experience takes place entirely in the Azure Machine Learning studio UI with a guided flow and instructional text to help contextualize the variety of choices in  which Responsible AI components you’d like to populate your dashboard. The wizard is divided into five steps:
 
-   - Datasets
-   - Modeling task
-   - Dashboard components
-   - Component parameters
-   - Experiment configuration
+    - Datasets
+    - Modeling task
+    - Dashboard components
+    - Component parameters
+    - Experiment configuration
 
 3. Under the **Datasets for training and testing** page, we need to select the train and test dataset that you used when training your model to generate model-debugging insights. Select the datasets as per the below instruction and click on **Next**.
 
@@ -265,9 +265,9 @@ The wizard is designed to provide an interface to input all the necessary parame
    - **Specify features to perturb**: By default, all features will be perturbed. However, if there are specific features you want perturbed, clicking this will open a panel with the list of features to select. (See below)
    - **Generate explanations**: Toggle on and off to generate a model explanation component for your Responsible AI dashboard. No configuration is necessary as a default opaque box mimic explainer will be used to generate feature importance.
   
-8. In **Target feature** select **Column1** and for **Categorial features** select **0,1,2,3,4,5,6** from the dropdown. **Disable** the **Error tree and heat map** option. If enabling the **Counterfactual what-if examples** please ensure to provide _Number of counterfactuals_ and _Range of value predictions_ as shown in the below screenshot. Leave the other parameters to default and select **Next**.
+8. In **Target feature** select **Column1** and for **Categorial features** select **0 to 6 Decimal** from the dropdown. **Disable** the **Error tree and heat map** option. If enabling the **Counterfactual what-if examples** please ensure to provide _Number of counterfactuals_ and _Range of value predictions_ as shown in the below screenshot. Leave the other parameters to default and select **Next**.
 
-   ![Parameters_debugging](media/lab1-task7-1.png)
+   ![Parameters_debugging](./media/SHC7.8.png)
 
 9. In the **Training job or experiment configuration**, page enter the following:
 
@@ -287,16 +287,16 @@ The wizard is designed to provide an interface to input all the necessary parame
 
    ![model](media/models.png)
 
-2. On the Models page, select the **Responsible AI (preview)** option and select the available RAI dashboard.
+2. On the Models page, select the **Responsible AI** option and select the available RAI dashboard.
 
-   ![Responsible_AI.png](media/available_RAI.png)
+   ![Responsible_AI.png](./media/SHC8.2.png)
 
 3. Go through the insights of the RAI dashbaord and select the **Back to models** details to get back to your list of dashboards.
 
-   ![Responsible_AI.png](media/lab1-task8-1.png)
+   ![Responsible_AI.png](./media/SHC8.3.png)
 
 4. Explore through the Dashboard to learn how to enable the Full functionality with integrated compute resources.
 
-> **Note**: For more information about the Responsible AI dashboard, reference this link ```https://docs.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-dashboard```
+> **Note**: For more information about the Responsible AI dashboard, refer here [how-to-responsible-ai-dashboard](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-dashboard)
 
  
