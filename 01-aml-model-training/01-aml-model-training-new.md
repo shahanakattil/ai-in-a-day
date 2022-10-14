@@ -297,6 +297,6 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 4. Explore through the Dashboard to learn how to enable the Full functionality with integrated compute resources.
 
-> **Note**: For more information about the Responsible AI dashboard, reference this link ```https://docs.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-dashboard```
+> **Note**: For more information about the Responsible AI dashboard, refer here [how-to-responsible-ai-dashboard](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-dashboard)
 
  
