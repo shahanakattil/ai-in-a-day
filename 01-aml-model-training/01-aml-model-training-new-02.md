@@ -1,4 +1,4 @@
-# Lab 1 - Making data-driven decisions with Azure Machine Learning & Responsible AI Dashboard
+# Making data-driven decisions with Azure Machine Learning & Responsible AI Dashboard
 
 This lab covers clustering with Azure Machine Learning, Automated ML, and model explainability.
 
