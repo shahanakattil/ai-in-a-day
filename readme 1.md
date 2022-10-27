@@ -58,7 +58,7 @@ Besides collecting data about COVID-19 cases, it is also essential to ensure the
 
 Using Cognitive Services Metrics Advisor, we will demonstrate how to improve the case surveillance data quality by identifying as early as possible anomalies in the number of daily reported cases (Lab 4).
 
-### Lab - [Making data-driven decisions with Azure Machine Learning & Responsible AI Dashboard](01-aml-model-training/01-aml-model-training-new.md)
+### Lab - [Making data-driven decisions with Azure Machine Learning & Responsible AI Dashboard](01-aml-model-training/01-aml-model-training-new-02.md)
 
 The lab covers clustering with Azure Machine Learning, Automated ML, and model explainability.
 
