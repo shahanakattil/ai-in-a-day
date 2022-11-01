@@ -112,6 +112,10 @@ The high-level steps covered in the lab are:
 
    ![Run Note Book Cell](./media/SHC4.png)
    ![Note Book Cell Output](./media/SHC4.1.png)
+   
+ 4. Please make sure to read the cells carefully and update the storage account name wherever required with <inject key="Storage Account Name" enableCopy="false"/>**.
+
+     ![Note Book Cell Output](./media/aiupdates.png)
 
 ## Task 5 - Train a Machine Learning model with Automated ML
 
