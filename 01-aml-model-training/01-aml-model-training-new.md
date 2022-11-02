@@ -63,11 +63,11 @@ The high-level steps covered in the lab are:
         
 1. Locate **Machine Learning** resource **ai-in-a-day-<inject key="DeploymentID" enableCopy="false"/>**, select that.
 
-    ![Navigate to Azure Machine Learning](./media/FindMLResv3.png)
+    ![Navigate to Azure Machine Learning](./media/lab1-open-aml.png)
     
 1. Click on **Launch studio**. If you are prompted to sign in again, use the same lab credentials you used to login to the Azure portal. Close the welcome **pop-up** if any with the cross icon.  
     
-    ![Launch Machine Learning Studio](./media/launch_studio2.png)
+    ![Launch Machine Learning Studio](./media/lab1-aml-launch.png)
 
 1. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is `running` **(2)**.
    * Compute instance name: notebook<inject key="DeploymentID" enableCopy="false"/>
@@ -131,7 +131,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 3. In order to be able to launch an Automated ML run we need to provision an Azure ML compute cluster. On the `Configure run` step select `aml-compute-cpu` **(1)** from the list of clusters. If the list is empty select `+ New` **(2)** link.
 
-    ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/amlcompute-select.png)
+    ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/lab1-computenew.png)
 
     > **Note:** If you already have `aml-compute-cpu` cluster provisioned, feel free to skip to step 6.
 
@@ -159,7 +159,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 6. Set the experiment name to `COVID19_Classification` **(1)** and Target column to `cluster` **(2)**. The values we're trying to predict are in the `cluster` column. Then for compute type, select `Compute cluster` **(3)**. If your Azure ML compute cluster is not yet selected, make sure `aml-compute-cpu` **(4)** is selected as your compute for the experiment. Select `Next` **(5)** to continue.
 
-    ![Experiment name is set to COVID19_Classification. Cluster is selected for the target column. Compute cluster selection points aml-compute-cpu. The next button is highlighted.](media/amlcompute2-select.png)
+    ![Experiment name is set to COVID19_Classification. Cluster is selected for the target column. Compute cluster selection points aml-compute-cpu. The next button is highlighted.](media/lab1-configurejob.png)
 
 7. On the `Select task and settings` screen, make sure `Classification` **(1)** is selected (confirm with green check). If it is not selected, then select `View additional configuration settings` **(2)** to open a new panel of settings.
 
@@ -224,9 +224,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![Model-Created](media/rai_model.png)
 
-2. In **rai_diabetes_decision_model** page, from the **Responsible AI** option click the **Create dashboard** button.
+2. From **Models** **(1)** in **rai_diabetes_decision_model** page, select the **Responsible AI** **(2)** option and click on drop-down next to **Create Responsible AI insights (preview)** **(3)** then select **Create dashboard** **(4)** option.
 
-   ![Responsible AI dashboard](./media/SHC7.2.png)
+   ![Responsible AI dashboard](./media/lab1-rai-createdashboard.png)
 
    The wizard is designed to provide an interface to input all the necessary parameters to instantiate your Responsible AI dashboard without having to touch code. The  experience takes place entirely in the Azure Machine Learning studio UI with a guided flow and instructional text to help contextualize the variety of choices in  which Responsible AI components you’d like to populate your dashboard. The wizard is divided into five steps:
 
