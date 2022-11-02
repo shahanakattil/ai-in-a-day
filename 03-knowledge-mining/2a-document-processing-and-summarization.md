@@ -335,7 +335,11 @@ The high-level steps covered in the lab are:
 
     ![The Abstracts model has been trained](media/lab2a-t6-frs15.png)
 
-22. From the left menu, select the **Test**(1). Click on **Browse for a file**(2) and navigate to `C:\Temp\AzureSearch\` and select `2020.09.25.20201616v1.pdf`. Select **Analyze**(3) to see the results. Note that the abstract is on page 2 of the PDF.
+22. From the left menu, select the **Test**(1). Click on **Browse for a file**(2). Select **Analyze**(3) to see the results. Note that the abstract is on page 2 of the PDF.
+
+    * In the Upload Files pop-up, click on **Choose file** **(1)**. Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf`file **(2)** and then click on **Add file** **(3)**.
+    
+    ![An analyzed document](media/lab2a-fr-fileupload.png)
 
     ![An analyzed document](media/new-lab2a-5.png)
 
