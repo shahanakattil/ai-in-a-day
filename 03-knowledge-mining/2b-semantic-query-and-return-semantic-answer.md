@@ -28,22 +28,26 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
    ![Semantic config](media/lab2b-ssp4.png)
    
-2. In the **covid19temp** index pane, select **Semantic configurations** **(1)** and click on **+ Add semantic configuration**. You will see a tab appears on the right-side with **New semantic configuration**. Enter the below values:
+2. In the **covid19temp** index pane, select **Semantic configurations** **(1)** and click on **+ Add semantic configuration** **(2)**.
+
+   ![Semantic config](media/lab2b-add-sc.png)
+
+3. You will see a tab appears on the right-side with **New semantic configuration**. Enter the below values:
 
     | Parameter                   | Value                                        |
     | --------------------------- | -------------------------------------------- |
-    | Name (3)                    | my-semantic-config                           |
-    | Title field (4)             | Select `metadata/title` from the drop-down   |
-    | Field name under Content fields (5) | Select `bib_entries/BIBREFO/title` from the drop-down |
-    | Field name under Key fields (6)    | Select `bib_entries/BIBREFO/ref_id` from the drop-down |
+    | Name (1)                    | my-semantic-config                           |
+    | Title field (2)             | Select `metadata/title` from the drop-down   |
+    | Field name under Content fields (3) | Select `bib_entries/BIBREFO/title` from the drop-down |
+    | Field name under Key fields (4)    | Select `bib_entries/BIBREFO/ref_id` from the drop-down |
   
-   Click on **Ok** **(7)**.
+   Click on **Save** **(5)**.
   
-   ![Semantic configuration](media/lab2b-ssp5-latest.png)
+   ![Semantic configuration](media/lab2b-new-sc.png)
   
-3. You will be able to see the added semantic configuration under the Semantic configurations tab. Click on **Save** to save the changes made.
+4. You will be able to see the added semantic configuration **(1)** under the Semantic configurations tab. Click on **Save** **(2)** to save the changes made.
 
-   ![Semantic configuration](media/lab2b-ssp6-latest.png)
+   ![Semantic configuration](media/lab2b-save-sc.png)
 
 ## Task 3 - Semantic search using the semantic configuration in Azure Portal
 

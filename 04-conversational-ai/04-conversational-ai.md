@@ -125,7 +125,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    >**Note** : You can find the credentials in the environment details tab.
 
-2. Once you sign in, you will be asked to import your bot to a new project. The **Name** field will be auto-populated. If it's empty, fill the name field with the name of your bot which we created on the **Power virtual agents** page. Then, click **Create**.
+2. Once you sign in, you will be asked to import your bot to a new project. The **Name** field will be auto-populated. If it's empty, fill the name field with the name of your bot **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>** which you created on the **Power virtual agents** page. Then, click **Create**.
 
    ![](media/import-bot.png)
 
