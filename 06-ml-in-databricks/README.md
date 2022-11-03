@@ -52,7 +52,7 @@ The high-level steps covered in the lab are:
 
 4. In the Azure Databricks workspace, select the `Compute` section on the left side menu.
 
-   ![select compute](media/select-compute-not-cluster.png)
+   ![select compute](media/lab5-computeadb.png)
 
 5. Under **All-purpose clusters** select the **ai-adb-lab** cluster.
 
@@ -62,13 +62,13 @@ The high-level steps covered in the lab are:
 
    ![Start Azure Databricks Cluster](./media/lab5-task3-step6.png)
 
-7. While the cluster is starting, select the `Workspace` section on the left side menu, select the `Users` folder, then select the folder corresponding to the user name from your lab credentials, and then select the `AI-in-a-day-Lab-6` folder.
+7. While the cluster is starting, select the `Workspace` section on the left side menu, select the `Users` folder, then select the folder corresponding to the user name from your lab credentials.
 
-   ![Open Azure Databricks workspace folders](media/user-select-1.png)
+   ![Open Azure Databricks workspace folders](media/lab5-workspace-users.png)
 
-8. In the `AI-Lab6` folder, you should see the three notebooks that you will use in this lab.
+8. Select the `AI-in-a-day-Lab-6` folder. In the `AI-in-a-Day-Lab-6` folder, you should see the three notebooks that you will use in this lab.
 
-   ![View list of notebooks in Azure Databricks workspace](./media/SHC5.3.8.png)
+   ![View list of notebooks in Azure Databricks workspace](./media/lab5-workspace-notebooks.png)
 
 9. Now click the drop-down from the top right corner and select the **User Settings (2)** option.
 
@@ -98,17 +98,17 @@ In this task, you will be creating a link service in the Data factory to connect
 
     ![ADF for lab6](./../media/adfopen.png) 
      
-3. Once you are on the overview page of the Data factory, click on the **Open Azure Data Factory** option in Getting started section. 
+3. Once you are on the overview page of the Data factory, click on the **Launch studio** option in Getting started section. 
 
-    ![ADF for lab6](./../media/adfoverview.png) 
+    ![ADF for lab6](media/lab5-launchadf.png) 
     
-4. Once you click on the option **Open Azure Data Factory**, a new browser tab with open with the Data Factory portal.
+4. Once you click on the option **Launch studio**, a new browser tab with open with the Data Factory portal.
 
     ![ADF for lab6](./../media/adfportal.png)
    
 5. On the Data Factory portal, click on the **Manage (1)** button from the left side menu and select **Linked service (2)**.
 
-    ![ADF for lab6](./../media/navlinked.png)
+    ![ADF for lab6](media/lab5-adf-manage.png)
     
 6. Now click on the **Create linked service** button.
 
@@ -143,7 +143,7 @@ In this task, you will be creating a link service in the Data factory to connect
    
 1. While you are on the same Data Factory portal, navigate to the **Author** section from the left side menu and click on the **+** button.
 
-    ![ADF for lab6](./../media/pipeline1.png)
+    ![ADF for lab6](media/lab5-adf-author.png)
      
 2. Now, Select **Pipeline (1)** and then select **Pipeline (2)** again.
    
