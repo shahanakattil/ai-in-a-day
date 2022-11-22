@@ -236,13 +236,14 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
     - Component parameters
     - Experiment configuration
 
-3. Under the **Datasets for training and testing** page, we need to select the train and test dataset that you used when training your model to generate model-debugging insights. Select the datasets as per the below instruction and click on **Next**.
+3. Under the **Train dataset** page, we need to select the train dataset that you used when training your model to generate model-debugging insights. Search for **COVID19Articles_Train** (1) and select **COVID19Articles_Train** (2) then click on **Next** (3).
 
-   - **Select a dataset for training** : From the dropdown select **COVID19Articles_Train**
-   - **Select a dataset for testing**  : From the dropdown select  **COVID19Articles_Test**
+   ![Selecting Dataset](media/ai-L1-t7-s3.png)
+   
+1. Under the **Test dataset** page, we need to select the test dataset that you used when training your model to generate model-debugging insights. Search for **COVID19Articles_Test** (1) and select **COVID19Articles_Test** (2) then click on **Next** (3).   
 
-   ![Selecting Dataset](media/select_dataset1.png)
-
+   ![Selecting Dataset](media/ai-L1-t7-s4.png)
+   
 4. Once we picked the dataset, select the **Regression** modeling type and click **Next**
 
    ![Modeling_type](media/modelling_type.png)
