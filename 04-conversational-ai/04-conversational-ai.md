@@ -55,11 +55,10 @@ The way organizations are building conversational systems is evolving, with bots
 
    - **Name of your bot** : Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
    - **What language will your bot speak?** : Select **English (US)** from the dropdown.
-   - **Select an environment** : Select the default **Cloudlabs.AI (AIW-DS) (default) - United States**
 
    Now select **Create**.
 
-   ![](media/create-a-bot.png)
+   ![](media/ai-L3-t3-s7.png)
 
 8. Once the Bot is created you will see the Power virtual agents page.
 
