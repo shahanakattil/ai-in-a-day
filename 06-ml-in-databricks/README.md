@@ -58,7 +58,7 @@ The high-level steps covered in the lab are:
 
    ![Select Azure Databricks Cluster](media/select-compute-1.png)
   
-6. Select `Start` to start the Azure Databricks cluster. It will take 1-2 minutes to start.
+6. Select `Start` to start the Azure Databricks cluster. It will take 1-2 minutes to start. If you are prompted to 'Are you sure you want to start cluster ai-adb-lab?' pop-up, click on Confirm.
 
    ![Start Azure Databricks Cluster](./media/lab5-task3-step6.png)
 
@@ -121,6 +121,7 @@ In this task, you will be creating a link service in the Data factory to connect
 8. After clicking on the **Continue** button, Enter the below details in the creation window. Once done, click on the **Create** button.
 
     * Name: ```AzureDatabricks``` **(1)**
+    * Description: ```AzureDatabricks linked service``` **(2)**
     * Connect via integration runtime: **Leave default**
     * Account Selection method: ```From Azure subscription``` **(3)**
     * Azure subscription: ```Select available subscription from drop down``` **(4)**
@@ -169,7 +170,7 @@ In this task, you will be creating a link service in the Data factory to connect
 
           ![ADF for lab6](./../media/notebookpath1.png)
           
-6. Leave the other things default and click on the **Publish all** button to publish the newly created pipeline. You should be able to see a notification after some time with the information of **Publishing completed**.
+6. Leave the other things default and click on the **Publish all** button to publish the newly created pipeline and then click on **Publish**. You should be able to see a notification after some time with the information of **Publishing completed**.
 
     ![ADF for lab6](./../media/pubdone.png)
     
@@ -214,7 +215,7 @@ In this task, you will be creating a link service in the Data factory to connect
 
     ![ADF for lab6](./media/notebookj2name.png)
     
-1. Now, under the parameters section **(3)**, click on the **+New (2)** button and add the below parameters and the values **(3)**:
+1. Now, under the parameters section **(1)**, click on the **+New (2)** button and add the below parameters and the values **(3)**:
 
      - **experiment**: ```/Users/odl_user_xxxxxx@aiw-ds.cloudlabs.ai/2-surveillance-risk-classifier```, Please make sure to update the XXXXXX value with **<inject key="DeploymentID" enableCopy="true"/>**.
      - **client_id**:  **<inject key="Application Id" enableCopy="true"/>**
@@ -246,7 +247,7 @@ In this task, you will be creating a link service in the Data factory to connect
            
            ![ADF for lab6](./media/pipeparam.png)
            
-1. Leave the other things default and click on the **Publish all** button to publish the newly created pipeline. You should be able to see a notification after some time with the information of **Publishing completed**.
+1. Leave the other things default and click on the **Publish all** button to publish the newly created pipeline and then click on **Publish**. You should be able to see a notification after some time with the information of **Publishing completed**.
     
     ![ADF for lab6](./media/publishppp.png)
     ![ADF for lab6](./../media/pubdone.png)
@@ -312,7 +313,7 @@ In this task, you will be creating a link service in the Data factory to connect
 
           ![ADF for lab6](./media/lab5-task6-3.png)
           
-6. Leave the other things default and click on the **Publish all** button to publish the newly created pipeline. You should be able to see a notification after some time with the information of **Publishing completed**.
+6. Leave the other things default and click on the **Publish all** button to publish the newly created pipeline and then click on **Publish**. You should be able to see a notification after some time with the information of **Publishing completed**.
 
     ![ADF for lab6](./../media/pubdone.png)
     
