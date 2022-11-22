@@ -100,7 +100,7 @@ In this task, you are going to perform the semantic search using a query in [RES
    
    ![Semantic search](media/lab2b-ssp14.png)
 
-7. For adding a query, you need to select the **Body** **(2)** section. Then click on **raw** **(2)** as code type and select **JSON** **(3)** as an extension from the drop-down. Copy-paste the query which is given below into the **coding area** **(4)** and click on **Send** **(5)**.
+7. For adding a query, you need to select the **Body** **(1)** section. Then click on **raw** **(2)** as code type and select **JSON** **(3)** as an extension from the drop-down. Copy-paste the query which is given below into the **coding area** **(4)** and click on **Send** **(5)**.
 
    ```bash
    {
