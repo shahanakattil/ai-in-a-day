@@ -220,13 +220,13 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 ## Task 7 - Generate a Responsible AI dashboard in the studio UI
 
-1. In the Azure Machine Learning Studio, navigate to the registered model you’d like to create Responsible AI insights **Models (1)** section under Assets and locate the **rai_diabetes_decision_model_xxxx (2)**. Select the model available.
+1. In the Azure Machine Learning Studio, navigate to the registered model you’d like to create Responsible AI insights **Models (1)** section under Assets and locate the **boston (2)**. Select the model available.
 
-   ![Model-Created](media/rai_model.png)
+   ![Model-Created](media/boston_model.png)
 
-2. From **Models** **(1)** in **rai_diabetes_decision_model** page, select the **Responsible AI** **(2)** option and click on drop-down next to **Create Responsible AI insights (preview)** **(3)** then select **Create dashboard** **(4)** option.
+2. From **Models** **(1)** in **boston** page, select the **Responsible AI** **(2)** option and click on drop-down next to **Create Responsible AI insights (preview)** **(3)** then select **Create dashboard** **(4)** option.
 
-   ![Responsible AI dashboard](./media/lab1-rai-createdashboard.png)
+   ![Responsible AI dashboard](./media/lab1-boston-createdashboard.png)
 
    The wizard is designed to provide an interface to input all the necessary parameters to instantiate your Responsible AI dashboard without having to touch code. The  experience takes place entirely in the Azure Machine Learning studio UI with a guided flow and instructional text to help contextualize the variety of choices in  which Responsible AI components you’d like to populate your dashboard. The wizard is divided into five steps:
 
@@ -236,13 +236,13 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
     - Component parameters
     - Experiment configuration
 
-3. Under the **Train dataset** page, we need to select the train dataset that you used when training your model to generate model-debugging insights. Search for **COVID19Articles_Train** (1) and select **COVID19Articles_Train** (2) then click on **Next** (3).
+3. Under the **Train dataset** page, we need to select the train dataset that you used when training your model to generate model-debugging insights. Search for **boston_train** (1) and select **boston_train** (2) then click on **Next** (3).
 
-   ![Selecting Dataset](media/ai-L1-t7-s3.png)
+   ![Selecting Dataset](media/upd-ai-L1-t7-s3.png)
    
-1. Under the **Test dataset** page, we need to select the test dataset that you used when training your model to generate model-debugging insights. Search for **COVID19Articles_Test** (1) and select **COVID19Articles_Test** (2) then click on **Next** (3).   
+1. Under the **Test dataset** page, we need to select the test dataset that you used when training your model to generate model-debugging insights. Search for **boston_test** (1) and select **boston_test** (2) then click on **Next** (3).   
 
-   ![Selecting Dataset](media/ai-L1-t7-s4.png)
+   ![Selecting Dataset](media/upd-ai-L1-t7-s4.png)
    
 4. Once we picked the dataset, select the **Regression** modeling type and click **Next**
 
@@ -270,9 +270,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
    - **Specify features to perturb**: By default, all features will be perturbed. However, if there are specific features you want perturbed, clicking this will open a panel with the list of features to select. (See below)
    - **Generate explanations**: Toggle on and off to generate a model explanation component for your Responsible AI dashboard. No configuration is necessary as a default opaque box mimic explainer will be used to generate feature importance.
   
-8. In **Target feature** select **Column1** and for **Categorial features** select **0 to 6 Decimal** from the dropdown. **Disable** the **Error tree and heat map** option. If enabling the **Counterfactual what-if examples** please ensure to provide _Number of counterfactuals_ and _Range of value predictions_ as shown in the below screenshot. Leave the other parameters to default and select **Next**.
+8. In **Target feature** select **B (Decimal)** and for **Categorial features** select **y (Decimal)** from the dropdown. **Disable** the **Error tree and heat map** option. If enabling the **Counterfactual what-if examples** please ensure to provide _Number of counterfactuals_ and _Range of value predictions_ as shown in the below screenshot. Leave the other parameters to default and select **Next**.
 
-   ![Parameters_debugging](./media/SHC7.8.png)
+   ![Parameters_debugging](./media/upd-SHC7.8.png)
 
 9. In the **Training job or experiment configuration**, page enter the following:
 
@@ -280,27 +280,35 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
    - **Experiment name** : Select an existing experiment to run the job.
    - **Existing experiment** : Select an existing experiment from drop-down.
    - **Select compute type** : Compute cluster
-   - **Select compute** : cpucluster
+   - **Select compute** : aml-compute-cpu
 
 10. Skip the creation of the experiment by clicking the **Cancel** option, since we have already created an RAI dashboard in the environment, this allows you to explore Responsible AI Dashboard experiments without having to wait for the completion of the job run.
     
-    ![experiment_configuration](media/lab1-task7-2.png)
+    ![experiment_configuration](media/upd-lab1-task7-2.png)
 
 ## Task 8 -  How to use the Responsible AI dashboard in AML studio
 
-1. Navigate to **Models** under Assets, from the Model List select the available model, for example: **rai_diabetes_decision_model_1655974567:1**
+1. Navigate to **Models** (1) under Assets, from the Model List select the available model, for example: **boston** (2).
 
-   ![model](media/models.png)
+   ![model](media/boston_model.png)
 
 2. On the Models page, select the **Responsible AI** option and select the available RAI dashboard.
 
-   ![Responsible_AI.png](./media/SHC8.2.png)
+   ![Responsible_AI.png](./media/upd-SHC8.2.png)
 
-3. Go through the insights of the RAI dashbaord and select the **Back to models** details to get back to your list of dashboards.
+3. Go through the insights of the RAI Regression Boston dashbaord and select the **Back to models** details to get back to your list of dashboards.
 
-   ![Responsible_AI.png](./media/SHC8.3.png)
+   ![Responsible_AI.png](./media/upd-SHC8.3.png)
 
-4. Explore through the Dashboard to learn how to enable the Full functionality with integrated compute resources.
+4. Explore through the Dashboard to learn how to enable the Full functionality with integrated compute resources:
+
+  - Error analysis
+  - Model overview
+  - Data analysis
+  - Feature importances
+  - Counterfactuals
+  - Causal analysis
+  
 
 > **Note**: For more information about the Responsible AI dashboard, refer here [how-to-responsible-ai-dashboard](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-dashboard)
 
