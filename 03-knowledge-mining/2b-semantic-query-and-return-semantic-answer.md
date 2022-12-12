@@ -114,7 +114,7 @@ In this task, you are going to perform the semantic search using a query in [RES
    }
    ```
    
-   ![Semantic search](media/lab2b-ssp15.png)
+   ![Semantic search](media/newlatest15.png)
    
 8. You will see a **Sending request** in the **Response** section, which will take a few seconds to get the response from the cognitive search service. Once you get the response check that **Network Status: 200 OK**, review the response and explore with your query requests.
 

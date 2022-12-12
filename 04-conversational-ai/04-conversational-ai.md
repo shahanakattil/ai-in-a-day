@@ -51,10 +51,10 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/PVA-select-region.png)
 
-7. On the **Create a Chatbot** page enter the following details :
+7. On the **Create a Chatbot** page enter the following details:
 
-   - **Name of your bot** : Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
-   - **What language will your bot speak?** : Select **English (US)** from the dropdown.
+   - **Name of your bot**: Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
+   - **What language will your bot speak?**: Select **English (US)** from the dropdown.
 
    Now select **Create**.
 
@@ -70,7 +70,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/PVA-new-topic.png)
 
-2. Name the topic as **Meal delivery options**, and on the **Trigger phrases** pane, add the following trigger phrases : 
+2. Name the topic as **Meal delivery options**, and on the **Trigger phrases** pane, add the following trigger phrases: 
 
    ```
    what meals can I order
@@ -96,15 +96,15 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/add-a-question.png)
 
-5. On the **Question** node, add the following details :
+5. On the **Question** node, add the following details:
 
-      - **Ask a question** : ```What city are you in?```
-      - **Identify** : ```City```
-      - **Save Response as** : On the **Variable properties** tab that opens up, set the name of the variable as ```user_city``` and **usage** as **Bot (Any topic can access)**
+      - **Ask a question**: ```What city are you in?```
+      - **Identify**: ```City```
+      - **Save Response as**: On the **Variable properties** tab that opens up, set the name of the variable as ```user_city``` and **usage** as **Bot (Any topic can access)**
 
    ![](media/add-a-question-1.png)
 
-   >**Note** : The variable just created will be used in the adaptive card. For the variable to be used within Bot Framework Composer, it must be set with Bot scope rather than Topic scope.
+   >**Note**: The variable just created will be used in the adaptive card. For the variable to be used within Bot Framework Composer, it must be set with Bot scope rather than Topic scope.
 
 6. Save the **topic**, then return to the list of topics. 
 
@@ -122,7 +122,7 @@ The way organizations are building conversational systems is evolving, with bots
 
 1. When Bot Framework Composer application launches, you will be prompted to sign in. Sign in with the provided credentials.
 
-   >**Note** : You can find the credentials in the environment details tab.
+   >**Note**: You can find the credentials in the environment details tab.
 
 2. Once you sign in, you will be asked to import your bot to a new project. The **Name** field will be auto-populated. If it's empty, fill the name field with the name of your bot **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>** which you created on the **Power virtual agents** page. Then, click **Create**.
 
@@ -317,7 +317,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    >**Note**: You may need to refresh the screen your page to see it.
 
-3. Open the topic : **Meal delivery options**.
+3. Open the topic: **Meal delivery options**.
 
    ![](media/select-mdo.png)
 
