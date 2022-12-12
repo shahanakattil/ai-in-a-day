@@ -168,7 +168,7 @@ The high-level steps covered in the lab are:
 
     ![storageaccount](media/storage-account.png)
 
-3. Select **Connection String(Key or SAS)** under the Select Connection Method Window and then select **Next**
+3. Select **Connection String (Key or SAS)** under the Select Connection Method Window and then select **Next**
 
     ![The Use a connection string option is selected.](media/connectionstring.png)
 
@@ -236,7 +236,7 @@ The high-level steps covered in the lab are:
 
     ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
 
-4. Under **Settings**, navigate to the **Resource sharing(CORS)** page. Ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)**.
+4. Under **Settings**, navigate to the **Resource sharing (CORS)** page. Ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)**.
 
     ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/storage-cors.png)
 
@@ -295,7 +295,7 @@ The high-level steps covered in the lab are:
 
     ![Project](media/SHC2a.6.12.1.png)
     
-    > **Note** : If you are unable to select the Storage Account in connect training data source page, signout and signin from the Form Recognizer Studio with the given credentials. Re-perform the task from Step-8.
+    > **Note**: If you are unable to select the Storage Account in connect training data source page, signout and signin from the Form Recognizer Studio with the given credentials. Re-perform the task from Step-8.
 
 13. Review the details and click on **Create project**.
 
@@ -335,7 +335,7 @@ The high-level steps covered in the lab are:
 
     ![The Abstracts model has been trained](media/lab2a-t6-frs15.png)
 
-22. From the left menu, select the **Test**(1). Click on **Browse for a file**(2). Select **Analyze**(3) to see the results. Note that the abstract is on page 2 of the PDF.
+22. From the left menu, select the **Test** (1). Click on **Browse for a file** (2). Select **Analyze** (3) to see the results. Note that the abstract is on page 2 of the PDF.
 
     * In the Upload Files pop-up, click on **Choose file** **(1)**. Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf`file **(2)** and then click on **Add file** **(3)**.
     
