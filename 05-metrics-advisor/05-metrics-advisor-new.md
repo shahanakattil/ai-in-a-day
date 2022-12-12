@@ -112,7 +112,7 @@ The high-level steps covered in the lab are:
 
 1. Navigate to the Azure portal and click on the menu icon, and select **+ Create a resource**
 
-   ![](media/menu_icon.png)  
+   ![](media/newlatest14.png) 
 
 2. In the search bar, type **Metrics Advisor** and then select **Create**
 
