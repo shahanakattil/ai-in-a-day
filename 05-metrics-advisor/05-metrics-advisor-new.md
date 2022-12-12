@@ -120,10 +120,10 @@ The high-level steps covered in the lab are:
 
 3. Under Project details on Create Metrics Advisor page provide the following details and click **Review + Create**
 
-    * Subscription : Select the available Subscription
-    * Resource Group : **Ai-in-a-Day**
-    * Region : Select the available Region from the dropdown
-    * Name : **metricsadvisor-<inject key="DeploymentID" enableCopy="false"/>** 
+    * Subscription: Select the available Subscription
+    * Resource Group: **Ai-in-a-Day**
+    * Region: Select the available Region from the dropdown
+    * Name: **metricsadvisor-<inject key="DeploymentID" enableCopy="false"/>** 
     * Pricing tier: **S0**
     * Make sure to mark checkbox ☑ for **I confirm I have read and understood the notice below**.
    
@@ -254,7 +254,7 @@ To do this, go back to the metric detection configuration screen and try a new c
 - Value **Out of range** Min: **1000** and Max: **9000** is an anomaly
 - Do not report the anomalies until 100% of the latest **10** points are detected as anomalies
 
-We should have marked as anomalies the points in time where a number of cases are below or above a fixed threshold for 10 continuous points in time.(Notice the yellow dots **(2)** before the reported anomalies and how the threshold is delimited by the red horizontal lines **(3)**).
+We should have marked as anomalies the points in time where a number of cases are below or above a fixed threshold for 10 continuous points in time. (Notice the yellow dots **(2)** before the reported anomalies and how the threshold is delimited by the red horizontal lines **(3)**).
 
 ![Hard threshold](./media/AI-metric-advisor-hardthreshold.png)
 
