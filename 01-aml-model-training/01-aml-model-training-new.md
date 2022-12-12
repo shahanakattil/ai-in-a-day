@@ -20,7 +20,7 @@ To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Over
 
 Given the magnitude of the COVID-19 problem, it comes naturally to have a lot of research on the topic. In fact, in 2020 alone, tens of thousands of papers have been published on COVID-19 alone. The sheer amount of communication on the subject makes it difficult for a researcher to grasp and structure all the relevant topics and details. Furthermore, pre-defined catalogs and paper classification might not always reflect their content in the most effective way possible.
 
-Based on a set of existing research papers, we will use Natural Language Processing and Machine Learning to identify these papers' natural grouping. For each new document that gets into our system, we will use Machine Learning to classify it into one of the previously identified groups. We will use Automated ML (a feature of Azure Machine Learning) to train the best classification model and explain its behavior.
+Based on a set of existing research papers, we will use Natural Language Processing and Machine Learning to identify these papers' natural grouping. For each new document that gets into our system, we will use Machine Learning to classify it into one of the previously identified groups. We will use Automated ML (a feature of Azure Machine Learning) to train the best classification model and explain its behaviour.
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
@@ -108,7 +108,7 @@ The high-level steps covered in the lab are:
 
    ![](./media/selectaikernel.png)
 
-3. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on the 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or ) and observe the results of each cell execution.
+3. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on the 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
 
    ![Run Note Book Cell](./media/SHC4.png)
    ![Note Book Cell Output](./media/SHC4.1.png)
@@ -244,14 +244,14 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![Selecting Dataset](media/upd-ai-L1-t7-s4.png)
    
-4. Once we picked the dataset, select the **Regression** modeling type and click **Next**
+4. Once we picked the dataset, select the **Regression** modelling type and click **Next**
 
    ![Modeling_type](media/modelling_type.png)
 
 5. Now we need to select the Dashboard components; the Responsible AI dashboard offers two profiles for recommended sets of tools you can generate:
 
    - **Model debugging**: Understand and debug erroneous data cohorts in your ML model using Error analysis, Counterfactual what-if examples, and Model explainability
-   - **Real life interventions** : Understand and debug erroneous data cohorts in your ML model using Causal analysis
+   - **Real life interventions**: Understand and debug erroneous data cohorts in your ML model using Causal analysis
 
 6. Select the **Model Debugging** component and click **Next**
 
@@ -276,11 +276,11 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 9. In the **Training job or experiment configuration**, page enter the following:
 
-   - **Name** : Give the dashboard a unique name so that you can differentiate it when you’re viewing the list of dashboards for a given model.
-   - **Experiment name** : Select an existing experiment to run the job.
-   - **Existing experiment** : Select an existing experiment from drop-down.
-   - **Select compute type** : Compute cluster
-   - **Select compute** : aml-compute-cpu
+   - **Name**: Give the dashboard a unique name so that you can differentiate it when you’re viewing the list of dashboards for a given model.
+   - **Experiment name**: Select an existing experiment to run the job.
+   - **Existing experiment**: Select an existing experiment from drop-down.
+   - **Select compute type**: Compute cluster
+   - **Select compute**: aml-compute-cpu
 
 10. Skip the creation of the experiment by clicking the **Cancel** option, since we have already created an RAI dashboard in the environment, this allows you to explore Responsible AI Dashboard experiments without having to wait for the completion of the job run.
     
