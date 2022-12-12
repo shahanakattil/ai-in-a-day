@@ -70,7 +70,7 @@ The high-level steps covered in the lab are:
 
    ![View list of notebooks in Azure Databricks workspace](./media/lab5-workspace-notebooks.png)
 
-9. Now click the drop-down from the top right corner and select the **User Settings (2)** option.
+9. Now click the drop-down from the **top right (1)** corner and select the **User Settings (2)** option.
 
      ![ADF for lab6](./media/SHC5.3.9.png)
      
@@ -78,7 +78,7 @@ The high-level steps covered in the lab are:
 
      ![ADF for lab6](./../media/tokengen.png)
      
-11. Now on the Token creation window, add the comment as **ADFlinktoken (1)** and click on the **Generate** button. 
+11. Now on the Token creation window, add the comment as **ADFlinktoken (1)** and click on the **Generate (2)** button. 
 
      ![ADF for lab6](./../media/tokengen2.png)
  
