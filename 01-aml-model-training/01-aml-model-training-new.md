@@ -65,7 +65,7 @@ The high-level steps covered in the lab are:
 
     ![Navigate to Azure Machine Learning](./media/lab1-open-aml.png)
     
-1. Click on **Launch studio**. If you are prompted to sign in again, use the same lab credentials you used to login to the Azure portal. Close the welcome **pop-up** if any with the cross icon.  
+1. On the **Overview (1)** page, click on **Launch studio (2)**. If you are prompted to sign in again, use the same lab credentials you used to login to the Azure portal. Close the welcome **pop-up** if any with the cross icon.  
     
     ![Launch Machine Learning Studio](./media/lab1-aml-launch.png)
 
@@ -104,7 +104,7 @@ The high-level steps covered in the lab are:
 
    ![Select Note Book](./media/SHC3.png)
    
-2. On Jupiter page, select **Kernel** *(1)*, then **Change kernel** *(2)* and make sure **Python (aiw-ai-kernel)** *(3)* is selected.
+2. On Jupiter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected.
 
    ![](./media/selectaikernel.png)
 
