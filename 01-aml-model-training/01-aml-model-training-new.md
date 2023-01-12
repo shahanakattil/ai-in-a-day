@@ -236,11 +236,11 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
     - Component parameters
     - Experiment configuration
 
-3. Under the **Train dataset** page, we need to select the train dataset that you used when training your model to generate model-debugging insights. Search for **boston_train** (1) and select **boston_train** (2) then click on **Next** (3).
+3. Under the **Train dataset** page, we need to select the train dataset that you used when training your model to generate model-debugging insights. Search for **boston_train (1)**  and select **boston_train (2)**  then click on **Next (3)** .
 
    ![Selecting Dataset](media/upd-ai-L1-t7-s3.png)
    
-1. Under the **Test dataset** page, we need to select the test dataset that you used when training your model to generate model-debugging insights. Search for **boston_test** (1) and select **boston_test** (2) then click on **Next** (3).   
+1. Under the **Test dataset** page, we need to select the test dataset that you used when training your model to generate model-debugging insights. Search for **boston_test (1)**  and select **boston_test (2)**  then click on **Next (3)** .   
 
    ![Selecting Dataset](media/upd-ai-L1-t7-s4.png)
    
@@ -288,7 +288,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 ## Task 8 -  How to use the Responsible AI dashboard in AML studio
 
-1. Navigate to **Models** (1) under Assets, from the Model List select the available model, for example: **boston** (2).
+1. Navigate to **Models (1)**  under Assets, from the Model List select the available model, for example: **boston (2)** .
 
    ![model](media/boston_model.png)
 
