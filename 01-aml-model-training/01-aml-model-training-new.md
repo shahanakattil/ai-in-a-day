@@ -270,21 +270,21 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
    - **Specify features to perturb**: By default, all features will be perturbed. However, if there are specific features you want perturbed, clicking this will open a panel with the list of features to select. (See below)
    - **Generate explanations**: Toggle on and off to generate a model explanation component for your Responsible AI dashboard. No configuration is necessary as a default opaque box mimic explainer will be used to generate feature importance.
   
-8. In **Target feature** select **B (Decimal)** and for **Categorial features** select **y (Decimal)** from the dropdown. **Disable** the **Error tree and heat map** option. If enabling the **Counterfactual what-if examples** please ensure to provide _Number of counterfactuals_ and _Range of value predictions_ as shown in the below screenshot. Leave the other parameters to default and select **Next**.
+8. In **Target feature** select **B (Decimal) (1)** and for **Categorial features** select **y (Decimal) (2)** from the dropdown. **Disable** the **Error tree and heat map (3)** option. If enabling the **Counterfactual what-if examples (4)** please ensure to provide _Number of counterfactuals_ and _Range of value predictions_ as shown in the below screenshot. Leave the other parameters to default and select **Next (5)**.
 
-   ![Parameters_debugging](./media/upd-SHC7.8.png)
+   ![Parameters_debugging](./media/upd-SHC7.8.1.png)
 
 9. In the **Training job or experiment configuration**, page enter the following:
 
-   - **Name**: Give the dashboard a unique name so that you can differentiate it when you’re viewing the list of dashboards for a given model.
-   - **Experiment name**: Select an existing experiment to run the job.
-   - **Existing experiment**: Select an existing experiment from drop-down.
-   - **Select compute type**: Compute cluster
-   - **Select compute**: aml-compute-cpu
+   - **Name (1)**: Give the dashboard a unique name so that you can differentiate it when you’re viewing the list of dashboards for a given model.
+   - **Experiment name (2)**: Select an existing experiment to run the job.
+   - **Existing experiment (3)**: Select an existing experiment from drop-down.
+   - **Select compute type (4)**: Compute cluster
+   - **Select Azure ML compute cluster (5)**: aml-compute-cpu
 
-10. Skip the creation of the experiment by clicking the **Cancel** option, since we have already created an RAI dashboard in the environment, this allows you to explore Responsible AI Dashboard experiments without having to wait for the completion of the job run.
+10. Skip the creation of the experiment by clicking the **Cancel (6)** option, since we have already created an RAI dashboard in the environment, this allows you to explore Responsible AI Dashboard experiments without having to wait for the completion of the job run.
     
-    ![experiment_configuration](media/upd-lab1-task7-2.png)
+    ![experiment_configuration](media/upd-lab1-task7-2.1.png)
 
 ## Task 8 -  How to use the Responsible AI dashboard in AML studio
 
