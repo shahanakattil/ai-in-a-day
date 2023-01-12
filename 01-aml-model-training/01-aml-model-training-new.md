@@ -292,9 +292,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![model](media/boston_model.png)
 
-2. On the Models page, select the **Responsible AI** option and select the available RAI dashboard.
+2. On the Models page, select the **Responsible AI (1)** option and select the available RAI dashboard **RAI Regression Boston (2)**.
 
-   ![Responsible_AI.png](./media/upd-SHC8.2.png)
+   ![Responsible_AI.png](./media/upd-SHC8.2.1.png)
 
 3. Go through the insights of the RAI Regression Boston dashbaord and select the **Back to models** details to get back to your list of dashboards.
 
