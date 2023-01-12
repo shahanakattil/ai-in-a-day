@@ -246,7 +246,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
    
 4. Once we picked the dataset, select the **Regression** modelling type and click **Next**
 
-   ![Modeling_type](media/modelling_type.png)
+   ![Modeling_type](media/modelling_type.1.png)
 
 5. Now we need to select the Dashboard components; the Responsible AI dashboard offers two profiles for recommended sets of tools you can generate:
 
@@ -255,7 +255,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 6. Select the **Model Debugging** component and click **Next**
 
-   ![Model Debugging](media/model_debugging.png)
+   ![Model Debugging](media/model_debugging.1.png)
    
 7. After selecting a profile, we need to configure parameters for dashboard components. Explore through the component parameters for model debugging
   
