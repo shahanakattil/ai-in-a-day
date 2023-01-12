@@ -53,7 +53,7 @@ The high-level steps covered in the lab are:
 
 5. Navigate to the Keys setting and copy the Primary admin key. Paste this into a text file.
 
-    ![The Search service's API key is copied to the clipboard.](media/lab2-t3-step5.png)
+    ![The Search service's API key is copied to the clipboard.](media/lab2-t3-step5.1.png)
 
 6. Open **File Explorer** from the task bar and navigate to the path `C:\Temp\AzureSearch\`. There are six files, three prefixed with `abstracts` and three with `covid19temp`.
 
@@ -130,17 +130,17 @@ The high-level steps covered in the lab are:
 
     ![The Search Explorer option is selected.](media/search-service-explorer.png)
 
-6. Choose the **covid19temp** index and enter `RNA interference` into the Query string input box, and then select **Search**. This will return the documents which include the phrase "RNA interference."
+6. Choose the **covid19temp (1)** index and enter `RNA interference`**(2)** into the Query string input box, and then select **Search (3)**. This will return the documents which include the phrase "RNA interference."
 
-    ![Articles with the phrase RNA interference.](media/search-explorer-rna-interference.png)
+    ![Articles with the phrase RNA interference.](media/search-explorer-rna-interference.1.png)
 
-7. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` and then select **Search**.  This will return 53 documents.
+7. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` **(1)** and then select **Search (2)**.  This will return 53 documents **(3)**.
 
-    ![53 articles reference Brazil.](media/search-explorer-brazil-1.png)
+    ![53 articles reference Brazil.](media/search-explorer-brazil-1.1.png)
 
-8. Each document returns a large number of fields, but we can specify the fields we would like to see. In the Query string input box, enter the phrase `UNC Chapel Hill&$select=metadata/authors, metadata/title` and then select **Search**. This will return the title as well as detailed information on each author.
+8. Each document returns a large number of fields, but we can specify the fields we would like to see. In the Query string input box, enter the phrase `UNC Chapel Hill&$select=metadata/authors, metadata/title` **(1)** and then select **Search (2)**. This will return the title as well as detailed information on each author.
 
-    ![Paper titles and authors referencing UNC Chapel Hill.](media/search-explorer-unc.png)
+    ![Paper titles and authors referencing UNC Chapel Hill.](media/search-explorer-unc.1.png)
 
 9. The Azure Search service can also generate a demo application. Return to the search service and select the **covid19temp** index.
 
@@ -150,13 +150,13 @@ The high-level steps covered in the lab are:
 
     ![The Create Demo App option is selected.](media/lab2a-task4-step10.png)
 
-11. On the first tab, select `metadata.title` for the Title and `abstract.text` for the Description. Then select **Create Demo App**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
+11. On the first tab, select `metadata.title` **(1)** for the Title and `abstract.text` **(2)** for the Description. Then select **Create Demo App (3)**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
 
-    ![Create a demo app.](media/create-demo-app-1.png)
+    ![Create a demo app.](media/create-demo-app-1.1.png)
 
 12. Open the demo app HTML file. In the search box, enter the phrase "RNA interference" and select the Search icon. This will return 497 papers relating to RNA interference.
 
-    ![Use the demo app.](media/search-demo-app.png)
+    ![Use the demo app.](media/search-demo-app.1.png)
 
 ## Task 5 - Updating Azure Search Indexes
 
