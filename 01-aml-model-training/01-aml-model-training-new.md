@@ -163,7 +163,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 7. On the `Select task and settings` screen, make sure `Classification` **(1)** is selected (confirm with green check). If it is not selected, then select `View additional configuration settings` **(2)** to open a new panel of settings.
 
-    ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/lab1-task5-3.png)
+    ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/lab1-task5-3.1.png)
 
 8. On the `Additional configurations` panel, fill in the values listed below:
 
