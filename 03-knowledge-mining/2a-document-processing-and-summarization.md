@@ -268,32 +268,32 @@ The high-level steps covered in the lab are:
   
     ![Project](media/lab2a-t6-frs2.png)
 
-10. In the Enter Project Details pane, enter the Project Name as **covid19abstract** and add the description as **Extracting Abstract from the documents**. Click on **Continue**.
+10. In the Enter Project Details pane, enter the Project Name as **covid19abstract (1)** and add the description as **Extracting Abstract from the documents (2)**. Click on **Continue (3)**.
 
-    ![The covid19abstract project has been created](media/lab2a-t6-frs3.png)
+    ![The covid19abstract project has been created](media/lab2a-t6-frs3.1.png)
     
 11. In the **Configure service resource**, provide the following details and click on **Continue**.
    
     | Parameter                   | Value                                |
     | --------------------------- | -------------------------------------|
-    | Subscription                | Select the default subscription      |
-    | Resource Group              | Select `AI-in-a-Day`                 |
-    | Form Recognizer or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>|
+    | Subscription                | Select the default subscription  **(1)**    |
+    | Resource Group              | Select `AI-in-a-Day` **(2)**                |
+    | Form Recognizer or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
     
 
-    ![Project](media/SHC2a.6.11.1.png)
+    ![Project](media/SHC2a.6.11.1.0.png)
     
-12. Next in the connect training data source, select the below values from the drop-down and click on **Continue**.
+12. Next in the connect training data source, select the below values from the drop-down and click on **Continue (6)**.
 
     | Parameter                   | Value                                |
     | --------------------------- | -------------------------------------|
-    | Subscription                | Select the default subscription      |
-    | Resource Group              | Select `AI-in-a-Day`                 |
-    | Storage account             | Select aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> |
-    | Blob container              | Select `covid19temp`                 |
-    | Folder path                 | Enter `papers`                       |
+    | Subscription                | Select the default subscription **(1)**     |
+    | Resource Group              | Select `AI-in-a-Day` **(2)**                |
+    | Storage account             | Select aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> **(3)** |
+    | Blob container              | Select `covid19temp` **(4)**                 |
+    | Folder path                 | Enter `papers` **(5)**                      |
 
-    ![Project](media/SHC2a.6.12.1.png)
+    ![Project](media/AI-2a.6.12.1.png)
     
     > **Note**: If you are unable to select the Storage Account in connect training data source page, signout and signin from the Form Recognizer Studio with the given credentials. Re-perform the task from Step-8.
 
@@ -323,9 +323,9 @@ The high-level steps covered in the lab are:
     
     ![The first five PDFs have been tagged](media/lab2a-t6-frs12.png)
 
-19. In a pop-up to Train a new model, enter **Abstracts** as the ModelID, and select the **Neural** from the drop-down as Build Mode. Then click on **Train**.
+19. In a pop-up to Train a new model, enter **Abstracts (1)** as the ModelID, and select the **Neural (2)** from the drop-down as Build Mode. Then click on **Train (3)**.
 
-    ![The option to train a model has been selected](media/lab2a-t6-frs13.png)
+    ![The option to train a model has been selected](media/lab2a-t6-frs13.1.png)
 
 20. Training a model may take up to 10-15 minutes to get succeed. Click on **Go to models**. 
 
@@ -335,17 +335,19 @@ The high-level steps covered in the lab are:
 
     ![The Abstracts model has been trained](media/lab2a-t6-frs15.png)
 
-22. From the left menu, select the **Test** (1). Click on **Browse for a file** (2). Select **Analyze** (3) to see the results. Note that the abstract is on page 2 of the PDF.
+22. From the left menu, select the **Test (1)**. Click on **Browse for a file (2)**. 
 
-    * In the Upload Files pop-up, click on **Choose file** **(1)**. Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf`file **(2)** and then click on **Add file** **(3)**.
+    * In the Upload Files pop-up, click on **Choose file** **(1)**. Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf` file **(2)** and then click on **Add file** **(3)**.
     
-    ![An analyzed document](media/lab2a-fr-fileupload.png)
+     ![An analyzed document](media/lab2a-fr-fileupload.png)
+   
+    *  Choose `2020.09.25.20201616v1.pdf` file **(3)** select **Analyze (4)**. Note that the abstract is on **page 2 (5)** of the PDF. View the **Results (6)** on the right side of the page.
+    
+      ![An analyzed document](media/new-lab2a-5.png)
 
-    ![An analyzed document](media/new-lab2a-5.png)
+23. Select **Result (1)** and click on **download icon (2)** to download JSON file. Find the location where the script was downloaded and observe the result code.
 
-23. Select **Result** and click on **download icon** to download JSON file. Find the location where the script was downloaded and observe the result code.
-
-    ![An analyzed document](media/lab2a-t6-frs19.png)
+    ![An analyzed document](media/lab2a-t6-frs19.1.png)
     
 24. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Form Recognizer Studio: [Quickstart: Form Recognizer Studio - Azure Applied AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-form-recognizer-studio)
 
