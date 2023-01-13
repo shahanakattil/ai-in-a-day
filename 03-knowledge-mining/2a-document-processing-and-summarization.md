@@ -53,7 +53,7 @@ The high-level steps covered in the lab are:
 
 5. Navigate to the Keys setting and copy the Primary admin key. Paste this into a text file.
 
-    ![The Search service's API key is copied to the clipboard.](media/lab2-t3-step5.png)
+    ![The Search service's API key is copied to the clipboard.](media/lab2-t3-step5.1.png)
 
 6. Open **File Explorer** from the task bar and navigate to the path `C:\Temp\AzureSearch\`. There are six files, three prefixed with `abstracts` and three with `covid19temp`.
 
@@ -130,17 +130,17 @@ The high-level steps covered in the lab are:
 
     ![The Search Explorer option is selected.](media/search-service-explorer.png)
 
-6. Choose the **covid19temp** index and enter `RNA interference` into the Query string input box, and then select **Search**. This will return the documents which include the phrase "RNA interference."
+6. Choose the **covid19temp (1)** index and enter `RNA interference`**(2)** into the Query string input box, and then select **Search (3)**. This will return the documents which include the phrase "RNA interference."
 
-    ![Articles with the phrase RNA interference.](media/search-explorer-rna-interference.png)
+    ![Articles with the phrase RNA interference.](media/search-explorer-rna-interference.1.png)
 
-7. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` and then select **Search**.  This will return 53 documents.
+7. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` **(1)** and then select **Search (2)**.  This will return 53 documents **(3)**.
 
-    ![53 articles reference Brazil.](media/search-explorer-brazil-1.png)
+    ![53 articles reference Brazil.](media/search-explorer-brazil-1.1.png)
 
-8. Each document returns a large number of fields, but we can specify the fields we would like to see. In the Query string input box, enter the phrase `UNC Chapel Hill&$select=metadata/authors, metadata/title` and then select **Search**. This will return the title as well as detailed information on each author.
+8. Each document returns a large number of fields, but we can specify the fields we would like to see. In the Query string input box, enter the phrase `UNC Chapel Hill&$select=metadata/authors, metadata/title` **(1)** and then select **Search (2)**. This will return the title as well as detailed information on each author.
 
-    ![Paper titles and authors referencing UNC Chapel Hill.](media/search-explorer-unc.png)
+    ![Paper titles and authors referencing UNC Chapel Hill.](media/search-explorer-unc.1.png)
 
 9. The Azure Search service can also generate a demo application. Return to the search service and select the **covid19temp** index.
 
@@ -150,13 +150,13 @@ The high-level steps covered in the lab are:
 
     ![The Create Demo App option is selected.](media/lab2a-task4-step10.png)
 
-11. On the first tab, select `metadata.title` for the Title and `abstract.text` for the Description. Then select **Create Demo App**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
+11. On the first tab, select `metadata.title` **(1)** for the Title and `abstract.text` **(2)** for the Description. Then select **Create Demo App (3)**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
 
-    ![Create a demo app.](media/create-demo-app-1.png)
+    ![Create a demo app.](media/create-demo-app-1.1.png)
 
 12. Open the demo app HTML file. In the search box, enter the phrase "RNA interference" and select the Search icon. This will return 497 papers relating to RNA interference.
 
-    ![Use the demo app.](media/search-demo-app.png)
+    ![Use the demo app.](media/search-demo-app.1.png)
 
 ## Task 5 - Updating Azure Search Indexes
 
@@ -166,23 +166,23 @@ The high-level steps covered in the lab are:
 
 2. Select the **Connect (1)** option and then click on **Storage account or service (2)**.
 
-    ![storageaccount](media/storage-account.png)
+    ![storageaccount](media/storage-account.1.png)
 
-3. Select **Connection String (Key or SAS)** under the Select Connection Method Window and then select **Next**
+3. Select **Connection String (Key or SAS) (1)** under the Select Connection Method Window and then select **Next (2)**.
 
-    ![The Use a connection string option is selected.](media/connectionstring.png)
+    ![The Use a connection string option is selected.](media/connectionstring.1.png)
 
-4. Paste in your storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>**.  Then, select **Next** to continue and **Connect** to complete the operation.
+4. Paste in your storage account **Connection string (1)** **<inject key="storageAccountConnectionString" enableCopy="true"/>**. Then, select **Next (2)** to continue and **Connect (3)** to complete the operation.
 
-    ![The connection string is filled in.](media/new-lab2a-1.png)
+    ![The connection string is filled in.](media/new-lab2a-1.1.png)
 
-    ![Connect is selected on the storage explorer page](media/new-lab2a-2.png)
+    ![Connect is selected on the storage explorer page](media/new-lab2a-2.1.png)
 
-5. In Azure Storage Explorer, navigate down the **(1)  lab03** attached storage and expand **(2) Blob containers** select the **(3) `covid19temp` blob container**.  Double-click the **(4)  comm_use_subset** to enter that folder.
+5. In Azure Storage Explorer, navigate down the **lab03 (1)** attached storage and expand **Blob containers (2)** expand the **blob container (3)** and select `covid19temp` **(4)**.  Double-click the **comm_use_subset (5)** to enter that folder.
 
     ![The comm_use_subset folder is selected.](media/new-lab2a-3.png)
 
-6. Enter the **pdf_json_refresh** folder. Then, in the **(1) Select All** menu, choose **(2) Select All Cached**. This will highlight all 100 records in the folder.  Select **(3) Copy** to copy these documents.
+6. Enter the **pdf_json_refresh** folder. Then, in the **Select All (1)** menu, choose **Select All Cached (2)**. This will highlight all 100 records in the folder.  Select **Copy (3)** to copy these documents.
 
     ![Select the PDF refresh folder.](media/select-pdf-refresh-folder01.png)
     
@@ -204,13 +204,13 @@ The high-level steps covered in the lab are:
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
-11. Navigate to the **Indexers** section and select the **covid19temp** indexer.
+11. Navigate to the **Indexers (1)** section and select the **covid19temp (2)** indexer.
 
-    ![The covid19temp indexer is selected.](media/azure-search-indexers.png)
+    ![The covid19temp indexer is selected.](media/azure-search-indexers.1.png)
 
-12. Select the **Run** option to process the 100 documents. Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes** to run the indexer.
+12. Select the **Run (1)** option to process the 100 documents. Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes (2)** to run the indexer.
 
-    ![The covid19temp indexer is set to run.](media/azure-search-indexers-run.png)
+    ![The covid19temp indexer is set to run.](media/azure-search-indexers-run.1.png)
 
 13. The indexer will run. It should complete within 15-30 seconds to process the 100 new documents. You may need to select **Refresh** to see the indexer's progress.
 
@@ -220,9 +220,9 @@ The high-level steps covered in the lab are:
 
     ![The covid19temp index has finished updating.](media/azure-search-indexes-update.png)
 
-15. Select the **covid19temp** index to return to the Search explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` and selecting **Search**. This will now return 57 results instead of the prior 53.
+15. Select the **covid19temp** index to return to the Search explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` **(1)** and selecting **Search (2)**. This will now return 57 results **(3)** instead of the prior 53.
 
-    ![57 documents pertaining to Brazil.](media/search-explorer-brazil-2.png)
+    ![57 documents pertaining to Brazil.](media/search-explorer-brazil-2.1.png)
 
 ## Task 6 - Using the Form Recognizer Studio
 
@@ -268,32 +268,32 @@ The high-level steps covered in the lab are:
   
     ![Project](media/lab2a-t6-frs2.png)
 
-10. In the Enter Project Details pane, enter the Project Name as **covid19abstract** and add the description as **Extracting Abstract from the documents**. Click on **Continue**.
+10. In the Enter Project Details pane, enter the Project Name as **covid19abstract (1)** and add the description as **Extracting Abstract from the documents (2)**. Click on **Continue (3)**.
 
-    ![The covid19abstract project has been created](media/lab2a-t6-frs3.png)
+    ![The covid19abstract project has been created](media/lab2a-t6-frs3.1.png)
     
 11. In the **Configure service resource**, provide the following details and click on **Continue**.
    
     | Parameter                   | Value                                |
     | --------------------------- | -------------------------------------|
-    | Subscription                | Select the default subscription      |
-    | Resource Group              | Select `AI-in-a-Day`                 |
-    | Form Recognizer or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>|
+    | Subscription                | Select the default subscription  **(1)**    |
+    | Resource Group              | Select `AI-in-a-Day` **(2)**                |
+    | Form Recognizer or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
     
 
-    ![Project](media/SHC2a.6.11.1.png)
+    ![Project](media/SHC2a.6.11.1.0.png)
     
-12. Next in the connect training data source, select the below values from the drop-down and click on **Continue**.
+12. Next in the connect training data source, select the below values from the drop-down and click on **Continue (6)**.
 
     | Parameter                   | Value                                |
     | --------------------------- | -------------------------------------|
-    | Subscription                | Select the default subscription      |
-    | Resource Group              | Select `AI-in-a-Day`                 |
-    | Storage account             | Select aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> |
-    | Blob container              | Select `covid19temp`                 |
-    | Folder path                 | Enter `papers`                       |
+    | Subscription                | Select the default subscription **(1)**     |
+    | Resource Group              | Select `AI-in-a-Day` **(2)**                |
+    | Storage account             | Select aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> **(3)** |
+    | Blob container              | Select `covid19temp` **(4)**                 |
+    | Folder path                 | Enter `papers` **(5)**                      |
 
-    ![Project](media/SHC2a.6.12.1.png)
+    ![Project](media/AI-2a.6.12.1.png)
     
     > **Note**: If you are unable to select the Storage Account in connect training data source page, signout and signin from the Form Recognizer Studio with the given credentials. Re-perform the task from Step-8.
 
@@ -323,9 +323,9 @@ The high-level steps covered in the lab are:
     
     ![The first five PDFs have been tagged](media/lab2a-t6-frs12.png)
 
-19. In a pop-up to Train a new model, enter **Abstracts** as the ModelID, and select the **Neural** from the drop-down as Build Mode. Then click on **Train**.
+19. In a pop-up to Train a new model, enter **Abstracts (1)** as the ModelID, and select the **Neural (2)** from the drop-down as Build Mode. Then click on **Train (3)**.
 
-    ![The option to train a model has been selected](media/lab2a-t6-frs13.png)
+    ![The option to train a model has been selected](media/lab2a-t6-frs13.1.png)
 
 20. Training a model may take up to 10-15 minutes to get succeed. Click on **Go to models**. 
 
@@ -335,17 +335,19 @@ The high-level steps covered in the lab are:
 
     ![The Abstracts model has been trained](media/lab2a-t6-frs15.png)
 
-22. From the left menu, select the **Test** (1). Click on **Browse for a file** (2). Select **Analyze** (3) to see the results. Note that the abstract is on page 2 of the PDF.
+22. From the left menu, select the **Test (1)**. Click on **Browse for a file (2)**. 
 
-    * In the Upload Files pop-up, click on **Choose file** **(1)**. Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf`file **(2)** and then click on **Add file** **(3)**.
+    * In the Upload Files pop-up, click on **Choose file** **(1)**. Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf` file **(2)** and then click on **Add file** **(3)**.
     
-    ![An analyzed document](media/lab2a-fr-fileupload.png)
+     ![An analyzed document](media/lab2a-fr-fileupload.png)
+   
+    *  Choose `2020.09.25.20201616v1.pdf` file **(3)** select **Analyze (4)**. Note that the abstract is on **page 2 (5)** of the PDF. View the **Results (6)** on the right side of the page.
+    
+      ![An analyzed document](media/new-lab2a-5.png)
 
-    ![An analyzed document](media/new-lab2a-5.png)
+23. Select **Result (1)** and click on **download icon (2)** to download JSON file. Find the location where the script was downloaded and observe the result code.
 
-23. Select **Result** and click on **download icon** to download JSON file. Find the location where the script was downloaded and observe the result code.
-
-    ![An analyzed document](media/lab2a-t6-frs19.png)
+    ![An analyzed document](media/lab2a-t6-frs19.1.png)
     
 24. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Form Recognizer Studio: [Quickstart: Form Recognizer Studio - Azure Applied AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-form-recognizer-studio)
 
@@ -361,9 +363,9 @@ In this task, we are creating a text summarization application with the client l
 
     ![The Cognitive Services service is selected](media/cognitive-service-latest-select.png)
 
-2. Select the **Keys and Endpoint** option under Resource Management.  Then, copy the value for **KEY 1** and the **Endpoint**.  Paste these into a text file for later use.
+2. Select the **Keys and Endpoint (1)** option under Resource Management.  Then, copy the value for **KEY 1 (2)** and the **Endpoint (3)**.  Paste these into a text file for later use.
 
-    ![The Cognitive Services key and endpoint are selected](media/cognitive-service-latest.png)
+    ![The Cognitive Services key and endpoint are selected](media/connectionstring.1.png)
 
 3. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd`, and select the **Command Prompt** application.
 

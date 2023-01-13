@@ -65,7 +65,7 @@ The high-level steps covered in the lab are:
 
     ![Navigate to Azure Machine Learning](./media/lab1-open-aml.png)
     
-1. Click on **Launch studio**. If you are prompted to sign in again, use the same lab credentials you used to login to the Azure portal. Close the welcome **pop-up** if any with the cross icon.  
+1. On the **Overview (1)** page, click on **Launch studio (2)**. If you are prompted to sign in again, use the same lab credentials you used to login to the Azure portal. Close the welcome **pop-up** if any with the cross icon.  
     
     ![Launch Machine Learning Studio](./media/lab1-aml-launch.png)
 
@@ -104,7 +104,7 @@ The high-level steps covered in the lab are:
 
    ![Select Note Book](./media/SHC3.png)
    
-2. On Jupiter page, select **Kernel** *(1)*, then **Change kernel** *(2)* and make sure **Python (aiw-ai-kernel)** *(3)* is selected.
+2. On Jupiter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected.
 
    ![](./media/selectaikernel.png)
 
@@ -163,7 +163,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 7. On the `Select task and settings` screen, make sure `Classification` **(1)** is selected (confirm with green check). If it is not selected, then select `View additional configuration settings` **(2)** to open a new panel of settings.
 
-    ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/lab1-task5-3.png)
+    ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/lab1-task5-3.1.png)
 
 8. On the `Additional configurations` panel, fill in the values listed below:
 
@@ -236,17 +236,17 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
     - Component parameters
     - Experiment configuration
 
-3. Under the **Train dataset** page, we need to select the train dataset that you used when training your model to generate model-debugging insights. Search for **boston_train** (1) and select **boston_train** (2) then click on **Next** (3).
+3. Under the **Train dataset** page, we need to select the train dataset that you used when training your model to generate model-debugging insights. Search for **boston_train (1)**  and select **boston_train (2)**  then click on **Next (3)** .
 
    ![Selecting Dataset](media/upd-ai-L1-t7-s3.png)
    
-1. Under the **Test dataset** page, we need to select the test dataset that you used when training your model to generate model-debugging insights. Search for **boston_test** (1) and select **boston_test** (2) then click on **Next** (3).   
+1. Under the **Test dataset** page, we need to select the test dataset that you used when training your model to generate model-debugging insights. Search for **boston_test (1)**  and select **boston_test (2)**  then click on **Next (3)** .   
 
    ![Selecting Dataset](media/upd-ai-L1-t7-s4.png)
    
 4. Once we picked the dataset, select the **Regression** modelling type and click **Next**
 
-   ![Modeling_type](media/modelling_type.png)
+   ![Modeling_type](media/modelling_type.1.png)
 
 5. Now we need to select the Dashboard components; the Responsible AI dashboard offers two profiles for recommended sets of tools you can generate:
 
@@ -255,7 +255,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 6. Select the **Model Debugging** component and click **Next**
 
-   ![Model Debugging](media/model_debugging.png)
+   ![Model Debugging](media/model_debugging.1.png)
    
 7. After selecting a profile, we need to configure parameters for dashboard components. Explore through the component parameters for model debugging
   
@@ -270,31 +270,31 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
    - **Specify features to perturb**: By default, all features will be perturbed. However, if there are specific features you want perturbed, clicking this will open a panel with the list of features to select. (See below)
    - **Generate explanations**: Toggle on and off to generate a model explanation component for your Responsible AI dashboard. No configuration is necessary as a default opaque box mimic explainer will be used to generate feature importance.
   
-8. In **Target feature** select **B (Decimal)** and for **Categorial features** select **y (Decimal)** from the dropdown. **Disable** the **Error tree and heat map** option. If enabling the **Counterfactual what-if examples** please ensure to provide _Number of counterfactuals_ and _Range of value predictions_ as shown in the below screenshot. Leave the other parameters to default and select **Next**.
+8. In **Target feature** select **B (Decimal) (1)** and for **Categorial features** select **y (Decimal) (2)** from the dropdown. **Disable** the **Error tree and heat map (3)** option. If enabling the **Counterfactual what-if examples (4)** please ensure to provide _Number of counterfactuals_ and _Range of value predictions_ as shown in the below screenshot. Leave the other parameters to default and select **Next (5)**.
 
-   ![Parameters_debugging](./media/upd-SHC7.8.png)
+   ![Parameters_debugging](./media/upd-SHC7.8.1.png)
 
 9. In the **Training job or experiment configuration**, page enter the following:
 
-   - **Name**: Give the dashboard a unique name so that you can differentiate it when you’re viewing the list of dashboards for a given model.
-   - **Experiment name**: Select an existing experiment to run the job.
-   - **Existing experiment**: Select an existing experiment from drop-down.
-   - **Select compute type**: Compute cluster
-   - **Select compute**: aml-compute-cpu
+   - **Name (1)**: Give the dashboard a unique name so that you can differentiate it when you’re viewing the list of dashboards for a given model.
+   - **Experiment name (2)**: Select an existing experiment to run the job.
+   - **Existing experiment (3)**: Select an existing experiment from drop-down.
+   - **Select compute type (4)**: Compute cluster
+   - **Select Azure ML compute cluster (5)**: aml-compute-cpu
 
-10. Skip the creation of the experiment by clicking the **Cancel** option, since we have already created an RAI dashboard in the environment, this allows you to explore Responsible AI Dashboard experiments without having to wait for the completion of the job run.
+10. Skip the creation of the experiment by clicking the **Cancel (6)** option, since we have already created an RAI dashboard in the environment, this allows you to explore Responsible AI Dashboard experiments without having to wait for the completion of the job run.
     
-    ![experiment_configuration](media/upd-lab1-task7-2.png)
+    ![experiment_configuration](media/upd-lab1-task7-2.1.png)
 
 ## Task 8 -  How to use the Responsible AI dashboard in AML studio
 
-1. Navigate to **Models** (1) under Assets, from the Model List select the available model, for example: **boston** (2).
+1. Navigate to **Models (1)**  under Assets, from the Model List select the available model, for example: **boston (2)** .
 
    ![model](media/boston_model.png)
 
-2. On the Models page, select the **Responsible AI** option and select the available RAI dashboard.
+2. On the Models page, select the **Responsible AI (1)** option and select the available RAI dashboard **RAI Regression Boston (2)**.
 
-   ![Responsible_AI.png](./media/upd-SHC8.2.png)
+   ![Responsible_AI.png](./media/upd-SHC8.2.1.png)
 
 3. Go through the insights of the RAI Regression Boston dashbaord and select the **Back to models** details to get back to your list of dashboards.
 

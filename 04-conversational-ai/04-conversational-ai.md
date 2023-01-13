@@ -33,9 +33,9 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/power-virtual-agent-sign-up.png)
 
-2. Enter your email on the **Let's get you started** and select **Next**. 
+2. Enter your email on the **Let's get you started (1)** and select **Next (2)**. 
 
-   ![](media/PVA-sign-up-1.png)
+   ![](media/PVA-sign-up-1.1.png)
 
    > **Note**: You can retrieve your Email/username and Password from the environment details tab.
 
@@ -47,18 +47,18 @@ The way organizations are building conversational systems is evolving, with bots
 
 5. You have now successfully signed up for **Power Virtual Agents**
 
-6. On the **Welcome to Power Virtual Agents** page, choose your respective region and select **Get Started**.
+6. On the **Welcome to Power Virtual Agents (1)** page, choose your respective region and select **Get Started (2)**.
 
-   ![](media/PVA-select-region.png)
+   ![](media/PVA-select-region.1.png)
 
 7. On the **Create a Chatbot** page enter the following details:
 
-   - **Name of your bot**: Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
-   - **What language will your bot speak?**: Select **English (US)** from the dropdown.
+   - **Name of your bot (1)**: Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
+   - **What language will your bot speak? (2)**: Select **English (US)** from the dropdown.
 
-   Now select **Create**.
+   Now select **Create (3)**.
 
-   ![](media/ai-L3-t3-s7.png)
+   ![](media/ai-L3-t3-s7.1.png)
 
 8. Once the Bot is created you will see the Power virtual agents page.
 
@@ -66,11 +66,11 @@ The way organizations are building conversational systems is evolving, with bots
 
 ## Task 4 - Create a new Topic
 
-1. One the **Power Virtual Agents** page, select **Topics** and **New Topic**.
+1. One the **Power Virtual Agents** page, select **Topics (1)** and **New Topic (2)**.
 
    ![](media/PVA-new-topic.png)
 
-2. Name the topic as **Meal delivery options**, and on the **Trigger phrases** pane, add the following trigger phrases: 
+2. Name the topic as **Meal delivery options (1)**, and on the **Trigger phrases** pane, add the following trigger phrases by clicking on **+**: 
 
    ```
    what meals can I order
@@ -85,7 +85,7 @@ The way organizations are building conversational systems is evolving, with bots
    entrees available for delivery
    ```
 
-   ![](media/trigger-phrases-1.png)
+   ![](media/trigger-phrases-1.1.png)
 
 
 3. Delete the blank message node under the trigger phrases on the authoring canvas.
@@ -98,11 +98,11 @@ The way organizations are building conversational systems is evolving, with bots
 
 5. On the **Question** node, add the following details:
 
-      - **Ask a question**: ```What city are you in?```
-      - **Identify**: ```City```
-      - **Save Response as**: On the **Variable properties** tab that opens up, set the name of the variable as ```user_city``` and **usage** as **Bot (Any topic can access)**
+      - **Ask a question (1)**: ```What city are you in?``` 
+      - **Identify (2)**: ```City``` 
+      - **Save Response as (3)**: On the **Variable properties** tab that opens up, set the name of the variable as ```user_city``` **(4)** and **usage** as **Bot (Any topic can access) (5)**
 
-   ![](media/add-a-question-1.png)
+   ![](media/add-a-question-1.2.png)
 
    >**Note**: The variable just created will be used in the adaptive card. For the variable to be used within Bot Framework Composer, it must be set with Bot scope rather than Topic scope.
 
@@ -124,23 +124,23 @@ The way organizations are building conversational systems is evolving, with bots
 
    >**Note**: You can find the credentials in the environment details tab.
 
-2. Once you sign in, you will be asked to import your bot to a new project. The **Name** field will be auto-populated. If it's empty, fill the name field with the name of your bot **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>** which you created on the **Power virtual agents** page. Then, click **Create**.
+2. Once you sign in, you will be asked to import your bot to a new project. The **Name** field will be auto-populated. If it's empty, fill the name field with the name of your bot **AI-Bot-<inject key="DeploymentID" enableCopy="false"/> (1)** which you created on the **Power virtual agents** page. Then, click **Create (2)**.
 
-   ![](media/import-bot.png)
+   ![](media/import-bot.1.png)
 
    >**Note**: In the occasion where the following screen does not appear in Composer on launch, you will need to close the application and launch it again from Power Virtual Agents.
 
-3. Once you see your project appear in Composer. On the left side of the screen, click on **Create** and click on the three dots. Then, select **+ Add a dialog**.
+3. Once you see your project appear in Composer. On the left side of the screen, click on **Create (1)** and click on the three dots **(2)**. Then, select **+ Add a dialog (3)**.
 
    ![](media/lab3-task5-1.png)
 
-4. On the **Create a dialog** pop up, specify the name of your new dialog as **Meals**, then click **OK**.
+4. On the **Create a dialog** pop up, specify the name of your new dialog as **Meals (1)**, then click **OK (2)**.
 
-   ![](media/meals-dialog.png)
+   ![](media/meals-dialog.1.png)
    
-5. From the left navigation menu, click on the **Bot Responses** tab. With the **Meals** dialogue selected click on **Show code**. This is where we will enter the **JSON** text to create the adaptive card.
+5. From the left navigation menu, click on the **Bot Responses (1)** tab. With the **Meals (2)** dialogue selected click on **Show code (3)**. This is where we will enter the **JSON** text to create the adaptive card.
 
-   ![](media/bot-show-code.png)
+   ![](media/bot-show-code.1.png)
 
 6. Paste in the following LG (Language Generation) Template. This template sets out the names of the meals and their related image that will be displayed in the adaptive card.
 
@@ -277,13 +277,13 @@ The way organizations are building conversational systems is evolving, with bots
    
    ![](media/lab3-task5-step8.png)
 
-9. From the left navigation bar, click on the **Create** tab and select **BeginDialog**.
+9. From the left navigation bar, click on the **Create (1)** tab and select **BeginDialog (2)**.
 
-   ![](media/begin-dialog-1.png)
+   ![](media/begin-dialog-1.1.png)
 
-10. Click on the **'+'** button, and select **Send a response**.
+10. Click on the **'+' (1)** button, and select **Send a response (2)**.
 
-    ![](media/begin-dialog-2.png)
+    ![](media/begin-dialog-2.1.png)
 
 11. In the Bot responses box that appears on the right side of the screen, select **Show Code** and enter the following JSON code.
 
@@ -297,9 +297,9 @@ The way organizations are building conversational systems is evolving, with bots
 
     >**Note**: Ensure there is only one – symbol at the start of the code.
 
-12. On the left navigation menu select **Publish**.  Select your **bot**, then click on **Publish selected bots**. 
+12. On the left navigation menu select **Publish (1)**.  Select your **bot (2)**, then click on **Publish selected bots (3)**. 
 
-    ![](media/publish-bot-01.png)   
+    ![](media/publish-bot-01.1.png)   
 
 13. You need to provide the Email/Username: <inject key="AzureAdUserEmail"></inject> in the signup popup for publishing bot. Confirm that you want to publish the bot by clicking on **Okay**. The bot should now be in the process of publishing.
 
@@ -321,9 +321,9 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/select-mdo.png)
 
-4. Click on **+** to add a node at the bottom of the Topic. Then select **Redirect to another topic** and select **Meals**.
+4. Click on **+** to add a node at the bottom of the Topic. Then select **Redirect to another topic (1)** and select **Meals (2)**.
 
-   ![](media/redirect-another-topic.png)
+   ![](media/redirect-another-topic.1.png)
 
 5. Your Power Virtual Agents bot will call the Bot Framework dialog to display an adaptive card. Click on **Save** icon at the top right.
 

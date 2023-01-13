@@ -20,9 +20,9 @@ You should follow all of the steps provided in this section _before_ taking part
 
     ![Locate storage account in Azure Portal](media/select-azure-storage-account01.png)
 
-4.  Select `Access keys` from the left side menu, and then select `Show keys`. Save the storage account name, the `key1 Key` value, and the `key1 - Connection string` value for later use.
+4.  Select `Access keys` from the left side menu, and then select `Show keys`. Save the **Storage account name** **(1)**, the **key1** `Key` **(2)** value, and the `key1 - Connection string` **(3)** value for later use.
 
-    ![Storage account name and key](media/datastore-03.png)
+    ![Storage account name and key](media/datastore-03.1.png)
 
 ## Task 2 - Prepare the COVID cases per age group dataset
 
@@ -46,9 +46,9 @@ You should follow all of the steps provided in this section _before_ taking part
 
     [Prepare metrics feed data](https://aiinadayaiw.blob.core.windows.net/aiinaday/preparemetricsfeeddata.ipynb)
 
-5. Upload the file by selecting the Upload button from the screen's top right corner, then selecting the blue Upload button to confirm.
+5. Upload the file by selecting the **Upload button (1)** from the screen's top right corner, then selecting the **blue Upload button (2)** to confirm.
 
-    ![Launch Studio](media/select-upload-1.png)
+    ![Launch Studio](media/select-upload-1.1.png)
    
    - Click on `Click to browse and select file(s)` and select the file which was just downloaded.
    - Check the "I trust contents of the File" and select upload. 
@@ -118,16 +118,16 @@ The high-level steps covered in the lab are:
 
    ![](media/AI-metric-advisor-create.png)  
 
-3. Under Project details on Create Metrics Advisor page provide the following details and click **Review + Create**
+3. Under Project details on Create Metrics Advisor page provide the following details and click **Review + Create (7)**
 
-    * Subscription: Select the available Subscription
-    * Resource Group: **Ai-in-a-Day**
-    * Region: Select the available Region from the dropdown
-    * Name: **metricsadvisor-<inject key="DeploymentID" enableCopy="false"/>** 
-    * Pricing tier: **S0**
-    * Make sure to mark checkbox ☑ for **I confirm I have read and understood the notice below**.
+    * Subscription: Select the available Subscription **(1)**
+    * Resource Group: **Ai-in-a-Day (2)**
+    * Region: Select the available Region from the dropdown **(3)**
+    * Name: **metricsadvisor-<inject key="DeploymentID" enableCopy="false"/> (4)** 
+    * Pricing tier: **S0 (5)**
+    * Make sure to mark checkbox ☑ for **I confirm I have read and understood the notice below (6)**.
    
-     ![](media/AI-metric-advisor-latest.png)
+     ![](media/AI-metric-advisor-latest.1.png)
 
 4. Once the validation is passed, click on **Create**. The deployment could take up to **60 minutes** to complete, although it normally finishes in less than **10 minutes**. Please wait until the deployment gets succeeded and then you can proceed with the next task.
 
@@ -136,9 +136,9 @@ The high-level steps covered in the lab are:
 1. Back to the Home page in Azure Portal, in the list of your recent resources, locate the Azure Metrics Advisor workspace and select it. If you are prompted to sign in again, use the same lab Azure credentials you used at the previous step.
 ![Open Azure Metrics Advisor](./media/metrics-advisor.png)
 
-2. On the Metrics Advisor Overview page, select the `Go to workspace` link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
+2. On the Metrics Advisor **Overview (1)** page, select the `Go to workspace` **(2)** link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
 
-    ![Start the web-based workspace](./media/metrics-advisor-overview.png)
+    ![Start the web-based workspace](./media/metrics-advisor-overview.1.png)
 
 3. On the Metrics Advisor welcome page, select your directory, subscription and workspace information and select **Get started**. You are now prepared to create your first Data feed.
 
@@ -146,29 +146,29 @@ The high-level steps covered in the lab are:
 
     ![Connect to Metrics Advisor workspace](./media/AI4.3.6.png)
 
-4. With the Metrics Advisor workspace opened, select the **Add datafeed** option from the left navigation menu.
+4. With the Metrics Advisor workspace opened, select the **Add datafeed (1)** option from the left navigation menu.
 
 5. Add the data feed by connecting to your time-series data source. Start by selecting the following parameters:
 
-    - **Source type**: `Azure Blob Storage (JSON)`
-    - **Granularity**: `Daily`
-    - **Ingest data since (UTC)**: `2022-02-01`
-    - **Connection string**: provide the connection string from the blob storage access keys page. (`key1 - Connection string` copied on **Before the hands-on lab** part or else please  follow Task 1 of Before the hands-on lab) 
-    - **Container**: `jsonmetrics`
-    - **Blob template**: `%Y-%m-%d.json` (since the daily json files are provided in with naming format)
-    - **JSON format version**: `v2` (since we'll be using the age group dimension in our data schema)
+    - **Source type**: `Azure Blob Storage (JSON)` **(2)**
+    - **Granularity**: `Daily` **(3)**
+    - **Ingest data since (UTC)**: `2022-02-01` **(4)**
+    - **Connection string**: provide the connection string from the blob storage access keys page. (`key1 - Connection string` copied on **Before the hands-on lab** part or else please  follow Task 1 of Before the hands-on lab) **(5)**
+    - **Container**: `jsonmetrics` **(6)**
+    - **Blob template**: `%Y-%m-%d.json` (since the daily json files are provided in with naming format) **(7)**
+    - **JSON format version**: `v2` (since we'll be using the age group dimension in our data schema) **(8)**
 
-    ![Data feed source properties](./media/adddatafeed1.png)
+    ![Data feed source properties](./media/AI-L4-HOL-T4-S5.png)
 
-6. Select the **Load data button** to validate the configured connection. You can find the **Load Data** option just below the **JSON format version** on the right side, so scroll to the right to see the button. If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
+6. Select the **Load data button** to validate the configured connection. You can find the **Load Data (9)** option just below the **JSON format version** on the right side, so scroll to the right to see the button. If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
 
-7. Once the data schema is loaded and shown like below, configure the appropriate fields as Dimension, Measure or Timestamp, and select **Verify schema**.
+7. Once the data schema is loaded and shown like below, configure the appropriate fields as Dimension, Measure or Timestamp **(1)**, and select **Verify schema (2)**.
 
-    ![Schema configuration](./media/schemconfig1.png)
+    ![Schema configuration](./media/AI-L4-HOL-T4-S7.png)
 
-8. Scroll down to the bottom of the page. For **Automatic roll-up** settings, select the **I need the service to roll-up my data** **(1)** option, select the link **Set roll-up columns**, and include both dimensions **(3)**.
+8. Scroll down to the bottom of the page. For **Automatic roll-up** settings, select the **I need the service to roll-up my data** **(1)** option, select the link **Set roll-up columns (2)**, and include both dimensions **(3)**.
 
-    ![Automatic rollup settings](./media/automaticrollup1.png)
+    ![Automatic rollup settings](./media/AI-L4-HOL-T4-S8.png)
 
 9. In the **Advanced settings (1)** section, inside **Ingestion options**, set **Stop retrying after (2)** to **0** hours to stop the ingestion process after the first run. 
     
@@ -178,9 +178,9 @@ The high-level steps covered in the lab are:
 
     ![Misc settings](./media/AI4.3.13.png)
 
-11. Provide the **Data feed name**: `covid-ages` and select **Submit** to confirm and submit the data feed.
+11. Provide the **Data feed name**: `covid-ages` **(1)** and select **Submit (2)** to confirm and submit the data feed.
 
-    ![Submit schema configuration](./media/AI4.3.14.png)
+    ![Submit schema configuration](./media/AI4.3.14.1.png)
 
 12. Wait for the ingestion progress dialog and select the **Details** link in order to observe the ingestion log by timestamp. Wait until the ingestion completes with success for all ingested json files.
 
@@ -216,7 +216,7 @@ When detection is applied, you can select one of the metrics listed in the data 
 
     > **Note:-** It can take 30 minutes to complete recent historical data, so please wait or continue with the next lab and come back later and continue this lab.
 
-    ![Metric-level configuration](./media/metric-level-configuration-smart1.png)
+    ![Metric-level configuration](./media/metric-level-configuration-smart1.1.png)
 
 >Note
 >
@@ -237,11 +237,11 @@ When detection is applied, you can select one of the metrics listed in the data 
 1. In the incidents hub, notice the **Root cause** section where you should find reported the main contributors for the detected anomaly, age groups that contributed to the sum of cases reported as anomaly. Also, in the **Diagnostic** tree, hover on each age group node to investigate its contribution to the incident.
     ![Incident Hub diagnostics](./media/root_cause_incidents_hub1.png)
 
-2. In the **Diagnostics** **(1)** section, navigate to **Metrics drill-down** **(2)** and notice the current point Value (number of cases) and the **Diff**  from the identified **Baseline** **(3)**. Choose the **age_group** dimension to drill-down by it and check the same **Delta** percent and **Diff** value from the baseline for the anomalies detected at the current point. 
+2. In the **Diagnostics** **(1)** section, navigate to **Metrics drill-down** **(2)** and notice the current point Value (number of cases) and the **Diff**  from the identified **Baseline** **(3)**. Choose the **age_group (4)** dimension to drill-down by it and check the same **Delta** percent and **Diff** **(5)** value from the baseline for the anomalies detected at the current point. 
 
-     ![Metrics drill down](./media/metricdrill1.png)
+     ![Metrics drill down](./media/metricdrill1.1.png)
 
-    ![Metrics drill down](./media/metrics-drill-down1.png)
+    ![Metrics drill down](./media/metrics-drill-down1.1.png)
 
 
 ## Task 7 - Explore anomalies with hard thresholds (optional)
@@ -256,7 +256,7 @@ To do this, go back to the metric detection configuration screen and try a new c
 
 We should have marked as anomalies the points in time where a number of cases are below or above a fixed threshold for 10 continuous points in time. (Notice the yellow dots **(2)** before the reported anomalies and how the threshold is delimited by the red horizontal lines **(3)**).
 
-![Hard threshold](./media/AI-metric-advisor-hardthreshold.png)
+![Hard threshold](./media/AI-metric-advisor-hardthreshold.1.png)
 
 ## Task 8 - Anomaly detection methods (Optional)
 
@@ -303,7 +303,7 @@ Change threshold is normally used when metric data generally stay around a certa
 
 2. Select **count** to see its details. In this view.
 
-   ![](./media/metrics-browse.png)
+   ![](./media/metrics-browse.1.png)
 
 When you first view a metric's details, you can load a time series by letting Metrics Advisor choose one for you or by specifying values to be included for each dimension.
 
@@ -341,9 +341,11 @@ You will be greeted with the **Auto tuning preference** page.
 
 2. For the  **anomaly pattern**  option, the system will list out different anomaly patterns that were observed with the metric. You can choose which ones you're interested in and select them, and the unselected patterns will have their sensitivity **reduced** by default.
 
-    ![](./media/auto-tuning-select-1.png)
-
 3. Select the **Apply Pattern preference** option **(1)**, followed by selecting **Spike** **(2)** as the anomaly pattern, and then select **Next** **(3)** to go to the next section.
+  
+    ![](./media/auto-tuning-select-1.1.png)
+
+
 
 ### Subtask 2 - Tune the configuration for selected anomaly patterns
 
@@ -351,7 +353,7 @@ The next step is to fine-tune the configuration for each. There's a global **sen
 
 1. You must tune each anomaly pattern that has been chosen individually. In our case, the **Spike** **(1)** anomaly pattern will be visible. Under the **Adjustment for anomaly patterns**, adjust the slider to change the **sensitivity**. Now select **Next** **(2)** to set up alerts.
 
-    ![](./media/pattern-based-sensitivity.png)
+    ![](./media/pattern-based-sensitivity.1.png)
 
 ### Subtask 3 - Set up alert rules
 
@@ -359,11 +361,11 @@ Once the detection configuration for capturing valid anomalies is tuned, it's st
 
 1. On the **Setup alert Rules** page under the **Configuration name** enter **Test-Alert** **(1)** and leave the **Hooks** unselected. Expand the **Filter anomaly based on value** section **(2)** and the **Advanced Settings** **(3)**.
 
-    ![](./media/setup-alert-rules.png)
+    ![](./media/setup-alert-rules.1.png)
 
 2. On the **Filter anomaly based on value**, select the **This Metric** setting, and from the drop-down select **Out of range** **(2)**. Leave the **Snooze successive anomalies** **(3)** unchanged. Select the **Anomalies in all series** **(4)** under the **Alert Scope** section. Now select **Save and close** **(5)**.
 
-    ![](./media/setup-alert-rules-1.png)
+    ![](./media/setup-alert-rules-1.1.png)
 
 3. You can see the newly configured **Test-Alert** under the **metric-level configuration** pane on the left.
 
@@ -382,9 +384,9 @@ After configuring all the settings described in the section above, the system wi
     
     ![](./media/detect-config.png)
 
-3. Select the **'+'** for **Configuration for series group**. Specify at least one **dimension value** **(1)** for a group-level configuration to identify a group of series. Leave the conditions as default and select **Save**.
+3. Select the **'+'** for **Configuration for series group**. Specify at least one **dimension value** **(1)** for a group-level configuration to identify a group of series. Leave the conditions as default and select **Save (2)**.
 
-    ![](./media/series-group-config-01.png)
+    ![](./media/series-group-config-01.1.png)
 
 4. Under the **Metric-level configuration** pane, notice the **Series group configs** value has changed to **1**.
 
@@ -394,9 +396,9 @@ After configuring all the settings described in the section above, the system wi
 
     ![](./media/advanced-config-1.png)
 
-6. Select the **'+'** for **Configuration for specific series**. Specify all **dimension values** **(1)** and **(2)** for series-level configuration to identify a specific series. Leave the **Conditions** as default and select **Save**.
+6. Select the **'+'** for **Configuration for specific series**. Specify all **dimension values** **(1)** and **(2)** for series-level configuration to identify a specific series. Leave the **Conditions** as default and select **Save (3)**.
 
-    ![](./media/specific-config-01.png)
+    ![](./media/specific-config-01.1.png)
 
 7. Under the **Metric-level configuration** pane, notice the **Specific series configs** value has changed to **1**.
 
@@ -428,7 +430,7 @@ Sometimes, expected events and occurrences (such as holidays) can generate anoma
 6. On the **Holiday option**, select **Only NON-PTO Holidays**.
 Leave the rest of the options as default. The **Holiday event** pane should look like this: 
 
-    ![](./media/holiday-event.png)
+   ![](./media/holiday-event.1.png)
 
 7. The **Cycle event** is used to reduce anomalies if they follow a cyclic pattern, but it will report an anomaly if multiple data points don't follow the pattern. Select the downward arrow to expand the **Cycle event** **(1)**.
 
@@ -436,9 +438,9 @@ Leave the rest of the options as default. The **Holiday event** pane should look
 
 9. On the **Cycle option**, select **MoM** **(3)**.
 
-    ![](./media/cycle-event.png)
+    ![](./media/cycle-event.1.png)
 
-10. On the **Strict mode**, select **Yes** **(4)** and click on **Save** to save the preset.
+10. On the **Strict mode**, select **Yes** **(4)** and click on **Save (5)** to save the preset.
 
 11. You have now successfully configured **Present events**.
 
@@ -460,4 +462,4 @@ Metrics Advisor detects anomalies on all your time series data as they're ingest
 
 3. On the **Incident hub**, select **Home** to find the page where you can find all the incidents under the specific metric.
 
-    ![](./media/view-incident-2.png)
+    ![](./media/view-incident-2.1.png)
