@@ -341,9 +341,11 @@ You will be greeted with the **Auto tuning preference** page.
 
 2. For the  **anomaly pattern**  option, the system will list out different anomaly patterns that were observed with the metric. You can choose which ones you're interested in and select them, and the unselected patterns will have their sensitivity **reduced** by default.
 
-    ![](./media/auto-tuning-select-1.png)
-
 3. Select the **Apply Pattern preference** option **(1)**, followed by selecting **Spike** **(2)** as the anomaly pattern, and then select **Next** **(3)** to go to the next section.
+  
+    ![](./media/auto-tuning-select-1.1.png)
+
+
 
 ### Subtask 2 - Tune the configuration for selected anomaly patterns
 
@@ -351,7 +353,7 @@ The next step is to fine-tune the configuration for each. There's a global **sen
 
 1. You must tune each anomaly pattern that has been chosen individually. In our case, the **Spike** **(1)** anomaly pattern will be visible. Under the **Adjustment for anomaly patterns**, adjust the slider to change the **sensitivity**. Now select **Next** **(2)** to set up alerts.
 
-    ![](./media/pattern-based-sensitivity.png)
+    ![](./media/pattern-based-sensitivity.1.png)
 
 ### Subtask 3 - Set up alert rules
 
@@ -359,11 +361,11 @@ Once the detection configuration for capturing valid anomalies is tuned, it's st
 
 1. On the **Setup alert Rules** page under the **Configuration name** enter **Test-Alert** **(1)** and leave the **Hooks** unselected. Expand the **Filter anomaly based on value** section **(2)** and the **Advanced Settings** **(3)**.
 
-    ![](./media/setup-alert-rules.png)
+    ![](./media/setup-alert-rules.1.png)
 
 2. On the **Filter anomaly based on value**, select the **This Metric** setting, and from the drop-down select **Out of range** **(2)**. Leave the **Snooze successive anomalies** **(3)** unchanged. Select the **Anomalies in all series** **(4)** under the **Alert Scope** section. Now select **Save and close** **(5)**.
 
-    ![](./media/setup-alert-rules-1.png)
+    ![](./media/setup-alert-rules-1.1.png)
 
 3. You can see the newly configured **Test-Alert** under the **metric-level configuration** pane on the left.
 
@@ -382,9 +384,9 @@ After configuring all the settings described in the section above, the system wi
     
     ![](./media/detect-config.png)
 
-3. Select the **'+'** for **Configuration for series group**. Specify at least one **dimension value** **(1)** for a group-level configuration to identify a group of series. Leave the conditions as default and select **Save**.
+3. Select the **'+'** for **Configuration for series group**. Specify at least one **dimension value** **(1)** for a group-level configuration to identify a group of series. Leave the conditions as default and select **Save (2)**.
 
-    ![](./media/series-group-config-01.png)
+    ![](./media/series-group-config-01.1.png)
 
 4. Under the **Metric-level configuration** pane, notice the **Series group configs** value has changed to **1**.
 
@@ -394,9 +396,9 @@ After configuring all the settings described in the section above, the system wi
 
     ![](./media/advanced-config-1.png)
 
-6. Select the **'+'** for **Configuration for specific series**. Specify all **dimension values** **(1)** and **(2)** for series-level configuration to identify a specific series. Leave the **Conditions** as default and select **Save**.
+6. Select the **'+'** for **Configuration for specific series**. Specify all **dimension values** **(1)** and **(2)** for series-level configuration to identify a specific series. Leave the **Conditions** as default and select **Save (3)**.
 
-    ![](./media/specific-config-01.png)
+    ![](./media/specific-config-01.1.png)
 
 7. Under the **Metric-level configuration** pane, notice the **Specific series configs** value has changed to **1**.
 
@@ -428,7 +430,7 @@ Sometimes, expected events and occurrences (such as holidays) can generate anoma
 6. On the **Holiday option**, select **Only NON-PTO Holidays**.
 Leave the rest of the options as default. The **Holiday event** pane should look like this: 
 
-    ![](./media/holiday-event.png)
+   ![](./media/holiday-event.1.png)
 
 7. The **Cycle event** is used to reduce anomalies if they follow a cyclic pattern, but it will report an anomaly if multiple data points don't follow the pattern. Select the downward arrow to expand the **Cycle event** **(1)**.
 
@@ -436,9 +438,9 @@ Leave the rest of the options as default. The **Holiday event** pane should look
 
 9. On the **Cycle option**, select **MoM** **(3)**.
 
-    ![](./media/cycle-event.png)
+    ![](./media/cycle-event.1.png)
 
-10. On the **Strict mode**, select **Yes** **(4)** and click on **Save** to save the preset.
+10. On the **Strict mode**, select **Yes** **(4)** and click on **Save (5)** to save the preset.
 
 11. You have now successfully configured **Present events**.
 
@@ -460,4 +462,4 @@ Metrics Advisor detects anomalies on all your time series data as they're ingest
 
 3. On the **Incident hub**, select **Home** to find the page where you can find all the incidents under the specific metric.
 
-    ![](./media/view-incident-2.png)
+    ![](./media/view-incident-2.1.png)
