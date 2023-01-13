@@ -178,9 +178,9 @@ The high-level steps covered in the lab are:
 
     ![Misc settings](./media/AI4.3.13.png)
 
-11. Provide the **Data feed name**: `covid-ages` and select **Submit** to confirm and submit the data feed.
+11. Provide the **Data feed name**: `covid-ages` **(1)** and select **Submit (2)** to confirm and submit the data feed.
 
-    ![Submit schema configuration](./media/AI4.3.14.png)
+    ![Submit schema configuration](./media/AI4.3.14.1.png)
 
 12. Wait for the ingestion progress dialog and select the **Details** link in order to observe the ingestion log by timestamp. Wait until the ingestion completes with success for all ingested json files.
 
