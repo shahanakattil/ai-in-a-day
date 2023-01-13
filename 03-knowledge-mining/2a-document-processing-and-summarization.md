@@ -166,23 +166,23 @@ The high-level steps covered in the lab are:
 
 2. Select the **Connect (1)** option and then click on **Storage account or service (2)**.
 
-    ![storageaccount](media/storage-account.png)
+    ![storageaccount](media/storage-account.1.png)
 
-3. Select **Connection String (Key or SAS)** under the Select Connection Method Window and then select **Next**
+3. Select **Connection String (Key or SAS) (1)** under the Select Connection Method Window and then select **Next (2)**.
 
-    ![The Use a connection string option is selected.](media/connectionstring.png)
+    ![The Use a connection string option is selected.](media/connectionstring.1.png)
 
-4. Paste in your storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>**.  Then, select **Next** to continue and **Connect** to complete the operation.
+4. Paste in your storage account **Connection string (1)** **<inject key="storageAccountConnectionString" enableCopy="true"/>**. Then, select **Next (2)** to continue and **Connect (3)** to complete the operation.
 
-    ![The connection string is filled in.](media/new-lab2a-1.png)
+    ![The connection string is filled in.](media/new-lab2a-1.1.png)
 
-    ![Connect is selected on the storage explorer page](media/new-lab2a-2.png)
+    ![Connect is selected on the storage explorer page](media/new-lab2a-2.1.png)
 
-5. In Azure Storage Explorer, navigate down the **(1)  lab03** attached storage and expand **(2) Blob containers** select the **(3) `covid19temp` blob container**.  Double-click the **(4)  comm_use_subset** to enter that folder.
+5. In Azure Storage Explorer, navigate down the **lab03 (1)** attached storage and expand **Blob containers (2)** expand the **blob container (3)** and select `covid19temp` **(4)**.  Double-click the **comm_use_subset (5)** to enter that folder.
 
     ![The comm_use_subset folder is selected.](media/new-lab2a-3.png)
 
-6. Enter the **pdf_json_refresh** folder. Then, in the **(1) Select All** menu, choose **(2) Select All Cached**. This will highlight all 100 records in the folder.  Select **(3) Copy** to copy these documents.
+6. Enter the **pdf_json_refresh** folder. Then, in the **Select All (1)** menu, choose **Select All Cached (2)**. This will highlight all 100 records in the folder.  Select **Copy (3)** to copy these documents.
 
     ![Select the PDF refresh folder.](media/select-pdf-refresh-folder01.png)
     
@@ -204,13 +204,13 @@ The high-level steps covered in the lab are:
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
-11. Navigate to the **Indexers** section and select the **covid19temp** indexer.
+11. Navigate to the **Indexers (1)** section and select the **covid19temp (2)** indexer.
 
-    ![The covid19temp indexer is selected.](media/azure-search-indexers.png)
+    ![The covid19temp indexer is selected.](media/azure-search-indexers.1.png)
 
-12. Select the **Run** option to process the 100 documents. Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes** to run the indexer.
+12. Select the **Run (1)** option to process the 100 documents. Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes (2)** to run the indexer.
 
-    ![The covid19temp indexer is set to run.](media/azure-search-indexers-run.png)
+    ![The covid19temp indexer is set to run.](media/azure-search-indexers-run.1.png)
 
 13. The indexer will run. It should complete within 15-30 seconds to process the 100 new documents. You may need to select **Refresh** to see the indexer's progress.
 
@@ -220,9 +220,9 @@ The high-level steps covered in the lab are:
 
     ![The covid19temp index has finished updating.](media/azure-search-indexes-update.png)
 
-15. Select the **covid19temp** index to return to the Search explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` and selecting **Search**. This will now return 57 results instead of the prior 53.
+15. Select the **covid19temp** index to return to the Search explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` **(1)** and selecting **Search (2)**. This will now return 57 results **(3)** instead of the prior 53.
 
-    ![57 documents pertaining to Brazil.](media/search-explorer-brazil-2.png)
+    ![57 documents pertaining to Brazil.](media/search-explorer-brazil-2.1.png)
 
 ## Task 6 - Using the Form Recognizer Studio
 
