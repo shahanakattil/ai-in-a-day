@@ -216,7 +216,7 @@ When detection is applied, you can select one of the metrics listed in the data 
 
     > **Note:-** It can take 30 minutes to complete recent historical data, so please wait or continue with the next lab and come back later and continue this lab.
 
-    ![Metric-level configuration](./media/metric-level-configuration-smart1.png)
+    ![Metric-level configuration](./media/metric-level-configuration-smart1.1.png)
 
 >Note
 >
@@ -237,11 +237,11 @@ When detection is applied, you can select one of the metrics listed in the data 
 1. In the incidents hub, notice the **Root cause** section where you should find reported the main contributors for the detected anomaly, age groups that contributed to the sum of cases reported as anomaly. Also, in the **Diagnostic** tree, hover on each age group node to investigate its contribution to the incident.
     ![Incident Hub diagnostics](./media/root_cause_incidents_hub1.png)
 
-2. In the **Diagnostics** **(1)** section, navigate to **Metrics drill-down** **(2)** and notice the current point Value (number of cases) and the **Diff**  from the identified **Baseline** **(3)**. Choose the **age_group** dimension to drill-down by it and check the same **Delta** percent and **Diff** value from the baseline for the anomalies detected at the current point. 
+2. In the **Diagnostics** **(1)** section, navigate to **Metrics drill-down** **(2)** and notice the current point Value (number of cases) and the **Diff**  from the identified **Baseline** **(3)**. Choose the **age_group (4)** dimension to drill-down by it and check the same **Delta** percent and **Diff** **(5)** value from the baseline for the anomalies detected at the current point. 
 
-     ![Metrics drill down](./media/metricdrill1.png)
+     ![Metrics drill down](./media/metricdrill1.1.png)
 
-    ![Metrics drill down](./media/metrics-drill-down1.png)
+    ![Metrics drill down](./media/metrics-drill-down1.1.png)
 
 
 ## Task 7 - Explore anomalies with hard thresholds (optional)
@@ -256,7 +256,7 @@ To do this, go back to the metric detection configuration screen and try a new c
 
 We should have marked as anomalies the points in time where a number of cases are below or above a fixed threshold for 10 continuous points in time. (Notice the yellow dots **(2)** before the reported anomalies and how the threshold is delimited by the red horizontal lines **(3)**).
 
-![Hard threshold](./media/AI-metric-advisor-hardthreshold.png)
+![Hard threshold](./media/AI-metric-advisor-hardthreshold.1.png)
 
 ## Task 8 - Anomaly detection methods (Optional)
 
@@ -303,7 +303,7 @@ Change threshold is normally used when metric data generally stay around a certa
 
 2. Select **count** to see its details. In this view.
 
-   ![](./media/metrics-browse.png)
+   ![](./media/metrics-browse.1.png)
 
 When you first view a metric's details, you can load a time series by letting Metrics Advisor choose one for you or by specifying values to be included for each dimension.
 
