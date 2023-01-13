@@ -136,9 +136,9 @@ The high-level steps covered in the lab are:
 1. Back to the Home page in Azure Portal, in the list of your recent resources, locate the Azure Metrics Advisor workspace and select it. If you are prompted to sign in again, use the same lab Azure credentials you used at the previous step.
 ![Open Azure Metrics Advisor](./media/metrics-advisor.png)
 
-2. On the Metrics Advisor Overview page, select the `Go to workspace` link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
+2. On the Metrics Advisor **Overview (1)** page, select the `Go to workspace` **(2)** link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
 
-    ![Start the web-based workspace](./media/metrics-advisor-overview.png)
+    ![Start the web-based workspace](./media/metrics-advisor-overview.1.png)
 
 3. On the Metrics Advisor welcome page, select your directory, subscription and workspace information and select **Get started**. You are now prepared to create your first Data feed.
 
@@ -146,29 +146,29 @@ The high-level steps covered in the lab are:
 
     ![Connect to Metrics Advisor workspace](./media/AI4.3.6.png)
 
-4. With the Metrics Advisor workspace opened, select the **Add datafeed** option from the left navigation menu.
+4. With the Metrics Advisor workspace opened, select the **Add datafeed (1)** option from the left navigation menu.
 
 5. Add the data feed by connecting to your time-series data source. Start by selecting the following parameters:
 
-    - **Source type**: `Azure Blob Storage (JSON)`
-    - **Granularity**: `Daily`
-    - **Ingest data since (UTC)**: `2022-02-01`
-    - **Connection string**: provide the connection string from the blob storage access keys page. (`key1 - Connection string` copied on **Before the hands-on lab** part or else please  follow Task 1 of Before the hands-on lab) 
-    - **Container**: `jsonmetrics`
-    - **Blob template**: `%Y-%m-%d.json` (since the daily json files are provided in with naming format)
-    - **JSON format version**: `v2` (since we'll be using the age group dimension in our data schema)
+    - **Source type**: `Azure Blob Storage (JSON)` **(2)**
+    - **Granularity**: `Daily` **(3)**
+    - **Ingest data since (UTC)**: `2022-02-01` **(4)**
+    - **Connection string**: provide the connection string from the blob storage access keys page. (`key1 - Connection string` copied on **Before the hands-on lab** part or else please  follow Task 1 of Before the hands-on lab) **(5)**
+    - **Container**: `jsonmetrics` **(6)**
+    - **Blob template**: `%Y-%m-%d.json` (since the daily json files are provided in with naming format) **(7)**
+    - **JSON format version**: `v2` (since we'll be using the age group dimension in our data schema) **(8)**
 
-    ![Data feed source properties](./media/adddatafeed1.png)
+    ![Data feed source properties](./media/AI-L4-HOL-T4-S5.png)
 
-6. Select the **Load data button** to validate the configured connection. You can find the **Load Data** option just below the **JSON format version** on the right side, so scroll to the right to see the button. If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
+6. Select the **Load data button** to validate the configured connection. You can find the **Load Data (9)** option just below the **JSON format version** on the right side, so scroll to the right to see the button. If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
 
-7. Once the data schema is loaded and shown like below, configure the appropriate fields as Dimension, Measure or Timestamp, and select **Verify schema**.
+7. Once the data schema is loaded and shown like below, configure the appropriate fields as Dimension, Measure or Timestamp **(1)**, and select **Verify schema (2)**.
 
-    ![Schema configuration](./media/schemconfig1.png)
+    ![Schema configuration](./media/AI-L4-HOL-T4-S7.png)
 
-8. Scroll down to the bottom of the page. For **Automatic roll-up** settings, select the **I need the service to roll-up my data** **(1)** option, select the link **Set roll-up columns**, and include both dimensions **(3)**.
+8. Scroll down to the bottom of the page. For **Automatic roll-up** settings, select the **I need the service to roll-up my data** **(1)** option, select the link **Set roll-up columns (2)**, and include both dimensions **(3)**.
 
-    ![Automatic rollup settings](./media/automaticrollup1.png)
+    ![Automatic rollup settings](./media/AI-L4-HOL-T4-S8.png)
 
 9. In the **Advanced settings (1)** section, inside **Ingestion options**, set **Stop retrying after (2)** to **0** hours to stop the ingestion process after the first run. 
     
