@@ -20,9 +20,9 @@ You should follow all of the steps provided in this section _before_ taking part
 
     ![Locate storage account in Azure Portal](media/select-azure-storage-account01.png)
 
-4.  Select `Access keys` from the left side menu, and then select `Show keys`. Save the storage account name, the `key1 Key` value, and the `key1 - Connection string` value for later use.
+4.  Select `Access keys` from the left side menu, and then select `Show keys`. Save the **Storage account name** **(1)**, the **key1** `Key` **(2)** value, and the `key1 - Connection string` **(3)** value for later use.
 
-    ![Storage account name and key](media/datastore-03.png)
+    ![Storage account name and key](media/datastore-03.1.png)
 
 ## Task 2 - Prepare the COVID cases per age group dataset
 
@@ -46,9 +46,9 @@ You should follow all of the steps provided in this section _before_ taking part
 
     [Prepare metrics feed data](https://aiinadayaiw.blob.core.windows.net/aiinaday/preparemetricsfeeddata.ipynb)
 
-5. Upload the file by selecting the Upload button from the screen's top right corner, then selecting the blue Upload button to confirm.
+5. Upload the file by selecting the **Upload button (1)** from the screen's top right corner, then selecting the **blue Upload button (2)** to confirm.
 
-    ![Launch Studio](media/select-upload-1.png)
+    ![Launch Studio](media/select-upload-1.1.png)
    
    - Click on `Click to browse and select file(s)` and select the file which was just downloaded.
    - Check the "I trust contents of the File" and select upload. 
@@ -118,16 +118,16 @@ The high-level steps covered in the lab are:
 
    ![](media/AI-metric-advisor-create.png)  
 
-3. Under Project details on Create Metrics Advisor page provide the following details and click **Review + Create**
+3. Under Project details on Create Metrics Advisor page provide the following details and click **Review + Create (7)**
 
-    * Subscription: Select the available Subscription
-    * Resource Group: **Ai-in-a-Day**
-    * Region: Select the available Region from the dropdown
-    * Name: **metricsadvisor-<inject key="DeploymentID" enableCopy="false"/>** 
-    * Pricing tier: **S0**
-    * Make sure to mark checkbox ☑ for **I confirm I have read and understood the notice below**.
+    * Subscription: Select the available Subscription **(1)**
+    * Resource Group: **Ai-in-a-Day (2)**
+    * Region: Select the available Region from the dropdown **(3)**
+    * Name: **metricsadvisor-<inject key="DeploymentID" enableCopy="false"/> (4)** 
+    * Pricing tier: **S0 (5)**
+    * Make sure to mark checkbox ☑ for **I confirm I have read and understood the notice below (6)**.
    
-     ![](media/AI-metric-advisor-latest.png)
+     ![](media/AI-metric-advisor-latest.1.png)
 
 4. Once the validation is passed, click on **Create**. The deployment could take up to **60 minutes** to complete, although it normally finishes in less than **10 minutes**. Please wait until the deployment gets succeeded and then you can proceed with the next task.
 
