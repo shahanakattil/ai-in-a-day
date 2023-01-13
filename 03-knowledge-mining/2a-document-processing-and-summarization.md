@@ -363,9 +363,9 @@ In this task, we are creating a text summarization application with the client l
 
     ![The Cognitive Services service is selected](media/cognitive-service-latest-select.png)
 
-2. Select the **Keys and Endpoint** option under Resource Management.  Then, copy the value for **KEY 1** and the **Endpoint**.  Paste these into a text file for later use.
+2. Select the **Keys and Endpoint (1)** option under Resource Management.  Then, copy the value for **KEY 1 (2)** and the **Endpoint (3)**.  Paste these into a text file for later use.
 
-    ![The Cognitive Services key and endpoint are selected](media/cognitive-service-latest.png)
+    ![The Cognitive Services key and endpoint are selected](media/connectionstring.1.png)
 
 3. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd`, and select the **Command Prompt** application.
 
