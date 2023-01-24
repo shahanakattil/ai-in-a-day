@@ -366,7 +366,7 @@ In this task, we are creating a text summarization application with the client l
 
 2. Select the **Keys and Endpoint (1)** option under Resource Management.  Then, copy the value for **KEY 1 (2)** and the **Endpoint (3)**.  Paste these into a text file for later use.
 
-    ![The Cognitive Services key and endpoint are selected](media/connectionstring.1.png)
+    ![The Cognitive Services key and endpoint are selected](media/upd-l2a-t7-s2.png)
 
 3. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd`, and select the **Command Prompt** application.
 
@@ -380,7 +380,7 @@ In this task, we are creating a text summarization application with the client l
 
     ![Pip has installed the azureai text analytics package for Python](media/lab2a-t7-pip-azureai.png)
 
-5. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\`. Select the file named **summarization.py** and open it in **Notepad**. 
+5. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\`. Select the file named **summarization.py** and open it in **Notepad or IDLE**. 
 
 6. Replace the **key** and **endpoint** in the file with Cognitive services multi-service account named **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have already copied in step-2 of the same task and finally save the file.
     
