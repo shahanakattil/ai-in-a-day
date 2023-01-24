@@ -98,6 +98,10 @@ The high-level steps covered in the lab are:
 
     ![](./media/trustcode01.png)
     
+    >**Note:** If prompted with Do you wish to trust this compute instance? webpage, click on **Click here to trust this compute instance**.
+    
+    ![](./media/upd-l1-t3-s14.png)
+    
 ## Task 4 - Prepare data for the Machine Learning process
 
 1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `1. Data Preparation.ipynb` notebook.
@@ -129,7 +133,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/lab1-task5-step2.png)
 
-3. In order to be able to launch an Automated ML run we need to provision an Azure ML compute cluster. On the `Configure run` step select `aml-compute-cpu` **(1)** from the list of clusters. If the list is empty select `+ New` **(2)** link.
+3. In order to be able to launch an Automated ML run we need to provision an Azure ML compute cluster. On the `Configure job` step select `aml-compute-cpu` **(1)** from the list of clusters. If the list is empty select `+ New` **(2)** link.
 
     ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/lab1-computenew.png)
 
