@@ -51,7 +51,7 @@ The high-level steps covered in the lab are:
 
     ![The Search service's URL is copied to the clipboard.](media/copy-azure-search-url.png)
 
-5. Navigate to the Keys setting and copy the Primary admin key. Paste this into a text file.
+5. Navigate to the **Keys (1)** under Settings and **copy the Primary admin key (2)**. Paste this into a text file.
 
     ![The Search service's API key is copied to the clipboard.](media/lab2-t3-step5.1.png)
 
@@ -154,7 +154,7 @@ The high-level steps covered in the lab are:
 
     ![Create a demo app.](media/create-demo-app-1.1.png)
 
-12. Open the demo app HTML file. In the search box, enter the phrase "RNA interference" and select the Search icon. This will return 497 papers relating to RNA interference.
+12. Open the demo app HTML file. In the search box, enter the phrase **RNA interference (1)** and select the **Search icon (2)**. This will return 497 papers relating to RNA interference.
 
     ![Use the demo app.](media/search-demo-app.1.png)
 
