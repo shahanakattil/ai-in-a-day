@@ -33,7 +33,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/power-virtual-agent-sign-up.png)
 
-2. On the **Let's get you started**, verify that you are logged-in with your azure username **(1)** and select **Next (2)**. 
+2. On the **Let's get you started**, verify that you are logged-in with your azure username **(1)** and select **Continue (2)**. 
 
    ![](media/upd-l3-t3-s2.png)
 
