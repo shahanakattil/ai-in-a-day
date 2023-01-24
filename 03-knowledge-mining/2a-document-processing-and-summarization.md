@@ -178,7 +178,7 @@ The high-level steps covered in the lab are:
 
     ![Connect is selected on the storage explorer page](media/new-lab2a-2.1.png)
 
-5. In Azure Storage Explorer, navigate down the **lab03 (1)** attached storage and expand **Blob containers (2)** expand the **blob container (3)** and select `covid19temp` **(4)**.  Double-click the **comm_use_subset (5)** to enter that folder.
+5. In Azure Storage Explorer, navigate down the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> (1)* attached storage and expand **Blob containers (2)** expand the **blob container (3)** and select `covid19temp` **(4)**.  Double-click the **comm_use_subset (5)** to enter that folder.
 
     ![The comm_use_subset folder is selected.](media/new-lab2a-3.png)
 
