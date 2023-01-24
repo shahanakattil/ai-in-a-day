@@ -136,7 +136,7 @@ The high-level steps covered in the lab are:
 1. Back to the Home page in Azure Portal, in the list of your recent resources, locate the Azure Metrics Advisor workspace and select it. If you are prompted to sign in again, use the same lab Azure credentials you used at the previous step.
 ![Open Azure Metrics Advisor](./media/metrics-advisor.png)
 
-2. On the Metrics Advisor **Overview (1)** page, select the `Go to workspace` **(2)** link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
+2. On the Metrics Advisor **Overview (1)** page, select the `Go to your workspace` **(2)** link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
 
     ![Start the web-based workspace](./media/metrics-advisor-overview.1.png)
 
@@ -146,7 +146,7 @@ The high-level steps covered in the lab are:
 
     ![Connect to Metrics Advisor workspace](./media/AI4.3.6.png)
 
-4. With the Metrics Advisor workspace opened, select the **Add datafeed (1)** option from the left navigation menu.
+4. With the Metrics Advisor workspace opened, select the **Add data feed (1)** option from the left navigation menu.
 
 5. Add the data feed by connecting to your time-series data source. Start by selecting the following parameters:
 
@@ -216,7 +216,7 @@ When detection is applied, you can select one of the metrics listed in the data 
 
     > **Note:-** It can take 30 minutes to complete recent historical data, so please wait or continue with the next lab and come back later and continue this lab.
 
-    ![Metric-level configuration](./media/metric-level-configuration-smart1.1.png)
+    ![Metric-level configuration](./media/upd-metric-level-configuration-smart1.1.png)
 
 >Note
 >

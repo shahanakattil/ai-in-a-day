@@ -33,19 +33,19 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/power-virtual-agent-sign-up.png)
 
-2. Enter your email on the **Let's get you started (1)** and select **Next (2)**. 
+2. On the **Let's get you started**, verify that you are logged-in with your azure username **(1)** and select **Continue (2)**. 
 
-   ![](media/PVA-sign-up-1.1.png)
+   ![](media/upd-l3-t3-s2.png)
 
-   > **Note**: You can retrieve your Email/username and Password from the environment details tab.
+3. Once **Signed in**, under Create your account, **choose your respective region (1)** from the drop-down menu and click on **Get Started (2)**.
+   
+   ![](media/upd-l3-t3-s3.png)
+   
+4. Under the **Confirmation details (1)**, click on **Get Started (2)**.
 
-3. Select **Sign in** and enter your Password and select **sign in**.
+    ![](media/upd-l3-t3-s4.png)
 
-4. Once **Signed in**, select **Get started** under the **Confirmation Details**.
-
-   ![](media/power-virtual-agent-sign-up-1.png)
-
-5. You have now successfully signed up for **Power Virtual Agents**
+5. You have now successfully signed up for **Power Virtual Agents**.
 
 6. On the **Welcome to Power Virtual Agents (1)** page, choose your respective region and select **Get Started (2)**.
 

@@ -51,7 +51,7 @@ The high-level steps covered in the lab are:
 
     ![The Search service's URL is copied to the clipboard.](media/copy-azure-search-url.png)
 
-5. Navigate to the Keys setting and copy the Primary admin key. Paste this into a text file.
+5. Navigate to the **Keys (1)** under Settings and **copy the Primary admin key (2)**. Paste this into a text file.
 
     ![The Search service's API key is copied to the clipboard.](media/lab2-t3-step5.1.png)
 
@@ -154,7 +154,7 @@ The high-level steps covered in the lab are:
 
     ![Create a demo app.](media/create-demo-app-1.1.png)
 
-12. Open the demo app HTML file. In the search box, enter the phrase "RNA interference" and select the Search icon. This will return 497 papers relating to RNA interference.
+12. Open the demo app HTML file. In the search box, enter the phrase **RNA interference (1)** and select the **Search icon (2)**. This will return 497 papers relating to RNA interference.
 
     ![Use the demo app.](media/search-demo-app.1.png)
 
@@ -178,7 +178,7 @@ The high-level steps covered in the lab are:
 
     ![Connect is selected on the storage explorer page](media/new-lab2a-2.1.png)
 
-5. In Azure Storage Explorer, navigate down the **lab03 (1)** attached storage and expand **Blob containers (2)** expand the **blob container (3)** and select `covid19temp` **(4)**.  Double-click the **comm_use_subset (5)** to enter that folder.
+5. In Azure Storage Explorer, navigate down the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/> (1)* attached storage and expand **Blob containers (2)** expand the **blob container (3)** and select `covid19temp` **(4)**.  Double-click the **comm_use_subset (5)** to enter that folder.
 
     ![The comm_use_subset folder is selected.](media/new-lab2a-3.png)
 
@@ -236,9 +236,11 @@ The high-level steps covered in the lab are:
 
     ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
 
-4. Under **Settings**, navigate to the **Resource sharing (CORS)** page. Ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)**.
+4. Under **Settings**, navigate to the **Resource sharing (CORS)** page. 
 
     ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/storage-cors.png)
+    
+5. On Resource sharing (CORS) page, ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)** and then select **Save** **(3)** to save the CORS settings.  
 
    | Parameter                   | Value                                              |
    | --------------------------- | -------------------------------------------------- |
@@ -250,7 +252,6 @@ The high-level steps covered in the lab are:
 
    ![The CORS options are set for the storage account](media/storage-cors-blob.png)
 
-5. Select **Save** **(3)** to save the CORS settings.
 
 6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Form recognizer resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -272,7 +273,7 @@ The high-level steps covered in the lab are:
 
     ![The covid19abstract project has been created](media/lab2a-t6-frs3.1.png)
     
-11. In the **Configure service resource**, provide the following details and click on **Continue**.
+11. In the **Configure service resource**, provide the following details and click on **Continue (4)**.
    
     | Parameter                   | Value                                |
     | --------------------------- | -------------------------------------|
@@ -365,7 +366,7 @@ In this task, we are creating a text summarization application with the client l
 
 2. Select the **Keys and Endpoint (1)** option under Resource Management.  Then, copy the value for **KEY 1 (2)** and the **Endpoint (3)**.  Paste these into a text file for later use.
 
-    ![The Cognitive Services key and endpoint are selected](media/connectionstring.1.png)
+    ![The Cognitive Services key and endpoint are selected](media/upd-l2a-t7-s2.png)
 
 3. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd`, and select the **Command Prompt** application.
 
@@ -379,7 +380,7 @@ In this task, we are creating a text summarization application with the client l
 
     ![Pip has installed the azureai text analytics package for Python](media/lab2a-t7-pip-azureai.png)
 
-5. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\`. Select the file named **summarization.py** and open it in **Notepad**. 
+5. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\`. Select the file named **summarization.py** and open it in **Notepad or IDLE**. 
 
 6. Replace the **key** and **endpoint** in the file with Cognitive services multi-service account named **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have already copied in step-2 of the same task and finally save the file.
     

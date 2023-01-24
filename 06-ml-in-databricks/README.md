@@ -42,7 +42,7 @@ The high-level steps covered in the lab are:
 
 1. Open the [Azure Portal](https://portal.azure.com) and sign-in with your lab credentials.
 
-2. Navigate to your resource group `AI-in-a-Day` **(1)**and locate the Azure Databricks workspace **ai-adb-ws (2)**.
+2. Navigate to your resource group `AI-in-a-Day` **(1)** and locate the Azure Databricks workspace **ai-adb-ws (2)**.
 
    ![Open Azure Databricks Workspace](media/rg-databricks.1.png)
    
@@ -58,7 +58,7 @@ The high-level steps covered in the lab are:
 
    ![Select Azure Databricks Cluster](media/select-compute-1.1.png)
   
-6. Select `Start` to start the Azure Databricks cluster. It will take 1-2 minutes to start. If you are prompted to 'Are you sure you want to start cluster ai-adb-lab?' pop-up, click on Confirm.
+6. Select `Start` to start the Azure Databricks cluster. It will take 1-2 minutes to start. If you are prompted to 'Are you sure you want to start cluster ai-adb-lab?' pop-up, click on **Confirm**.
 
    ![Start Azure Databricks Cluster](./media/lab5-task3-step6.png)
 
@@ -82,7 +82,7 @@ The high-level steps covered in the lab are:
 
      ![ADF for lab6](./media/tokengen-2.1.png)
  
-12. Now copy the Generated token value and save it in a notepad to use in the next exercises.
+12. Now copy the Generated token value and save it in a notepad to use in the next exercises and then click on **Done**.
 
      ![ADF for lab6](./../media/tokengen3.png)
      
@@ -160,8 +160,8 @@ In this task, you will be creating a link service in the Data factory to connect
     
 5. In the properties for the Databricks Notebook activity window at the bottom, complete the following steps:
 
-    * Switch to the Azure Databricks tab.
-      -Select **AzureDatabricks (1)** LinkedService from the drop-down. (which you created in the previous task).
+    * Switch to the Azure Databricks tab **(1)**.
+    - Select **AzureDatabricks (2)** LinkedService from the drop-down. (which you created in the previous task).
       
       ![ADF for lab6](./media/linkpipelinedb.1.png)
       
@@ -229,8 +229,8 @@ In this task, you will be creating a link service in the Data factory to connect
   
 1. In the properties for the Databricks Notebook activity window at the bottom, complete the following steps:
 
-    * Switch to the Azure Databricks tab.
-      -Select **AzureDatabricks (1)** LinkedService from the drop-down. (which you created in the previous task).
+    * Switch to the Azure Databricks tab **(1)**.
+    - Select **AzureDatabricks (2)** LinkedService from the drop-down. (which you created in the previous task).
       
       ![ADF for lab6](./media/linkpipelinedb.1.png)
       
@@ -303,8 +303,8 @@ In this task, you will be creating a link service in the Data factory to connect
     
 5. In the properties for the Databricks Notebook activity window at the bottom, complete the following steps:
 
-    * Switch to the Azure Databricks tab.
-      -Select **AzureDatabricks (1)** LinkedService from the drop-down. (which you created in the previous task).
+    * Switch to the Azure Databricks tab **(1)**.
+    - Select **AzureDatabricks (2)** LinkedService from the drop-down. (which you created in the previous task).
       
       ![ADF for lab6](./media/linkpipelinedb.1.png)
       

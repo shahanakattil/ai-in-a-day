@@ -18,7 +18,7 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
    ![Semantic search service to be selected](media/lab2b-ssp1.png)
    
-4. From the Semantic search (preview) pane, select the **Free** tier by clicking on **Selected Plan**. Once you click on select plan, a free tier plan will be selected for Semantic search.
+4. From the Semantic search (preview) pane, select the **Free** tier by clicking on **Select Plan**. Once you click on select plan, a free tier plan will be selected for Semantic search.
 
    ![Semantic search service free tier to be selected](media/lab2b-ssp2.png)
    
