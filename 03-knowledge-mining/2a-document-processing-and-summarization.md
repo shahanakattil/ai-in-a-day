@@ -273,7 +273,7 @@ The high-level steps covered in the lab are:
 
     ![The covid19abstract project has been created](media/lab2a-t6-frs3.1.png)
     
-11. In the **Configure service resource**, provide the following details and click on **Continue**.
+11. In the **Configure service resource**, provide the following details and click on **Continue (4)**.
    
     | Parameter                   | Value                                |
     | --------------------------- | -------------------------------------|
