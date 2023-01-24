@@ -236,9 +236,11 @@ The high-level steps covered in the lab are:
 
     ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
 
-4. Under **Settings**, navigate to the **Resource sharing (CORS)** page. Ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)**.
+4. Under **Settings**, navigate to the **Resource sharing (CORS)** page. 
 
     ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/storage-cors.png)
+    
+5. On Resource sharing (CORS) page, ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)** and then select **Save** **(3)** to save the CORS settings.  
 
    | Parameter                   | Value                                              |
    | --------------------------- | -------------------------------------------------- |
@@ -250,7 +252,6 @@ The high-level steps covered in the lab are:
 
    ![The CORS options are set for the storage account](media/storage-cors-blob.png)
 
-5. Select **Save** **(3)** to save the CORS settings.
 
 6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Form recognizer resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
 
