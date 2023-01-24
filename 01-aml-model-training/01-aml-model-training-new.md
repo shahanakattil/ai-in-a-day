@@ -51,11 +51,11 @@ The high-level steps covered in the lab are:
    
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-1. If you see the pop-up **Stay Signed in?**, click **No**. Also, if you see a **Save Password** pop-up, close that.
+1. If you see the pop-up **Stay Signed in?**, click on **No**. Also, if you see a **Save Password** pop-up, close that.
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-1. If the **Welcome to Microsoft Azure** pop-up window appears, click **Maybe Later** to skip the tour.
+1. If the **Welcome to Microsoft Azure** pop-up window appears, click on **Maybe Later** to skip the tour.
 
 1. Navigate to `All Resources`.
 
@@ -94,7 +94,7 @@ The high-level steps covered in the lab are:
 
     ![](./media/clickjupiter01.png)
 
-1. If you see **IMPORTANT NOTE: Always use trusted code**, then check on **Yes, I Understand** and then click **Continue**.
+1. If you see **IMPORTANT NOTE: Always use trusted code**, then check on **Yes, I Understand** and then click on **Continue**.
 
     ![](./media/trustcode01.png)
     
@@ -248,7 +248,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![Selecting Dataset](media/upd-ai-L1-t7-s4.png)
    
-4. Once we picked the dataset, select the **Regression** modelling type and click **Next**
+4. Once we picked the dataset, select the **Regression (1)** modelling type and click on **Next (2)**.
 
    ![Modeling_type](media/modelling_type.1.png)
 
@@ -257,7 +257,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
    - **Model debugging**: Understand and debug erroneous data cohorts in your ML model using Error analysis, Counterfactual what-if examples, and Model explainability
    - **Real life interventions**: Understand and debug erroneous data cohorts in your ML model using Causal analysis
 
-6. Select the **Model Debugging** component and click **Next**
+6. Select the **Model Debugging (1)** component and click on **Next (2)**.
 
    ![Model Debugging](media/model_debugging.1.png)
    
