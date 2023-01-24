@@ -216,7 +216,7 @@ When detection is applied, you can select one of the metrics listed in the data 
 
     > **Note:-** It can take 30 minutes to complete recent historical data, so please wait or continue with the next lab and come back later and continue this lab.
 
-    ![Metric-level configuration](./media/metric-level-configuration-smart1.1.png)
+    ![Metric-level configuration](./media/upd-metric-level-configuration-smart1.1.png)
 
 >Note
 >
