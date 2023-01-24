@@ -146,7 +146,7 @@ The high-level steps covered in the lab are:
 
     ![Connect to Metrics Advisor workspace](./media/AI4.3.6.png)
 
-4. With the Metrics Advisor workspace opened, select the **Add datafeed (1)** option from the left navigation menu.
+4. With the Metrics Advisor workspace opened, select the **Add data feed (1)** option from the left navigation menu.
 
 5. Add the data feed by connecting to your time-series data source. Start by selecting the following parameters:
 
