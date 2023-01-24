@@ -136,7 +136,7 @@ The high-level steps covered in the lab are:
 1. Back to the Home page in Azure Portal, in the list of your recent resources, locate the Azure Metrics Advisor workspace and select it. If you are prompted to sign in again, use the same lab Azure credentials you used at the previous step.
 ![Open Azure Metrics Advisor](./media/metrics-advisor.png)
 
-2. On the Metrics Advisor **Overview (1)** page, select the `Go to workspace` **(2)** link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
+2. On the Metrics Advisor **Overview (1)** page, select the `Go to your workspace` **(2)** link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
 
     ![Start the web-based workspace](./media/metrics-advisor-overview.1.png)
 
