@@ -1,5 +1,11 @@
 # Release Notes - FY23
 
+### 23 February 2023
+
+ - Minor update in Lab 1.
+ 
+   - Updated the lab guide for **Task-7 Generate a Responsible AI dashboard** where users will be running the **azureml-model-analysis-regression** notebook in Jupyter instead of creating the Responsible AI dashboard using ML Studio. 
+
 ### 10 August 2022
 
 ## Major update in the lab
