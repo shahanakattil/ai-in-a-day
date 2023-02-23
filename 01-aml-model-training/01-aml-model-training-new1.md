@@ -236,9 +236,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![Run Note Book Cell](./media/EX1-T7-03.png)
    
-   >**Note:** The below cell for model training can take upto 15-20 minutes to complete the run. Wait until the run gets succeeded before moving forward.
+   >**Note**: The below cell for model training can take upto 15-20 minutes to complete the run. Wait until the run gets succeeded before moving forward.
    
-   ![Note Book Cell Output](./media/EX1-T7-04.png)
+    ![Note Book Cell Output](./media/EX1-T7-04.png)
    
  4. Please make sure to read the cells carefully and run them one by one. Click on **AzureML studio** URL at the end of the notebook before moving the next task.
 
