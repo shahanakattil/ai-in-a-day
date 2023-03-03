@@ -1,4 +1,4 @@
-# Lab 2b - Knowledge Mining with Azure Cognitive Search
+# Lab 3 - Knowledge Mining with Azure Cognitive Search
 
 This lab covers Azure Cognitive Search Services, particularly [Semantic ranking](https://docs.microsoft.com/en-us/azure/search/semantic-ranking) using [semantic query](https://docs.microsoft.com/en-us/azure/search/semantic-how-to-query-request?tabs=semanticConfiguration%2Cportal#create-a-semantic-configuration) and [return a semantic answer](https://docs.microsoft.com/en-us/azure/search/semantic-answers?tabs=semanticConfiguration).
 

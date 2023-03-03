@@ -1,4 +1,4 @@
-# Lab 2a - Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language
+# Lab 2 - Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language
 
 This lab covers Azure Cognitive Services, particularly [Azure Cognitive Search](https://azure.microsoft.com/services/search/) and the [Form Recognizer](https://azure.microsoft.com/services/cognitive-services/form-recognizer/) service.
 

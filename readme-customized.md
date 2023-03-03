@@ -46,15 +46,15 @@ When data comes in natural language, a data engineering process should transform
 
 Another critical problem to deal with when it comes to the volumes of research documents covering COVID-19 is the problem of advanced indexing and searching their content. The specific internal structure of research papers (including citations, contributors, and various entities like diagnosis, forms of examination, family relations, genes, medication, symptom or signs, and treatments) form a reach semantic graph that goes way beyond simple document categorization. An analyst would benefit significantly from exploring the corpus of documents in a way that takes all these complex relationships into account.
 
-Using the Cognitive Search capabilities, we will create a complex index of documents that allows an analyst to perform an advanced search and explore the inter-document graph relationships (Lab 2a).
+Using the Cognitive Search capabilities, we will create a complex index of documents that allows an analyst to perform an advanced search and explore the inter-document graph relationships (Lab 2).
 
 The power of Machine Learning also comes into play when dealing with human-to-machine interfaces. While classical interfaces like native or web applications are ubiquitous, the new approaches based on conversational AI are becoming increasingly popular. Having the capability to interact with intelligent services using natural language is quickly becoming the norm rather than the exception. Using Conversational AI, analysts can find the research of interest by using simple natural language phrases.
 
-Using Power Virtual Agents and Cognitive Services, we provide a conversational bot that helps analysts navigate the corpus of research documents and identify the most relevant ones (Lab 3).
+Using Power Virtual Agents and Cognitive Services, we provide a conversational bot that helps analysts navigate the corpus of research documents and identify the most relevant ones (Lab 4).
 
 Besides collecting data about COVID-19 cases, it is also essential to ensure the accuracy of the reporting. Accuracy check is where continuous monitoring of incoming data feeds doubled by automatic detection of anomalies plays a critical role. Data is valid for analysis as long as it is reliable and contains the minimum possible number of errors. With distributed data sources and numerous reporting entities, automatic anomaly detection is the best choice to minimize that number.
 
-Using Cognitive Services Metrics Advisor, we will demonstrate how to improve the case surveillance data quality by identifying as early as possible anomalies in the number of daily reported cases (Lab 4).
+Using Cognitive Services Metrics Advisor, we will demonstrate how to improve the case surveillance data quality by identifying as early as possible anomalies in the number of daily reported cases (Lab 5).
 
 ## Labs
 
@@ -76,7 +76,7 @@ The high-level steps covered in the lab are:
 - Explain the best model produced by AutoML
 - Assess AI systems and make data-driven decisions with Azure Machine Learning Responsible AI dashboard
 
-### Lab 2a - [Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language](03-knowledge-mining/2a-document-processing-and-summarization.md)
+### Lab 2 - [Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language](03-knowledge-mining/2-document-processing-and-summarization.md)
 
 This lab covers Azure Cognitive Search (index, knowledge store, custom skills) and Form Recognizer.
 
@@ -90,14 +90,14 @@ The high-level steps covered in the lab are:
 - Introducing  the Form Recognizer Studio
 - Document Summarization via Cognitive Service for Language integration
 
-### Lab 2b - [Knowledge Mining with Azure Cognitive Search](03-knowledge-mining/2b-semantic-query-and-return-semantic-answer.md)
+### Lab 3 - [Knowledge Mining with Azure Cognitive Search](03-knowledge-mining/3-semantic-query-and-return-semantic-answer.md)
 
  - Enabling the Semantic search (preview) in Cognitive Search service
  - Creating a Semantic configuration
  - Semantic search using semantic configuration in Azure Portal
  - Semantic Query using REST APIs
 
-### Lab 3 - [Conversational AI with Azure Bot Service and Cognitive Services](04-conversational-ai/04-conversational-ai.md)
+### Lab 4 - [Conversational AI with Azure Bot Service and Cognitive Services](04-conversational-ai/04-conversational-ai.md)
 
  - Explore dashboard of COVID-19 data
  - Explore lab scenario
@@ -108,7 +108,7 @@ The high-level steps covered in the lab are:
  - Test your Bot
  - Enabling Voice Access for Our Bot 
 
-### Lab 4 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/05-metrics-advisor-new.md)
+### Lab 5 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/05-metrics-advisor-new.md)
 
 The lab covers the Metrics Advisor service from Azure Cognitive Services.
 
