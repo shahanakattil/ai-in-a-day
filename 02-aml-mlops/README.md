@@ -32,7 +32,7 @@ Using GitHub and GitHub Actions, we will build an end-to-end Machine Learning pr
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
-![Architecture for Lab 2](./media/SHC2.png)
+![Architecture for Lab 2](./media/lab2.png)
 
 ## Task 3 - Observe the execution and artifacts of the existing model training Azure DevOps pipeline
 
