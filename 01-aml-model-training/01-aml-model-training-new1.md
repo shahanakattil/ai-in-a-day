@@ -24,7 +24,7 @@ Based on a set of existing research papers, we will use Natural Language Process
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
-![Azure AI in a Day datasets](./media/data-overview-01-01.png)
+![Azure AI in a Day datasets](./media/lab1.png)
 
 The high-level steps covered in the lab are:
 
