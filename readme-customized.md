@@ -32,7 +32,7 @@ Using the data from the datasets described above, we aim to demonstrate how to u
 
 The following diagram provides a high-level overview of the various AI and ML approaches which are applied throughout the labs.
 
-![Overall Azure AI in a Day architecture](./media/Architecture-0.png)
+![Overall Azure AI in a Day architecture](./media/Architecture-customized.png)
 
 Given the magnitude of the COVID-19 problem, it comes naturally to have a lot of research on the topic. In fact, in 2020 alone, tens of thousands of papers have been published on COVID-19 alone. The sheer amount of communication on the subject makes it difficult for a researcher to grasp and structure all the relevant topics and details. Furthermore, pre-defined catalogs and papers classification might not always reflect their content in the most effective way possible.
 
