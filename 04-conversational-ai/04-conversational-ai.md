@@ -1,4 +1,4 @@
-# Lab 3 - Conversational AI with Azure Bot Service and Cognitive Services
+# Lab 4 - Conversational AI with Azure Bot Service and Cognitive Services
 
 This lab covers Power Virtual Agents as the hero bot service and demonstrates how to extend your PVA bot using Bot Framework Composer.
 
