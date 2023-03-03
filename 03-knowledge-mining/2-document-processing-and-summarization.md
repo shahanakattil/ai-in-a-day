@@ -24,7 +24,7 @@ Using the Cognitive Search capabilities, we will create a complex index of docum
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
-![Architecture for Lab 3](./media/SHC2.png)
+![Architecture for Lab 3](./media/lab3.png)
 
 The high-level steps covered in the lab are:
 
