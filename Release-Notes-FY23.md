@@ -1,5 +1,13 @@
 # Release Notes - FY23
 
+### 03 March 2023
+
+ - Major update in the lab.
+ 
+   - The lab content has been trimmed down to optimize the overall lab completion time.
+   - Since Azure Databricks portion is being covered in Analytics hands-on-lab to avoid conflicts, we are removing the Lab 5 - Machine Learning with Azure Databricks.
+
+
 ### 23 February 2023
 
  - Minor update in Lab 1.
