@@ -382,31 +382,17 @@ After configuring all the settings described in the section above, the system wi
 
 2. You can add a configuration for an individual series or group of series by clicking the **'+'** icon in this window. 
     
-    ![](./media/detect-config.png)
+    ![](./media/specific%20series.png)
 
-3. Select the **'+'** for **Configuration for series group**. Specify at least one **dimension value** **(1)** for a group-level configuration to identify a group of series. Leave the conditions as default and select **Save (2)**.
+6. Select the **'+'** for **Configuration for specific series (1)**. Specify all **dimension values** **(2)** for series-level configuration to identify a specific series. Leave the **Conditions** as default and select **Save (3)**.
 
-    ![](./media/series-group-config-01.1.png)
-
-4. Under the **Metric-level configuration** pane, notice the **Series group configs** value has changed to **1**.
-
-    ![](./media/series-group-config-2.png)
-
-5. Select **Advanced configuration** once again to add **specific series** level configuration.
-
-    ![](./media/advanced-config-1.png)
-
-6. Select the **'+'** for **Configuration for specific series**. Specify all **dimension values** **(1)** and **(2)** for series-level configuration to identify a specific series. Leave the **Conditions** as default and select **Save (3)**.
-
-    ![](./media/specific-config-01.1.png)
+    ![](./media/specifiseries.png)
 
 7. Under the **Metric-level configuration** pane, notice the **Specific series configs** value has changed to **1**.
 
-    ![](./media/series-specific-config-2.png)
+    ![](./media/count.png)
 
-8. This configuration will be applied to the group of series or specific series instead of the metric level configuration. After setting the conditions for this group, **save**.
 
-    ![](./media/save-config-01.png)
 
 ## Task 12 - Preset events
 
