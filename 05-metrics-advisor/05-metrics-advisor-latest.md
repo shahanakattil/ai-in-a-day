@@ -228,7 +228,7 @@ When detection is applied, you can select one of the metrics listed in the data 
 
     ![Filter incidents by hospitalization steps](media/HOL-Task5-step5.png)
 
-6. From the list, select the anomaly reported for SUM or any age_group from the list of Incidents.
+6. From the list, select the anomaly reported for SUM or any of the age_group.
     
     ![Filter incidents by hospitalization](media/HOL-Task5-step6.png)
 
