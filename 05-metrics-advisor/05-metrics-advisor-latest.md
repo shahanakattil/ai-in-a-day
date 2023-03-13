@@ -1,4 +1,4 @@
-# Lab 4 - Data monitoring and anomaly detection using Metrics Advisor in Azure Cognitive Services 
+# Lab 5 - Data monitoring and anomaly detection using Metrics Advisor in Azure Cognitive Services 
 
 This lab covers the Metrics Advisor service features from Azure Cognitive Services.
 
@@ -168,7 +168,7 @@ The high-level steps covered in the lab are:
 
 8. Scroll down to the bottom of the page. For **Automatic roll-up** settings, select the **I need the service to roll-up my data** **(1)** option, select the link **Set roll-up columns (2)**, and include `age_group` dimensions **(3)**.
 
-    ![Automatic rollup settings](media/AI-L4-HOL-T4-S8.png)
+    ![Automatic rollup settings](media/HOL-Task4-step8.png)
 
 9. In the **Advanced settings (1)** section, inside **Ingestion options**, set **Stop retrying after (2)** to **0** hours to stop the ingestion process after the first run. 
     
@@ -228,7 +228,7 @@ When detection is applied, you can select one of the metrics listed in the data 
 
     ![Filter incidents by hospitalization steps](media/HOL-Task5-step5.png)
 
-6. From the list, select the anomaly reported for SUM or any age_group of hospitalized cases.
+6. From the list, select the anomaly reported for SUM or any of the age_group.
     
     ![Filter incidents by hospitalization](media/HOL-Task5-step6.png)
 
@@ -303,7 +303,7 @@ Change threshold is normally used when metric data generally stay around a certa
 
 2. Select **count** to see its details. In this view.
 
-   ![](/mediaHOL-Task9-Step2.png)
+   ![](media/HOL-Task9-Step2.png)
 
 When you first view a metric's details, you can load a time series by letting Metrics Advisor choose one for you or by specifying values to be included for each dimension.
 
@@ -339,21 +339,24 @@ You will be greeted with the **Auto tuning preference** page.
 
 1. The **Auto tuning preference** feature enables you to tune detection configuration from two perspectives **anomaly pattern** and **series value** based on your specific use case. In our case, we will choose the **Anomaly pattern.**
 
-2. For the  **anomaly pattern**  option, the system will list out different anomaly patterns that were observed with the metric. You can choose which ones you're interested in and select them, and the unselected patterns will have their sensitivity **reduced** by default.
+1. For the  **anomaly pattern**  option, the system will list out different anomaly patterns that were observed with the metric. You can choose which ones you're interested in and select them, and the unselected patterns will have their sensitivity **reduced** by default.
 
-3. Select the **Apply Pattern preference** option **(1)**, followed by selecting **Spike** **(2)** as the anomaly pattern, and then select **Next** **(3)** to go to the next section.
+1. Select the **Apply Pattern preference** option **(1)**, followed by selecting **Spike** **(2)** as the anomaly pattern, and then select **Next** **(3)** to go to the next section.
   
-    ![](./media/auto-tuning-select-1.1.png)
-
+    ![](./media/ms-auto-tunning.png)
 
 
 ### Subtask 2 - Tune the configuration for selected anomaly patterns
 
 The next step is to fine-tune the configuration for each. There's a global **sensitivity** that is applied for all series. For each anomaly pattern, you can tune the **adjustment**, which is based on the global **sensitivity**.
 
-1. You must tune each anomaly pattern that has been chosen individually. In our case, the **Spike** **(1)** anomaly pattern will be visible. Under the **Adjustment for anomaly patterns**, adjust the slider to change the **sensitivity**. Now select **Next** **(2)** to set up alerts.
+1. You must tune each anomaly pattern that has been chosen individually. In our case, the **Spike** **(1)** anomaly pattern will be visible. Under the **Adjustment for anomaly patterns**, adjust the slider to change the **sensitivity**. Now select **Next** **(2)**.
 
-    ![](./media/pattern-based-sensitivity.1.png)
+    ![](./media/ms-auto-tunning-1.png)
+    
+2. In the Value based sensitivity pane, you can adjust the slider to change the **Adjusment for value** **(1)** and select **Next** **(2)** to set up alerts.
+
+    ![](./media/ms-auto-tunning-2.png)
 
 ### Subtask 3 - Set up alert rules
 
@@ -361,11 +364,11 @@ Once the detection configuration for capturing valid anomalies is tuned, it's st
 
 1. On the **Setup alert Rules** page under the **Configuration name** enter **Test-Alert** **(1)** and leave the **Hooks** unselected. Expand the **Filter anomaly based on value** section **(2)** and the **Advanced Settings** **(3)**.
 
-    ![](./media/setup-alert-rules.1.png)
+    ![](./media/ms-auto-tunning-3.png)
 
-2. On the **Filter anomaly based on value**, select the **This Metric** setting, and from the drop-down select **Out of range** **(2)**. Leave the **Snooze successive anomalies** **(3)** unchanged. Select the **Anomalies in all series** **(4)** under the **Alert Scope** section. Now select **Save and close** **(5)**.
+2. On the **Filter anomaly based on value**, select the **This Metric** **(1)** setting, and from the drop-down select **Out of range** **(2)**. Leave the **Snooze successive anomalies** **(3)** unchanged. Select the **Anomalies in all series** **(4)** under the **Alert Scope** section. Now select **Save and close** **(5)**.
 
-    ![](./media/setup-alert-rules-1.1.png)
+    ![](./media/ms-auto-tunning-4.1.png)
 
 3. You can see the newly configured **Test-Alert** under the **metric-level configuration** pane on the left.
 
@@ -382,31 +385,17 @@ After configuring all the settings described in the section above, the system wi
 
 2. You can add a configuration for an individual series or group of series by clicking the **'+'** icon in this window. 
     
-    ![](./media/detect-config.png)
+    ![](./media/specific%20series.png)
 
-3. Select the **'+'** for **Configuration for series group**. Specify at least one **dimension value** **(1)** for a group-level configuration to identify a group of series. Leave the conditions as default and select **Save (2)**.
+6. Select the **'+'** for **Configuration for specific series (1)**. Specify all **dimension values** **(2)** for series-level configuration to identify a specific series. Leave the **Conditions** as default and select **Save (3)**.
 
-    ![](./media/series-group-config-01.1.png)
-
-4. Under the **Metric-level configuration** pane, notice the **Series group configs** value has changed to **1**.
-
-    ![](./media/series-group-config-2.png)
-
-5. Select **Advanced configuration** once again to add **specific series** level configuration.
-
-    ![](./media/advanced-config-1.png)
-
-6. Select the **'+'** for **Configuration for specific series**. Specify all **dimension values** **(1)** and **(2)** for series-level configuration to identify a specific series. Leave the **Conditions** as default and select **Save (3)**.
-
-    ![](./media/specific-config-01.1.png)
+    ![](./media/specifiseries.png)
 
 7. Under the **Metric-level configuration** pane, notice the **Specific series configs** value has changed to **1**.
 
-    ![](./media/series-specific-config-2.png)
+    ![](./media/count.png)
 
-8. This configuration will be applied to the group of series or specific series instead of the metric level configuration. After setting the conditions for this group, **save**.
 
-    ![](./media/save-config-01.png)
 
 ## Task 12 - Preset events
 
@@ -452,7 +441,7 @@ Metrics Advisor detects anomalies on all your time series data as they're ingest
 
 1. To view these incidents select the **Incident** tab on the metrics details page.
 
-    ![](./media/select-incident.png)
+    ![](./media/ms-at-task13.png)
 
 2. From the **Incident** page, select an incident to go to the **Incidents Analysis** page, where you can see more details about it. 
 
