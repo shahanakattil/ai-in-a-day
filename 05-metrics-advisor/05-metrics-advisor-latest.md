@@ -168,7 +168,7 @@ The high-level steps covered in the lab are:
 
 8. Scroll down to the bottom of the page. For **Automatic roll-up** settings, select the **I need the service to roll-up my data** **(1)** option, select the link **Set roll-up columns (2)**, and include `age_group` dimensions **(3)**.
 
-    ![Automatic rollup settings](media/AI-L4-HOL-T4-S8.png)
+    ![Automatic rollup settings](media/HOL-Task4-step8.png)
 
 9. In the **Advanced settings (1)** section, inside **Ingestion options**, set **Stop retrying after (2)** to **0** hours to stop the ingestion process after the first run. 
     
