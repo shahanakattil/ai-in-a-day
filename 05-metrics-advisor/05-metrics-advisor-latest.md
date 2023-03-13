@@ -303,7 +303,7 @@ Change threshold is normally used when metric data generally stay around a certa
 
 2. Select **count** to see its details. In this view.
 
-   ![](/mediaHOL-Task9-Step2.png)
+   ![](media/HOL-Task9-Step2.png)
 
 When you first view a metric's details, you can load a time series by letting Metrics Advisor choose one for you or by specifying values to be included for each dimension.
 
