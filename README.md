@@ -78,7 +78,7 @@ The high-level steps covered in the lab are:
 - Explain the best model produced by AutoML
 - Assess AI systems and make data-driven decisions with Azure Machine Learning Responsible AI dashboard
 
-### Lab 2a - [Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language](03-knowledge-mining/2a-document-processing-and-summarization.md)
+### Lab 2 - [Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language](03-knowledge-mining/2a-document-processing-and-summarization.md)
 
 This lab covers Azure Cognitive Search (index, knowledge store, custom skills) and Form Recognizer.
 
@@ -92,14 +92,14 @@ The high-level steps covered in the lab are:
 - Introducing  the Form Recognizer Studio
 - Document Summarization via Cognitive Service for Language integration
 
-### Lab 2b - [Knowledge Mining with Azure Cognitive Search](03-knowledge-mining/2b-semantic-query-and-return-semantic-answer.md)
+### Lab 3 - [Knowledge Mining with Azure Cognitive Search](03-knowledge-mining/2b-semantic-query-and-return-semantic-answer.md)
 
  - Enabling the Semantic search (preview) in Cognitive Search service
  - Creating a Semantic configuration
  - Semantic search using semantic configuration in Azure Portal
  - Semantic Query using REST APIs
 
-### Lab 3 - [Conversational AI with Azure Bot Service and Cognitive Services](04-conversational-ai/04-conversational-ai.md)
+### Lab 4 - [Conversational AI with Azure Bot Service and Cognitive Services](04-conversational-ai/04-conversational-ai.md)
 
  - Explore dashboard of COVID-19 data
  - Explore lab scenario
@@ -110,7 +110,7 @@ The high-level steps covered in the lab are:
  - Test your Bot
  - Enabling Voice Access for Our Bot 
 
-### Lab 4 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/05-metrics-advisor-new.md)
+### Lab 5 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/05-metrics-advisor-new.md)
 
 The lab covers the Metrics Advisor service from Azure Cognitive Services.
 
@@ -128,16 +128,4 @@ The high-level steps covered in the lab are:
 - Preset Events
 - Recent incident views
 
-### Lab 5 - [Machine Learning with Azure Databricks](06-ml-in-databricks/README.md)
-
-The lab covers Data Engineering and Machine Learning using Azure Databricks notebooks activity in Azure Data Factory.
-
-The high-level steps covered in the lab are:
-
-- Explore dashboard of COVID-19 data
-- Explore the lab scenario
-- Connect Data Factory to Azure Databricks using linked service
-- Create Data Factory Pipeline to run the Explore the surveillance dataset Databricks notebook
-- Create Data Factory Pipeline to run the Build a risk classifier based on surveillance data Azure Databricks Notebook
-- Create Data Factory Pipeline to run the Explore the research papers dataset Azure Databricks for notebook
 
