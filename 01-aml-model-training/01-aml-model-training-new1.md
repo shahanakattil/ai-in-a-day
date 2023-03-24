@@ -45,11 +45,11 @@ The high-level steps covered in the lab are:
     
 1. On the **Sign into Microsoft Azure** tab, you will see the login screen. In that enter the following **Email/Username** and then click on **Next**. 
    
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   * Email/Username: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
    
 1. Enter the following **Password** and click on **Sign in**. 
    
-   * Password: <inject key="AzureAdUserPassword"></inject>
+   * Password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
    
 1. If you see the pop-up **Stay Signed in?**, click on **No**. Also, if you see a **Save Password** pop-up, close that.
 
@@ -61,7 +61,7 @@ The high-level steps covered in the lab are:
 
     ![All Resources](./media/AllResources.png)
         
-1. Locate **Machine Learning** resource **ai-in-a-day-<inject key="DeploymentID" enableCopy="false"/>**, select that.
+1. Locate **Machine Learning** resource named **<inject key="AML Workspace Name " enableCopy="true"/>** and select it.
 
     ![Navigate to Azure Machine Learning](./media/lab1-open-aml.png)
     
@@ -70,6 +70,7 @@ The high-level steps covered in the lab are:
     ![Launch Machine Learning Studio](./media/lab1-aml-launch.png)
 
 1. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is `running` **(2)**.
+   
    * Compute instance name: notebook<inject key="DeploymentID" enableCopy="false"/>
 
     ![Verify Azure Machine Learning compute instance is running](./media/compute_status.png)
@@ -81,11 +82,19 @@ The high-level steps covered in the lab are:
    ![](./media/mlterminal.png)
    
 1. Run the following commands and make sure all commands will execute successfully.
+    
     ```  
     conda env create -f aiw-ai-kernel.yml
+    ```
+    
+    ```
     conda activate aiw-ai-kernel
+    ```
+    
+    ```
     ipython kernel install --user --name aiw-ai-kernel --display-name "Python (aiw-ai-kernel)"
     ```
+   
    ![](./media/setkernel1.png)
    
    ![](./media/setkernel2.png)
@@ -98,7 +107,7 @@ The high-level steps covered in the lab are:
 
     ![](./media/trustcode01.png)
     
-    >**Note:** If prompted with Do you wish to trust this compute instance? webpage, click on **Click here to trust this compute instance**.
+   >**Note**: If prompted with Do you wish to trust this compute instance? webpage, click on **Click here to trust this compute instance**.
     
     ![](./media/upd-l1-t3-s14.png)
     
@@ -137,7 +146,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/lab1-computenew.png)
 
-    > **Note:** If you already have `aml-compute-cpu` cluster provisioned, feel free to skip to step 6.
+   >**Note**: If you already have `aml-compute-cpu` cluster provisioned, feel free to skip to step 6.
 
 4. On the `Create compute cluster` screen set the values listed below:
 
