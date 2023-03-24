@@ -43,7 +43,7 @@ The high-level steps covered in the lab are:
 
 2. Select the **AI-in-a-Day** resource group.
 
-3. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**, select that.
+3. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and select it.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
@@ -104,7 +104,9 @@ The high-level steps covered in the lab are:
 
     ```powershell
     Create-AzureSearchIndex "C:/Temp/AzureSearch/abstracts_datasource.schema" "C:/Temp/AzureSearch/abstracts.schema" "C:/Temp/AzureSearch/abstracts_indexer.schema" "AZURE SEARCH ACCOUNT NAME" "API KEY"
-
+    ```
+    
+    ```powershell
     Create-AzureSearchIndex "C:/Temp/AzureSearch/covid19temp_datasource.schema" "C:/Temp/AzureSearch/covid19temp.schema" "C:/Temp/AzureSearch/covid19temp_indexer.schema" "AZURE SEARCH ACCOUNT NAME" "API KEY"
     ```
 
@@ -118,7 +120,7 @@ The high-level steps covered in the lab are:
 
 2. Select the **AI-in-a-Day** resource group.
 
-3. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**, select that.
+3. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and select it.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
