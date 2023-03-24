@@ -57,50 +57,30 @@ The high-level steps covered in the lab are:
 
 6. Open **File Explorer** from the task bar and navigate to the path `C:\Temp\AzureSearch\`. There are six files, three prefixed with `abstracts` and three with `covid19temp`.
 
-7. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.  Do the same for `covid19temp_datasource.schema`.
+7. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
 
     ![The abstract data source is ready to be updated.](media/edit-abstracts-datasource.png)
 
-8. Open a new PowerShell prompt. Navigate to the following directory `cd C:\Temp\AzureSearch\`. Enter the following code, to create an Azure Search data source, index, and indexer.
+8. Open the `covid19temp_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
 
-    ```powershell
-    function Create-AzureSearchIndex {
-        param
-        (
-            [string]$DataSourceFilePath,
-            [string]$IndexFilePath,
-            [string]$IndexerFilePath,
-            [string]$AccountName,
-            [string]$ApiKey
-        )
-        
-        $Header = @{
-            "api-key" = $ApiKey
-        }
-        $BaseUri = "https://" + $AccountName + ".search.windows.net"
-        
-        # Create Data Source
-        $Uri = $BaseUri + "/datasources?api-version=2020-06-30"
-        Invoke-RestMethod -Method Post -Uri $Uri -Header $header -ContentType "application/json" -InFile $DataSourceFilePath
-        
-        # Create Index
-        $Uri = $BaseUri + "/indexes?api-version=2020-06-30"
-        Invoke-RestMethod -Method Post -Uri $Uri -Header $header -ContentType "application/json" -InFile $IndexFilePath
-        
-        # Create Indexer
-        $Uri = $BaseUri + "/indexers?api-version=2020-06-30"
-        Invoke-RestMethod -Method Post -Uri $Uri -Header $header -ContentType "application/json" -InFile $IndexerFilePath
-    }
+9. Now, open `AzureSearchIndex.ps1` file with a text editor and copy the code present in it.
+
+10. Open a new PowerShell prompt and navigate to the following directory:
+
     ```
+    cd C:\Temp\AzureSearch\
+    ```
+ 
+11. Paste the copied code from the **AzureSearchIndex.ps1** file and press enter to create an Azure Search data source, index, and indexer.
 
     ![The Create-AzureSearchIndex function has been created in PowerShell.](media/create-azuresearchindex.png)
 
-9. In the same PowerShell prompt, call this function for the `abstracts` index and the `covid19temp` index.
+12. In the same PowerShell prompt, call this function for the `abstracts` index and the `covid19temp` index.
 
-   Make sure to update the Azure Search account name and Azure Search API key in the below commands and then run.
+    Make sure to update the Azure Search account name and Azure Search API key in the below commands and then run.
    
-    - Azure Search Account Name: **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**
-    - Azure Search API key: You saved the Primary admin key in the text editor in step 5, use that
+     - Azure Search Account Name: **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>**
+     - Azure Search API key: You saved the Primary admin key in the text editor in step 5, use that
 
     ```powershell
     Create-AzureSearchIndex "C:/Temp/AzureSearch/abstracts_datasource.schema" "C:/Temp/AzureSearch/abstracts.schema" "C:/Temp/AzureSearch/abstracts_indexer.schema" "AZURE SEARCH ACCOUNT NAME" "API KEY"
