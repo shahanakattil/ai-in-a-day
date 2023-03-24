@@ -1,12 +1,10 @@
 # Release Notes - FY23
 
-### 03 March 2023
+### 24 March 2023
 
- - Major update in the lab.
+ - Minor update in the Lab 4.
  
-   - The lab content has been trimmed down to optimize the overall lab completion time.
-   - Since Azure Databricks portion is being covered in Analytics hands-on-lab to avoid conflicts, we are removing the Lab 5 - Machine Learning with Azure Databricks.
-
+   - In Lab 4 - Data monitoring and anomaly detection using Metrics Advisor in Azure Cognitive Services, we have updated the dataset with the latest timestamp to optimize the time series count creation in data ingestion process for the created datafeed in Metric Advisor workspace.
 
 ### 23 February 2023
 
