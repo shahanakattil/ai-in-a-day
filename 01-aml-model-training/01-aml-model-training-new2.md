@@ -251,7 +251,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 ## Task 8 -  Explore the Responsible AI dashboard
 
-1. Once the opened the endpoint, you will see the Fairness dashboard page click on **Get started** to start the assessment.
+1. Once you opened the endpoint, you will see the Fairness dashboard page click on **Get started** to start the assessment.
 
     ![Run Note Book Cell](./media/ai1.7.png)
  
