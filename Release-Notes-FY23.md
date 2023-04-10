@@ -1,5 +1,11 @@
 # Release Notes - FY23
 
+### 10 April 2023
+
+ - Minor update in the Lab 1.
+
+   - In Lab 1 - Azure Machine Learning Model Training, we have updated the Task 7 & 8 for generating and exploring the Responsible AI dashbaord using the latest `fairness-dashboard-loan-allocation.ipynb` notebook.
+
 ### 24 March 2023
 
  - Minor update in the Lab 4.
