@@ -233,23 +233,19 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 ## Task 7 - Generate a Responsible AI dashboard 
 
-1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `azureml-model-analysis-regression.ipynb` notebook.
+1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `fairness-dashboard-loan-allocation.ipynb` notebook.
 
-   ![Select Note Book](./media/EX1-T7-01.png)
+   ![Select Note Book](./media/ai1.1.png)
    
 2. On Jupiter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python 3.8-AzureML (3)** is selected.
 
-   ![](./media/EX1-T7-02.png)
+   ![](./media/ai1.2.png)
 
-3. Execute the cells inside `azureml-model-analysis-regression.ipynb` notebook one by one (Click on the 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
+3. Execute the cells inside `fairness-dashboard-loan-allocation.ipynb` notebook one by one (Click on the 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
 
-   ![Run Note Book Cell](./media/EX1-T7-03.png)
+   ![Run Note Book Cell](./media/ai1.3.png)
    
-   >**Note**: The below cell for model training can take upto 15-20 minutes to complete the run. Wait until the run gets succeeded before moving forward.
-   
-    ![Note Book Cell Output](./media/EX1-T7-04.png)
-   
- 4. Please make sure to read the cells carefully and run them one by one. Click on **AzureML studio** URL at the end of the notebook before moving the next task.
+4. Please make sure to read the cells carefully and run them one by one. Click on **AzureML studio** URL at the end of the notebook before moving the next task.
 
      ![Note Book Cell Output](./media/EX1-T7-05.png)
 
