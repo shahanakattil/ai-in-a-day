@@ -231,13 +231,22 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![View explanations](media/lab1-task6-step4.png)
 
-## Task 7 - Generate a Responsible AI dashboard 
+## Task 7 - Generate a Responsible AI dashboard
+
+Responsible AI is a governance framework that documents how a specific organization is addressing the challenges around artificial intelligence (AI) from both an ethical and legal point of view. Resolving ambiguity for where responsibility lies if something goes wrong is an important driver for responsible AI initiatives.
+
+**Principles of responsible AI**: AI and the machine learning models that support it should be comprehensive, explainable, ethical and efficient.
+
+ - Comprehensiveness – comprehensive AI has clearly defined testing and governance criteria to prevent machine learning from being hacked easily.
+ - Explainable AI is programmed to describe its purpose, rationale and decision-making process in a way that can be understood by the average end user.
+ - Ethical AI initiatives have processes in place to seek out and eliminate bias in machine learning models.
+ - Efficient AI is able to run continually and respond quickly to changes in the operational environment.
 
 1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `fairness-dashboard-loan-allocation.ipynb` notebook.
 
    ![Select Note Book](./media/ai1.1.png)
    
-2. On Jupiter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected.
+2. Once the notebook is opened in the Jupyter application, select **Kernel** **(1)**. Then select **Change kernel** **(2)** and make sure to select **Python (aiw-ai-kernel) **(3)**.
 
    ![](./media/ai1.4.png)
 
@@ -251,23 +260,23 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 ## Task 8 -  Explore the Responsible AI dashboard
 
-1. Once you opened the endpoint, you will see the Fairness dashboard page click on **Get started** to start the assessment.
+1. Once you click on the endpoint, you will be navigated to the Welcome to the Fairness dashboard page in the new tab. You can go through the features mentioned in the page and click on **Get started** to start the assessment.
 
     ![Run Note Book Cell](./media/ai1.7.png)
  
-1. On the Sensitive features page, select any of the sensitive feature (In this we are selecting sex) and click on **Next**.
+1. On the Sensitive features page, select anyone of the available sensitive feature (In this we are selecting sex) and click on **Next**.
 
     ![Run Note Book Cell](./media/ai1.8.png)
 
-1. On the Performance metrics page, select any of the performance metric from the list (In this we are selecting Accuracy) and click on **Next**.
+1. On the Performance metrics page, select anyone of the available performance metric from the list (In this we are selecting Accuracy) and click on **Next**.
 
     ![Run Note Book Cell](./media/ai1.9.png)
 
-1. On the Fairness metrics page, select any of the fairness matric from the list (In this we are selecting Demographic parity difference) and click on **Next**.
+1. On the Fairness metrics page, select anyone of the fairness metric from the list (In this we are selecting Demographic parity difference) and click on **Next**.
 
     ![Run Note Book Cell](./media/ai1.10.png)
 
-1. You will see the chart of Model comparison assessment.
+1. You will see the chart of Model comparison assessment and refer the key insights displayed in the same page.
 
     ![Run Note Book Cell](./media/ai1.11.png)
 
