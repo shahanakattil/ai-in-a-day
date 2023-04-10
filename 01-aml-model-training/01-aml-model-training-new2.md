@@ -237,42 +237,36 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![Select Note Book](./media/ai1.1.png)
    
-2. On Jupiter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected.
+2. On Jupiter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python 3.8-AzureML (3)** is selected.
 
-   ![](./media/ai1.4.png)
+   ![](./media/ai1.2.png)
 
-3. Execute the cells inside `fairness-dashboard-loan-allocation.ipynb` notebook one by one (Click on the **Run** button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
+3. Execute the cells inside `fairness-dashboard-loan-allocation.ipynb` notebook one by one (Click on the 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
 
-   ![Run Note Book Cell](./media/ai1.5.png)
+   ![Run Note Book Cell](./media/ai1.3.png)
    
-4. Please make sure to read the cells carefully and run them one by one. Click on **Endpoint** URL at the end of the notebook before moving the next task.
+4. Please make sure to read the cells carefully and run them one by one. Click on **AzureML studio** URL at the end of the notebook before moving the next task.
 
-     ![Note Book Cell Output](./media/ai1.6.png)
+     ![Note Book Cell Output](./media/EX1-T7-05.png)
 
-## Task 8 -  Explore the Responsible AI dashboard in AML studio
+## Task 8 -  Explore the Responsible AI dashboard
 
-1. Navigate to **Models (1)**  under Assets, from the Model List select the available model, for example: **boston (2)** .
+1. Once the endpoint is opened, you will see the Fairness dashboard page click on **Get started** to start the assessment.
 
-   ![model](media/boston_model.png)
+    ![Run Note Book Cell](./media/ai1.7.png)
+ 
+1. On the Sensitive features page, select any of the sensitive feature (In this we are selecting `sex`) and click on **Next**.
 
-2. On the Models page, select the **Responsible AI (1)** option and select the available RAI dashboard **RAI Regression Boston (2)**.
+    ![Run Note Book Cell](./media/ai1.8.png)
 
-   ![Responsible_AI.png](./media/upd-SHC8.2.1.png)
+1. On the Performance metrics page, select any of the performance metric from the list (In this we are selecting `Accuracy`) and click on **Next**.
 
-3. Go through the insights of the RAI Regression Boston dashbaord and select the **Back to models** details to get back to your list of dashboards.
+    ![Run Note Book Cell](./media/ai1.9.png)
 
-   ![Responsible_AI.png](./media/upd-SHC8.3.png)
+1. On the Fairness metrics page, select any of the fairness matric from the list (In this we are selecting `Demographic parity difference`) and click on **Next**.
 
-4. Explore through the Dashboard to learn how to enable the Full functionality with integrated compute resources:
+    ![Run Note Book Cell](./media/ai1.10.png)
 
-  - Error analysis
-  - Model overview
-  - Data analysis
-  - Feature importances
-  - Counterfactuals
-  - Causal analysis
-  
-
-> **Note**: For more information about the Responsible AI dashboard, refer here [how-to-responsible-ai-dashboard](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-responsible-ai-dashboard)
+1. 
 
  
