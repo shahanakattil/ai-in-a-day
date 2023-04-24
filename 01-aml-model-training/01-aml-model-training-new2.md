@@ -79,9 +79,13 @@ The high-level steps covered in the lab are:
 
 1. In the Azure Machine Learning Studio under **Compute** **(1)**, open the **Terminal** **(2)** environment.
     
-   ![](./media/mlterminal.png)
+   ![](./media/mlterminal.png) 
    
 1. Run the following commands and make sure all commands will execute successfully.
+    
+    ```  
+    sudo chown -R azureuser /anaconda
+    ```
     
     ```  
     conda env create -f aiw-ai-kernel.yml
