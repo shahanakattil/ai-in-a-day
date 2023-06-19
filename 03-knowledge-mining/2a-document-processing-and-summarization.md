@@ -41,41 +41,45 @@ The high-level steps covered in the lab are:
 
     ![Open Azure resource group](media/SHC2a.3.1.png)
 
-2. Select the **AI-in-a-Day** resource group.
+1. Select the **AI-in-a-Day** resource group.
 
-3. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and select it.
+1. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and select it.
 
     ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
 
-4. Copy the search service URL and paste this into a text file. Also make a note of the service account name, which comes before `.search.windows.net`.
+1. Copy the search service URL and paste this into a text file. Also make a note of the service account name, which comes before `.search.windows.net`.
 
     ![The Search service's URL is copied to the clipboard.](media/copy-azure-search-url.png)
 
-5. Navigate to the **Keys (1)** under Settings and **copy the Primary admin key (2)**. Paste this into a text file.
+1. Navigate to the **Keys (1)** under Settings and **copy the Primary admin key (2)**. Paste this into a text file.
 
     ![The Search service's API key is copied to the clipboard.](media/lab2-t3-step5.1.png)
 
-6. Open **File Explorer** from the task bar and navigate to the path `C:\Temp\AzureSearch\`. There are six files, three prefixed with `abstracts` and three with `covid19temp`.
+1. Navigate to Storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** **(1)**, select **Access keys** **(2)** under Security + networking from left-menu. Click on **Show** of connection string under Key1 **(3)** to see the connection string and **copy the connection string** **(4)** under Key1. Paste this into a text file.
 
-7. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
+   ![](media/ai-sa-cs.png)
+
+1. Open **File Explorer** from the task bar and navigate to the path `C:\Temp\AzureSearch\`. There are six files, three prefixed with `abstracts` and three with `covid19temp`.
+
+1. Open the `abstracts_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
 
     ![The abstract data source is ready to be updated.](media/edit-abstracts-datasource.png)
 
-8. Open the `covid19temp_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
+1. Open the `covid19temp_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
 
-9. Now, open `AzureSearchIndex.ps1` file with a text editor and copy the code present in it.
+1. Now, open `AzureSearchIndex.ps1` file with a text editor and copy the code present in it.
 
-10. Open a new PowerShell prompt and navigate to the following directory:
+1. Open a new PowerShell prompt and navigate to the following directory:
 
     ```
     cd C:\Temp\AzureSearch\
     ```
  
-11. Paste the copied code from the **AzureSearchIndex.ps1** file and press enter to create an Azure Search data source, index, and indexer.
+1. Paste the copied code from the **AzureSearchIndex.ps1** file and press enter to create an Azure Search data source, index, and indexer.
 
     ![The Create-AzureSearchIndex function has been created in PowerShell.](media/create-azuresearchindex.png)
 
-12. In the same PowerShell prompt, call this function for the `abstracts` index and the `covid19temp` index.
+1. In the same PowerShell prompt, call this function for the `abstracts` index and the `covid19temp` index.
 
     Make sure to update the Azure Search account name and Azure Search API key in the below commands and then run.
    
