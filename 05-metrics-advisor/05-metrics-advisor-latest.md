@@ -63,7 +63,7 @@ You should follow all of the steps provided in this section _before_ taking part
 
     ![select kernal for preparemetricfeeddata notebook](media/AI-notebook-kernal-update.png)
     
->**Note**: Please ensure to click on the **Authenticate** button if a pop-up notification comes like below.
+   >**Note**: Please ensure to click on the **Authenticate** button if a pop-up notification comes like below.
 
    ![authenticate pop-up](media/AI-notebook-authenticate.png)
    
@@ -71,7 +71,7 @@ You should follow all of the steps provided in this section _before_ taking part
 
    ![Kernal selected](media/AI-notebook-python3.8-kernal.png) 
 
-> **Note**: Make sure you replace the `<BLOBSTORAGE_ACCOUNT_NAME>` and `<BLOBSTORAGE_ACCOUNT_KEY>` values in the variable initialization cell with the values you have noted down at the end of the previous task.
+   > **Note**: Make sure you replace the `<BLOBSTORAGE_ACCOUNT_NAME>` and `<BLOBSTORAGE_ACCOUNT_KEY>` values in the variable initialization cell with the values you have noted down at the end of the previous task.
 
    The notebook will guide you through a list of steps to prepare a time series-based dataset containing JSON files to be fed into the Metrics Advisor workspace. Each JSON file will contain daily data representing the count of COVID-positive cases by age group.
 
