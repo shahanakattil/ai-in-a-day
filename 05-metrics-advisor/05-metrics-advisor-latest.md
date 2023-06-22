@@ -106,32 +106,9 @@ The high-level steps covered in the lab are:
 - Onboard your time series data in the Metrics Advisor
 - Explore anomalies detected in your data
 - Perform root cause analysis
-- Explore anomalies with hard thresholds (optional)
+- Explore anomalies with hard thresholds (optional)  
 
-## Task 3 -  Deploy Azure Cognitive Services Metrics Advisor instance
-
-1. Navigate to the Azure portal and click on the menu icon, and select **+ Create a resource**
-
-   ![](media/newlatest14.png) 
-
-2. In the search bar, type **Metrics Advisor** and then select **Create**
-
-   ![](media/AI-metric-advisor-create.png)  
-
-3. Under Project details on Create Metrics Advisor page provide the following details and click **Review + Create (7)**
-
-    * Subscription: Select the available Subscription **(1)**
-    * Resource Group: **Ai-in-a-Day (2)**
-    * Region: Select the available Region from the dropdown **(3)**
-    * Name: **metricsadvisor-<inject key="DeploymentID" enableCopy="false"/> (4)** 
-    * Pricing tier: **S0 (5)**
-    * Make sure to mark checkbox ☑ for **I confirm I have read and understood the notice below (6)**.
-   
-     ![](media/AI-metric-advisor-latest.1.png)
-
-4. Once the validation is passed, click on **Create**. The deployment could take up to **60 minutes** to complete, although it normally finishes in less than **10 minutes**. Please wait until the deployment gets succeeded and then you can proceed with the next task.
-
-## Task 4 - Configure the "COVID cases by age group" Metrics Advisor data feed
+## Task 3 - Configure the "COVID cases by age group" Metrics Advisor data feed
 
 1. Back to the Home page in Azure Portal, in the list of your recent resources, locate the Azure Metrics Advisor workspace and select it. If you are prompted to sign in again, use the same lab Azure credentials you used at the previous step.
 ![Open Azure Metrics Advisor](./media/metrics-advisor.png)
@@ -187,7 +164,7 @@ The high-level steps covered in the lab are:
     ![Check the ingestion progress](media/HOL-Task4-step12.png)
 
 
-## Task 5 - Explore anomalies detected in data
+## Task 4 - Explore anomalies detected in data
 
 After the data feed is added, Metrics Advisor will attempt to ingest metric data from the specified start date. It will take some time for data to be fully ingested, and you can view the ingestion status by clicking Ingestion progress at the top of the data feed page. If data is ingested, Metrics Advisor will apply detection and continue to monitor the source for new data.
 
@@ -232,7 +209,7 @@ When detection is applied, you can select one of the metrics listed in the data 
     
     ![Filter incidents by hospitalization](media/HOL-Task5-step6.png)
 
-## Task 6 - Perform root cause analysis
+## Task 5 - Perform root cause analysis
 
 1. In the incidents hub, notice the **Root cause** section where you should find reported the main contributors for the detected anomaly, age groups that contributed to the sum of cases reported as anomaly. Also, in the **Diagnostic** tree, hover on each age group node to investigate its contribution to the incident.
     ![Incident Hub diagnostics](media/HOL-Task6-step1.png)
@@ -244,7 +221,7 @@ When detection is applied, you can select one of the metrics listed in the data 
     ![Metrics drill down](media/HOL-Task6-step2b.png)
 
 
-## Task 7 - Explore anomalies with hard thresholds (optional)
+## Task 6 - Explore anomalies with hard thresholds (optional)
 
 As an optional exercise, you can create a different detection configuration based on hard thresholds rather than smart detection.
 
@@ -258,7 +235,7 @@ We should have marked as anomalies the points in time where a number of cases ar
 
 ![Hard threshold](media/HOL-Task7-step1.png)
 
-## Task 8 - Anomaly detection methods (Optional)
+## Task 7 - Anomaly detection methods (Optional)
 
 Metrics Advisor offers multiple anomaly detection methods:  **Hard threshold, Smart detection, Change threshold**.
 
@@ -297,7 +274,7 @@ Change threshold is normally used when metric data generally stay around a certa
 
 >**Note**: For more information, see [Anomaly detection methods](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/configure-metrics#anomaly-detection-methods).
 
-## Task 9 - Configuring Metrics 
+## Task 8 - Configuring Metrics 
 
 1. To browse the metrics for a specific data feed, go to the **Data feeds** page and select **covid-ages** from the feeds. This will display a list of metrics associated with it.
 
@@ -313,7 +290,7 @@ When you first view a metric's details, you can load a time series by letting Me
 
     ![Metrics drill down](media/HOL-Task9-Step4.png)
 
-## Task 10 - Fine Tuning the detection configuration
+## Task 9 - Fine Tuning the detection configuration
 
 A metric can apply one or more detection configurations. There's a default configuration for each metric, which you can edit or add to according to your monitoring needs. The new auto-tuning feature makes this distinction between anomaly types possible. As of now, there are five supported anomaly patterns:
 
@@ -377,7 +354,7 @@ Once the detection configuration for capturing valid anomalies is tuned, it's st
 After configuring all the settings described in the section above, the system will orchestrate them together and automatically detect anomalies based on your inputted preferences. The goal is to get the best configuration that works for each metric, which can be achieved much easier through the use of the new  **auto-tuning**  capability.
 
 
-## Task 11 - Tune the configuration for a specific series or group
+## Task 10 - Tune the configuration for a specific series or group
 
 1. Select **Advanced configuration** below the metric level configuration options to see the group level configuration.
 
@@ -397,7 +374,7 @@ After configuring all the settings described in the section above, the system wi
 
 
 
-## Task 12 - Preset events
+## Task 11 - Preset events
 
 Sometimes, expected events and occurrences (such as holidays) can generate anomalous data. Using preset events, you can add flags to the anomaly detection output during specified times. This feature should be configured after your data feed is onboarded. Each metric can only have one preset event configuration.
 
@@ -435,7 +412,7 @@ Leave the rest of the options as default. The **Holiday event** pane should look
 
 >**Note**: For more information, see [Present Events](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/configure-metrics#preset-events).
 
-## Task 13 - View recent incidents
+## Task 12 - View recent incidents
 
 Metrics Advisor detects anomalies on all your time series data as they're ingested. However, not all anomalies need to be escalated because they might not have a significant impact. Aggregation will be performed on anomalies to group related ones into incidents. 
 
