@@ -1,5 +1,13 @@
 # Release Notes - FY23
 
+### 20 June 2023
+
+ - Minor update in the lab.
+ 
+   - Updated instructions in Lab-2 to get connection string from Storage account.
+   - Automated Metric Advisor resource deployment.
+
+
 ### 17 April 2023
 
  - Major update in the lab.
