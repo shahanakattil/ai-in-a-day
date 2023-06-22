@@ -60,7 +60,7 @@ Using Cognitive Services Metrics Advisor, we will demonstrate how to improve the
 
 Each individual lab in this repo addresses a subset of the challenges described in the [Background story](#background-story) section.
 
-### Lab 1 - [Azure Machine Learning Model Training](01-aml-model-training/01-aml-model-training-new.md)
+### Lab 1 - Azure Machine Learning Model Training
 
 The lab covers clustering with Azure Machine Learning, Automated ML, and model explainability.
 
@@ -76,7 +76,7 @@ The high-level steps covered in the lab are:
 - Explain the best model produced by AutoML
 - Assess AI systems and make data-driven decisions with Azure Machine Learning Responsible AI dashboard
 
-### Lab 2 - [Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language](03-knowledge-mining/2-document-processing-and-summarization.md)
+### Lab 2 - Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language
 
 This lab covers Azure Cognitive Search (index, knowledge store, custom skills) and Form Recognizer.
 
@@ -90,14 +90,14 @@ The high-level steps covered in the lab are:
 - Introducing  the Form Recognizer Studio
 - Document Summarization via Cognitive Service for Language integration
 
-### Lab 3 - [Knowledge Mining with Azure Cognitive Search](03-knowledge-mining/3-semantic-query-and-return-semantic-answer.md)
+### Lab 3 - Knowledge Mining with Azure Cognitive Search
 
  - Enabling the Semantic search (preview) in Cognitive Search service
  - Creating a Semantic configuration
  - Semantic search using semantic configuration in Azure Portal
  - Semantic Query using REST APIs
 
-### Lab 4 - [Conversational AI with Azure Bot Service and Cognitive Services](04-conversational-ai/04-conversational-ai.md)
+### Lab 4 - Conversational AI with Azure Bot Service and Cognitive Services
 
  - Explore dashboard of COVID-19 data
  - Explore lab scenario
@@ -108,7 +108,7 @@ The high-level steps covered in the lab are:
  - Test your Bot
  - Enabling Voice Access for Our Bot 
 
-### Lab 5 - [Metrics Advisor with Azure Cognitive Services](05-metrics-advisor/05-metrics-advisor-new.md)
+### Lab 5 - Metrics Advisor with Azure Cognitive Services
 
 The lab covers the Metrics Advisor service from Azure Cognitive Services.
 
