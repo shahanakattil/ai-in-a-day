@@ -118,15 +118,15 @@ The high-level steps covered in the lab are:
 
 6. Choose the **covid19temp (1)** index and enter `RNA interference`**(2)** into the Query string input box, and then select **Search (3)**. This will return the documents which include the phrase "RNA interference."
 
-    ![Articles with the phrase RNA interference.](media/search-explorer-rna-interference.1.png)
+    ![Articles with the phrase RNA interference.](media/searchservice1.png)
 
 7. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` **(1)** and then select **Search (2)**.  This will return 53 documents **(3)**.
 
-    ![53 articles reference Brazil.](media/search-explorer-brazil-1.1.png)
+    ![53 articles reference Brazil.](media/searchservice2.png)
 
 8. Each document returns a large number of fields, but we can specify the fields we would like to see. In the Query string input box, enter the phrase `UNC Chapel Hill&$select=metadata/authors, metadata/title` **(1)** and then select **Search (2)**. This will return the title as well as detailed information on each author.
 
-    ![Paper titles and authors referencing UNC Chapel Hill.](media/search-explorer-unc.1.png)
+    ![Paper titles and authors referencing UNC Chapel Hill.](media/searchservice3.png)
 
 9. The Azure Search service can also generate a demo application. Return to the search service and select the **covid19temp** index.
 
