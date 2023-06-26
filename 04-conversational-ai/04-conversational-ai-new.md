@@ -114,28 +114,24 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/cai-l4-t4-s12.png)
 
-13. Review the topic trigger, click on **Save** to save the topic.
+13. Review the topic trigger, click on **Save** from right-top corner to save the topic.
 
     ![](media/cai-l4-t4-s13new.png)
 
 ## Task 5 - Test your Bot
 
-1. Once the Topic is saved, click on **Test bot**.
+1. Once the Topic is saved, click on **Test bot** from right-top corner.
 
    ![](media/cai-l4-t4-s13new1.png)
 
-2. In the Test bot pane, enable the **Track between topics**.
+2. In the Test bot pane, enter the given phrase ```What can I make for lunch?``` and then enter city name as ```Seattle```. 
 
-   ![](media/track-between-topics.png)
+   ![](media/cai-l4-t4-s14.png)
 
-3. Enter the below phrase in a trigger phrase in Test bot. 
+3. You can select the type of food that you are looking for i.e, Chinese or Italian. 
 
-   ```what meals can I order```
+4. Your chatbot should display names of the meals as shown below.
 
-   ![](media/lab3-task7-step3.png)
-
-4. Then enter the name of the city as **Seattle**. Your chatbot should display images of the meals in an adaptive card as show below.
-
-   ![](media/final-bot.png)
+   ![](media/cai-l4-t4-s15.png)
 
 Now you have successfully created and tested Power Virtual Agents bot
