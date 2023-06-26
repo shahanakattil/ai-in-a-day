@@ -118,11 +118,11 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/cai-l4-t4-s13new.png)
 
-## Task 7 - Test your Bot
+## Task 5 - Test your Bot
 
-1. While on the **Meal delivery options**, select the **Bot** icon on the top right corner.
+1. Once the Topic is saved, click on **Test bot**.
 
-   ![](media/test-bot.png)
+   ![](media/cai-l4-t4-s13new1.png)
 
 2. In the Test bot pane, enable the **Track between topics**.
 
