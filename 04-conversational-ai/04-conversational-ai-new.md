@@ -70,35 +70,36 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/cai-l4-t4-s1.png)
 
-2. In Create it with Copilot pane, Name your topic as **Meal delivery options** **(1)**. In Create a topic to ..., enter the given phrase **Checking for food options based on the city you are in** **(2)**, then click on **Create** **(3)**.
+2. In Create it with Copilot pane, Name your topic as **Meal delivery options** **(1)**. In Create a topic to ..., enter the given phrase "**Checking for food options based on the city you are in**" **(2)**, then click on **Create** **(3)**.
 
    ![](media/cai-l4-t4-s2.png)
 
-3. Now select the **'+'** under the trigger phrase and add **Ask a question** node.
+3. Once you are in the topic pane, **close** **(1)** the edit with copilot pane from right-side. Scroll-down to the **Message** node, click on **eclipse** button **(2)** and select **Delete** **(3)** to remove the message node.
 
-   ![](media/chatgpt-question.png)
+   ![](media/cai-l4-t4-s3.png)
 
-4. On the **Question** node, add the following details:
+4. On the **topic** pane, click on **+** at the bottom to **Add node**.
 
-      - **Ask a question (1)**: ```What city are you in?``` 
-      - **Identify (2)**: ```City``` 
-      - **Save Response as (3)**: On the **Variable properties** tab that opens up, set the name of the variable as ```user_city``` **(4)** and **usage** as **Global (Any topic can access) (5)**
+   ![](media/cai-l4-t4-s4.png)
 
-   ![](media/chatbot-adding-questions.png)
+5. Select **Ask a question** from drop-down while adding a node.
 
-   >**Note**: The variable just created will be used in the adaptive card. For the variable to be used within Bot Framework Composer, it must be set with Bot scope rather than Topic scope.
+   ![](media/cai-l4-t4-s5.png)
 
-5. Save the **topic**, then return to the list of topics. 
+6. Enter the question as "**What type of food would you like to order?**" **(1)** and under options for users, click on **New option** **(2)** to add types of food. Add **Chinese** and **Italian** **(3)** as shown in the below screenshot.
 
-   ![](media/chatbot-save.png)
+    ![](media/cai-l4-t4-s6.png)
+   
+7. Now under Condition of Chinese, click on **+** to Add node.
 
-7. Select **Topics** from the left menu, then click on the downward arrow and select **Open in Bot Framework Composer**.
+   ![](media/cai-l4-t4-s7.png)
 
-    ![](media/bot-composer-1.png)
+8. Select **Send a message** from drop-down while adding a node.
 
-    >**Note**: If you can’t launch composer automatically from Power Virtual Agents, you can launch it manually from your browser. Click on Copy link to copy the link and paste the URL in your web browser.
+   ![](media/cai-l4-t4-s8.png)
 
-8. Make sure to open Bot Framework Composer from within Power Virtual Agents. This ensures that Composer has all the necessary plugins needed for integration with Power Virtual Agents.
+9. 
+
 
 ## Task 5 - Create an adaptive card using Bot Framework Composer
 
