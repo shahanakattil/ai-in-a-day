@@ -92,225 +92,31 @@ The way organizations are building conversational systems is evolving, with bots
    
 7. Now under Condition of Chinese, click on **+** to Add node.
 
-   ![](media/cai-l4-t4-s7.png)
+   ![](media/cai-l4-t4-s7new.png)
 
 8. Select **Send a message** from drop-down while adding a node.
 
    ![](media/cai-l4-t4-s8.png)
 
-9. 
+9. Enter the Chinese food items given here in message section: **Noodles, Spring Rolls, Fried Chicken**
 
+   ![](media/cai-l4-t4-s9.png)
 
-## Task 5 - Create an adaptive card using Bot Framework Composer
+10. Now under Condition of Italian, click on **+** to Add node.
 
-1. When Bot Framework Composer application launches, you will be prompted to sign in. Sign in with the provided credentials.
+    ![](media/cai-l4-t4-s10.png)
 
-   >**Note**: You can find the credentials in the environment details tab.
+11. Select **Send a message** from drop-down while adding a node.
 
-2. Once you sign in, you will be asked to import your bot to a new project. The **Name** field will be auto-populated. If it's empty, fill the name field with the name of your bot **AI-Bot-<inject key="DeploymentID" enableCopy="false"/> (1)** which you created on the **Power virtual agents** page. Then, click **Create (2)**.
+    ![](media/cai-l4-t4-s11.png)
 
-   ![](media/import-bot.1.png)
+12. Enter the Italian food items given here in message section: **Pizza, Pasta, Truffles**
 
-   >**Note**: In the occasion where the following screen does not appear in Composer on launch, you will need to close the application and launch it again from Power Virtual Agents.
+    ![](media/cai-l4-t4-s12.png)
 
-3. Once you see your project appear in Composer. On the left side of the screen, click on **Create (1)** and click on the three dots **(2)**. Then, select **+ Add a dialog (3)**.
+13. Review the topic trigger, click on **Save** to save the topic.
 
-   ![](media/lab3-task5-1.png)
-
-4. On the **Create a dialog** pop up, specify the name of your new dialog as **Meals (1)**, then click **OK (2)**.
-
-   ![](media/meals-dialog.1.png)
-   
-5. From the left navigation menu, click on the **Bot Responses (1)** tab. With the **Meals (2)** dialogue selected click on **Show code (3)**. This is where we will enter the **JSON** text to create the adaptive card.
-
-   ![](media/bot-show-code.1.png)
-
-6. Paste in the following LG (Language Generation) Template. This template sets out the names of the meals and their related image that will be displayed in the adaptive card.
-
-   ```
-   # Chicken()
-   -Chicken
-   # Steak()
-   -Steak
-   # Tofu()
-   -Tofu
-   # SteakImageURL()
-   -https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/FY-23-AI-Updates/04-conversational-ai/media/steak.png
-   # ChickenImageURL()
-   -https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/FY-23-AI-Updates/04-conversational-ai/media/chicken.png
-   # TofuImageURL()
-   -https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/FY-23-AI-Updates/04-conversational-ai/media/tofu.png
-   ```
-   
-   ![](media/lab3-task5-step6.png)
-
-7. Next, paste in the following JSON code into the same window, underneath the code entered previous step.
-
-   ````
-   # adaptivecardjson_meals(location) 
-   - ```
-   { 
-      "type": "AdaptiveCard", 
-      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json", 
-      "version": "1.1", 
-      "body": [ 
-               { 
-               "type": "TextBlock", 
-               "text": "Meal delivery options for ${location}:", 
-               "size": "Medium", 
-               "weight": "Bolder" 
-         }, 
-         { 
-               "type": "ColumnSet", 
-               "columns": [ 
-                  { 
-                     "type": "Column", 
-                     "width": "stretch", 
-                     "items": [ 
-                           { 
-                              "type": "Image", 
-                              "url": "${SteakImageURL()}", 
-                              "size": "Stretch", 
-                              "spacing": "Medium", 
-                              "horizontalAlignment": "Center" 
-                           } 
-                     ] 
-                  }, 
-                  { 
-                     "type": "Column", 
-                     "width": "stretch", 
-                     "items": [ 
-                           { 
-                              "type": "Image", 
-                              "url": "${ChickenImageURL()}", 
-                              "horizontalAlignment": "Center" 
-                           } 
-                     ] 
-                  }, 
-                  { 
-                     "type": "Column", 
-                     "width": "stretch", 
-                     "items": [ 
-                           { 
-                              "type": "Image", 
-                              "url": "${TofuImageURL()}", 
-                              "horizontalAlignment": "Center" 
-                           } 
-                     ] 
-                  } 
-               ] 
-         }, 
-         { 
-               "type": "ColumnSet", 
-               "columns": [ 
-                  { 
-                     "type": "Column", 
-                     "width": "stretch", 
-                     "items": [ 
-                           { 
-                              "type": "TextBlock", 
-                              "text": "${Steak()}", 
-                              "wrap": true, 
-                              "horizontalAlignment": "Center"                             
-                           } 
-                     ] 
-                  }, 
-                  { 
-                     "type": "Column", 
-                     "width": "stretch", 
-                     "items": [ 
-                           { 
-                              "type": "TextBlock", 
-                              "text": "${Chicken()}", 
-                              "wrap": true, 
-                              "horizontalAlignment": "Center" 
-                           } 
-                     ] 
-                  }, 
-                  { 
-                     "type": "Column", 
-                     "width": "stretch", 
-                     "items": [ 
-                           { 
-                              "type": "TextBlock", 
-                              "text": "${Tofu()}", 
-                              "wrap": true, 
-                              "horizontalAlignment": "Center" 
-                           } 
-                     ] 
-                  } 
-               ] 
-         } 
-      ] 
-   } 
-   ```
-   ````
-   
-   ![](media/code-2.png)
-
-8. The last code to enter is the activity that will display this **adaptive card** in the Bot Framework dialog. Paste in the following code in the same window in composer, underneath the code entered in previous step.
-
-   ```
-   # AdaptiveCardMeals(location)
-   [Activity
-   Attachments = ${json(adaptivecardjson_meals(location))}
-   ]
-
-   ```
-   
-   ![](media/lab3-task5-step8.png)
-
-9. From the left navigation bar, click on the **Create (1)** tab and select **BeginDialog (2)**.
-
-   ![](media/begin-dialog-1.1.png)
-
-10. Click on the **'+' (1)** button, and select **Send a response (2)**.
-
-    ![](media/begin-dialog-2.1.png)
-
-11. In the Bot responses box that appears on the right side of the screen, select **Show Code** and enter the following JSON code.
-
-    ![](media/show-code-1.png)
-
-    ```
-    ${AdaptiveCardMeals(virtualagent.user_city)}
-    ```
-
-    ![](media/lab3-task5-step11.png)   
-
-    >**Note**: Ensure there is only one – symbol at the start of the code.
-
-12. On the left navigation menu select **Publish (1)**.  Select your **bot (2)**, then click on **Publish selected bots (3)**. 
-
-    ![](media/publish-bot-01.1.png)   
-
-13. You need to provide the Email/Username: <inject key="AzureAdUserEmail"></inject> in the signup popup for publishing bot. Confirm that you want to publish the bot by clicking on **Okay**. The bot should now be in the process of publishing.
-
-    ![](media/publish-bot-02.png)  
-
-14. You will get a confirmation message in Composer once the bot has been published.
-
-    ![](media/publish-bot-03.png) 
-
-## Task 6 - Add your composer content to Power Virtual Agents bot
-
-1. Go back to the **Power Virtual Agents** page.
-
-2. On the **Topics** tab notice the adaptive card action you just published from Composer is visible in your list of topics. 
-
-   >**Note**: You may need to refresh the screen your page to see it.
-
-3. Open the topic: **Meal delivery options**.
-
-   ![](media/select-mdo.png)
-
-4. Click on **+** to add a node at the bottom of the Topic. Then select **Redirect to another topic (1)** and select **Meals (2)**.
-
-   ![](media/redirect-another-topic.1.png)
-
-5. Your Power Virtual Agents bot will call the Bot Framework dialog to display an adaptive card. Click on **Save** icon at the top right.
-
-   ![](media/lab3-task6-step5.png)
+    ![](media/cai-l4-t4-s13new.png)
 
 ## Task 7 - Test your Bot
 
