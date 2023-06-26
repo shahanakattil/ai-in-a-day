@@ -1,22 +1,8 @@
-# Lab 4 - Conversational AI with Azure Bot Service and Cognitive Services
+# Lab 4 - Conversational AI with Bot Service using Power Virtual Agents
 
 This lab covers Power Virtual Agents as the hero bot service and demonstrates how to use Copilot option to create bot.
 
-## Task 1 - Explore dashboard of COVID-19 data
-
-Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
-
-![Azure AI in a Day datasets](./media/SHC1.png)
-
-To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
-
-To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see `Introducing the updated mobile layout` popup screen, then close it by click on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
-
-> **Note:** Please close and reopen the Power BI Desktop document if it throws an error in the first attempt.
-
- ![Azure AI in a Day datasets](./media/powerbireportopen.png)
-
-## Task 2 - Explore lab scenario
+## Task 1 - Explore lab scenario
 
 The power of Machine Learning also comes into play when dealing with human-to-machine interfaces. While classical interfaces like native or web applications are ubiquitous, the new approaches based on conversational AI are becoming increasingly popular. Having the capability to interact with intelligent services using natural language is quickly becoming the norm rather than the exception. Using Conversational AI, analysts can find the research of interest by using simple natural language phrases.
 
@@ -27,7 +13,7 @@ The way organizations are building conversational systems is evolving, with bots
 
 ![Architecture for Lab 4](media/ai-workflow.png)
 
-## Task 3 - Setting up Power Virtual Agents and Create your first Chatbot
+## Task 2 - Setting up Power Virtual Agents and Create your first Chatbot
 
 1. Navigate to **[Power Virtual agents page](https://powervirtualagents.microsoft.com/en-us/)** and select **Start Free**.
 
@@ -64,7 +50,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/chatbothomepage.png)
 
-## Task 4 - Create a new Topic
+## Task 3 - Create a new Topic
 
 1. One the **Power Virtual Agents** page, select **Topics** **(1)**, **New Topic** **(2)** and select **Create with Copilot** **(3)**.
 
@@ -118,7 +104,7 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/cai-l4-t4-s13new.png)
 
-## Task 5 - Test your Bot
+## Task 4 - Test your Bot
 
 1. Once the Topic is saved, click on **Test bot** from right-top corner.
 
