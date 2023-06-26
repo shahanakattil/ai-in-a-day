@@ -1,6 +1,6 @@
 # Lab 4 - Conversational AI with Azure Bot Service and Cognitive Services
 
-This lab covers Power Virtual Agents as the hero bot service and demonstrates how to extend your PVA bot using Bot Framework Composer.
+This lab covers Power Virtual Agents as the hero bot service and demonstrates how to use Copilot option to create bot.
 
 ## Task 1 - Explore dashboard of COVID-19 data
 
