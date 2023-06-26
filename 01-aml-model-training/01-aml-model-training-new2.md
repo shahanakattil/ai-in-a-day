@@ -67,7 +67,7 @@ The high-level steps covered in the lab are:
     
 1. On the **Overview (1)** page, click on **Launch studio (2)**. If you are prompted to sign in again, use the same lab credentials you used to login to the Azure portal. Close the welcome **pop-up** if any with the cross icon.  
     
-    ![Launch Machine Learning Studio](./media/lab1-aml-launch.png)
+    ![Launch Machine Learning Studio](media/ml-workspace-launch.png)
 
 1. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is `running` **(2)**.
    
