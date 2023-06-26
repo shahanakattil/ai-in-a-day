@@ -1,11 +1,12 @@
 # Release Notes - FY23
 
-### 20 June 2023
+### 26 June 2023
 
- - Minor update in the lab.
+ - Major update in the lab.
  
    - Updated instructions in Lab-2 to get connection string from Storage account.
    - Automated Metric Advisor resource deployment.
+   - Content Updated in **Lab-4 Conversational AI with Bot Service using Power Virtual Agents**. As integration between power virtual agents and bot composer framework has been removed from Microsoft, we have updated the content to create bot using copilot feature in Power Virtual Agents. 
 
 
 ### 17 April 2023
