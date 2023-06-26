@@ -67,19 +67,19 @@ The high-level steps covered in the lab are:
     
 1. On the **Overview (1)** page, click on **Launch studio (2)**. If you are prompted to sign in again, use the same lab credentials you used to login to the Azure portal. Close the welcome **pop-up** if any with the cross icon.  
     
-    ![Launch Machine Learning Studio](./media/lab1-aml-launch.png)
+    ![Launch Machine Learning Studio](media/ml-workspace-launch.png)
 
 1. In Azure Machine Learning Studio, select `Compute` **(1)** from the left side menu and verify that your compute instance is `running` **(2)**.
    
    * Compute instance name: notebook<inject key="DeploymentID" enableCopy="false"/>
 
-    ![Verify Azure Machine Learning compute instance is running](./media/compute_status.png)
+    ![Verify Azure Machine Learning compute instance is running](media/ml-compute-status.png)
 
     >**Note**: If you launched Azure Machine Learning Studio right after your lab environment was provisioned, you might find the compute instance in a provisioning state. In this case, wait a few minutes until it changes its status to `Running`.
 
-1. In the Azure Machine Learning Studio under **Compute** **(1)**, open the **Terminal** **(2)** environment.
+1. In the Azure Machine Learning Studio under **Compute** **(1)**, click on **... (2)** and, open the **Terminal** **(2)** environment.
     
-   ![](./media/mlterminal.png)
+   ![](media/ml-terminal.png)
    
 1. Run the following commands and make sure all commands will execute successfully.
     
@@ -101,7 +101,7 @@ The high-level steps covered in the lab are:
 
 1. From the `Application` section associated with the compute instance, select `Jupyter` **(1)**. 
 
-    ![](./media/clickjupiter01.png)
+    ![](media/ml-jupyter.png)
 
 1. If you see **IMPORTANT NOTE: Always use trusted code**, then check on **Yes, I Understand** and then click on **Continue**.
 
@@ -136,15 +136,15 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 1. In the Azure Machine Learning Studio, switch to the `Automated ML` **(1)** section and select `+ New Automated ML job` **(2)** to start the Automated ML.
 
-    ![Automated ML section is open. + New Automated ML run button is highlighted.](media/lab1-task5-1.png)
+    ![Automated ML section is open. + New Automated ML run button is highlighted.](media/ml-newautomatedml.png)
 
 2. In the `Create a new Automated ML job` wizard pick `COVID19Articles_Train_Vectors` **(1)** as your dataset and select `Next` **(2)** to proceed.
 
-    ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/lab1-task5-step2.png)
+    ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/ml-select-dataset.png)
 
 3. In order to be able to launch an Automated ML run we need to provision an Azure ML compute cluster. On the `Configure job` step select `aml-compute-cpu` **(1)** from the list of clusters. If the list is empty select `+ New` **(2)** link.
 
-    ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/lab1-computenew.png)
+    ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/ml-computecluster.png)
 
    >**Note**: If you already have `aml-compute-cpu` cluster provisioned, feel free to skip to step 6.
 
@@ -205,7 +205,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     Select `Finish` **(3)** to kick off the Automated ML experiment run. If this is the first time you are launching an experiment run in the Azure Machine Learning workspace, the total experiment time will be longer than the `training job time` we have set. This is because of the time needed to start the Compute Cluster and deploy the container images required to execute.
 
-    ![Validation is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/validationtype-aml.png)
+    ![Validation is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/ml-test-type.png)
 
 11. On the following screen, you will see the progress of your experiment run.
 
@@ -217,15 +217,15 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 1. In the Azure Machine Learning Studio, navigate to the **Jobs (1)** section and locate the **COVID19_Classification** experiment **(2)**. Select the experiment name link.
 
-   ![Locate the completed experiment ](media/lab1-task6-1.png)
+   ![Locate the completed experiment ](media/ml-job.png)
 
 2. You will navigate to the experiment details page, where you should see the list of experiment runs. Locate the first run **(1)** listed here, which has the status **Completed**. The name of the run can be different in your environment and may not match the below screenshot.
 
-   ![Locate the completed AutoML run](media/locate-completed-run01.png)
+   ![Locate the completed AutoML run](media/ml-completedjob.png)
 
 3. On the **Run details** page, navigate to the **Models (1)** section. Check the values on the  **AUC weighted** column **(2)**, which is the primary metric selected in the AutoML run configuration. See how the best model was selected; this is the one with the maximum metric value. This is also the model for which the explanation was generated. Select **View explanation (3)**.
 
-   ![Explore the models section of the AutoML run](media/inspect-models02.png)
+   ![Explore the models section of the AutoML run](media/ml-test-module.png)
 
 4. On the **Explanations (preview) (1)** section, browse the available explanations **(2)** and investigate the **Model performance (3)** representation.
 

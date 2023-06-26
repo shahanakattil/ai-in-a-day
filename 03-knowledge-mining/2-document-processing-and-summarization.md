@@ -118,15 +118,15 @@ The high-level steps covered in the lab are:
 
 6. Choose the **covid19temp (1)** index and enter `RNA interference`**(2)** into the Query string input box, and then select **Search (3)**. This will return the documents which include the phrase "RNA interference."
 
-    ![Articles with the phrase RNA interference.](media/search-explorer-rna-interference.1.png)
+    ![Articles with the phrase RNA interference.](media/searchservice1.png)
 
 7. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` **(1)** and then select **Search (2)**.  This will return 53 documents **(3)**.
 
-    ![53 articles reference Brazil.](media/search-explorer-brazil-1.1.png)
+    ![53 articles reference Brazil.](media/searchservice2.png)
 
 8. Each document returns a large number of fields, but we can specify the fields we would like to see. In the Query string input box, enter the phrase `UNC Chapel Hill&$select=metadata/authors, metadata/title` **(1)** and then select **Search (2)**. This will return the title as well as detailed information on each author.
 
-    ![Paper titles and authors referencing UNC Chapel Hill.](media/search-explorer-unc.1.png)
+    ![Paper titles and authors referencing UNC Chapel Hill.](media/searchservice3.png)
 
 9. The Azure Search service can also generate a demo application. Return to the search service and select the **covid19temp** index.
 
@@ -224,7 +224,7 @@ The high-level steps covered in the lab are:
 
 4. Under **Settings**, navigate to the **Resource sharing (CORS)** page. 
 
-    ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/storage-cors.png)
+    ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/storaheaccount-CORS.png)
     
 5. On Resource sharing (CORS) page, ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)** and then select **Save** **(3)** to save the CORS settings.  
 
@@ -249,11 +249,11 @@ The high-level steps covered in the lab are:
 
 8. Navigate to the [Form Recognizer Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Create new** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
 
-    ![Create new custom model](media/lab2a-t6-frs1.png)
+    ![Create new custom model](media/form-custom-model.png)
 
 9. In the Custom models page, under **My Project** click on **+ Create a project**.
   
-    ![Project](media/lab2a-t6-frs2.png)
+    ![Project](media/form-myproject.png)
 
 10. In the Enter Project Details pane, enter the Project Name as **covid19abstract (1)** and add the description as **Extracting Abstract from the documents (2)**. Click on **Continue (3)**.
 
@@ -268,7 +268,7 @@ The high-level steps covered in the lab are:
     | Form Recognizer or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
     
 
-    ![Project](media/SHC2a.6.11.1.0.png)
+    ![Project](media/form-service.png)
     
 12. Next in the connect training data source, select the below values from the drop-down and click on **Continue (6)**.
 
@@ -280,7 +280,7 @@ The high-level steps covered in the lab are:
     | Blob container              | Select `covid19temp` **(4)**                 |
     | Folder path                 | Enter `papers` **(5)**                      |
 
-    ![Project](media/AI-2a.6.12.1.png)
+    ![Project](media/form-training.png)
     
     > **Note**: If you are unable to select the Storage Account in connect training data source page, signout and signin from the Form Recognizer Studio with the given credentials. Re-perform the task from Step-8.
 
@@ -294,25 +294,27 @@ The high-level steps covered in the lab are:
     
     ![The Abstract tag has been created](media/lab2a-t6-frs9.png)
 
-15. Wait for the layout to be run for the first document and locate the document's abstract. Note that for some documents, the abstract is on the second page. Then, move on to the next document. We will tag each of the five papers, so navigate to each in turn, allowing the layout to be run. In order for tagging to be successful, we must first run the layout of a document, navigate to another document, and return to this first document before we begin tagging. Layout generation happens once per document, after which we can return to it and tag our abstract.
+15. Click on **Run layout**.Wait for the layout to be run for the first document and locate the document's abstract. Note that for some documents, the abstract is on the second page. Then, move on to the next document. We will tag each of the five papers, so navigate to each in turn, allowing the layout to be run. In order for tagging to be successful, we must first run the layout of a document, navigate to another document, and return to this first document before we begin tagging. Layout generation happens once per document, after which we can return to it and tag our abstract.
+
+    ![Running layout for a document](media/from-runlayout.png)
 
     ![Running layout for a document](media/lab2a-t6-frs7.png)
 
 16. Return to the second PDF and select each word in the **Abstract** section. After highlighting this, select the **Abstract** tag to tag this section. Note that you will need to select each word individually rather than selecting a box. After selecting the **Abstract** tag, you should see a tag logo next to the PDF. If you see the tag logo, this means that tagging was successful for this document.
 
-    ![The first PDF has been viewed, and the second PDF has been tagged](media/new-lab2a-4.png)
+    ![The first PDF has been viewed, and the second PDF has been tagged](media/form-abstract1.png)
 
 17. Return to the first PDF and highlight the word **ABSTRACT** and the abstract. If the abstract is lengthy, as in this example, it is okay to include just the first paragraph. Then, select the **Abstract** tag to tag this document. Ensure that the viewed icon (an eye) changes to a tag icon. If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful. In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
 
-    ![The first PDF has been tagged](media/lab2a-t6-frs11.png)
+    ![The first PDF has been tagged](media/form-abstract2.png)
 
 18. Continue tagging until all five of the top papers are tagged. Once we have tagged five documents, select the **Train** option.
     
-    ![The first five PDFs have been tagged](media/lab2a-t6-frs12.png)
+    ![The first five PDFs have been tagged](media/form-abstract3.png)
 
-19. In a pop-up to Train a new model, enter **Abstracts (1)** as the ModelID, and select the **Neural (2)** from the drop-down as Build Mode. Then click on **Train (3)**.
+19. In a pop-up to Train a new model, enter **Abstracts (1)** as the ModelID, and select the **Neural (Recommended) (2)** from the drop-down as Build Mode. Then click on **Train (3)**.
 
-    ![The option to train a model has been selected](media/lab2a-t6-frs13.1.png)
+    ![The option to train a model has been selected](media/form-model.png)
 
 20. Training a model may take up to 10-15 minutes to get succeed. Click on **Go to models**. 
 
@@ -376,6 +378,8 @@ In this task, we are creating a text summarization application with the client l
 
    ```bash
    cd C:\Temp\AzureSearch\
+   ```
+   ```bash
    python summarization.py
    ```
    

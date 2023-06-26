@@ -58,19 +58,19 @@ The way organizations are building conversational systems is evolving, with bots
 
    Now select **Create (3)**.
 
-   ![](media/ai-L3-t3-s7.1.png)
+   ![](media/chatbotcreate.png)
 
 8. Once the Bot is created you will see the Power virtual agents page.
 
-   ![](media/after-bot-creation.png)
+   ![](media/chatbothomepage.png)
 
 ## Task 4 - Create a new Topic
 
-1. One the **Power Virtual Agents** page, select **Topics (1)** and **New Topic (2)**.
+1. One the **Power Virtual Agents** page, select **Topics (1)**, **New Topic (2)** and select **From blank (3)**.
 
-   ![](media/PVA-new-topic.png)
+   ![](media/chatbot-topic.png)
 
-2. Name the topic as **Meal delivery options (1)**, and on the **Trigger phrases** pane, add the following trigger phrases by clicking on **+**: 
+2. Name the topic as **Meal delivery options (1)**, and on the **Trigger phrases** pane, under Phrases click on **Edit (2)**, and add the following trigger phrases by clicking on **+ (3)**: 
 
    ```
    what meals can I order
@@ -85,30 +85,25 @@ The way organizations are building conversational systems is evolving, with bots
    entrees available for delivery
    ```
 
-   ![](media/trigger-phrases-1.1.png)
+   ![](media/chatbot-trigger.png)
 
+3. Now select the **'+'** under the trigger phrase and add **Ask a question** node.
 
-3. Delete the blank message node under the trigger phrases on the authoring canvas.
+   ![](media/chatgpt-question.png)
 
-   ![](media/delete-01.png)
-
-4. Now select the **'+'** under the trigger phrase and add **Ask a question** node.
-
-   ![](media/add-a-question.png)
-
-5. On the **Question** node, add the following details:
+4. On the **Question** node, add the following details:
 
       - **Ask a question (1)**: ```What city are you in?``` 
       - **Identify (2)**: ```City``` 
-      - **Save Response as (3)**: On the **Variable properties** tab that opens up, set the name of the variable as ```user_city``` **(4)** and **usage** as **Bot (Any topic can access) (5)**
+      - **Save Response as (3)**: On the **Variable properties** tab that opens up, set the name of the variable as ```user_city``` **(4)** and **usage** as **Global (Any topic can access) (5)**
 
-   ![](media/add-a-question-1.2.png)
+   ![](media/chatbot-adding-questions.png)
 
    >**Note**: The variable just created will be used in the adaptive card. For the variable to be used within Bot Framework Composer, it must be set with Bot scope rather than Topic scope.
 
-6. Save the **topic**, then return to the list of topics. 
+5. Save the **topic**, then return to the list of topics. 
 
-   ![](media/save-bot.png)
+   ![](media/chatbot-save.png)
 
 7. Select **Topics** from the left menu, then click on the downward arrow and select **Open in Bot Framework Composer**.
 
