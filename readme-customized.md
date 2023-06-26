@@ -97,9 +97,8 @@ The high-level steps covered in the lab are:
  - Semantic search using semantic configuration in Azure Portal
  - Semantic Query using REST APIs
 
-### Lab 4 - Conversational AI with Azure Bot Service and Cognitive Services
+### Lab 4 - Conversational AI with Bot Service using Power Virtual Agents
 
- - Explore dashboard of COVID-19 data
  - Explore lab scenario
  - Setting up Power Virtual Agents and Create your first Chatbot.
  - Create a new topic
