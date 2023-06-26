@@ -103,10 +103,7 @@ The high-level steps covered in the lab are:
  - Explore lab scenario
  - Setting up Power Virtual Agents and Create your first Chatbot.
  - Create a new topic
- - Create an adaptive card using Bot Framework Composer
- - Add your composer content to Power Virtual Agents bot
  - Test your Bot
- - Enabling Voice Access for Our Bot 
 
 ### Lab 5 - Metrics Advisor with Azure Cognitive Services
 
