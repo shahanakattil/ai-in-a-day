@@ -66,26 +66,13 @@ The way organizations are building conversational systems is evolving, with bots
 
 ## Task 4 - Create a new Topic
 
-1. One the **Power Virtual Agents** page, select **Topics (1)**, **New Topic (2)** and select **From blank (3)**.
+1. One the **Power Virtual Agents** page, select **Topics** **(1)**, **New Topic** **(2)** and select **Create with Copilot** **(3)**.
 
-   ![](media/chatbot-topic.png)
+   ![](media/cai-l4-t4-s1.png)
 
-2. Name the topic as **Meal delivery options (1)**, and on the **Trigger phrases** pane, under Phrases click on **Edit (2)**, and add the following trigger phrases by clicking on **+ (3)**: 
+2. In Create it with Copilot pane, Name your topic as **Meal delivery options** **(1)**. In Create a topic to ..., enter the given phrase **Checking for food options based on the city you are in** **(2)**, then click on **Create** **(3)**.
 
-   ```
-   what meals can I order
-   ```
-   ```
-   what meal options do you have
-   ```
-   ```
-   what dishes do you deliver
-   ```
-   ```
-   entrees available for delivery
-   ```
-
-   ![](media/chatbot-trigger.png)
+   ![](media/cai-l4-t4-s2.png)
 
 3. Now select the **'+'** under the trigger phrase and add **Ask a question** node.
 
