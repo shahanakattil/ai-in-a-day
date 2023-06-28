@@ -110,7 +110,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/cai-l4-t4-s13new1.png)
 
-2. In the Test bot pane, enter the given phrase ```What can I make for lunch?``` and then enter city name as ```Seattle```. 
+2. In the Test bot pane, enter the given phrase ```What are my meal delivery options?``` and then enter city name as ```Seattle```. 
 
    ![](media/cai-l4-t4-s14.png)
 
