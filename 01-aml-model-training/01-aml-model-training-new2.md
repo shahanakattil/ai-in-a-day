@@ -231,7 +231,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![View explanations](media/lab1-task6-step4.png)
 
-## Task 7 - Generate a Responsible AI dashboard
+## Task 7 - Analyze Errors and Explore Interpretability of Models
 
 Responsible AI is a governance framework that documents how a specific organization is addressing the challenges around artificial intelligence (AI) from both an ethical and legal point of view. Resolving ambiguity for where responsibility lies if something goes wrong is an important driver for responsible AI initiatives.
 
@@ -242,21 +242,21 @@ Responsible AI is a governance framework that documents how a specific organizat
  - Ethical AI initiatives have processes in place to seek out and eliminate bias in machine learning models.
  - Efficient AI is able to run continually and respond quickly to changes in the operational environment.
 
-1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `fairness-dashboard-loan-allocation.ipynb` notebook.
+1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `erroranalysis-dashboard-regression-superconductor.ipynb` notebook.
 
    ![Select Note Book](./media/ai1.1.png)
    
-2. Once the notebook is opened in the Jupyter application, select **Kernel** **(1)**. Then select **Change kernel** **(2)** and make sure to select **Python (aiw-ai-kernel) **(3)**.
+2. Once the notebook is opened in the Jupyter application, select **Kernel** **(1)**. Then select **Change kernel** **(2)** and make sure to select **Python (aiw-ai-kernel) (3)**.
 
-   ![](./media/ai1.4.png)
+   ![](./media/ai-img1.png)
 
-3. Execute the cells inside `fairness-dashboard-loan-allocation.ipynb` notebook one by one (Click on the **Run** button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
+3. Execute the cells inside `erroranalysis-dashboard-regression-superconductor.ipynb` notebook one by one (Click on the **Run** button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
 
-   ![Run Note Book Cell](./media/ai1.5.png)
+   ![Run Note Book Cell](./media/ai-img2.png)
    
 4. Please make sure to read the cells carefully and run them one by one. Click on **Endpoint** URL at the end of the notebook before moving the next task.
 
-     ![Note Book Cell Output](./media/ai1.6.png)
+     ![Note Book Cell Output](./media/ai-img3.png)
 
 ## Task 8 -  Explore the Responsible AI dashboard
 
