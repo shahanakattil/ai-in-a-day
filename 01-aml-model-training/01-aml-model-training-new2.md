@@ -242,42 +242,34 @@ Responsible AI is a governance framework that documents how a specific organizat
  - Ethical AI initiatives have processes in place to seek out and eliminate bias in machine learning models.
  - Efficient AI is able to run continually and respond quickly to changes in the operational environment.
 
-1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `fairness-dashboard-loan-allocation.ipynb` notebook.
+1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `erroranalysis-dashboard-regression-superconductor.ipynb` notebook.
 
-   ![Select Note Book](./media/ai1.1.png)
+   ![Select Note Book](./media/ai-img0.png)
    
-2. Once the notebook is opened in the Jupyter application, select **Kernel** **(1)**. Then select **Change kernel** **(2)** and make sure to select **Python (aiw-ai-kernel) **(3)**.
+2. Once the notebook is opened in the Jupyter application, select **Kernel** **(1)**. Then select **Change kernel** **(2)** and make sure to select **Python (aiw-ai-kernel) (3)**.
 
-   ![](./media/ai1.4.png)
+   ![](./media/ai-img1.png)
 
-3. Execute the cells inside `fairness-dashboard-loan-allocation.ipynb` notebook one by one (Click on the **Run** button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
+3. Execute the cells inside `erroranalysis-dashboard-regression-superconductor.ipynb` notebook one by one (Click on the **Run** button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
 
-   ![Run Note Book Cell](./media/ai1.5.png)
+   ![Run Note Book Cell](./media/ai-img2.png)
    
 4. Please make sure to read the cells carefully and run them one by one. Click on **Endpoint** URL at the end of the notebook before moving the next task.
 
-     ![Note Book Cell Output](./media/ai1.6.png)
+     ![Note Book Cell Output](./media/ai-img3.png)
 
 ## Task 8 -  Explore the Responsible AI dashboard
 
-1. Once you click on the endpoint, you will be navigated to the Welcome to the Fairness dashboard page in the new tab. You can go through the features mentioned in the page and click on **Get started** to start the assessment.
+1. Once you click on the endpoint, you will be navigated to the a new tab. Select **Tree map (1)** from the drop-down next to **Error Explorer**, the tree visualization uses the mutual information between each feature and the error to best separate error instances from success instances hierarchically in the data. This simplifies the process of discovering and highlighting common failure patterns. Choose the **Mean squared error (2)** for **Select metric** and click on **Explanation** to view the results. 
 
-    ![Run Note Book Cell](./media/ai1.7.png)
+   ![Run Note Book Cell](./media/ai-img4.png)
  
-1. On the Sensitive features page, select anyone of the available sensitive feature (In this we are selecting sex) and click on **Next**.
+1. On the **Explanation** page, observe the box plot graph representing the data. In addition you can explore the available options to view different representation of data.
 
-    ![Run Note Book Cell](./media/ai1.8.png)
+    ![Run Note Book Cell](./media/ai-img5.png)
 
-1. On the Performance metrics page, select anyone of the available performance metric from the list (In this we are selecting Accuracy) and click on **Next**.
+1. Navigate back to **Error explorer** page, and choose **Heat map (1)** form the drop-down next to **Error Explorer**. Set the **Select mertic** to **Mean absolute error (2)**, choose **number_of_elements (3)** for **Rows: Feature 1** and **mean_atomic_mass (4)**.
 
-    ![Run Note Book Cell](./media/ai1.9.png)
+    ![Run Note Book Cell](./media/ai-img6.png)
 
-1. On the Fairness metrics page, select anyone of the fairness metric from the list (In this we are selecting Demographic parity difference) and click on **Next**.
 
-    ![Run Note Book Cell](./media/ai1.10.png)
-
-1. You will see the chart of Model comparison assessment and refer the key insights displayed in the same page.
-
-    ![Run Note Book Cell](./media/ai1.11.png)
-
- 
