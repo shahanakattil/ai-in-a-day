@@ -231,7 +231,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![View explanations](media/lab1-task6-step4.png)
 
-## Task 7 - Analyze Errors and Explore Interpretability of Models
+## Task 7 - Generate a Responsible AI dashboard
 
 Responsible AI is a governance framework that documents how a specific organization is addressing the challenges around artificial intelligence (AI) from both an ethical and legal point of view. Resolving ambiguity for where responsibility lies if something goes wrong is an important driver for responsible AI initiatives.
 
