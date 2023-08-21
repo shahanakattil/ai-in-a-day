@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Knowledge Mining with Azure Cognitive Search",
+    "Language": "English",
+    "Files": [
+   
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/prod1/03-knowledge-mining/MSSPL-knowledgeMining.md",
+        "Order": 1
+      }
+   
+    ]
+  }
+]
+ 

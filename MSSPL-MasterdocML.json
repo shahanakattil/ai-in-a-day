@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Getting Started with Azure Cognitive Services",
+    "Language": "English",
+    "Files": [
+   
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/prod1/01-aml-model-training/MSSPL-MachineLearning.md",
+        "Order": 1
+      }
+   
+    ]
+  }
+]
+ 
