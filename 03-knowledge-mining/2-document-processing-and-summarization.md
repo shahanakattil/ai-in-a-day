@@ -14,7 +14,7 @@ To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Over
 
  ![Azure AI in a Day datasets](./media/powerbireportopen.png)
 
-> **Note:** Please close and reopen the Power BI Desktop document if it throws an error in the first attempt.
+> **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
 
 ## Task 2 - Explore lab scenario
 
@@ -55,7 +55,7 @@ The high-level steps covered in the lab are:
 
     ![The Search service's API key is copied to the clipboard.](media/lab2-t3-step5.1.png)
 
-1. Navigate to Storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** **(1)**, select **Access keys** **(2)** under Security + networking from left-menu. Click on **Show** of connection string under Key1 **(3)** to see the connection string and **copy the connection string** **(4)** under Key1. Paste this into a text file.
+1. Navigate to Storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** **(1)**, select **Access keys** **(2)** under Security + networking from left-menu. Click on **Show** of the connection string under Key1 **(3)** to see the connection string and **copy the connection string** **(4)** under Key1. Paste this into a text file.
 
    ![](media/ai-sa-cs.png)
 
@@ -67,7 +67,7 @@ The high-level steps covered in the lab are:
 
 1. Open the `covid19temp_datasource.schema` file with a text editor and replace the segment starting `<< TODO:` with your Storage account connection string **<inject key="storageAccountConnectionString" enableCopy="true"/>** and then save the file.
 
-1. Now, open `AzureSearchIndex.ps1` file with a text editor and copy the code present in it.
+1. Now, open the `AzureSearchIndex.ps1` file with a text editor and copy the code present in it.
 
 1. Open a new PowerShell prompt and navigate to the following directory:
 
@@ -110,7 +110,7 @@ The high-level steps covered in the lab are:
 
 4. Select the **Indexes** tab and ensure that you have two indexes created. If the Document Count is 0 for either, wait a couple of minutes and select **Refresh** until the document count appears.
 
-    ![The list of Azure Search indexes.](media/search-service-indexes.png)
+    ![The list of Azure Search indexes.](media/AI1.png)
 
 5. Once documents are available, select **Search Explorer** to open up the Search Explorer.
 
@@ -192,13 +192,13 @@ The high-level steps covered in the lab are:
 
 11. Navigate to the **Indexers (1)** section and select the **covid19temp (2)** indexer.
 
-    ![The covid19temp indexer is selected.](media/azure-search-indexers.1.png)
+    ![The covid19temp indexer is selected.](media/AI2.png)
 
 12. Select the **Run (1)** option to process the 100 documents. Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes (2)** to run the indexer.
 
     ![The covid19temp indexer is set to run.](media/azure-search-indexers-run.1.png)
 
-13. The indexer will run. It should complete within 15-30 seconds to process the 100 new documents. You may need to select **Refresh** to see the indexer's progress.
+13. The indexer will run. It should be completed within 15-30 seconds to process the 100 new documents. You may need to select **Refresh** to see the indexer's progress.
 
     ![The covid19temp indexer has finished running.](media/azure-search-indexers-refresh.png)
 
@@ -206,7 +206,7 @@ The high-level steps covered in the lab are:
 
     ![The covid19temp index has finished updating.](media/azure-search-indexes-update.png)
 
-15. Select the **covid19temp** index to return to the Search explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` **(1)** and selecting **Search (2)**. This will now return 57 results **(3)** instead of the prior 53.
+15. Select the **covid19temp** index to return to the Search Explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` **(1)** and selecting **Search (2)**. This will now return 57 results **(3)** instead of the prior 53.
 
     ![57 documents pertaining to Brazil.](media/search-explorer-brazil-2.1.png)
 
@@ -226,7 +226,7 @@ The high-level steps covered in the lab are:
 
     ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/storaheaccount-CORS.png)
     
-5. On Resource sharing (CORS) page, ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)** and then select **Save** **(3)** to save the CORS settings.  
+5. On the Resource Sharing (CORS) page, ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)** and then select **Save** **(3)** to save the CORS settings.  
 
    | Parameter                   | Value                                              |
    | --------------------------- | -------------------------------------------------- |
@@ -282,7 +282,7 @@ The high-level steps covered in the lab are:
 
     ![Project](media/form-training.png)
     
-    > **Note**: If you are unable to select the Storage Account in connect training data source page, signout and signin from the Form Recognizer Studio with the given credentials. Re-perform the task from Step-8.
+    > **Note**: If you are unable to select the Storage Account in the Connect training data source page, signout and signin from the Form Recognizer Studio with the given credentials. Re-perform the task from Step-8.
 
 13. Review the details and click on **Create project**.
 
@@ -316,7 +316,7 @@ The high-level steps covered in the lab are:
 
     ![The option to train a model has been selected](media/form-model.png)
 
-20. Training a model may take up to 10-15 minutes to get succeed. Click on **Go to models**. 
+20. Training a model may take up to 10-15 minutes to succeed. Click on **Go to models**. 
 
     ![The option to train a model has been selected](media/lab2a-t6-frs14.png)
 
@@ -340,7 +340,7 @@ The high-level steps covered in the lab are:
     
 24. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Form Recognizer Studio: [Quickstart: Form Recognizer Studio - Azure Applied AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-form-recognizer-studio)
 
-## Task 7 - Document Summarization via Cognitive Service for Language integration
+## Task 7 - Document Summarization via Cognitive Service for Language Integration
 
 Summarization is one of the features offered by [Azure Cognitive Service for Language](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/overview), a collection of machine learning and AI algorithms in the cloud for developing intelligent applications that involve written language. Use this article to learn more about this feature, and how to use it in your applications.
 
@@ -348,7 +348,7 @@ In general, there are two approaches for automatic document summarization: extra
 
 In this task, we are creating a text summarization application with the client library for Python. You will create a Python application that can summarize documents or text-based customer service conversations.
 
-1. Return to Azure Portal page and navigate to the **AI-in-a-Day** resource group and select the Cognitive services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>**.
+1. Return to the Azure Portal page and navigate to the **AI-in-a-Day** resource group and select the Cognitive services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>**.
 
     ![The Cognitive Services service is selected](media/cognitive-service-latest-select.png)
 

@@ -10,9 +10,9 @@ Understanding the source datasets is very important in AI and ML. To help you ex
 
 To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
 
-To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see `Introducing the updated mobile layout` pop-up screen, then close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
+To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview` file located on the desktop (**C:\Users\public\desktop**) 💻 of the virtual machine provided with your environment. If you see the `Introducing the updated mobile layout` pop-up screen, then close it by clicking on `Got it`. Collapse the **Fields** and **Visualizations** tabs to see the clear report.
 
-> **Note:** Please close and reopen the Power BI Desktop document if it throws an error in the first attempt.
+> **Note:** Please close and reopen the Power BI Desktop document if it throws an error on the first attempt.
 
  ![Azure AI in a Day datasets](./media/powerbireportopen.png)
 
@@ -121,7 +121,7 @@ The high-level steps covered in the lab are:
 
    ![](./media/selectaikernel.png)
 
-3. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on the 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
+3. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on the 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
 
    ![Run Note Book Cell](./media/SHC4.png)
    ![Note Book Cell Output](./media/SHC4.1.png)
@@ -161,7 +161,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 5. To configure cluster settings set the values given below:
 
     - **Compute name (1)**: aml-<inject key="DeploymentID" enableCopy="false"/>
-    - **Minimum number od nodes (2)**: 0
+    - **Minimum number of nodes (2)**: 0
     - **Maximum number of nodes (3)**: 4  
 
     Setting the number of maximum nodes to a higher value will allow Automated ML to run more experiments in parallel but will also increase your costs.
@@ -233,11 +233,11 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 ## Task 7 - Generate a Responsible AI dashboard
 
-Responsible AI is a governance framework that documents how a specific organization is addressing the challenges around artificial intelligence (AI) from both an ethical and legal point of view. Resolving ambiguity for where responsibility lies if something goes wrong is an important driver for responsible AI initiatives.
+Responsible AI is a governance framework that documents how a specific organization is addressing the challenges around artificial intelligence (AI) from both an ethical and legal point of view. Resolving ambiguity about where responsibility lies if something goes wrong is an important driver for responsible AI initiatives.
 
 **Principles of responsible AI**: AI and the machine learning models that support it should be comprehensive, explainable, ethical and efficient.
 
- - Comprehensiveness – comprehensive AI has clearly defined testing and governance criteria to prevent machine learning from being hacked easily.
+ - Comprehensiveness – Comprehensive AI has clearly defined testing and governance criteria to prevent machine learning from being hacked easily.
  - Explainable AI is programmed to describe its purpose, rationale and decision-making process in a way that can be understood by the average end user.
  - Ethical AI initiatives have processes in place to seek out and eliminate bias in machine learning models.
  - Efficient AI is able to run continually and respond quickly to changes in the operational environment.
@@ -254,17 +254,17 @@ Responsible AI is a governance framework that documents how a specific organizat
 
    ![Run Note Book Cell](./media/ai-img2.png)
    
-4. Please make sure to read the cells carefully and run them one by one. Click on **Endpoint** URL at the end of the notebook before moving the next task.
+4. Please make sure to read the cells carefully and run them one by one. Click on the **Endpoint** URL at the end of the notebook before moving to the next task.
 
      ![Note Book Cell Output](./media/ai-img3.png)
 
 ## Task 8 -  Explore the Responsible AI dashboard
 
-1. Once you click on the endpoint, you will be navigated to the a new tab. Select **Tree map (1)** from the drop-down next to **Error Explorer**, the tree visualization uses the mutual information between each feature and the error to best separate error instances from success instances hierarchically in the data. This simplifies the process of discovering and highlighting common failure patterns. Choose the **Mean squared error (2)** for **Select metric** and click on **Explanation** to view the results. 
+1. Once you click on the endpoint, you will be navigated to the new tab. Select **Tree map (1)** from the drop-down next to **Error Explorer**, the tree visualization uses the mutual information between each feature and the error to best separate error instances from success instances hierarchically in the data. This simplifies the process of discovering and highlighting common failure patterns. Choose the **Mean squared error (2)** for **Select metric** and click on **Explanation** to view the results. 
 
    ![Run Note Book Cell](./media/ai-img4.png)
  
-1. On the **Explanation** page, observe the box plot graph representing the data. In addition you can explore the available options to view different representation of data.
+1. On the **Explanation** page, observe the box plot graph representing the data. In addition, you can explore the available options to view different representations of data.
 
     ![Run Note Book Cell](./media/ai-img5.png)
 
