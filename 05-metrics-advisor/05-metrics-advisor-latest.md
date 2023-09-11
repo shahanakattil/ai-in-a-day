@@ -26,7 +26,7 @@ You should follow all of the steps provided in this section _before_ taking part
 
 ## Task 2 - Prepare the COVID cases per age group dataset
 
-1. Navigate to back to the resource group `AI-in-a-Day`. Select the AML Workspace named **ai-in-a-day-<inject key="DeploymentID" enableCopy="false"/>**
+1. Navigate back to the resource group `AI-in-a-Day`. Select the AML Workspace named **ai-in-a-day-<inject key="DeploymentID" enableCopy="false"/>**
   
     ![Select AML](media/select-aml-ws.png)
    
@@ -38,7 +38,7 @@ You should follow all of the steps provided in this section _before_ taking part
 
     ![Launch Studio](media/select-notebook-1.png)
 
-3. In the Notebooks environment, check if `preparemetricsfeeddata.ipynb` is there in **Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** folder. If it is not there download and import using next steps.
+3. In the Notebooks environment, check if `preparemetricsfeeddata.ipynb` is there in **Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** folder. If it is not there download and import using the next steps.
 
     ![Launch Studio](media/lab-user-1.png)
 
@@ -55,7 +55,7 @@ You should follow all of the steps provided in this section _before_ taking part
    
     ![Launch Studio](media/select-upload-2.png)
 
-6. With the Azure Machine Learning Studio and the Jupyter notebook environment open, select the `preparemetricsfeeddata.ipynb` from **Notebooks** under **Author**.
+6. With the Azure Machine Learning Studio and the Jupyter Notebook environment open, select the `preparemetricsfeeddata.ipynb` from **Notebooks** under **Author**.
 
     ![preparemetricfeeddata notebook](media/notebook_05.png)
 
@@ -67,7 +67,7 @@ You should follow all of the steps provided in this section _before_ taking part
 
    ![authenticate pop-up](media/AI-notebook-authenticate.png)
    
-8. Make sure **Python 3.8 -AzureML** kernel is selected as shown in the below screenshot.
+8. Make sure the **Python 3.8 -AzureML** kernel is selected as shown in the below screenshot.
 
    ![Kernal selected](media/AI-notebook-python3.8-kernal.png) 
 
@@ -110,7 +110,7 @@ The high-level steps covered in the lab are:
 
 ## Task 3 - Configure the "COVID cases by age group" Metrics Advisor data feed
 
-1. Back to the Home page in Azure Portal, in the list of your recent resources, locate the Azure Metrics Advisor workspace and select it. If you are prompted to sign in again, use the same lab Azure credentials you used at the previous step.
+1. Back to the Home page in Azure Portal, In the list of your recent resources, locate the Azure Metrics Advisor workspace and select it. If you are prompted to sign in again, use the same lab Azure credentials you used in the previous step.
 ![Open Azure Metrics Advisor](./media/metrics-advisor.png)
 
 2. On the Metrics Advisor **Overview (1)** page, select the `Go to your workspace` **(2)** link in the first section to start working with the web-based [Metrics Advisor workspace](https://metricsadvisor.azurewebsites.net/).
@@ -119,7 +119,7 @@ The high-level steps covered in the lab are:
 
 3. On the Metrics Advisor welcome page, select your directory, subscription and workspace information and select **Get started**. You are now prepared to create your first Data feed.
 
-   > **Note:-** If you see that **Get Started** button is not available for you, it means that the metric advisor service is not fully available yet. Please wait for 20-30 minutes and try again after refreshing the page.
+   > **Note:-** If you see that the **Get Started** button is not available for you, it means that the metric advisor service is not fully available yet. Please wait for 20-30 minutes and try again after refreshing the page.
 
     ![Connect to Metrics Advisor workspace](./media/AI4.3.6.png)
 
@@ -130,7 +130,7 @@ The high-level steps covered in the lab are:
     - **Source type**: `Azure Blob Storage (JSON)` **(2)**
     - **Granularity**: `Daily` **(3)**
     - **Ingest data since (UTC)**: `2023-02-01` **(4)**
-    - **Connection string**: provide the connection string from the blob storage access keys page. (`key1 - Connection string` copied on **Before the hands-on lab** part or else please  follow Task 1 of Before the hands-on lab) **(5)**
+    - **Connection string**: Provide the connection string from the blob storage access keys page. (`key1 - Connection string` copied on **Before the hands-on lab** part or else please  follow Task 1 of Before the hands-on lab) **(5)**
     - **Container**: `jsonmetrics` **(6)**
     - **Blob template**: `%Y-%m-%d.json` (since the daily json files are provided in with naming format) **(7)**
     - **JSON format version**: `v2` (since we'll be using the age group dimension in our data schema) **(8)**
@@ -166,13 +166,13 @@ The high-level steps covered in the lab are:
 
 ## Task 4 - Explore anomalies detected in data
 
-After the data feed is added, Metrics Advisor will attempt to ingest metric data from the specified start date. It will take some time for data to be fully ingested, and you can view the ingestion status by clicking Ingestion progress at the top of the data feed page. If data is ingested, Metrics Advisor will apply detection and continue to monitor the source for new data.
+After the data feed is added, Metrics Advisor will attempt to ingest metric data from the specified start date. It will take some time for data to be fully ingested, and you can view the ingestion status by clicking Ingestion Progress at the top of the data feed page. If data is ingested, the Metrics Advisor will apply detection and continue to monitor the source for new data.
 
-When detection is applied, you can select one of the metrics listed in the data feed to find the Metric detail to:
+When detection is applied, you can select one of the metrics listed in the data feed to find the Metric detail:
 
 - View visualizations of all time series slices under this metric
 - Update detecting configuration to meet expected results
-- Set up notification for detected anomalies
+- Set up notifications for detected anomalies
 
 
 1. Select the **Visit data-feed: covid-ages** button to navigate to the data feed overview page.
@@ -201,7 +201,7 @@ When detection is applied, you can select one of the metrics listed in the data 
 >
 > - Spend a few minutes to change some parameters inside the **Metric-level configuration** section and observe the change of reported anomalies (red points) on the series data representation.
 
-5. In the metrics browser page, select the **Incidents** tab and click on the **Dimension filter** you can see the below output. 
+5. In the metrics browser page, select the **Incidents** tab and click on the **Dimension filter** You can see the below output. 
 
     ![Filter incidents by hospitalization steps](media/HOL-Task5-step5.png)
 
@@ -211,7 +211,7 @@ When detection is applied, you can select one of the metrics listed in the data 
 
 ## Task 5 - Perform root cause analysis
 
-1. In the incidents hub, notice the **Root cause** section where you should find reported the main contributors for the detected anomaly, age groups that contributed to the sum of cases reported as anomaly. Also, in the **Diagnostic** tree, hover on each age group node to investigate its contribution to the incident.
+1. In the incidents hub, notice the **Root cause** section where you should find reported the main contributors for the detected anomaly, and age groups that contributed to the sum of cases reported as anomaly. Also, in the **Diagnostic** tree, hover on each age group node to investigate its contribution to the incident.
     ![Incident Hub diagnostics](media/HOL-Task6-step1.png)
 
 2. In the **Diagnostics** **(1)** section, navigate to **Metrics drill-down** **(2)** and notice the current point Value (number of cases) and the **Diff**  from the identified **Baseline** **(3)**. Choose the **age_group (4)** dimension to drill-down by it and check the same **Delta** percent and **Diff** **(5)** value from the baseline for the anomalies detected at the current point. 
@@ -253,7 +253,7 @@ Smart detection is powered by machine learning that learns patterns from histori
 
 ### Subtask 2: Change threshold
 
-Change threshold is normally used when metric data generally stay around a certain range. The threshold is set according to **Change percentage**. The **Change threshold**  mode is able to detect anomalies in the scenarios:
+A change threshold is normally used when metric data generally stay around a certain range. The threshold is set according to **Change percentage**. The **Change threshold**  mode is able to detect anomalies in the scenarios:
 
 -   Your data is normally stable and smooth. You want to be notified when there are fluctuations.
 -   Your data is normally unstable and fluctuates a lot. You want to be notified when it becomes too stable or flat.
@@ -414,7 +414,7 @@ Leave the rest of the options as default. The **Holiday event** pane should look
 
 ## Task 12 - View recent incidents
 
-Metrics Advisor detects anomalies on all your time series data as they're ingested. However, not all anomalies need to be escalated because they might not have a significant impact. Aggregation will be performed on anomalies to group related ones into incidents. 
+Metrics Advisor detects anomalies in all your time series data as they're ingested. However, not all anomalies need to be escalated because they might not have a significant impact. Aggregation will be performed on anomalies to group related ones into incidents. 
 
 1. To view these incidents select the **Incident** tab on the metrics details page.
 
