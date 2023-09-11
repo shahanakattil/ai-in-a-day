@@ -1,6 +1,6 @@
 # Lab 4 - Conversational AI with Bot Service using Power Virtual Agents
 
-This lab covers Power Virtual Agents as the hero bot service and demonstrates how to use Copilot option to create bot.
+This lab covers Power Virtual Agents as the hero bot service and demonstrates how to use the Copilot option to create a bot.
 
 ## Task 1 - Explore lab scenario
 
@@ -9,7 +9,7 @@ The power of Machine Learning also comes into play when dealing with human-to-ma
 With Machine Learning (ML) and Natural Language Processing (NLP), Human Machine Interface (HMI) technologies are enjoying an increased adoption year over year. By 2021, [the growth of chatbots in this space is expected to be 25.07%](https://www.technavio.com/report/chatbot-market-industry-analysis).
 
 
-The way organizations are building conversational systems is evolving, with bots being built and maintained by a mix of technical and non-technical roles. Power Virtual Agents has the capability to extend its capabilities by allowing pro-code users to create dialogs / topics using the Azure Bot Framework Composer today. This experience allows technical and non-technical teams to build and host their solutions on a single platform.
+The way organizations are building conversational systems is evolving, with bots being built and maintained by a mix of technical and non-technical roles. Power Virtual Agents has the capability to extend its capabilities by allowing pro-code users to create dialogs/topics using the Azure Bot Framework Composer today. This experience allows technical and non-technical teams to build and host their solutions on a single platform.
 
 ![Architecture for Lab 4](media/ai-workflow.png)
 
@@ -50,7 +50,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/chatbothomepage.png)
 
-## Task 3 - Create a new Topic
+## Task 3 - Create a New Topic
 
 1. One the **Power Virtual Agents** page, select **Topics** **(1)**, **New Topic** **(2)** and select **Create with Copilot** **(3)**.
 
@@ -60,7 +60,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/cai-l4-t4-s2.png)
 
-3. Once you are in the topic pane, **close** **(1)** the edit with copilot pane from right-side. Scroll-down to the **Message** node, click on **eclipse** button **(2)** and select **Delete** **(3)** to remove the message node.
+3. Once you are in the topic pane, **close** **(1)** the edit with copilot pane from right-side. Scroll down to the **Message** node, click on the **eclipse** button **(2)** and select **Delete** **(3)** to remove the message node.
 
    ![](media/cai-l4-t4-s3.png)
 
@@ -68,7 +68,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/cai-l4-t4-s4.png)
 
-5. Select **Ask a question** from drop-down while adding a node.
+5. Select **Ask a question** from the drop-down while adding a node.
 
    ![](media/cai-l4-t4-s5.png)
 
@@ -80,11 +80,11 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/cai-l4-t4-s7new.png)
 
-8. Select **Send a message** from drop-down while adding a node.
+8. Select **Send a message** from the drop-down while adding a node.
 
    ![](media/cai-l4-t4-s8.png)
 
-9. Enter the Chinese food items given here in message section: **Noodles, Spring Rolls, Fried Chicken**
+9. Enter the Chinese food items given here in the message section: **Noodles, Spring Rolls, Fried Chicken**
 
    ![](media/cai-l4-t4-s9.png)
 
@@ -92,32 +92,32 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/cai-l4-t4-s10.png)
 
-11. Select **Send a message** from drop-down while adding a node.
+11. Select **Send a message** from the drop-down while adding a node.
 
     ![](media/cai-l4-t4-s11.png)
 
-12. Enter the Italian food items given here in message section: **Pizza, Pasta, Truffles**
+12. Enter the Italian food items given here in the message section: **Pizza, Pasta, Truffles**
 
     ![](media/cai-l4-t4-s12.png)
 
-13. Review the topic trigger, click on **Save** from right-top corner to save the topic.
+13. Review the topic trigger, and click on **Save** from the right-top corner to save the topic.
 
     ![](media/cai-l4-t4-s13new.png)
 
 ## Task 4 - Test your Bot
 
-1. Once the Topic is saved, click on **Test bot** from right-top corner.
+1. Once the Topic is saved, click on **Test bot** from the right-top corner.
 
    ![](media/cai-l4-t4-s13new1.png)
 
-2. In the Test bot pane, enter the given phrase ```What are my meal delivery options?``` and then enter city name as ```Seattle```. 
+2. In the Test bot pane, enter the given phrase ```What are my meal delivery options?``` and then enter the city name as ```Seattle```. 
 
    ![](media/cai-l4-t4-s14.png)
 
-3. You can select the type of food that you are looking for i.e, Chinese or Italian. 
+3. You can select the type of food that you are looking for i.e., Chinese or Italian. 
 
-4. Your chatbot should display names of the meals as shown below.
+4. Your chatbot should display the names of the meals as shown below.
 
    ![](media/cai-l4-t4-s15.png)
 
-Now you have successfully created and tested Power Virtual Agents bot
+Now you have successfully created and tested the Power Virtual Agents bot
