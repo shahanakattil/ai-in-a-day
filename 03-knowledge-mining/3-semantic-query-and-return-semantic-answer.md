@@ -24,9 +24,9 @@ The semantic ranking is an extension of the query execution pipeline that improv
    
 ## Task 2 - Creating a Semantic configuration
 
-1. Navigate to **Overview** **(1)** of **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then select **Indexes** **(2)**. You will be able to see the list of indexes, click on **covid19temp** **(3)** index for adding semantic configuration.
+1. Navigate to the **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then select **Indexes (1)**. You will be able to see the list of indexes, click on **covid19temp (2)** index for adding semantic configuration.
 
-   ![Semantic config](media/lab2b-ssp4.png)
+   ![Semantic config](media/AI4.png)
    
 2. In the **covid19temp** index pane, select **Semantic configurations** **(1)** and click on **+ Add semantic configuration** **(2)**.
 
