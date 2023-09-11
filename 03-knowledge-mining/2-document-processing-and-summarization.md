@@ -110,7 +110,7 @@ The high-level steps covered in the lab are:
 
 4. Select the **Indexes** tab and ensure that you have two indexes created. If the Document Count is 0 for either, wait a couple of minutes and select **Refresh** until the document count appears.
 
-    ![The list of Azure Search indexes.](media/search-service-indexes.png)
+    ![The list of Azure Search indexes.](media/AI1.png)
 
 5. Once documents are available, select **Search Explorer** to open up the Search Explorer.
 
@@ -192,7 +192,7 @@ The high-level steps covered in the lab are:
 
 11. Navigate to the **Indexers (1)** section and select the **covid19temp (2)** indexer.
 
-    ![The covid19temp indexer is selected.](media/azure-search-indexers.1.png)
+    ![The covid19temp indexer is selected.](media/AI2.png)
 
 12. Select the **Run (1)** option to process the 100 documents. Although we can configure an indexer to run periodically, this indexer will only run when manually engaged.  Select **Yes (2)** to run the indexer.
 
