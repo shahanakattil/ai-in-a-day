@@ -229,7 +229,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 4. On the **Explanations (preview) (1)** section, browse the available explanations **(2)** and investigate the **Model performance (3)** representation.
 
-   ![View explanations](media/lab1-task6-step4.png)
+   ![View explanations](media/L1-T6-S4.png)
 
 ## Task 7 - Generate a Responsible AI dashboard
 

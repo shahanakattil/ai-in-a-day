@@ -6,6 +6,8 @@ Semantic search is a premium feature in Azure Cognitive Search that invokes a se
 
 The semantic ranking is an extension of the query execution pipeline that improves precision by reranking the top matches of an initial result set. In order to complete processing within the expected latency of a query operation, inputs to the semantic ranker are consolidated and reduced so that the underlying summarization and reranking steps can be completed as quickly as possible.
 
+>**Note**: Ensure to complete Lab 2 before proceeding with this lab.
+
 ## Task 1 - Enabling the Semantic search (preview) in the Cognitive Search service
 
 1. Navigate to **AI-in-a-Day** resource group in the [Azure portal](https://portal.azure.com).

@@ -53,7 +53,7 @@ The high-level steps covered in the lab are:
 
 1. Navigate to the **Keys (1)** under Settings and **copy the Primary admin key (2)**. Paste this into a text file.
 
-    ![The Search service's API key is copied to the clipboard.](media/lab2-t3-step5.1.png)
+    ![The Search service's API key is copied to the clipboard.](media/L2-T3-S5.png)
 
 1. Navigate to Storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** **(1)**, select **Access keys** **(2)** under Security + networking from left-menu. Click on **Show** of the connection string under Key1 **(3)** to see the connection string and **copy the connection string** **(4)** under Key1. Paste this into a text file.
 
@@ -130,7 +130,7 @@ The high-level steps covered in the lab are:
 
 9. The Azure Search service can also generate a demo application. Return to the search service and select the **covid19temp** index.
 
-    ![The covid19temp index is selected.](media/azure-search-indexes-covid19temp.png)
+    ![The covid19temp index is selected.](media/L2-T4-S9.png)
 
 10. Select the **Create Demo App** option.
 
@@ -204,7 +204,7 @@ The high-level steps covered in the lab are:
 
 14. Return to the **Indexes** tab for the Search service and ensure that the **covid19temp** index has 965 documents. If it still reads 865, wait 30 seconds and select **Refresh** to check again.
 
-    ![The covid19temp index has finished updating.](media/azure-search-indexes-update.png)
+    ![The covid19temp index has finished updating.](media/L2-T5-S14.png)
 
 15. Select the **covid19temp** index to return to the Search Explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` **(1)** and selecting **Search (2)**. This will now return 57 results **(3)** instead of the prior 53.
 
@@ -239,17 +239,17 @@ The high-level steps covered in the lab are:
    ![The CORS options are set for the storage account](media/storage-cors-blob.png)
 
 
-6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Form recognizer resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
+6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Document Intelligence resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![The Cognitive Services service is selected](media/form-recog-new.png)
+    ![The Cognitive Services service is selected](media/L2-T6-S6.png)
 
 7. Select the **Keys and Endpoint** **(1)** option under Resource Management and click on **Show Keys** **(2)**. Then, copy the value for **KEY 1** **(3)** and the **Endpoint** **(4)**. Paste these into a text file for later use.
 
-    ![The Cognitive Services key and endpoint are selected](media/fr-key-endpoint.png)
+    ![The Cognitive Services key and endpoint are selected](media/L2-T5-S7.png)
 
-8. Navigate to the [Form Recognizer Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Create new** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
+8. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Create new** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
 
-    ![Create new custom model](media/form-custom-model.png)
+    ![Create new custom model](media/L2-T6-S8.png)
 
 9. In the Custom models page, under **My Project** click on **+ Create a project**.
   
@@ -348,13 +348,13 @@ In general, there are two approaches for automatic document summarization: extra
 
 In this task, we are creating a text summarization application with the client library for Python. You will create a Python application that can summarize documents or text-based customer service conversations.
 
-1. Return to the Azure Portal page and navigate to the **AI-in-a-Day** resource group and select the Cognitive services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>**.
+1. Return to the Azure Portal page and navigate to the **AI-in-a-Day** resource group and select the Azure AI services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![The Cognitive Services service is selected](media/cognitive-service-latest-select.png)
+    ![The Cognitive Services service is selected](media/L2-T7-S1.png)
 
 2. Select the **Keys and Endpoint (1)** option under Resource Management.  Then, copy the value for **KEY 1 (2)** and the **Endpoint (3)**.  Paste these into a text file for later use.
 
-    ![The Cognitive Services key and endpoint are selected](media/upd-l2a-t7-s2.png)
+    ![The Cognitive Services key and endpoint are selected](media/L2-T7-S2.png)
 
 3. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd`, and select the **Command Prompt** application.
 
