@@ -130,7 +130,7 @@ The high-level steps covered in the lab are:
 
 9. The Azure Search service can also generate a demo application. Return to the search service and select the **covid19temp** index.
 
-    ![The covid19temp index is selected.](media/azure-search-indexes-covid19temp.png)
+    ![The covid19temp index is selected.](media/L2-T4-S9.png)
 
 10. Select the **Create Demo App** option.
 
@@ -241,7 +241,7 @@ The high-level steps covered in the lab are:
 
 6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Document Intelligence resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![The Cognitive Services service is selected](L2-T6-S6.png)
+    ![The Cognitive Services service is selected](media/L2-T6-S6.png)
 
 7. Select the **Keys and Endpoint** **(1)** option under Resource Management and click on **Show Keys** **(2)**. Then, copy the value for **KEY 1** **(3)** and the **Endpoint** **(4)**. Paste these into a text file for later use.
 
