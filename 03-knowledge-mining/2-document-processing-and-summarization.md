@@ -1,6 +1,6 @@
-# Lab 2 - Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language
+# Lab 2 - Document Processing and Summarization with Azure Document Intelligence and Cognitive Service for Language
 
-This lab covers Azure Cognitive Services, particularly [Azure Cognitive Search](https://azure.microsoft.com/services/search/) and the [Form Recognizer](https://azure.microsoft.com/services/cognitive-services/form-recognizer/) service.
+This lab covers Azure Cognitive Services, particularly [Azure Cognitive Search](https://azure.microsoft.com/services/search/) and the [Document Intelligence](https://azure.microsoft.com/services/cognitive-services/form-recognizer/) service.
 
 ## Task 1 - Explore the dashboard of COVID-19 data
 
@@ -210,7 +210,7 @@ The high-level steps covered in the lab are:
 
     ![57 documents pertaining to Brazil.](media/search-explorer-brazil-2.1.png)
 
-## Task 6 - Using the Form Recognizer Studio
+## Task 6 - Using the Document Intelligence Studio
 
 1. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials. Then, select **Resource groups**.
 
@@ -253,7 +253,7 @@ The high-level steps covered in the lab are:
 
 9. In the Custom models page, under **My Project** click on **+ Create a project**.
   
-    ![Project](media/form-myproject.png)
+    ![Project](media/L2-T6-S9.png)
 
 10. In the Enter Project Details pane, enter the Project Name as **covid19abstract (1)** and add the description as **Extracting Abstract from the documents (2)**. Click on **Continue (3)**.
 
@@ -265,7 +265,7 @@ The high-level steps covered in the lab are:
     | --------------------------- | -------------------------------------|
     | Subscription                | Select the default subscription  **(1)**    |
     | Resource Group              | Select `AI-in-a-Day` **(2)**                |
-    | Form Recognizer or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
+    | Document Intelligence or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
     
 
     ![Project](media/form-service.png)
@@ -282,7 +282,7 @@ The high-level steps covered in the lab are:
 
     ![Project](media/form-training.png)
     
-    > **Note**: If you are unable to select the Storage Account in the Connect training data source page, signout and signin from the Form Recognizer Studio with the given credentials. Re-perform the task from Step-8.
+    > **Note**: If you are unable to select the Storage Account in the Connect training data source page, signout and signin from the Document Intelligence Studio with the given credentials. Re-perform the task from Step-8.
 
 13. Review the details and click on **Create project**.
 
@@ -296,21 +296,21 @@ The high-level steps covered in the lab are:
 
 15. Click on **Run layout**.Wait for the layout to be run for the first document and locate the document's abstract. Note that for some documents, the abstract is on the second page. Then, move on to the next document. We will tag each of the five papers, so navigate to each in turn, allowing the layout to be run. In order for tagging to be successful, we must first run the layout of a document, navigate to another document, and return to this first document before we begin tagging. Layout generation happens once per document, after which we can return to it and tag our abstract.
 
-    ![Running layout for a document](media/from-runlayout.png)
+    ![Running layout for a document](media/L2-T6-S15.png)
 
     ![Running layout for a document](media/lab2a-t6-frs7.png)
 
 16. Return to the second PDF and select each word in the **Abstract** section. After highlighting this, select the **Abstract** tag to tag this section. Note that you will need to select each word individually rather than selecting a box. After selecting the **Abstract** tag, you should see a tag logo next to the PDF. If you see the tag logo, this means that tagging was successful for this document.
 
-    ![The first PDF has been viewed, and the second PDF has been tagged](media/form-abstract1.png)
+    ![The first PDF has been viewed, and the second PDF has been tagged](media/L2-T6-S16.1.png)
 
 17. Return to the first PDF and highlight the word **ABSTRACT** and the abstract. If the abstract is lengthy, as in this example, it is okay to include just the first paragraph. Then, select the **Abstract** tag to tag this document. Ensure that the viewed icon (an eye) changes to a tag icon. If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful. In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
 
-    ![The first PDF has been tagged](media/form-abstract2.png)
+    ![The first PDF has been tagged](media/L2-T6-S17.png)
 
 18. Continue tagging until all five of the top papers are tagged. Once we have tagged five documents, select the **Train** option.
     
-    ![The first five PDFs have been tagged](media/form-abstract3.png)
+    ![The first five PDFs have been tagged](media/L2-T6-S18.png)
 
 19. In a pop-up to Train a new model, enter **Abstracts (1)** as the ModelID, and select the **Neural (Recommended) (2)** from the drop-down as Build Mode. Then click on **Train (3)**.
 
@@ -338,7 +338,7 @@ The high-level steps covered in the lab are:
 
     ![An analyzed document](media/lab2a-t6-frs19.1.png)
     
-24. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Form Recognizer Studio: [Quickstart: Form Recognizer Studio - Azure Applied AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-form-recognizer-studio)
+24. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Document Intelligence Studio: [Quickstart: Document Intelligence Studio - Azure Applied AI Services | Microsoft Docs](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0)
 
 ## Task 7 - Document Summarization via Cognitive Service for Language Integration
 

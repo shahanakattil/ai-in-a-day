@@ -76,9 +76,9 @@ The high-level steps covered in the lab are:
 - Explain the best model produced by AutoML
 - Assess AI systems and make data-driven decisions with Azure Machine Learning Responsible AI dashboard
 
-### Lab 2 - Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language
+### Lab 2 - Document Processing and Summarization with Azure Document Intelligence and Cognitive Service for Language
 
-This lab covers Azure Cognitive Search (index, knowledge store, custom skills) and Form Recognizer.
+This lab covers Azure Cognitive Search (index, knowledge store, custom skills) and Document Intelligence.
 
 The high-level steps covered in the lab are:
 
@@ -87,7 +87,7 @@ The high-level steps covered in the lab are:
 - Creating Azure Search Indexes
 - Querying Azure Search Indexes
 - Updating Azure Search Indexes
-- Introducing  the Form Recognizer Studio
+- Introducing  the Document Intelligence Studio
 - Document Summarization via Cognitive Service for Language integration
 
 ### Lab 3 - Knowledge Mining with Azure Cognitive Search
