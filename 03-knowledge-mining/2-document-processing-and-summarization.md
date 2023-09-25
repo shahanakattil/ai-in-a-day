@@ -1,6 +1,6 @@
-# Lab 2 - Document Processing and Summarization with Azure Form Recognizer and Cognitive Service for Language
+# Lab 2 - Document Processing and Summarization with Azure Document Intelligence and Cognitive Service for Language
 
-This lab covers Azure Cognitive Services, particularly [Azure Cognitive Search](https://azure.microsoft.com/services/search/) and the [Form Recognizer](https://azure.microsoft.com/services/cognitive-services/form-recognizer/) service.
+This lab covers Azure Cognitive Services, particularly [Azure Cognitive Search](https://azure.microsoft.com/services/search/) and the [Document Intelligence](https://azure.microsoft.com/services/cognitive-services/form-recognizer/) service.
 
 ## Task 1 - Explore the dashboard of COVID-19 data
 
@@ -210,7 +210,7 @@ The high-level steps covered in the lab are:
 
     ![57 documents pertaining to Brazil.](media/search-explorer-brazil-2.1.png)
 
-## Task 6 - Using the Form Recognizer Studio
+## Task 6 - Using the Document Intelligence Studio
 
 1. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials. Then, select **Resource groups**.
 
@@ -265,7 +265,7 @@ The high-level steps covered in the lab are:
     | --------------------------- | -------------------------------------|
     | Subscription                | Select the default subscription  **(1)**    |
     | Resource Group              | Select `AI-in-a-Day` **(2)**                |
-    | Form Recognizer or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
+    | Document Intelligence or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
     
 
     ![Project](media/form-service.png)
@@ -282,7 +282,7 @@ The high-level steps covered in the lab are:
 
     ![Project](media/form-training.png)
     
-    > **Note**: If you are unable to select the Storage Account in the Connect training data source page, signout and signin from the Form Recognizer Studio with the given credentials. Re-perform the task from Step-8.
+    > **Note**: If you are unable to select the Storage Account in the Connect training data source page, signout and signin from the Document Intelligence Studio with the given credentials. Re-perform the task from Step-8.
 
 13. Review the details and click on **Create project**.
 
@@ -338,7 +338,7 @@ The high-level steps covered in the lab are:
 
     ![An analyzed document](media/lab2a-t6-frs19.1.png)
     
-24. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Form Recognizer Studio: [Quickstart: Form Recognizer Studio - Azure Applied AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-form-recognizer-studio)
+24. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Document Intelligence Studio: [Quickstart: Document Intelligence Studio - Azure Applied AI Services | Microsoft Docs](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0)
 
 ## Task 7 - Document Summarization via Cognitive Service for Language Integration
 
