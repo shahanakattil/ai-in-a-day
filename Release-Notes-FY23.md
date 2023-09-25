@@ -1,5 +1,12 @@
 # Release Notes - FY23
 
+### 25 September 2023
+
+ - Minor update in the lab.
+ 
+   - Updated instructions and screenshots in Lab-2 with the latest naming convention and UI updates for Azure Form Recognizer.
+   - Azure Form Recognizer has been renamed to Azure AI Document Intelligence.
+   
 ### 26 June 2023
 
  - Major update in the lab.
