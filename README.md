@@ -20,7 +20,7 @@ This dataset is intended to mobilize researchers to apply recent advances in nat
 
 The corpus may be updated as new research is published in peer-reviewed publications and archival services like [bioRxiv](https://www.biorxiv.org/), [medRxiv](https://www.medrxiv.org/), and others.
 
-Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the begining of each lab.
+Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
 
 ![Azure AI in a Day datasets](./media/data-overview-01-01.png)
 
