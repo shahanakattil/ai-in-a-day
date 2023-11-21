@@ -8,7 +8,7 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
 >**Note**: Ensure to complete Lab 2 before proceeding with this lab.
 
-## Task 1 - Enabling the Semantic search (preview) in the Cognitive Search service
+## Task 1 - Enabling the Semantic ranker in the Cognitive Search service
 
 1. Navigate to **AI-in-a-Day** resource group in the [Azure portal](https://portal.azure.com).
 
@@ -16,13 +16,13 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
    
-3. Select the **Semantic search (preview)** under settings in the left menu.
+3. Select the **Semantic ranker** under settings in the left menu.
 
    ![Semantic search service to be selected](media/lab2b-ssp1.png)
    
-4. From the Semantic search (preview) pane, select the **Free** tier by clicking on **Select Plan**. Once you click on a select plan, a free tier plan will be selected for the Semantic search.
+4. From the Semantic ranker pane, select the **Free** tier by clicking on **Select Plan**. Once you click on a select plan, a free tier plan will be selected for the Semantic search.
 
-   ![Semantic search service free tier to be selected](media/lab2b-ssp2.png)
+   ![Semantic search service free tier to be selected](media/L3T1S4.png)
    
 ## Task 2 - Creating a Semantic Configuration
 
@@ -57,13 +57,16 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
    ![Semantic search](media/lab2b-ssp3.png)
    
-2. In the **Search explorer** pane, select the Index **covid19temp** **(1)** from the drop-down and click on the downward arrow to expand the **Query options (Preview)** **(2)**. Turn **On** **(3)** the Semantic search (preview), select **my-semantic-config** **(4)** from the drop-down under Semantic configuration, which you created in the previous task. Click on **Search** **(5)**.
+2. In the **Search explorer** pane, select the Index **covid19temp** **(1)**.Click on the **Query options** **(2)**.
+  ![Semantic search](media/L3T3S2.png)
 
-   ![Semantic search](media/lab2b-ssp7-latest.png)
+3. In a popup on the right side, turn **On** **(1)** the Semantic ranker, select **my-semantic-config** **(2)** from the drop-down under Semantic configuration, which you created in the previous task. Click on **Close** **(3)**. 
+
+   ![Semantic search](media/L3T3S3.png)
    
-3. Wait for a few seconds to complete the search and scroll down to the **Results** part on the same page. You will be able to see the output for the semantic search using semantic configuration.
+4. Click on **Search** **(1)**.Wait for a few seconds to complete the search and scroll down to the **Results** **(2)**part on the same page. You will be able to see the output for the semantic search using semantic configuration.
 
-   ![Semantic search](media/lab2b-ssp8-latest.png)
+   ![Semantic search](media/L3T3S4.png)
    
 ## Task 4 - Semantic Query using REST APIs
 
