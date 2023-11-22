@@ -85,6 +85,8 @@ Understanding the source datasets is very important in AI and ML. To help you ex
 
 ![Azure AI in a Day datasets](./media/SHC1.png)
 
+To get more details about the source datasets, check out the [Data Overview](https://github.com/CloudLabsAI-Azure/ai-in-a-day/blob/main/data-overview.md) section.
+
 To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Overview.pbix` file located on the desktop of the virtual machine provided with your environment.
 
 ## Task 2 - Explore lab scenario
