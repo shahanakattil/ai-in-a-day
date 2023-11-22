@@ -118,15 +118,15 @@ The high-level steps covered in the lab are:
 
 6. Choose the **covid19temp (1)** index and enter `RNA interference`**(2)** into the Query string input box, and then select **Search (3)**. This will return the documents which include the phrase "RNA interference."
 
-    ![Articles with the phrase RNA interference.](media/searchservice1.png)
+    ![Articles with the phrase RNA interference.](media/L2T4S6.png)
 
 7. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` **(1)** and then select **Search (2)**.  This will return 53 documents **(3)**.
 
-    ![53 articles reference Brazil.](media/searchservice2.png)
+    ![53 articles reference Brazil.](media/L2T4S7.png)
 
 8. Each document returns a large number of fields, but we can specify the fields we would like to see. In the Query string input box, enter the phrase `UNC Chapel Hill&$select=metadata/authors, metadata/title` **(1)** and then select **Search (2)**. This will return the title as well as detailed information on each author.
 
-    ![Paper titles and authors referencing UNC Chapel Hill.](media/searchservice3.png)
+    ![Paper titles and authors referencing UNC Chapel Hill.](media/L2T4S8.png)
 
 9. The Azure Search service can also generate a demo application. Return to the search service and select the **covid19temp** index.
 
@@ -142,7 +142,7 @@ The high-level steps covered in the lab are:
 
 12. Open the demo app HTML file. In the search box, enter the phrase **RNA interference (1)** and select the **Search icon (2)**. This will return 497 papers relating to RNA interference.
 
-    ![Use the demo app.](media/search-demo-app.1.png)
+    ![Use the demo app.](media/L2T4S12.png)
 
 ## Task 5 - Updating Azure Search Indexes
 
@@ -208,7 +208,7 @@ The high-level steps covered in the lab are:
 
 15. Select the **covid19temp** index to return to the Search Explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` **(1)** and selecting **Search (2)**. This will now return 57 results **(3)** instead of the prior 53.
 
-    ![57 documents pertaining to Brazil.](media/search-explorer-brazil-2.1.png)
+    ![57 documents pertaining to Brazil.](media/L2T5S15.png)
 
 ## Task 6 - Using the Document Intelligence Studio
 
