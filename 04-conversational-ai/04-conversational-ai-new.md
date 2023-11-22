@@ -13,64 +13,63 @@ The way organizations are building conversational systems is evolving, with bots
 
 ![Architecture for Lab 4](media/ai-workflow.png)
 
-## Task 2 - Setting up Power Virtual Agents and Create your first Chatbot
+## Task 2 - Setting up Microsoft Copilot Studio and Create your first Copilot
 
-1. Navigate to **[Power Virtual agents page](https://powervirtualagents.microsoft.com/en-us/)** and select **Start Free**.
+1. Navigate to **[Microsoft Copilot Studio page](https://www.microsoft.com/en-us/copilot/microsoft-copilot-studio)** and select **Try Free**. 
 
-   ![](media/power-virtual-agent-sign-up.png)
+   ![](media/L4T2S1.png)
 
-2. On the **Let's get you started**, verify that you are logged-in with your azure username **(1)** and select **Continue (2)**. 
+3. On the **Let's get you started**, enter your azure username **(1)** and select **Next (2)**. Then click on **Sign in.** 
 
-   ![](media/upd-l3-t3-s2.png)
+   ![](media/L4T2S2.png)
+   ![](media/L4T2S2.2.png)
 
-3. Once **Signed in**, under Create your account, **choose your respective region (1)** from the drop-down menu and click on **Get Started (2)**.
+5. Once **Signed in**, under Create your account, **choose your respective region (1)** from the drop-down menu and enter phone number and click on **Get Started (2)**.
    
-   ![](media/upd-l3-t3-s3.png)
+   ![](media/L4T2S3.png)
    
-4. Under the **Confirmation details (1)**, click on **Get Started (2)**.
+6. Under the **Confirmation details (1)**, click on **Get Started (2)**.
 
     ![](media/upd-l3-t3-s4.png)
 
-5. You have now successfully signed up for **Power Virtual Agents**.
+7. You have now successfully signed up for **Microsoft Copilot Studio**.
 
-6. On the **Welcome to Power Virtual Agents (1)** page, choose your respective region and select **Get Started (2)**.
+8. On the **Welcome to Microsoft Copilot Studio (1)** page, choose your respective region and select **Get Started (2)**.
 
-   ![](media/PVA-select-region.1.png)
+   ![](media/L4T2S6.png)
 
-7. On the **Create a Chatbot** page enter the following details:
+9. On the **Create a Copilot** page enter the following details:
 
-   - **Name of your bot (1)**: Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
+   - **Copilot name (1)**: Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
    - **What language will your bot speak? (2)**: Select **English (US)** from the dropdown.
 
    Now select **Create (3)**.
 
-   ![](media/chatbotcreate.png)
+   ![](media/L4T2S7.png)
 
-8. Once the Bot is created you will see the Power virtual agents page.
+10. Once the Bot is created you will see the Copilot Studio page.
 
-   ![](media/chatbothomepage.png)
+   ![](media/L4T2S8.png)
 
 ## Task 3 - Create a New Topic
 
-1. One the **Power Virtual Agents** page, select **Topics** **(1)**, **New Topic** **(2)** and select **Create with Copilot** **(3)**.
+1. One the **Microsoft Copilot Studio** page, select **Topics** **(1)**, **Add** **(2)**, click on **Topic** **(3)** from the drop down menu select **Create from description** **(4)**.
 
-   ![](media/cai-l4-t4-s1.png)
+   ![](media/L4T3S1.png)
 
 2. In Create it with Copilot pane, Name your topic as **Meal delivery options** **(1)**. In Create a topic to ..., enter the given phrase "**Checking for food options based on the city you are in**" **(2)**, then click on **Create** **(3)**.
 
    ![](media/cai-l4-t4-s2.png)
 
-3. Once you are in the topic pane, **close** **(1)** the edit with copilot pane from right-side. Scroll down to the **Message** node, click on the **eclipse** button **(2)** and select **Delete** **(3)** to remove the message node.
+3. Once you are in the topic pane, **close** the edit with copilot pane from right-side.
 
-   ![](media/cai-l4-t4-s3.png)
+4. On the **topics** pane, click on **+** at the bottom of the **Question** node to **Add node**.
 
-4. On the **topic** pane, click on **+** at the bottom to **Add node**.
-
-   ![](media/cai-l4-t4-s4.png)
+   ![](media/L4T3S4.png)
 
 5. Select **Ask a question** from the drop-down while adding a node.
 
-   ![](media/cai-l4-t4-s5.png)
+   ![](media/L4T3S5.png)
 
 6. Enter the question as "**What type of food would you like to order?**" **(1)** and under options for users, click on **New option** **(2)** to add types of food. Add **Chinese** and **Italian** **(3)** as shown in the below screenshot.
 
@@ -104,20 +103,20 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/cai-l4-t4-s13new.png)
 
-## Task 4 - Test your Bot
+## Task 4 - Test your Copilot
 
-1. Once the Topic is saved, click on **Test bot** from the right-top corner.
+1. Once the Topic is saved, click on **Test Copilot** from the right-top corner.
 
-   ![](media/cai-l4-t4-s13new1.png)
+   ![](media/L4T4S1.png)
 
-2. In the Test bot pane, enter the given phrase ```What are my meal delivery options?``` and then enter the city name as ```Seattle```. 
+2. In the Test copilot pane, enter the given phrase ```What are my meal delivery options?``` and then enter the city name as ```Seattle```. 
 
-   ![](media/cai-l4-t4-s14.png)
+   ![](media/L4T4S2.png)
 
 3. You can select the type of food that you are looking for i.e., Chinese or Italian. 
 
 4. Your chatbot should display the names of the meals as shown below.
 
-   ![](media/cai-l4-t4-s15.png)
+   ![](media/L4T4S4.png)
 
-Now you have successfully created and tested the Power Virtual Agents bot
+Now you have successfully created and tested the Microsoft Copilot.
