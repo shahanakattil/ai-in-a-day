@@ -316,15 +316,17 @@ The high-level steps covered in the lab are:
 
     ![The option to train a model has been selected](media/form-model.png)
 
-20. Training a model may take up to 10-15 minutes to succeed. Click on **Go to models**. 
+20. Training a model may take up to 45-60 minutes to succeed. Click on **Go to models**. 
 
     ![The option to train a model has been selected](media/lab2a-t6-frs14.png)
 
-21. After the model has finished training, you will see that the Status has succeeded.  Although the estimated accuracy is not great, we will use this model.
+    >**Note**: As Training a model will take up to 45-60 minutes to succeed. No need to wait for it, you can continue with next Lab. Come back later and review it after an hour.
+
+22. After the model has finished training, you will see that the Status has succeeded.  Although the estimated accuracy is not great, we will use this model.
 
     ![The Abstracts model has been trained](media/lab2a-t6-frs15.png)
 
-22. From the left menu, select the **Test (1)**. Click on **Browse for a file (2)**. 
+23. From the left menu, select the **Test (1)**. Click on **Browse for a file (2)**. 
 
     * In the Upload Files pop-up, click on **Choose file** **(1)**. Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf` file **(2)** and then click on **Add file** **(3)**.
     
@@ -334,11 +336,11 @@ The high-level steps covered in the lab are:
     
       ![An analyzed document](media/new-lab2a-5.png)
 
-23. Select **Result (1)** and click on **download icon (2)** to download JSON file. Find the location where the script was downloaded and observe the result code.
+24. Select **Result (1)** and click on **download icon (2)** to download JSON file. Find the location where the script was downloaded and observe the result code.
 
     ![An analyzed document](media/lab2a-t6-frs19.1.png)
     
-24. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Document Intelligence Studio: [Quickstart: Document Intelligence Studio - Azure Applied AI Services | Microsoft Docs](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0)
+25. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Document Intelligence Studio: [Quickstart: Document Intelligence Studio - Azure Applied AI Services | Microsoft Docs](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0)
 
 ## Task 7 - Document Summarization via Cognitive Service for Language Integration
 
