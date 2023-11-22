@@ -40,7 +40,7 @@ You should follow all of the steps provided in this section _before_ taking part
 
 3. In the Notebooks environment, check if `preparemetricsfeeddata.ipynb` is there in **Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** folder. If it is not there download and import using the next steps.
 
-    ![Launch Studio](media/lab-user-1.png)
+    ![Launch Studio](media/bef_hol_L5T2S4.png)
 
 4. If the folder does not contain `preparemetricsfeeddata.ipynb` notebooks, download the following items to your local machine:
 
