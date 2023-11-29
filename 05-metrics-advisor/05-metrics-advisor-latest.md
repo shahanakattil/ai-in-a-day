@@ -6,7 +6,7 @@ This lab covers the Metrics Advisor service features from Azure Cognitive Servic
 
 **Duration**: 30 minutes
 
-You should follow all of the steps provided in this section _before_ taking part in the hands-on lab ahead of time as some of these steps take time.
+You should follow all of the steps provided in this section before taking part in the hands-on lab, as some of these steps take time.
 
 ## Task 1 - Prepare Azure Machine Learning workspace
 
@@ -53,7 +53,7 @@ You should follow all of the steps provided in this section _before_ taking part
    - Click on `Click to browse and select file(s)` and select the file which was just downloaded.
    - Check the "I trust contents of the File" and select upload. 
    
-    ![Launch Studio](media/select-upload-2.png)
+        ![Launch Studio](media/select-upload-2.png)
 
 6. With the Azure Machine Learning Studio and the Jupyter Notebook environment open, select the `preparemetricsfeeddata.ipynb` from **Notebooks** under **Author**.
 
@@ -119,7 +119,7 @@ The high-level steps covered in the lab are:
 
 3. On the Metrics Advisor welcome page, select your directory, subscription and workspace information and select **Get started**. You are now prepared to create your first Data feed.
 
-   > **Note:-** If you see that the **Get Started** button is not available for you, it means that the metric advisor service is not fully available yet. Please wait for 20-30 minutes and try again after refreshing the page.
+   > **Note:** If you see that the **Get Started** button is not available for you, it means that the metric advisor service is not fully available yet. Please wait for 20-30 minutes and try again after refreshing the page.
 
     ![Connect to Metrics Advisor workspace](./media/AI4.3.6.png)
 
@@ -129,15 +129,18 @@ The high-level steps covered in the lab are:
 
     - **Source type**: `Azure Blob Storage (JSON)` **(2)**
     - **Granularity**: `Daily` **(3)**
-    - **Ingest data since (UTC)**: `2023-02-01` **(4)**
+    - **Ingest data since (UTC)**: `2023-08-02` **(4)**
     - **Connection string**: Provide the connection string from the blob storage access keys page. (`key1 - Connection string` copied on **Before the hands-on lab** part or else please  follow Task 1 of Before the hands-on lab) **(5)**
+
+        ![Data feed source properties](../media/newai1.png)
+
     - **Container**: `jsonmetrics` **(6)**
-    - **Blob template**: `%Y-%m-%d.json` (since the daily json files are provided in with naming format) **(7)**
+    - **Blob template**: `%Y-%m-%d.json` (since the daily JSON files are provided in with naming format) **(7)**
     - **JSON format version**: `v2` (since we'll be using the age group dimension in our data schema) **(8)**
 
-    ![Data feed source properties](media/HOL-Task4-step5.png)
+        ![Data feed source properties](../media/newai2.png)
 
-6. Select the **Load data button** to validate the configured connection. You can find the **Load Data (9)** option just below the **JSON format version** on the right side, so scroll to the right to see the button. If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
+6. Select the **Load data button** to validate the configured connection. You can find the **Load Data (9)** option below the **JSON format version** on the right side, so scroll to the right to see the button. If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
 
 7. Once the data schema is loaded and shown like below, configure the appropriate fields as Dimension, Measure or Timestamp **(1)**, and select **Verify schema (2)**.
 
@@ -159,7 +162,7 @@ The high-level steps covered in the lab are:
 
     ![Submit schema configuration](./media/AI4.3.14.1.png)
 
-12. Wait for the ingestion progress dialog and select the **Details** link in order to observe the ingestion log by timestamp. Wait until the ingestion completes with success for all ingested json files.
+12. Wait for the ingestion progress dialog and select the **Details** link in order to observe the ingestion log by timestamp. Wait until the ingestion completes with success for all ingested JSON files.
 
     ![Check the ingestion progress](media/HOL-Task4-step12.png)
 
@@ -195,11 +198,11 @@ When detection is applied, you can select one of the metrics listed in the data 
 
     ![Metric-level configuration](media/HOL-Task5-step4.png)
 
->Note
->
-> - To view the diagnostic insights, click on the red dots **(3)** on time series visualizations, which represent detected anomalies, and select the link **To incident hub**. 
->
-> - Spend a few minutes to change some parameters inside the **Metric-level configuration** section and observe the change of reported anomalies (red points) on the series data representation.
+    >Note
+    >
+    > - To view the diagnostic insights, click on the red dots **(3)** on time series visualizations, which represent detected anomalies, and select the link **To incident hub**. 
+    >
+    > - Spend a few minutes to change some parameters inside the **Metric-level configuration** section and observe the change of reported anomalies (red points) on the series data representation.
 
 5. In the metrics browser page, select the **Incidents** tab and click on the **Dimension filter** You can see the below output. 
 
@@ -212,6 +215,7 @@ When detection is applied, you can select one of the metrics listed in the data 
 ## Task 5 - Perform root cause analysis
 
 1. In the incidents hub, notice the **Root cause** section where you should find reported the main contributors for the detected anomaly, and age groups that contributed to the sum of cases reported as anomaly. Also, in the **Diagnostic** tree, hover on each age group node to investigate its contribution to the incident.
+
     ![Incident Hub diagnostics](media/HOL-Task6-step1.png)
 
 2. In the **Diagnostics** **(1)** section, navigate to **Metrics drill-down** **(2)** and notice the current point Value (number of cases) and the **Diff**  from the identified **Baseline** **(3)**. Choose the **age_group (4)** dimension to drill-down by it and check the same **Delta** percent and **Diff** **(5)** value from the baseline for the anomalies detected at the current point. 
@@ -272,7 +276,7 @@ A change threshold is normally used when metric data generally stay around a cer
     ![](media/HOL-Task8-Sub2-Step3.png)
 
 
->**Note**: For more information, see [Anomaly detection methods](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/configure-metrics#anomaly-detection-methods).
+    >**Note**: For more information, see [Anomaly detection methods](https://docs.microsoft.com/en-us/azure/applied-ai-services/metrics-advisor/how-tos/configure-metrics#anomaly-detection-methods).
 
 ## Task 8 - Configuring Metrics 
 
@@ -302,7 +306,7 @@ A metric can apply one or more detection configurations. There's a default confi
 
 >**Note**: The auto-tuning feature is only applied to the 'Smart detection' method.
 
-1. After the metrics are onboarded to Metrics Advisor, the system will try to perform statistics on the metrics to categorize **anomaly pattern** types and **series value** distribution. By providing this functionality, you can further fine tune the configuration based on their specific preferences. In the beginning, it will show a status of **Initializing**.
+1. After the metrics are onboarded to Metrics Advisor, the system will try to perform statistics on the metrics to categorize **anomaly pattern** types and **series value** distribution. By providing this functionality, you can further fine-tune the configuration based on their specific preferences. In the beginning, it will show a status of **Initializing**.
 
     ![](./media/AI4.10.1.png)
 
@@ -331,7 +335,7 @@ The next step is to fine-tune the configuration for each. There's a global **sen
 
     ![](./media/ms-auto-tunning-1.png)
     
-2. In the Value based sensitivity pane, you can adjust the slider to change the **Adjusment for value** **(1)** and select **Next** **(2)** to set up alerts.
+2. In the Value-based sensitivity pane, you can adjust the slider to change the **Adjusment for value** **(1)** and select **Next** **(2)** to set up alerts.
 
     ![](./media/ms-auto-tunning-2.png)
 
@@ -356,7 +360,7 @@ After configuring all the settings described in the section above, the system wi
 
 ## Task 10 - Tune the configuration for a specific series or group
 
-1. Select **Advanced configuration** below the metric level configuration options to see the group level configuration.
+1. Select **Advanced configuration** below the metric-level configuration options to see the group-level configuration.
 
     ![](./media/advanced-config-1.png)
 
