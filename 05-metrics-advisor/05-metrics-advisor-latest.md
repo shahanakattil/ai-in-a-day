@@ -135,12 +135,12 @@ The high-level steps covered in the lab are:
         ![Data feed source properties](../media/newai1.png)
 
     - **Container**: `jsonmetrics` **(6)**
-    - **Blob template**: `%Y-%m-%d.json` (since the daily json files are provided in with naming format) **(7)**
+    - **Blob template**: `%Y-%m-%d.json` (since the daily JSON files are provided in with naming format) **(7)**
     - **JSON format version**: `v2` (since we'll be using the age group dimension in our data schema) **(8)**
 
         ![Data feed source properties](../media/newai2.png)
 
-6. Select the **Load data button** to validate the configured connection. You can find the **Load Data (9)** option just below the **JSON format version** on the right side, so scroll to the right to see the button. If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
+6. Select the **Load data button** to validate the configured connection. You can find the **Load Data (9)** option below the **JSON format version** on the right side, so scroll to the right to see the button. If there is an error at this step, check that your connection string and blob template are correct and your Metrics Advisor instance is able to connect to the data source.
 
 7. Once the data schema is loaded and shown like below, configure the appropriate fields as Dimension, Measure or Timestamp **(1)**, and select **Verify schema (2)**.
 
@@ -162,7 +162,7 @@ The high-level steps covered in the lab are:
 
     ![Submit schema configuration](./media/AI4.3.14.1.png)
 
-12. Wait for the ingestion progress dialog and select the **Details** link in order to observe the ingestion log by timestamp. Wait until the ingestion completes with success for all ingested json files.
+12. Wait for the ingestion progress dialog and select the **Details** link in order to observe the ingestion log by timestamp. Wait until the ingestion completes with success for all ingested JSON files.
 
     ![Check the ingestion progress](media/HOL-Task4-step12.png)
 
@@ -306,7 +306,7 @@ A metric can apply one or more detection configurations. There's a default confi
 
 >**Note**: The auto-tuning feature is only applied to the 'Smart detection' method.
 
-1. After the metrics are onboarded to Metrics Advisor, the system will try to perform statistics on the metrics to categorize **anomaly pattern** types and **series value** distribution. By providing this functionality, you can further fine tune the configuration based on their specific preferences. In the beginning, it will show a status of **Initializing**.
+1. After the metrics are onboarded to Metrics Advisor, the system will try to perform statistics on the metrics to categorize **anomaly pattern** types and **series value** distribution. By providing this functionality, you can further fine-tune the configuration based on their specific preferences. In the beginning, it will show a status of **Initializing**.
 
     ![](./media/AI4.10.1.png)
 
@@ -335,7 +335,7 @@ The next step is to fine-tune the configuration for each. There's a global **sen
 
     ![](./media/ms-auto-tunning-1.png)
     
-2. In the Value based sensitivity pane, you can adjust the slider to change the **Adjusment for value** **(1)** and select **Next** **(2)** to set up alerts.
+2. In the Value-based sensitivity pane, you can adjust the slider to change the **Adjusment for value** **(1)** and select **Next** **(2)** to set up alerts.
 
     ![](./media/ms-auto-tunning-2.png)
 
@@ -360,7 +360,7 @@ After configuring all the settings described in the section above, the system wi
 
 ## Task 10 - Tune the configuration for a specific series or group
 
-1. Select **Advanced configuration** below the metric level configuration options to see the group level configuration.
+1. Select **Advanced configuration** below the metric-level configuration options to see the group-level configuration.
 
     ![](./media/advanced-config-1.png)
 
