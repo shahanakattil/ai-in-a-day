@@ -1,5 +1,13 @@
 # Release Notes - FY23
 
+### 29 November 2023
+
+ - Minor update in the lab.
+ 
+   - Updated instructions and screenshots in Lab - 1, 2 & 3 with the latest UI updates in Azure Resources.
+   - Naming convention of Power Virtual Agents has been renamed to Microsoft Copilot Studio. Updated instructions and screenshots in Lab - 4 with the latest UI updates.
+   - Updated the instructions in Lab - 5 while creating Data feed in Metric Advisor.
+
 ### 25 September 2023
 
  - Minor update in the lab.
