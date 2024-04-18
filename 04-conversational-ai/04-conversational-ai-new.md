@@ -103,6 +103,15 @@ The way organizations are building conversational systems is evolving, with bots
 
     ![](media/cai-l4-t4-s13new.png)
 
+    <validation step="1f3092c6-421b-4e88-8fe6-b5cb70ca1396" />
+
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+
 ## Task 4 - Test your Copilot
 
 1. Once the Topic is saved, click on **Test Copilot** from the right-top corner.
