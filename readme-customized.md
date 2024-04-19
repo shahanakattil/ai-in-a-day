@@ -1,4 +1,4 @@
-# Azure Immersion Workshop : AI
+# Innovate with AI
 
 ## Source datasets used by the labs
 
