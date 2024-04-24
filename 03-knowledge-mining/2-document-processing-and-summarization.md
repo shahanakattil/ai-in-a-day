@@ -146,7 +146,7 @@ The high-level steps covered in the lab are:
 
     ![The Create Demo App option is selected.](media/lab2a-task4-step10.png)
 
-11. On the first tab, select `metadata.title` **(1)** for the Title and `abstract.text` **(2)** for the Description. Then select **Create Demo App (3)**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
+11. On the first tab, select `metadata.title` **(1)** for the Title and `abstract.text` **(2)** for the Description. Then select **Next** twice and click on **Create Demo App (3)**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
 
     ![Create a demo app.](media/create-demo-app-1.1.png)
 
@@ -162,7 +162,7 @@ The high-level steps covered in the lab are:
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-
+    >**Note**: If you face any issues on validation, please perform the next steps till the end of this lab and then click on validate button again.
 
 ## Task 5 - Updating Azure Search Indexes
 
@@ -267,7 +267,7 @@ The high-level steps covered in the lab are:
 
     ![The Cognitive Services key and endpoint are selected](media/L2-T5-S7.png)
 
-8. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Create new** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
+8. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Get Started** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
 
     ![Create new custom model](media/L2-T6-S8.png)
 
@@ -308,7 +308,7 @@ The high-level steps covered in the lab are:
 
     ![Project](media/SHC2a.6.13.png)
   
-14. After creating a new project, you will be sent to the project for tagging in Label data. Select **+** **(1)** to create a new **Field** **(2)**, type `Abstract` in the Field, and hit enter. By this, you have created a new Abstract Field.
+14. After creating a new project, you will be sent to the project for tagging in Label data. Select **+** **(1)** to create a new field click on **Add a Field** **(2)**, type `Abstract` in the Field, and hit enter. By this, you have created a new Abstract Field.
 
     ![The Abstract tag has been created](media/lab2a-t6-frs8.png)
     
@@ -348,7 +348,7 @@ The high-level steps covered in the lab are:
 
 23. From the left menu, select the **Test (1)**. Click on **Browse for a file (2)**. 
 
-    * In the Upload Files pop-up, click on **Choose file** **(1)**. Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf` file **(2)** and then click on **Add file** **(3)**.
+    * In the Upload Files pop-up, click on **Choose file** **(1)**. Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf` file **(2)** and then click on **Open** **(3)**.
     
      ![An analyzed document](media/lab2a-fr-fileupload.png)
    
