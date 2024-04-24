@@ -267,7 +267,7 @@ The high-level steps covered in the lab are:
 
     ![The Cognitive Services key and endpoint are selected](media/L2-T5-S7.png)
 
-8. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Get S tarted** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
+8. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Get Started** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
 
     ![Create new custom model](media/L2-T6-S8.png)
 
