@@ -22,10 +22,6 @@
       {
         "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/ms-innovation/04-conversational-ai/04-conversational-ai-new.md",
         "Order": 5
-      },
-      {
-        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/ai-in-a-day/ms-innovation/05-metrics-advisor/05-metrics-advisor-latest.md",
-        "Order": 6
       }
     ]
   }
