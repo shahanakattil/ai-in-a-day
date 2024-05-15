@@ -52,10 +52,6 @@ The power of Machine Learning also comes into play when dealing with human-to-ma
 
 Using Power Virtual Agents and Cognitive Services, we provide a conversational bot that helps analysts navigate the corpus of research documents and identify the most relevant ones (Lab 4).
 
-Besides collecting data about COVID-19 cases, it is also essential to ensure the accuracy of the reporting. Accuracy check is where continuous monitoring of incoming data feeds doubled by automatic detection of anomalies plays a critical role. Data is valid for analysis as long as it is reliable and contains the minimum possible number of errors. With distributed data sources and numerous reporting entities, automatic anomaly detection is the best choice to minimize that number.
-
-Using Cognitive Services Metrics Advisor, we will demonstrate how to improve the case surveillance data quality by identifying as early as possible anomalies in the number of daily reported cases (Lab 5).
-
 ## Labs
 
 Each individual lab in this repo addresses a subset of the challenges described in the [Background story](#background-story) section.
@@ -103,21 +99,3 @@ The high-level steps covered in the lab are:
  - Setting up Power Virtual Agents and Create your first Chatbot.
  - Create a new topic
  - Test your Bot
-
-### Lab 5 - Metrics Advisor with Azure Cognitive Services
-
-The lab covers the Metrics Advisor service from Azure Cognitive Services.
-
-The high-level steps covered in the lab are:
-
-- Explore dashboard of COVID-19 data
-- Explore the lab scenario
-- Deploy Azure Cognitive Services Metrics Advisior instance
-- Configuring the "COVID cases by age group" Metrics Advisor data feed
-- Explore anomalies detected in data
-- Perform root cause analysis
-- Anomaly detection methods
-- Configure metrics and fine tune detection configuration
-- Tune the configuration for a specific series or group
-- Preset Events
-- Recent incident views
