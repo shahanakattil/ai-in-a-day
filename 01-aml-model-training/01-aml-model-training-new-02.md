@@ -214,6 +214,14 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![View explanations](media/lab1-task6-step4.png)
 
+<validation step="46d5c33f-126f-4f3c-9a15-a4596a0b876c" />
+
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task.
+> - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step,following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+
 ## Task 7 - Generate a Responsible AI dashboard in the studio UI
 
 1. In the Azure Machine Learning Studio, navigate to the registered model you’d like to create Responsible AI insights **Models (1)** section under Assets and locate the **rai_diabetes_decision_model_xxxx (2)**. Select the model available.
