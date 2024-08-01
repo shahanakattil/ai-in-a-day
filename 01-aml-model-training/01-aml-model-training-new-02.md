@@ -206,9 +206,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
    ![Locate the completed AutoML run](media/locate-completed-run01.png)
 
-3. On the **Run details** page, navigate to the **Models (1)** section. Check the values on the  **AUC weighted** column **(2)**, which is the primary metric selected in the AutoML run configuration. See how the best model was selected; this is the one with the maximum metric value. This is also the model for which the explanation was generated. Select **View explanation (3)**.
+3. On the **Run details** page, navigate to the **Models + child jobs (1)** section. Check the values on the  **AUC weighted** column **(2)**, which is the primary metric selected in the AutoML run configuration. See how the best model was selected; this is the one with the maximum metric value. This is also the model for which the explanation was generated. Select **View explanation (3)**.
 
-   ![Explore the models section of the AutoML run](media/inspect-models02.png)
+   ![Explore the models section of the AutoML run](media/child_jobs-1.jpg)
 
 4. On the **Explanations (preview) (1)** section, browse the available explanations **(2)** and investigate the **Model performance (3)** representation.
 
