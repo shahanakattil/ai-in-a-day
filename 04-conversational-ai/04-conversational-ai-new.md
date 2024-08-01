@@ -36,26 +36,25 @@ The way organizations are building conversational systems is evolving, with bots
 
 8. On the **Welcome to Microsoft Copilot Studio (1)** page, choose your respective region and select **Get Started (2)**.
 
-   ![](media/L4T2S6.png)
+    ![](media/L4T2S6.png)
 
 9. On the **Create a Copilot** page enter the following details:
 
    - **Copilot name (1)**: Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
-   - **What language will your bot speak? (2)**: Select **English (US)** from the dropdown.
 
-   Now select **Create (3)**.
+   Now select **Create (2)**.
 
-   ![](media/L4T2S7.png)
+   ![](media/create_bot.jpg)
 
 10. Once the Bot is created you will see the Copilot Studio page.
 
-   ![](media/L4T2S8.png)
+   ![](media/test-copilot0.1-1.jpg)
 
 ## Task 3 - Create a New Topic
 
-1. One the **Microsoft Copilot Studio** page, select **Topics** **(1)**, **Add** **(2)**, click on **Topic** **(3)** from the drop down menu select **Create from description** **(4)**.
+1. One the **Microsoft Copilot Studio** page, select **Topics** **(1)**, **Add a topic** **(2)**, from the drop down menu select **Create from description** **(3)**.
 
-   ![](media/L4T3S1.png)
+   ![](media/copilot-1.jpg)
 
 2. In Create it with Copilot pane, Name your topic as **Meal delivery options** **(1)**. In Create a topic to ..., enter the given phrase "**Checking for food options based on the city you are in**" **(2)**, then click on **Create** **(3)**.
 
@@ -106,7 +105,6 @@ The way organizations are building conversational systems is evolving, with bots
     <validation step="1f3092c6-421b-4e88-8fe6-b5cb70ca1396" />
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
     > - Hit the Validate button for the corresponding task.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
@@ -116,16 +114,14 @@ The way organizations are building conversational systems is evolving, with bots
 
 1. Once the Topic is saved, click on **Test Copilot** from the right-top corner.
 
-   ![](media/L4T4S1.png)
+   ![](media/test-0012.jpg)
 
-2. In the Test copilot pane, enter the given phrase ```What are my meal delivery options?``` and then enter the city name as ```Seattle```. 
+2. In the Test copilot pane, enter the given phrase ```What are my meal delivery options?``` and then enter the city name as ```Seattle```, You can select the type of food that you are looking for i.e., Chinese or Italian. 
 
-   ![](media/L4T4S2.png)
+   ![](media/test-copilot-1.jpg)
+ 
+3. Your chatbot should display the names of the meals as shown below.
 
-3. You can select the type of food that you are looking for i.e., Chinese or Italian. 
-
-4. Your chatbot should display the names of the meals as shown below.
-
-   ![](media/L4T4S4.png)
+   ![](media/test-324.jpg)
 
 Now you have successfully created and tested the Microsoft Copilot.

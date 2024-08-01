@@ -96,6 +96,13 @@ The high-level steps covered in the lab are:
 
     ![The Create-AzureSearchIndex function has been run to create a new index.](media/create-azuresearchindex-use.png)
 
+   <validation step="6e7f9bb9-9bed-4f51-ac7b-c6aa82222f50" />
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ## Task 4 - Querying Azure Search Indexes
 
 1. Navigate to [the Azure portal](https://portal.azure.com) and log in with your credentials. Then, select **Resource groups**.
@@ -145,6 +152,14 @@ The high-level steps covered in the lab are:
     ![Use the demo app.](media/L2T4S12.png)
 
     >**Note**: If you face any issues on validation, please perform the next steps till the end of this lab and then click on validate button again.
+
+    <validation step="b927b6a3-f2fd-4047-9a54-233ef39525c5" />
+    
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 
 ## Task 5 - Updating Azure Search Indexes
 
@@ -347,7 +362,6 @@ The high-level steps covered in the lab are:
     <validation step="24474dca-c3ab-413f-ba34-eb278f3c895f" />
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
     > - Hit the Validate button for the corresponding task.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
@@ -398,5 +412,12 @@ In this task, we are creating a text summarization application with the client l
    
    ![summarization](media/lab2a-t7-summ-results.png)
 
+   <validation step="24474dca-c3ab-413f-ba34-eb278f3c895f" />
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task.
+    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 You can find more references about Document Summarization from here: [Quickstart: Get started with Language Studio - Azure Cognitive Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/language-studio). Use this article to learn about Language Studio, and testing features of Azure Cognitive Service for Language Integration.
+
