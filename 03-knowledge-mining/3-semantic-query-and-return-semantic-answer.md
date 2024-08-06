@@ -10,12 +10,12 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
 ## Lab Objectives
 
-- Task 1 - Enabling the Semantic ranker in the Cognitive Search service
+- Task 1 - Enabling the Semantic ranker in the AI Search service
 - Task 2 - Creating a Semantic Configuration
 - Task 3 - Semantic search using the semantic configuration in Azure Portal
 - Task 4 - Semantic Query using REST APIs
 
-## Task 1 - Enabling the Semantic ranker in the Cognitive Search service
+## Task 1 - Enabling the Semantic ranker in the AI Search service
 
 1. Navigate to **AI-in-a-Day** resource group in the [Azure portal](https://portal.azure.com).
 
@@ -128,7 +128,7 @@ In this task, you are going to perform the semantic search using a query in [RES
    
    ![Semantic search](media/newlatest15.png)
    
-8. You will see a **Sending request** in the **Response** section, which will take a few seconds to get the response from the cognitive search service. Once you get the response check that **Network Status: 200 OK**, review the response and explore with your query requests.
+8. You will see a **Sending request** in the **Response** section, which will take a few seconds to get the response from the AI search service. Once you get the response check that **Network Status: 200 OK**, review the response and explore with your query requests.
 
    ![Semantic search](media/lab2b-ssp16.png)
 

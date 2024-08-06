@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this lab, you will explore the use of Natural Language Processing and Machine Learning to classify COVID-19 research papers into natural groupings. You will utilize Automated Machine Learning (AutoML) in Azure to train and refine the best classification models. The lab emphasizes the importance of a fully automated and traceable process for managing large volumes of incoming research documents, ensuring data quality through engineering processes, and providing advanced indexing and search capabilities using Cognitive Search. Additionally, you will learn how to leverage Conversational AI, using Power Virtual Agents and Azure AI Services, to help analysts easily navigate and find relevant research documents through natural language interactions.
+In this lab, you will explore the use of Natural Language Processing and Machine Learning to classify COVID-19 research papers into natural groupings. You will utilize Automated Machine Learning (AutoML) in Azure to train and refine the best classification models. The lab emphasizes the importance of a fully automated and traceable process for managing large volumes of incoming research documents, ensuring data quality through engineering processes, and providing advanced indexing and search capabilities using AI Search. Additionally, you will learn how to leverage Conversational AI, using Power Virtual Agents and Azure AI Services, to help analysts easily navigate and find relevant research documents through natural language interactions.
 
 ## Objective
 
@@ -39,7 +39,7 @@ In this lab, you will use AI technologies to manage and analyze COVID-19 researc
 
 - **Data Engineering and Quality Assurance** : Involves transforming natural language data into numerical formats suitable for machine learning and ensuring data accuracy and completeness through robust quality checks.
 
-- **Conversational AI with Power Virtual Agents** : Implements a chatbot interface using Power Virtual Agents and Cognitive Services to facilitate intuitive, natural language interactions for navigating and retrieving relevant research documents.
+- **Conversational AI with Power Virtual Agents** : Implements a chatbot interface using Power Virtual Agents and AI Services to facilitate intuitive, natural language interactions for navigating and retrieving relevant research documents.
 
 ## Getting Started with Lab
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
