@@ -8,6 +8,13 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
 >**Note**: Ensure to complete Lab 2 before proceeding with this lab.
 
+## Lab Objectives
+
+- Task 1 - Enabling the Semantic ranker in the Cognitive Search service
+- Task 2 - Creating a Semantic Configuration
+- Task 3 - Semantic search using the semantic configuration in Azure Portal
+- Task 4 - Semantic Query using REST APIs
+
 ## Task 1 - Enabling the Semantic ranker in the Cognitive Search service
 
 1. Navigate to **AI-in-a-Day** resource group in the [Azure portal](https://portal.azure.com).
@@ -134,3 +141,7 @@ In this task, you are going to perform the semantic search using a query in [RES
 
 
    >**Note**: If you face an issue that the request failed with 401 Forbidden or 403 Forbidden error, this might be caused due to passing invalid authentication credentials or an invalid api-key. For more information, reference this link ```https://docs.microsoft.com/en-us/rest/api/searchservice/http-status-codes#common-http-status-codes```
+
+## Summary
+
+In this lab, you have worked on indexing and exploring data, extracting insights, and enabling advanced search capabilities across structured and unstructured content.

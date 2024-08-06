@@ -2,6 +2,16 @@
 
 This lab covers Azure Cognitive Services, particularly [Azure Cognitive Search](https://azure.microsoft.com/services/search/) and the [Document Intelligence](https://azure.microsoft.com/services/cognitive-services/form-recognizer/) service.
 
+## Lab Objectives
+
+- Task 1 - Explore the dashboard of COVID-19 data
+- Task 2 - Explore lab scenario
+- Task 3 - Creating Azure Search Indexes
+- Task 4 - Querying Azure Search Indexes
+- Task 5 - Updating Azure Search Indexes
+- Task 6 - Using the Document Intelligence Studio
+- Task 7 - Document Summarization via Cognitive Service for Language Integration
+
 ## Task 1 - Explore the dashboard of COVID-19 data
 
 Understanding the source datasets is very important in AI and ML. To help you expedite the process, we have created a Power BI dashboard you can use to explore them at the beginning of each lab.
@@ -421,3 +431,6 @@ In this task, we are creating a text summarization application with the client l
 
 You can find more references about Document Summarization from here: [Quickstart: Get started with Language Studio - Azure Cognitive Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/language-studio). Use this article to learn about Language Studio, and testing features of Azure Cognitive Service for Language Integration.
 
+## Summary 
+
+In this lab, you have explored Azure Document Intelligence and Cognitive Services and extracted, analyzed, and summarized key information from documents.
