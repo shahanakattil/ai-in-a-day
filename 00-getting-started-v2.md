@@ -4,15 +4,15 @@
 
 ## Overview
 
-In this lab, you will explore the use of Natural Language Processing and Machine Learning to classify COVID-19 research papers into natural groupings. You will utilize Automated Machine Learning (AutoML) in Azure to train and refine the best classification models. The lab emphasizes the importance of a fully automated and traceable process for managing large volumes of incoming research documents, ensuring data quality through engineering processes, and providing advanced indexing and search capabilities using Cognitive Search. Additionally, you will learn how to leverage Conversational AI, using Power Virtual Agents and Cognitive Services, to help analysts easily navigate and find relevant research documents through natural language interactions.
+In this lab, you will explore the use of Natural Language Processing and Machine Learning to classify COVID-19 research papers into natural groupings. You will utilize Automated Machine Learning (AutoML) in Azure to train and refine the best classification models. The lab emphasizes the importance of a fully automated and traceable process for managing large volumes of incoming research documents, ensuring data quality through engineering processes, and providing advanced indexing and search capabilities using Cognitive Search. Additionally, you will learn how to leverage Conversational AI, using Power Virtual Agents and Azure AI Services, to help analysts easily navigate and find relevant research documents through natural language interactions.
 
 ## Objective
 
 Understand how to utilize Natural Language Processing, Machine Learning, and Conversational AI in Azure for classifying and exploring COVID-19 research papers. By the end of the lab, you will have knowledge on : 
 
 - **Azure Machine Learning Model Training** : Learn to build, train, and evaluate machine learning models using Azure Machine Learning. You will explore the end-to-end process, from data preparation to model deployment, leveraging Azure's Automated ML and other tools for streamlined development and operationalization.
-- **Document Processing and Summarization with Azure Document Intelligence and Cognitive Service for Language** : Explore document processing and summarization using Azure Document Intelligence and Cognitive Service for Language. learn to extract, analyze, and summarize key information from documents, enhancing data accessibility and comprehension.
-- **Knowledge Mining with Azure Cognitive Search** : Learn to create rich search experiences by indexing and exploring data, extracting insights, and enabling advanced search capabilities across structured and unstructured content.
+- **Document Processing and Summarization with Azure Document Intelligence and AI Service for Language** : Explore document processing and summarization using Azure Document Intelligence and AI Service for Language. learn to extract, analyze, and summarize key information from documents, enhancing data accessibility and comprehension.
+- **Knowledge Mining with Azure AI Search** : Learn to create rich search experiences by indexing and exploring data, extracting insights, and enabling advanced search capabilities across structured and unstructured content.
 - **Conversational AI with Bot Service using Power Virtual Agents** : Learn to create new topics, define conversation flows, and test the bot, enabling interactive and natural language interactions with users.
 
 ## Pre-requisites
@@ -23,7 +23,7 @@ Understand how to utilize Natural Language Processing, Machine Learning, and Con
 
 ## Architecture
 
-In this lab, you will use AI technologies to manage and analyze COVID-19 research papers. You'll apply Natural Language Processing and Machine Learning with Azure Automated ML to classify and group papers effectively (Lab 1). The workflow involves transforming natural language data for machine learning, ensuring high data quality, and using Azure Cognitive Search for advanced document indexing and exploration (Lab 2). Additionally, you'll implement a conversational AI solution with Power Virtual Agents and Cognitive Services to enable intuitive navigation and retrieval of relevant research (Lab 4).
+In this lab, you will use AI technologies to manage and analyze COVID-19 research papers. You'll apply Natural Language Processing and Machine Learning with Azure Automated ML to classify and group papers effectively. The workflow involves transforming natural language data for machine learning, ensuring high data quality, and using Azure AI Search for advanced document indexing and exploration. Additionally, you'll implement a conversational AI solution with Power Virtual Agents and Azure AI Services to enable intuitive navigation and retrieval of relevant research.
 
 ## Architecture Diagram
 
