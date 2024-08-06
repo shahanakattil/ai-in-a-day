@@ -1,6 +1,16 @@
 # Lab 2 - Document Processing and Summarization with Azure Document Intelligence and Cognitive Service for Language
 
-This lab covers Azure Cognitive Services, particularly [Azure Cognitive Search](https://azure.microsoft.com/services/search/) and the [Document Intelligence](https://azure.microsoft.com/services/cognitive-services/form-recognizer/) service.
+This lab covers Azure AI Services, particularly [Azure AI Search](https://azure.microsoft.com/services/search/) and the [Document Intelligence](https://azure.microsoft.com/services/cognitive-services/form-recognizer/) service.
+
+## Lab Objectives
+
+- Task 1 - Explore the dashboard of COVID-19 data
+- Task 2 - Explore lab scenario
+- Task 3 - Creating Azure Search Indexes
+- Task 4 - Querying Azure Search Indexes
+- Task 5 - Updating Azure Search Indexes
+- Task 6 - Using the Document Intelligence Studio
+- Task 7 - Document Summarization via Cognitive Service for Language Integration
 
 ## Task 1 - Explore the dashboard of COVID-19 data
 
@@ -369,7 +379,7 @@ The high-level steps covered in the lab are:
 
 ## Task 7 - Document Summarization via Cognitive Service for Language Integration
 
-Summarization is one of the features offered by [Azure Cognitive Service for Language](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/overview), a collection of machine learning and AI algorithms in the cloud for developing intelligent applications that involve written language. Use this article to learn more about this feature, and how to use it in your applications.
+Summarization is one of the features offered by [Azure AI Service for Language](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/overview), a collection of machine learning and AI algorithms in the cloud for developing intelligent applications that involve written language. Use this article to learn more about this feature, and how to use it in your applications.
 
 In general, there are two approaches for automatic document summarization: extractive and abstractive. This API provides extractive summarization. Extractive summarization is a feature that produces a summary by extracting sentences that collectively represent the most important or relevant information within the original content. This feature is designed to shorten content that users consider too long to read. Extractive summarization condenses articles, papers, or documents to key sentences. The AI models used by the API are provided by the service, you just have to send content for analysis.
 
@@ -419,5 +429,8 @@ In this task, we are creating a text summarization application with the client l
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-You can find more references about Document Summarization from here: [Quickstart: Get started with Language Studio - Azure Cognitive Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/language-studio). Use this article to learn about Language Studio, and testing features of Azure Cognitive Service for Language Integration.
+You can find more references about Document Summarization from here: [Quickstart: Get started with Language Studio - Azure AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/language-studio). Use this article to learn about Language Studio, and testing features of Azure AI Service for Language Integration.
 
+## Summary 
+
+In this lab, you have explored Azure Document Intelligence and Cognitive Services and extracted, analyzed, and summarized key information from documents.

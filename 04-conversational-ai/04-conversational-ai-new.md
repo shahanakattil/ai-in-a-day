@@ -2,6 +2,13 @@
 
 This lab covers Power Virtual Agents as the hero bot service and demonstrates how to use the Copilot option to create a bot.
 
+## Lab Objectives
+
+- Task 1 - Explore lab scenario
+- Task 2 - Setting up Microsoft Copilot Studio and Create your first Copilot
+- Task 3 - Create a New Topic
+- Task 4 - Test your Copilot
+
 ## Task 1 - Explore lab scenario
 
 The power of Machine Learning also comes into play when dealing with human-to-machine interfaces. While classical interfaces like native or web applications are ubiquitous, the new approaches based on conversational AI are becoming increasingly popular. Having the capability to interact with intelligent services using natural language is quickly becoming the norm rather than the exception. Using Conversational AI, analysts can find the research of interest by using simple natural language phrases.
@@ -125,3 +132,9 @@ The way organizations are building conversational systems is evolving, with bots
    ![](media/test-324.jpg)
 
 Now you have successfully created and tested the Microsoft Copilot.
+
+## Summary 
+
+In this lab, you have created new topics, defined conversation flows, and tested the bot.
+
+## You have successfully completed this Lab!
