@@ -27,7 +27,7 @@ In this lab, you will use AI technologies to manage and analyze COVID-19 researc
 
 ## Architecture Diagram
 
-![](./media/Architecture-customized.png)
+![](media/updated-arch-new-v2.png)
 
 ## Explanation of Components
 
