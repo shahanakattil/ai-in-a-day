@@ -1,6 +1,6 @@
-# Lab 2 - Document Processing and Summarization with Azure Document Intelligence and Cognitive Service for Language
+# Lab 2 - Document Processing and Summarization with Azure Document Intelligence and AI Service for Language
 
-This lab covers Azure AI Services, particularly [Azure AI Search](https://azure.microsoft.com/services/search/) and the [Document Intelligence](https://azure.microsoft.com/services/cognitive-services/form-recognizer/) service.
+This lab covers Azure AI Services, particularly [Azure AI Search](https://azure.microsoft.com/services/search/) and the [Document Intelligence](https://azure.microsoft.com/services/AI-services/form-recognizer/) service.
 
 ## Lab Objectives
 
@@ -10,7 +10,7 @@ This lab covers Azure AI Services, particularly [Azure AI Search](https://azure.
 - Task 4 - Querying Azure Search Indexes
 - Task 5 - Updating Azure Search Indexes
 - Task 6 - Using the Document Intelligence Studio
-- Task 7 - Document Summarization via Cognitive Service for Language Integration
+- Task 7 - Document Summarization via AI Service for Language Integration
 
 ## Task 1 - Explore the dashboard of COVID-19 data
 
@@ -30,11 +30,11 @@ To explore the dashboard of COVID-19 data, open the `Azure-AI-in-a-Day-Data-Over
 
 Another critical problem to deal with when it comes to the volumes of research documents covering COVID-19 is the problem of advanced indexing and searching their content. The specific internal structure of research papers (including citations, contributors, and various entities like diagnosis, forms of examination, family relations, genes, medication, symptoms or signs, and treatments) form a reach semantic graph that goes way beyond simple document categorization. An analyst would benefit significantly from exploring the corpus of documents in a way that considers all these complex relationships.
 
-Using the Cognitive Search capabilities, we will create a complex index of documents that allows an analyst to perform an advanced search and explore the inter-document graph relationships.
+Using the AI Search capabilities, we will create a complex index of documents that allows an analyst to perform an advanced search and explore the inter-document graph relationships.
 
 The following diagram highlights the portion of the general architecture covered by this lab.
 
-![Architecture for Lab 3](./media/lab2.2.png)
+![Azure AI in a Day datasets](../media/updated-arch-lab2.png)
 
 The high-level steps covered in the lab are:
 
@@ -268,11 +268,11 @@ The high-level steps covered in the lab are:
 
 6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Document Intelligence resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![The Cognitive Services service is selected](media/L2-T6-S6.png)
+    ![The AI Services service is selected](media/L2-T6-S6.png)
 
 7. Select the **Keys and Endpoint** **(1)** option under Resource Management and click on **Show Keys** **(2)**. Then, copy the value for **KEY 1** **(3)** and the **Endpoint** **(4)**. Paste these into a text file for later use.
 
-    ![The Cognitive Services key and endpoint are selected](media/L2-T5-S7.png)
+    ![The AI Services key and endpoint are selected](media/L2-T5-S7.png)
 
 8. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Get Started** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
 
@@ -292,7 +292,7 @@ The high-level steps covered in the lab are:
     | --------------------------- | -------------------------------------|
     | Subscription                | Select the default subscription  **(1)**    |
     | Resource Group              | Select `AI-in-a-Day` **(2)**                |
-    | Document Intelligence or Cognitive Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
+    | Document Intelligence or AI Service Resource| aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/> **(3)**|
     
 
     ![Project](media/form-service.png)
@@ -377,9 +377,9 @@ The high-level steps covered in the lab are:
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 
-## Task 7 - Document Summarization via Cognitive Service for Language Integration
+## Task 7 - Document Summarization via AI Service for Language Integration
 
-Summarization is one of the features offered by [Azure AI Service for Language](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/overview), a collection of machine learning and AI algorithms in the cloud for developing intelligent applications that involve written language. Use this article to learn more about this feature, and how to use it in your applications.
+Summarization is one of the features offered by [Azure AI Service for Language](https://docs.microsoft.com/en-us/azure/AI-services/language-service/overview), a collection of machine learning and AI algorithms in the cloud for developing intelligent applications that involve written language. Use this article to learn more about this feature, and how to use it in your applications.
 
 In general, there are two approaches for automatic document summarization: extractive and abstractive. This API provides extractive summarization. Extractive summarization is a feature that produces a summary by extracting sentences that collectively represent the most important or relevant information within the original content. This feature is designed to shorten content that users consider too long to read. Extractive summarization condenses articles, papers, or documents to key sentences. The AI models used by the API are provided by the service, you just have to send content for analysis.
 
@@ -387,11 +387,11 @@ In this task, we are creating a text summarization application with the client l
 
 1. Return to the Azure Portal page and navigate to the **AI-in-a-Day** resource group and select the Azure AI services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![The Cognitive Services service is selected](media/L2-T7-S1.png)
+    ![The AI Services service is selected](media/L2-T7-S1.png)
 
 2. Select the **Keys and Endpoint (1)** option under Resource Management.  Then, copy the value for **KEY 1 (2)** and the **Endpoint (3)**.  Paste these into a text file for later use.
 
-    ![The Cognitive Services key and endpoint are selected](media/L2-T7-S2.png)
+    ![The AI Services key and endpoint are selected](media/L2-T7-S2.png)
 
 3. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd`, and select the **Command Prompt** application.
 
@@ -407,7 +407,7 @@ In this task, we are creating a text summarization application with the client l
 
 5. Open **File Explorer** and navigate to the path `C:\Temp\AzureSearch\`. Select the file named **summarization.py** and open it in **Notepad or IDLE**. 
 
-6. Replace the **key** and **endpoint** in the file with Cognitive services multi-service account named **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have already copied in step-2 of the same task and finally save the file.
+6. Replace the **key** and **endpoint** in the file with AI services multi-service account named **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>** which you have already copied in step-2 of the same task and finally save the file.
     
    ![summarization](media/lab2a-t7-summarization.png) 
 
@@ -429,8 +429,8 @@ In this task, we are creating a text summarization application with the client l
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-You can find more references about Document Summarization from here: [Quickstart: Get started with Language Studio - Azure AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/language-studio). Use this article to learn about Language Studio, and testing features of Azure AI Service for Language Integration.
+You can find more references about Document Summarization from here: [Quickstart: Get started with Language Studio - Azure AI Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/AI-services/language-service/language-studio). Use this article to learn about Language Studio, and testing features of Azure AI Service for Language Integration.
 
 ## Summary 
 
-In this lab, you have explored Azure Document Intelligence and Cognitive Services and extracted, analyzed, and summarized key information from documents.
+In this lab, you have explored Azure Document Intelligence and AI Services and extracted, analyzed, and summarized key information from documents.
