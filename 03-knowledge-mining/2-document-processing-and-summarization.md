@@ -1,6 +1,6 @@
 # Lab 2 - Document Processing and Summarization with Azure Document Intelligence and AI Service for Language
 
-This lab covers Azure AI Services, particularly [Azure AI Search](https://azure.microsoft.com/services/search/) and the [Document Intelligence](https://azure.microsoft.com/services/AI-services/form-recognizer/) service.
+This lab covers Azure AI Services, particularly [Azure AI Search](https://azure.microsoft.com/services/search/) and the [Document Intelligence](https://azure.microsoft.com/en-in/products/ai-services/ai-document-intelligence) service.
 
 ## Lab Objectives
 
@@ -422,7 +422,7 @@ In this task, we are creating a text summarization application with the client l
    
    ![summarization](media/lab2a-t7-summ-results.png)
 
-   <validation step="24474dca-c3ab-413f-ba34-eb278f3c895f" />
+   <validation step="9783aabe-40ad-4cba-b3b6-6b1a967e27c6" />
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Hit the Validate button for the corresponding task.
