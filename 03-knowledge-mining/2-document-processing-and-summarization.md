@@ -276,11 +276,11 @@ The high-level steps covered in the lab are:
 
 8. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Get Started** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
 
-    ![Create new custom model](media/L2-T6-S8.png)
+    ![Create new custom model](media/updated-document-ai.png)
 
 9. In the Custom models page, under **My Project** click on **+ Create a project**.
   
-    ![Project](media/L2-T6-S9.png)
+    ![Project](media/updated-doc-ai-2.png)
 
 10. In the Enter Project Details pane, enter the Project Name as **covid19abstract (1)** and add the description as **Extracting Abstract from the documents (2)**. Click on **Continue (3)**.
 
