@@ -1,6 +1,6 @@
 # Lab 2 - Document Processing and Summarization with Azure Document Intelligence and AI Service for Language
 
-This lab covers Azure AI Services, particularly [Azure AI Search](https://azure.microsoft.com/services/search/) and the [Document Intelligence](https://azure.microsoft.com/services/AI-services/form-recognizer/) service.
+This lab covers Azure AI Services, particularly [Azure AI Search](https://azure.microsoft.com/services/search/) and the [Document Intelligence](https://azure.microsoft.com/en-in/products/ai-services/ai-document-intelligence) service.
 
 ## Lab Objectives
 
@@ -276,11 +276,11 @@ The high-level steps covered in the lab are:
 
 8. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Get Started** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
 
-    ![Create new custom model](media/L2-T6-S8.png)
+    ![Create new custom model](media/updated-document-ai.png)
 
 9. In the Custom models page, under **My Project** click on **+ Create a project**.
   
-    ![Project](media/L2-T6-S9.png)
+    ![Project](media/updated-doc-ai-2.png)
 
 10. In the Enter Project Details pane, enter the Project Name as **covid19abstract (1)** and add the description as **Extracting Abstract from the documents (2)**. Click on **Continue (3)**.
 
@@ -422,7 +422,7 @@ In this task, we are creating a text summarization application with the client l
    
    ![summarization](media/lab2a-t7-summ-results.png)
 
-   <validation step="24474dca-c3ab-413f-ba34-eb278f3c895f" />
+   <validation step="9783aabe-40ad-4cba-b3b6-6b1a967e27c6" />
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Hit the Validate button for the corresponding task.
