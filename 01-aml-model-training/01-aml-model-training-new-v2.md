@@ -1,5 +1,6 @@
-
 # Lab 1 - Azure Machine Learning Model Training
+
+## Estimated Duration : 2 Hours
 
 This lab covers clustering with Azure Machine Learning, Automated ML, and model explainability.
 
