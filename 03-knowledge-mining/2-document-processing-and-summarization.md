@@ -1,5 +1,7 @@
 # Lab 2 - Document Processing and Summarization with Azure Document Intelligence and AI Service for Language
 
+## Estimated Duration : 2 Hours 30 Minutes
+
 This lab covers Azure AI Services, particularly [Azure AI Search](https://azure.microsoft.com/services/search/) and the [Document Intelligence](https://azure.microsoft.com/en-in/products/ai-services/ai-document-intelligence) service.
 
 ## Lab Objectives
