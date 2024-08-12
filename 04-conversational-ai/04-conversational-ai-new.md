@@ -1,5 +1,7 @@
 # Lab 4 - Conversational AI with Bot Service using Power Virtual Agents
 
+## Estimated Duration : 1 Hour 30 Minutes
+
 This lab covers Power Virtual Agents as the hero bot service and demonstrates how to use the Copilot option to create a bot.
 
 ## Lab Objectives
