@@ -293,7 +293,7 @@ Responsible AI is a governance framework that documents how a specific organizat
 
 1. Navigate back to **Error explorer** page, and choose **Heat map (1)** form the drop-down next to **Error Explorer**. Set the **Select mertic** to **Mean absolute error (2)**, choose **number_of_elements (3)** for **Rows: Feature 1** and **mean_atomic_mass (4)**.
 
-    ![Run Note Book Cell](./media/ai-img6.png)
+    ![Run Note Book Cell](./media/image02.png)
 
 ## Summary
 
