@@ -152,7 +152,7 @@ The high-level steps covered in the lab are:
    
 2. On Jupiter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected.
 
-   ![](./media/selectaikernel.png)
+   ![](./media/image01.png)
 
 3. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on the 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
 
@@ -291,9 +291,9 @@ Responsible AI is a governance framework that documents how a specific organizat
 
     ![Run Note Book Cell](./media/ai-img5.png)
 
-1. Navigate back to **Error explorer** page, and choose **Heat map (1)** form the drop-down next to **Error Explorer**. Set the **Select mertic** to **Mean absolute error (2)**, choose **number_of_elements (3)** for **Rows: Feature 1** and **mean_atomic_mass (4)**.
+1. Navigate back to **Error explorer** page, and choose **Heat map (1)** form the drop-down next to **Error Explorer**. Choose **number_of_elements (2)** for **Rows: Feature 1** , **mean_atomic_mass (3)** for **Columns: Feature 2** and Set **Select mertic** to **Mean absolute error (4)** .
 
-    ![Run Note Book Cell](./media/ai-img6.png)
+    ![Run Note Book Cell](./media/image02.png)
 
 ## Summary
 
