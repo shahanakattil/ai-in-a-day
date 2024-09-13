@@ -152,7 +152,7 @@ The high-level steps covered in the lab are:
    
 2. On Jupiter page, select **Kernel (1)**, then **Change kernel (2)** and make sure **Python (aiw-ai-kernel) (3)** is selected.
 
-   ![](./media/selectaikernel.png)
+   ![](./media/image01.png)
 
 3. Execute the cells inside `1. Data Preparation.ipynb` notebook one by one (Click on the 'Run' button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell) and observe the results of each cell execution.
 
