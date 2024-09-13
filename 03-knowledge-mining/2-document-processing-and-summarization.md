@@ -139,7 +139,7 @@ The high-level steps covered in the lab are:
 
     ![Articles with the phrase RNA interference.](media/L2T4S6.png)
 
-7. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` **(1)** and then select **Search (2)**.  This will return 53 documents **(3)**.
+7. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` **(1)** and then select **Search (2)**.  This will return 53 documents.
 
     ![53 articles reference Brazil.](media/L2T4S7.png)
 
