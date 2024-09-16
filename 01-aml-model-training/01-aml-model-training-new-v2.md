@@ -96,7 +96,7 @@ The high-level steps covered in the lab are:
         
 1. Locate **Machine Learning** resource named **<inject key="AML Workspace Name " enableCopy="true"/>** and select it.
 
-    ![Navigate to Azure Machine Learning](./media/lab1-open-aml.png)
+    ![Navigate to Azure Machine Learning](./media/innovate10.png)
     
 1. On the **Overview (1)** page, click on **Launch studio (2)**. If you are prompted to sign in again, use the same lab credentials you used to login to the Azure portal. Close the welcome **pop-up** if any with the cross icon.  
     
@@ -173,31 +173,33 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
 2. In the `Submit an Automated ML job` wizard, for Experiment name `Select Existing` **(1)** and select Existing experiment as `COVID19_Classification` **(2)**. Click  `Next` **(3)** to proceed.
 
-    ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/E1T5S2.png)
+    ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn5.png)
    
-3. On the `Task type and data` page, make sure `Classification` **(1)** is selected. Select `COVID19Articles_Train_Vectors` as your dataset and click `Next` to proceed.
+3. On the `Task type and data` page, make sure `Classification` **(1)** is selected. Select `COVID19Articles_Train_Vectors`**(2)** as your dataset and click `Next` **(3)** to proceed.
 
-    ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/E1T5S3.png)
+    ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/innovate1.png)
 
-4. On `Task settings` page, select the Target column to `cluster` **(1)**. The values we're trying to predict are in the `cluster` column.
+    ![Classification is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/iinn9.png)   
 
-     ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/E1T5S4.png)
+5. On `Task settings` page, select the Target column to `cluster (Integer)` **(1)**. The values we're trying to predict are in the `cluster` column.
 
-5. Scroll down on the same page, fill in the values listed below and click `Next`.
+     ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn1.png)
 
-    - **Validation type (1)**: k-fold cross validation
-    - **Number of cross validations (2)**: 5
+6. Scroll down on the same page, fill in the values listed below and click `Next` **(4)**.
+
+    - Validation type : **k-fold cross validation (2)**
+    - Number of cross validations: **5 (3)**
     - Leave Default for Test dataset
 
-      ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/E1T5S5.png)
+      ![COVID19Articles_Train_Vectors dataset is selected. Next button is highlighted.](media/inn2.png)
       
-6. In order to be able to launch an Automated ML run, we need to provision an Azure ML compute cluster. On the `Compute` page, select compute type as `Compute Cluster` **(1)** and select Azure AML compute cluster as `aml-compute-cpu` **(2)** from the list of clusters. If the list is empty select `+ New` **(3)** link.
+7. In order to be able to launch an Automated ML run, we need to provision an Azure ML compute cluster. On the `Compute` page, select compute type as `Compute Cluster` **(1)** and select Azure AML compute cluster as `aml-compute-cpu` **(2)** from the list of clusters then click on **Next.** If the list is empty select `+ New` **(3)** link.
 
-    ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/E1T5S6.png)
+    ![Select compute cluster dropdown list and create a new compute link are highlighted.](media/inn3.png)
 
    >**Note**: If you already have `aml-compute-cpu` cluster provisioned, feel free to skip to step 9.
 
-7. On the `Create compute cluster` screen set the values listed below:
+8. On the `Create compute cluster` screen set the values listed below:
 
     - **Virtual machine priority (1)**: Dedicated
     - **Virtual machine type (2)**: CPU
@@ -207,7 +209,7 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     Select `Next` **(4)** to continue.
 
-8. To configure cluster settings set the values given below:
+9. To configure cluster settings set the values given below:
 
     - **Compute name (1)**: aml-<inject key="DeploymentID" enableCopy="false"/>
     - **Minimum number of nodes (2)**: 0
@@ -217,9 +219,9 @@ In this task, we'll use Azure Automated ML to train a machine learning model cap
 
     ![Computer name is set to aml-compute-cpu. The minimum number of nodes is set to zero. The maximum number of nodes is set to four. The create button is highlighted.](./media/SHC5.5.1.png)    
 
-9. On the Review page, select `Submit training job` **(1)**  to kick off the Automated ML experiment run. If this is the first time you are launching an experiment run in the Azure Machine Learning workspace, the total experiment time will be longer than the `training job time` we have set. This is because of the time needed to start the Compute Cluster and deploy the container images required to execute.
+10. On the Review page, select `Submit training job` **(1)**  to kick off the Automated ML experiment run. If this is the first time you are launching an experiment run in the Azure Machine Learning workspace, the total experiment time will be longer than the `training job time` we have set. This is because of the time needed to start the Compute Cluster and deploy the container images required to execute.
 
-    ![Validation is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/E1T5S9.png)
+    ![Validation is selected as the machine learning task type for the experiment. The View additional configuration settings link is highlighted. ](media/inn4.png)
 
 12. On the following screen, you will see the progress of your experiment run.
 
