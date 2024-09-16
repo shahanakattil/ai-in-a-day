@@ -38,7 +38,7 @@ The semantic ranking is an extension of the query execution pipeline that improv
    
 2. In the **covid19temp** index pane, select **Semantic configurations** **(1)** and click on **+ Add semantic configuration** **(2)**.
 
-   ![Semantic config](media/lab2b-add-sc.png)
+   ![Semantic config](media/inn20.png)
 
 3. You will see a tab appear on the right side with **New semantic configuration**. Enter the below values:
 
@@ -55,7 +55,7 @@ The semantic ranking is an extension of the query execution pipeline that improv
   
 4. You will be able to see the added semantic configuration **(1)** under the Semantic Configurations tab. Click on **Save** **(2)** to save the changes made.
 
-   ![Semantic configuration](media/lab2b-save-sc.png)
+   ![Semantic configuration](media/inn21.png)
 
 ## Task 3 - Semantic search using the semantic configuration in Azure Portal
 
