@@ -28,26 +28,26 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/L4T2S1.png)
 
-3. On the **Let's get you started**, enter your azure username **(1)** and select **Next (2)**. Then click on **Sign in.** 
+1. On the **Let's get you started**, enter your azure username **(1)** and select **Next (2)**. Then click on **Sign in.** 
 
    ![](media/L4T2S2.png)
    ![](media/L4T2S2.2.png)
 
-5. Once **Signed in**, under Create your account, **choose your respective region (1)** from the drop-down menu and enter phone number and click on **Get Started (2)**.
+1. Once **Signed in**, under Create your account, **choose your respective region (1)** from the drop-down menu and enter phone number and click on **Get Started (2)**.
    
    ![](media/L4T2S3.png)
    
-6. Under the **Confirmation details (1)**, click on **Get Started (2)**.
+1. Under the **Confirmation details (1)**, click on **Get Started (2)**.
 
     ![](media/upd-l3-t3-s4.png)
 
-7. You have now successfully signed up for **Microsoft Copilot Studio**.
+1. You have now successfully signed up for **Microsoft Copilot Studio**.
 
-8. On the **Welcome to Microsoft Copilot Studio (1)** page, choose your respective region and select **Get Started (2)**.
+1. On the **Welcome to Microsoft Copilot Studio (1)** page, choose your respective region and select **Get Started (2)**.
 
     ![](media/L4T2S6.png)
 
-9. On the **Create a Copilot** page enter the following details:
+1. On the **Create a Copilot** page enter the following details:
 
    - **Copilot name (1)**: Enter **AI-Bot-<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -55,7 +55,7 @@ The way organizations are building conversational systems is evolving, with bots
 
    ![](media/create_bot.jpg)
 
-10. Once the Bot is created you will see the Copilot Studio page.
+1. Once the Bot is created you will see the Copilot Studio page.
 
    ![](media/test-copilot0.1-1.jpg)
 
