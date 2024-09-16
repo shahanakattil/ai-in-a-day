@@ -23,15 +23,12 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
 2. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and select it.
 
-   ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
+   ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
    
-3. Select the **Semantic ranker** under settings in the left menu.
+3. Select the **Semantic ranker (1)** under settings in the left menu. From the Semantic ranker pane, select the **Free** tier by clicking on **Select Plan (2)**. Once you click on a select plan, a free tier plan will be selected for the Semantic search.
 
-   ![Semantic search service to be selected](media/image05.png)
-   
-4. From the Semantic ranker pane, select the **Free** tier by clicking on **Select Plan**. Once you click on a select plan, a free tier plan will be selected for the Semantic search.
+   ![Semantic search service to be selected](media/inn16.png)
 
-   ![Semantic search service free tier to be selected](media/L3T1S4.png)
    
 ## Task 2 - Creating a Semantic Configuration
 
@@ -64,7 +61,7 @@ The semantic ranking is an extension of the query execution pipeline that improv
 
 1. Navigate to **Overview** **(1)** of **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and then click on **Search explorer (2)**.
 
-   ![Semantic search](media/lab2b-ssp3.png)
+   ![Semantic search](media/inn17.png)
    
 2. In the **Search explorer** pane, select the Index **covid19temp** **(1)**.Click on the **Query options** **(2)**.
   ![Semantic search](media/L3T3S2.png)
@@ -83,11 +80,11 @@ In this task, you are going to perform the semantic search using a query in [RES
 
 1. In the **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** pane, select **Keys** under settings from left menu.
 
-   ![Semantic search](media/lab2b-ssp9.png)
+   ![Semantic search](media/inn18.png)
    
 2. Make sure to copy **key**, which you can find below the **Manage query keys**, and save it in the text file for later use.
 
-   ![Semantic search](media/lab2b-ssp10.png)
+   ![Semantic search](media/inn19.png)
    
 3. Navigate to **LABVM Desktop** and open the **Postman** application by double-clicking on it.
 
