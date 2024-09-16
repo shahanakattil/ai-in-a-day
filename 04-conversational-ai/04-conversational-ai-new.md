@@ -123,15 +123,15 @@ The way organizations are building conversational systems is evolving, with bots
 
 1. Once the Topic is saved, click on **Test Copilot** from the right-top corner.
 
-   ![](media/test-0012.jpg)
+    ![](media/test-0012.jpg)
 
 2. In the Test copilot pane, enter the given phrase ```What are my meal delivery options?``` and then enter the city name as ```Seattle```, You can select the type of food that you are looking for i.e., Chinese or Italian. 
 
-   ![](media/test-copilot-1.jpg)
+    ![](media/test-copilot-1.jpg)
  
 3. Your chatbot should display the names of the meals as shown below.
 
-   ![](media/test-324.jpg)
+    ![](media/test-324.jpg)
 
 Now you have successfully created and tested the Microsoft Copilot.
 
