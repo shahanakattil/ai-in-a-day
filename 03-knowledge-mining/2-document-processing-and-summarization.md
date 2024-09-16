@@ -57,7 +57,7 @@ The high-level steps covered in the lab are:
 
 1. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and select it.
 
-    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
+    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
 
 1. Copy the search service URL and paste this into a text file. Also make a note of the service account name, which comes before `.search.windows.net`.
 
@@ -65,7 +65,7 @@ The high-level steps covered in the lab are:
 
 1. Navigate to the **Keys (1)** under Settings and **copy the Primary admin key (2)**. Paste this into a text file.
 
-    ![The Search service's API key is copied to the clipboard.](media/L2-T3-S5.png)
+    ![The Search service's API key is copied to the clipboard.](media/inn7.png)
 
 1. Navigate to Storage account named **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** **(1)**, select **Access keys** **(2)** under Security + networking from left-menu. Click on **Show** of the connection string under Key1 **(3)** to see the connection string and **copy the connection string** **(4)** under Key1. Paste this into a text file.
 
@@ -125,41 +125,43 @@ The high-level steps covered in the lab are:
 
 3. Locate **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and select it.
 
-    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
+    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
 
 4. Select the **Indexes** tab and ensure that you have two indexes created. If the Document Count is 0 for either, wait a couple of minutes and select **Refresh** until the document count appears.
 
     ![The list of Azure Search indexes.](media/AI1.png)
 
-5. Once documents are available, select **Search Explorer** to open up the Search Explorer.
 
-    ![The Search Explorer option is selected.](media/search-service-explorer.png)
 
-6. Choose the **covid19temp (1)** index and enter `RNA interference`**(2)** into the Query string input box, and then select **Search (3)**. This will return the documents which include the phrase "RNA interference."
+6. Once documents are available, Navigate to Overview **(1)** of Search service and then select **Search Explorer (2)** to open up the Search Explorer.
+
+    ![The Search Explorer option is selected.](media/innovate4.png)
+
+7. Choose the **covid19temp (1)** index and enter `RNA interference`**(2)** into the Query string input box, and then select **Search (3)**. This will return the documents which include the phrase "RNA interference."
 
     ![Articles with the phrase RNA interference.](media/L2T4S6.png)
 
-7. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` **(1)** and then select **Search (2)**.  This will return 53 documents.
+8. We can also see how many articles match a certain search string. In the Query string input box, enter the phrase `Brazil&$count=true` **(1)** and then select **Search (2)**.  This will return 53 documents.
 
     ![53 articles reference Brazil.](media/image03.png)
 
-8. Each document returns a large number of fields, but we can specify the fields we would like to see. In the Query string input box, enter the phrase `UNC Chapel Hill&$select=metadata/authors, metadata/title` **(1)** and then select **Search (2)**. This will return the title as well as detailed information on each author.
+9. Each document returns a large number of fields, but we can specify the fields we would like to see. In the Query string input box, enter the phrase `UNC Chapel Hill&$select=metadata/authors, metadata/title` **(1)** and then select **Search (2)**. This will return the title as well as detailed information on each author.
 
     ![Paper titles and authors referencing UNC Chapel Hill.](media/image04.png)
 
-9. The Azure Search service can also generate a demo application. Return to the search service and select the **covid19temp** index.
+10. The Azure Search service can also generate a demo application. Return to the search service and select the **covid19temp** index.
 
-    ![The covid19temp index is selected.](media/L2-T4-S9.png)
+    ![The covid19temp index is selected.](media/inn8.png)
 
-10. Select the **Create Demo App** option.
+11. Select the **Create Demo App** option.
 
     ![The Create Demo App option is selected.](media/lab2a-task4-step10.png)
 
-11. On the first tab, select `metadata.title` **(1)** for the Title and `abstract.text` **(2)** for the Description. Then select **Next** twice and click on **Create Demo App (3)**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
+12. On the first tab, select `metadata.title` **(1)** for the Title and `abstract.text` **(2)** for the Description. Then select **Next** twice and click on **Create Demo App (3)**. After the prompt, select **Download** to download an HTML file named `AzSearch.html`.
 
     ![Create a demo app.](media/create-demo-app-1.1.png)
 
-12. Open the demo app HTML file. In the search box, enter the phrase **RNA interference (1)** and select the **Search icon (2)**. This will return 497 papers relating to RNA interference.
+13. Open the demo app HTML file. In the search box, enter the phrase **RNA interference (1)** and select the **Search icon (2)**. This will return 497 papers relating to RNA interference.
 
     ![Use the demo app.](media/L2T4S12.png)
 
@@ -217,7 +219,7 @@ The high-level steps covered in the lab are:
 
 10. Select the **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** Search service.
 
-    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-search-service1.png)
+    ![The Search service is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn6.png)
 
 11. Navigate to the **Indexers (1)** section and select the **covid19temp (2)** indexer.
 
@@ -233,7 +235,7 @@ The high-level steps covered in the lab are:
 
 14. Return to the **Indexes** tab for the Search service and ensure that the **covid19temp** index has 965 documents. If it still reads 865, wait 30 seconds and select **Refresh** to check again.
 
-    ![The covid19temp index has finished updating.](media/L2-T5-S14.png)
+    ![The covid19temp index has finished updating.](media/inn10.png)
 
 15. Select the **covid19temp** index to return to the Search Explorer. When we had 865 documents, 53 of them pertained to Brazil. We can confirm that this update was successful by entering `Brazil&$count=true` **(1)** and selecting **Search (2)**. This will now return 57 results **(3)** instead of the prior 53.
 
@@ -245,17 +247,17 @@ The high-level steps covered in the lab are:
 
     ![Open Azure resource group](media/SHC2a.3.1.png)
 
-2. Select the **AI-in-a-Day** resource group.
+1. Select the **AI-in-a-Day** resource group.
 
-3. Select the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** Storage account.
+1. Select the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** Storage account.
 
     ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
 
-4. Under **Settings**, navigate to the **Resource sharing (CORS)** page. 
+1. Under **Settings**, navigate to the **Resource sharing (CORS)** page. 
 
     ![The CORS is highlighted from the list of services in the AI-in-a-Day Resource Group](media/storaheaccount-CORS.png)
     
-5. On the Resource Sharing (CORS) page, ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)** and then select **Save** **(3)** to save the CORS settings.  
+1. On the Resource Sharing (CORS) page, ensure that you are on the **Blob service** **(1)** tab, and enter the following values into the table **(2)** and then select **Save** **(3)** to save the CORS settings.  
 
    | Parameter                   | Value                                              |
    | --------------------------- | -------------------------------------------------- |
@@ -268,27 +270,27 @@ The high-level steps covered in the lab are:
    ![The CORS options are set for the storage account](media/storage-cors-blob.png)
 
 
-6. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Document Intelligence resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
+1. Return to the Azure Portal page with your storage account. Navigate back to the **AI-in-a-Day** resource group and select the Document Intelligence resource **aiinaday-formrecog<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![The AI Services service is selected](media/L2-T6-S6.png)
+    ![The AI Services service is selected](media/inn11.png)
 
-7. Select the **Keys and Endpoint** **(1)** option under Resource Management and click on **Show Keys** **(2)**. Then, copy the value for **KEY 1** **(3)** and the **Endpoint** **(4)**. Paste these into a text file for later use.
+1. Select the **Keys and Endpoint** **(1)** option under Resource Management and click on **Show Keys** **(2)**. Then, copy the value for **KEY 1** **(3)** and the **Endpoint** **(4)**. Paste these into a text file for later use.
 
-    ![The AI Services key and endpoint are selected](media/L2-T5-S7.png)
+    ![The AI Services key and endpoint are selected](media/inn12.png)
 
-8. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Get Started** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
+1. Navigate to the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/), scroll-down to **Custom models** and select **Get Started** under **Custom model**. Use the credentials provided in the Environment Details to Sign-in.
 
     ![Create new custom model](media/updated-document-ai.png)
 
-9. In the Custom models page, under **My Project** click on **+ Create a project**.
+1. In the Custom models page, under **My Project** click on **+ Create a project**.
   
     ![Project](media/updated-doc-ai-2.png)
 
-10. In the Enter Project Details pane, enter the Project Name as **covid19abstract (1)** and add the description as **Extracting Abstract from the documents (2)**. Click on **Continue (3)**.
+1. In the Enter Project Details pane, enter the Project Name as **covid19abstract (1)** and add the description as **Extracting Abstract from the documents (2)**. Click on **Continue (3)**.
 
     ![The covid19abstract project has been created](media/lab2a-t6-frs3.1.png)
     
-11. In the **Configure service resource**, provide the following details and click on **Continue (4)**.
+1. In the **Configure service resource**, provide the following details and click on **Continue (4)**.
    
     | Parameter                   | Value                                |
     | --------------------------- | -------------------------------------|
@@ -299,7 +301,7 @@ The high-level steps covered in the lab are:
 
     ![Project](media/form-service.png)
     
-12. Next in the connect training data source, select the below values from the drop-down and click on **Continue (6)**.
+1. Next in the connect training data source, select the below values from the drop-down and click on **Continue (6)**.
 
     | Parameter                   | Value                                |
     | --------------------------- | -------------------------------------|
@@ -313,63 +315,65 @@ The high-level steps covered in the lab are:
     
     > **Note**: If you are unable to select the Storage Account in the Connect training data source page, signout and signin from the Document Intelligence Studio with the given credentials. Re-perform the task from Step-8.
 
-13. Review the details and click on **Create project**.
+1. Review the details and click on **Create project**.
 
     ![Project](media/SHC2a.6.13.png)
   
-14. After creating a new project, you will be sent to the project for tagging in Label data. Select **+** **(1)** to create a new field click on **Add a Field** **(2)**, type `Abstract` in the Field, and hit enter. By this, you have created a new Abstract Field.
+1. After creating a new project, you will be sent to the project for tagging in Label data. Select **+Add a Field** **(1)** to create a new field click on **Field** **(2)**, type `Abstract` in the Field, and hit enter. By this, you have created a new Abstract Field.
 
-    ![The Abstract tag has been created](media/lab2a-t6-frs8.png)
+    ![The Abstract tag has been created](media/innovate5.png)
     
     ![The Abstract tag has been created](media/lab2a-t6-frs9.png)
 
-15. Click on **Run layout**.Wait for the layout to be run for the first document and locate the document's abstract. Note that for some documents, the abstract is on the second page. Then, move on to the next document. We will tag each of the five papers, so navigate to each in turn, allowing the layout to be run. In order for tagging to be successful, we must first run the layout of a document, navigate to another document, and return to this first document before we begin tagging. Layout generation happens once per document, after which we can return to it and tag our abstract.
+1. Click on **Run layout**.Wait for the layout to be run for the first document and locate the document's abstract. Note that for some documents, the abstract is on the second page. Then, move on to the next document. We will tag each of the five papers, so navigate to each in turn, allowing the layout to be run. In order for tagging to be successful, we must first run the layout of a document, navigate to another document, and return to this first document before we begin tagging. Layout generation happens once per document, after which we can return to it and tag our abstract.
 
     ![Running layout for a document](media/L2-T6-S15.png)
 
     ![Running layout for a document](media/lab2a-t6-frs7.png)
 
-16. Return to the second PDF and select each word in the **Abstract** section. After highlighting this, select the **Abstract** tag to tag this section. Note that you will need to select each word individually rather than selecting a box. After selecting the **Abstract** tag, you should see a tag logo next to the PDF. If you see the tag logo, this means that tagging was successful for this document.
+1. Return to the second PDF and select each word in the **Abstract** section. After highlighting this, select the **Abstract** tag to tag this section. Note that you will need to select each word individually rather than selecting a box. After selecting the **Abstract** tag, you should see a tag logo next to the PDF. If you see the tag logo, this means that tagging was successful for this document.
 
     ![The first PDF has been viewed, and the second PDF has been tagged](media/L2-T6-S16.1.png)
 
-17. Return to the first PDF and highlight the word **ABSTRACT** and the abstract. If the abstract is lengthy, as in this example, it is okay to include just the first paragraph. Then, select the **Abstract** tag to tag this document. Ensure that the viewed icon (an eye) changes to a tag icon. If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful. In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
+1. Return to the first PDF and highlight the word **ABSTRACT** and the abstract. If the abstract is lengthy, as in this example, it is okay to include just the first paragraph. Then, select the **Abstract** tag to tag this document. Ensure that the viewed icon (an eye) changes to a tag icon. If it does not change to a tag but instead changes to a blank spot without any icons, tagging was unsuccessful. In the event that tagging is unsuccessful, select another document, wait for it to have its layout run, and then return to the prior document and try tagging again.
 
     ![The first PDF has been tagged](media/L2-T6-S17.png)
 
-18. Continue tagging until all five of the top papers are tagged. Once we have tagged five documents, select the **Train** option.
+1. Continue tagging until all five of the top papers are tagged. Once we have tagged five documents, select the **Train** option.
     
     ![The first five PDFs have been tagged](media/L2-T6-S18.png)
 
-19. In a pop-up to Train a new model, enter **Abstracts (1)** as the ModelID, and select the **Neural (Recommended) (2)** from the drop-down as Build Mode. Then click on **Train (3)**.
+1. In a pop-up to Train a new model, enter **Abstracts (1)** as the ModelID, and select the **Neural (Recommended) (2)** from the drop-down as Build Mode. Then click on **Train (3)**.
 
     ![The option to train a model has been selected](media/form-model.png)
 
-20. Training a model may take up to 45-60 minutes to succeed. Click on **Go to models**. 
+1. Training a model may take up to 45-60 minutes to succeed. Click on **Go to models**. 
 
     ![The option to train a model has been selected](media/lab2a-t6-frs14.png)
 
     >**Note**: As Training a model will take up to 45-60 minutes to succeed. No need to wait for it, you can continue with next Lab. Come back later and review it after an hour.
 
-22. After the model has finished training, you will see that the Status has succeeded.  Although the estimated accuracy is not great, we will use this model.
+1. After the model has finished training, you will see that the Status has succeeded.  Although the estimated accuracy is not great, we will use this model.
 
     ![The Abstracts model has been trained](media/lab2a-t6-frs15.png)
 
-23. From the left menu, select the **Test (1)**. Click on **Browse for a file (2)**. 
+1. From the left menu, select the **Test (1)**. Click on **Browse for a file (2)**. 
 
-    * In the Upload Files pop-up, click on **Choose file** **(1)**. Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf` file **(2)** and then click on **Open** **(3)**.
+    ![An analyzed document](media/innovate6.png)
     
-     ![An analyzed document](media/lab2a-fr-fileupload.png)
+1. In the Upload Files pop-up, Navigate to `C:\Temp\AzureSearch\`, select `2020.09.25.20201616v1.pdf` file **(2)** and then click on **Open** **(3)**.
+    
+    ![An analyzed document](media/innovate7.png)
    
-    *  Choose `2020.09.25.20201616v1.pdf` file **(3)** select **Analyze (4)**. Note that the abstract is on **page 2 (5)** of the PDF. View the **Results (6)** on the right side of the page.
+1. Choose `2020.09.25.20201616v1.pdf` file, select **Run Analysis (1)**. Note that the abstract is on **page 2 (2)** of the PDF. View the **Results (3)** on the right side of the page.
     
-      ![An analyzed document](media/new-lab2a-5.png)
+    ![An analyzed document](media/innovate8.png)
 
-24. Select **Result (1)** and click on **download icon (2)** to download JSON file. Find the location where the script was downloaded and observe the result code.
+1. Select **Result (1)** and click on **download icon (2)** to download JSON file. Find the location where the script was downloaded and observe the result code.
 
     ![An analyzed document](media/lab2a-t6-frs19.1.png)
     
-25. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Document Intelligence Studio: [Quickstart: Document Intelligence Studio - Azure Applied AI Services | Microsoft Docs](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0)
+1. For now, you have used custom models with Neural build mode. You can use any sample document which contains Tables and Signatures to Test/Analyze using Template build mode. Please find the reference to explore more about Document Intelligence Studio: [Quickstart: Document Intelligence Studio - Azure Applied AI Services | Microsoft Docs](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0)
 
     <validation step="24474dca-c3ab-413f-ba34-eb278f3c895f" />
 
