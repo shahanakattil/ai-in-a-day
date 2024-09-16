@@ -269,25 +269,25 @@ Responsible AI is a governance framework that documents how a specific organizat
 
 1. In the Jupyter application, navigate to the given path **\Users\odl_user_<inject key="DeploymentID" enableCopy="false"/>** and open `erroranalysis-dashboard-regression-superconductor.ipynb` notebook.
 
-   ![Select Note Book](./media/ai-img0.png)
+    ![Select Note Book](./media/ai-img0.png)
    
-2. Once the notebook is opened in the Jupyter application, select **Kernel** **(1)**. Then select **Change kernel** **(2)** and make sure to select **Python (aiw-ai-kernel) (3)**.
+1. Once the notebook is opened in the Jupyter application, select **Kernel** **(1)**. Then select **Change kernel** **(2)** and make sure to select **Python (aiw-ai-kernel) (3)**.
 
-   ![](./media/ai-img1.png)
+    ![](./media/ai-img1.png)
 
-3. Execute the cells inside `erroranalysis-dashboard-regression-superconductor.ipynb` notebook one by one (Click on the **Run** button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
+1. Execute the cells inside `erroranalysis-dashboard-regression-superconductor.ipynb` notebook one by one (Click on the **Run** button or by using either Ctrl + Enter to stay on the same cell, or Shift + Enter to advance to the next cell or) and observe the results of each cell execution.
 
-   ![Run Note Book Cell](./media/ai-img2.png)
+    ![Run Note Book Cell](./media/ai-img2.png)
    
-4. Please make sure to read the cells carefully and run them one by one. Click on the **Endpoint** URL at the end of the notebook before moving to the next task.
+1. Please make sure to read the cells carefully and run them one by one. Click on the **Endpoint** URL at the end of the notebook before moving to the next task.
 
-     ![Note Book Cell Output](./media/ai-img3.png)
+    ![Note Book Cell Output](./media/ai-img3.png)
 
 ## Task 8 -  Explore the Responsible AI dashboard
 
 1. Once you click on the endpoint, you will be navigated to the new tab. Select **Tree map (1)** from the drop-down next to **Error Explorer**, the tree visualization uses the mutual information between each feature and the error to best separate error instances from success instances hierarchically in the data. This simplifies the process of discovering and highlighting common failure patterns. Choose the **Mean squared error (2)** for **Select metric** and click on **Explanation** to view the results. 
 
-   ![Run Note Book Cell](./media/ai-img4.png)
+    ![Run Note Book Cell](./media/ai-img4.png)
  
 1. On the **Explanation** page, observe the box plot graph representing the data. In addition, you can explore the available options to view different representations of data.
 
