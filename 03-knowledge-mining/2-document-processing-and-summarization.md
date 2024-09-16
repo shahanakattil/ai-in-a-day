@@ -251,7 +251,7 @@ The high-level steps covered in the lab are:
 
 1. Select the **aiinadaystorage<inject key="DeploymentID" enableCopy="false"/>** Storage account.
 
-    ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/select-azure-storage-account1.png)
+    ![The Storage account is highlighted from the list of services in the AI-in-a-Day Resource Group](media/inn15.png)
 
 1. Under **Settings**, navigate to the **Resource sharing (CORS)** page. 
 
@@ -393,11 +393,11 @@ In this task, we are creating a text summarization application with the client l
 
 1. Return to the Azure Portal page and navigate to the **AI-in-a-Day** resource group and select the Azure AI services multi-service account **aiinaday-cogsv<inject key="DeploymentID" enableCopy="false"/>**.
 
-    ![The AI Services service is selected](media/L2-T7-S1.png)
+    ![The AI Services service is selected](media/inn13.png)
 
 2. Select the **Keys and Endpoint (1)** option under Resource Management.  Then, copy the value for **KEY 1 (2)** and the **Endpoint (3)**.  Paste these into a text file for later use.
 
-    ![The AI Services key and endpoint are selected](media/L2-T7-S2.png)
+    ![The AI Services key and endpoint are selected](media/inn14.png)
 
 3. In the labvm, open a command prompt (`cmd.exe`). To do this, open the Windows menu, type in `cmd`, and select the **Command Prompt** application.
 
