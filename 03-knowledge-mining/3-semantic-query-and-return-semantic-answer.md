@@ -80,27 +80,27 @@ In this task, you are going to perform the semantic search using a query in [RES
 
 1. In the **Search service** resource **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** pane, select **Keys** under settings from left menu.
 
-   ![Semantic search](media/inn18.png)
+    ![Semantic search](media/inn18.png)
    
-2. Make sure to copy **key**, which you can find below the **Manage query keys**, and save it in the text file for later use.
+1. Make sure to copy **key**, which you can find below the **Manage query keys**, and save it in the text file for later use.
 
-   ![Semantic search](media/inn19.png)
+    ![Semantic search](media/inn19.png)
    
-3. Navigate to **LABVM Desktop** and open the **Postman** application by double-clicking on it.
+1. Navigate to **LABVM Desktop** and open the **Postman** application by double-clicking on it.
 
-   ![Semantic search](media/lab2b-ssp11.png)
+    ![Semantic search](media/lab2b-ssp11.png)
    
-4. In the Overview page of the Postman app, click on **Create a request** under Get Started.
+1. In the Overview page of the Postman app, click on **Create a request** under Get Started.
 
-   ![Semantic search](media/lab2b-ssp12.png)
+    ![Semantic search](media/lab2b-ssp12.png)
    
-5. Select the **POST (1)** Method from the drop-down. Enter the request URL given below and make sure to replace the search service name as **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and the index name as **covid19temp**.
+1. Select the **POST (1)** Method from the drop-down. Enter the request URL given below and make sure to replace the search service name as **aiinaday-cog-<inject key="DeploymentID" enableCopy="false"/>** and the index name as **covid19temp**.
 
    `https://[search-service-name].search.windows.net/indexes/[index-name]/docs/search` **(2)**.
    
    ![Semantic search](media/lab2b-ssp13.png)
 
-6. In the Parameters section, enter the below values for **api-version** **(1)** and **api-key** **(2)**.
+1. In the Parameters section, enter the below values for **api-version** **(1)** and **api-key** **(2)**.
 
     | Parameter           | Value                                        |
     | --------------------| -------------------------------------------- |
@@ -109,9 +109,9 @@ In this task, you are going to perform the semantic search using a query in [RES
    
    After updating the parameters, your **Request URL** **(3)** should be the same as shown in the below screenshot.
    
-   ![Semantic search](media/lab2b-ssp14.png)
+    ![Semantic search](media/lab2b-ssp14.png)
 
-7. For adding a query, you need to select the **Body** **(1)** section. Then click on **raw** **(2)** as code type and select **JSON** **(3)** as an extension from the drop-down. Copy-paste the query which is given below into the **coding area** **(4)** and click on **Send** **(5)**.
+1. For adding a query, you need to select the **Body** **(1)** section. Then click on **raw** **(2)** as code type and select **JSON** **(3)** as an extension from the drop-down. Copy-paste the query which is given below into the **coding area** **(4)** and click on **Send** **(5)**.
 
    ```bash
    {
@@ -125,11 +125,11 @@ In this task, you are going to perform the semantic search using a query in [RES
    }
    ```
    
-   ![Semantic search](media/newlatest15.png)
+    ![Semantic search](media/newlatest15.png)
    
-8. You will see a **Sending request** in the **Response** section, which will take a few seconds to get the response from the AI search service. Once you get the response check that **Network Status: 200 OK**, review the response and explore with your query requests.
+1. You will see a **Sending request** in the **Response** section, which will take a few seconds to get the response from the AI search service. Once you get the response check that **Network Status: 200 OK**, review the response and explore with your query requests.
 
-   ![Semantic search](media/lab2b-ssp16.png)
+    ![Semantic search](media/lab2b-ssp16.png)
 
    <validation step="5f84e298-cac3-40e0-aad7-2eea5eefe286" />
 
