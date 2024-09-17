@@ -1,6 +1,6 @@
 # Innovate with AI
 
-## Overall Estimated Duration: 8 Hours
+### Overall Estimated Duration: 8 Hours
 
 ## Overview
 
