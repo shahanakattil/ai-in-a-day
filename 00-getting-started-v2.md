@@ -17,6 +17,8 @@ Understand how to utilize Natural Language Processing, Machine Learning, and Con
 
 ## Pre-requisites
 
+Participants should have:
+
 - Basic understanding of Azure AI Services and Azure DevOps
 - working knowledge with Github
 - Familarity with Machine Learning concepts
@@ -30,6 +32,8 @@ In this lab, you will use AI technologies to manage and analyze COVID-19 researc
 ![](media/updated-arch-new-v2.png)
 
 ## Explanation of Components
+
+The architecture for this lab involves the following key components:
 
 - **Natural Language Processing (NLP)** : Utilizes NLP techniques to analyze and understand the text within research papers, enabling the extraction of meaningful information and patterns.
 
@@ -64,19 +68,48 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
 ![](media/getting-started-5.png)
 
-Click **Next** from the bottom right corner to embark on your Lab journey!
+## Let's Get Started with Azure Portal
+ 
+1. On your virtual machine, click on the **Azure Portal** icon as shown below:
+ 
+   ![](./media/select-azureportal.png "Select Azure Portal")
 
-![](media/next.png)
+1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next**. 
 
-Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
+   
+      ![](../media/user-email.png "Enter Email")
+     
+1. Now enter the following password and click on **Sign in**.
+   
+   * **Password**: <inject key="AzureAdUserPassword"></inject>
+   
+      ![](../media/user-pass.png "Enter Password")
+
+1. If you see the pop-up Action Required, click Ask Later.
+
+   ![](../media/asklater.png)
+     
+1. If you see the pop-up **Stay Signed in?**, select **No**.
+
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+
+1. If a **Welcome to Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
 
 ## Support Contact
+
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
 Learner Support Contacts:
 
 - Email Support: labs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
+
+Click **Next** from the bottom right corner to embark on your Lab journey!
+
+![](media/next.png)
+
+### Happy Learning!!
 
 ## Happy Learning!!
 
