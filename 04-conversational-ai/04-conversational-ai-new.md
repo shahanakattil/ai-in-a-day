@@ -137,6 +137,6 @@ Now you have successfully created and tested the Microsoft Copilot.
 
 ## Summary 
 
-In this lab, you have created new topics, defined conversation flows, and tested the bot.
+In this lab, you set up Microsoft Copilot Studio, created your first Copilot, and tested it by developing and validating a new topic.
 
 ## You have successfully completed this Lab!
