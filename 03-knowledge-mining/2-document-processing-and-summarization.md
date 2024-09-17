@@ -440,3 +440,5 @@ You can find more references about Document Summarization from here: [Quickstart
 ## Summary 
 
 In this lab, you have explored Azure Document Intelligence and AI Services and extracted, analyzed, and summarized key information from documents.
+
+### You have successfully completed the lab
