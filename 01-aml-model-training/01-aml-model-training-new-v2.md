@@ -33,7 +33,7 @@ The corpus may be updated as new research is published in peer-reviewed publicat
 - Task 5 - Train a Machine Learning model with Automated ML
 - Task 6 - Explore AutoML results
 - Task 7 - Generate a Responsible AI dashboard
-- Task 8 -  Explore the Responsible AI dashboard
+- Task 8 - Explore the Responsible AI dashboard
 
 ## Task 1 - Explore dashboard of COVID-19 data
 
@@ -299,7 +299,9 @@ Responsible AI is a governance framework that documents how a specific organizat
 
 ## Summary
 
-In this lab, you have built, trained, and evaluated the machine learning model using Azure Machine Learning
+In this lab, you explore the COVID-19 data dashboard, set up and prepare your Azure Machine Learning workspace, train and evaluate a model using Automated ML, and generate and analyze a Responsible AI dashboard.
+
+### You have successfully completed the lab
 
 
 
