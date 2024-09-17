@@ -1,6 +1,6 @@
 # Lab 3 - Knowledge Mining with Azure AI Search
 
-## Estimated Duration : 2 Hours
+### Estimated Duration : 2 Hours
 
 This lab covers Azure AI Search Services, particularly [Semantic ranking](https://docs.microsoft.com/en-us/azure/search/semantic-ranking) using [semantic query](https://docs.microsoft.com/en-us/azure/search/semantic-how-to-query-request?tabs=semanticConfiguration%2Cportal#create-a-semantic-configuration) and [return a semantic answer](https://docs.microsoft.com/en-us/azure/search/semantic-answers?tabs=semanticConfiguration).
 
@@ -143,4 +143,6 @@ In this task, you are going to perform the semantic search using a query in [RES
 
 ## Summary
 
-In this lab, you have worked on indexing and exploring data, extracting insights, and enabling advanced search capabilities across structured and unstructured content.
+In this lab, you worked on indexing and exploring data, extracting insights, and enabling advanced search capabilities across structured and unstructured content.
+
+### You have successfully completed the lab
