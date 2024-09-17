@@ -72,25 +72,7 @@ The high-level steps covered in the lab are:
 
 ## Task 3 - Prepare Azure Machine Learning workspace
 
-1. In the **LabVM**, click on the **Azure Portal** shortcut of the Microsoft Edge browser, which is created on the desktop 💻.
-  
-    ![](./media/select-azureportal.png "Select Azure Portal")
-    
-1. On the **Sign into Microsoft Azure** tab, you will see the login screen. In that enter the following **Email/Username** and then click on **Next**. 
-   
-   * Email/Username: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
-   
-1. Enter the following **Password** and click on **Sign in**. 
-   
-   * Password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
-   
-1. If you see the pop-up **Stay Signed in?**, click on **No**. Also, if you see a **Save Password** pop-up, close that.
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
-
-1. If the **Welcome to Microsoft Azure** pop-up window appears, click on **Maybe Later** to skip the tour.
-
-1. Navigate to `All Resources`.
+1. In the **Azure portal**, navigate to `All Resources`.
 
     ![All Resources](./media/AllResources.png)
         
