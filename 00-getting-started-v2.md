@@ -111,5 +111,3 @@ Click **Next** from the bottom right corner to embark on your Lab journey!
 
 ### Happy Learning!!
 
-## Happy Learning!!
-
